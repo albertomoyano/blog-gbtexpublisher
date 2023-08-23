@@ -2,116 +2,116 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>gbTeXpublisher</title>
-    <link>https://albertomoyano.github.io/gbTeXpublisher/</link>
+    <link>https://albertomoyano.github.io/blog-gbtexpublisher/</link>
     <description>Recent content on gbTeXpublisher</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Tue, 21 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://albertomoyano.github.io/gbTeXpublisher/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://albertomoyano.github.io/blog-gbtexpublisher/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>URL largas en los libros</title>
-      <link>https://albertomoyano.github.io/gbTeXpublisher/post/2023-03-15-urllargas/</link>
+      <link>https://albertomoyano.github.io/blog-gbtexpublisher/post/2023-03-15-urllargas/</link>
       <pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://albertomoyano.github.io/gbTeXpublisher/post/2023-03-15-urllargas/</guid>
+      <guid>https://albertomoyano.github.io/blog-gbtexpublisher/post/2023-03-15-urllargas/</guid>
       <description>&lt;p&gt;Esta situación la vengo revisando desde hace mucho tiempo, pero aún hoy, no sé que solución es la más satisfactoria. El avance de la informatización de los contenidos, va generando inexorablemente más recursos en línea y los autores se ven en la necesidad de indicarlos en sus referencias bibliográficas y citas. Pero cuando una URL no tiene una estructura básica y legible por humanos, del estilo &lt;strong&gt;miweb.com&lt;/strong&gt;, la experiencia (propia y ajena) me dice que no tiene ninguna utilidad en un texto impreso; en libros digitales y/o electrónicos es harina de otro costal.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Markdown y los académicos</title>
-      <link>https://albertomoyano.github.io/gbTeXpublisher/post/2023-03-09-markdown/</link>
+      <link>https://albertomoyano.github.io/blog-gbtexpublisher/post/2023-03-09-markdown/</link>
       <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://albertomoyano.github.io/gbTeXpublisher/post/2023-03-09-markdown/</guid>
+      <guid>https://albertomoyano.github.io/blog-gbtexpublisher/post/2023-03-09-markdown/</guid>
       <description>En un curso al que asistí hace ya un tiempo, una compañera preguntó que tan dificil era migrar de word a los lenguajes de marcas ligeros, en ese momento hablábamos de markdown y de asciidoc, al principio la pregunta me pareció absurda, pero rápidamente me ubique en el lugar del otro y entendí lo hondo que ha calado word y el modelo WYSIWYG &amp;ndash;al menos en el ámbito académico&amp;ndash; en los entornos en los que me relaciono.</description>
     </item>
     
     <item>
       <title>Guía básica para MD</title>
-      <link>https://albertomoyano.github.io/gbTeXpublisher/post/markdown-syntax/</link>
+      <link>https://albertomoyano.github.io/blog-gbtexpublisher/post/markdown-syntax/</link>
       <pubDate>Mon, 25 Jul 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://albertomoyano.github.io/gbTeXpublisher/post/markdown-syntax/</guid>
+      <guid>https://albertomoyano.github.io/blog-gbtexpublisher/post/markdown-syntax/</guid>
       <description>&lt;p&gt;Este artículo ofrece una muestra de la sintaxis básica de Markdown que se puede usar en los archivos de contenido de Hugo, y también muestra si los elementos HTML básicos están decorados con CSS en un tema de Hugo.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Historia del PDF</title>
-      <link>https://albertomoyano.github.io/gbTeXpublisher/post/historia-pdf/</link>
+      <link>https://albertomoyano.github.io/blog-gbtexpublisher/post/historia-pdf/</link>
       <pubDate>Sun, 30 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://albertomoyano.github.io/gbTeXpublisher/post/historia-pdf/</guid>
+      <guid>https://albertomoyano.github.io/blog-gbtexpublisher/post/historia-pdf/</guid>
       <description>&lt;p&gt;El formato &lt;a href=&#34;https://es.wikipedia.org/wiki/PDF&#34;&gt;PDF&lt;/a&gt;, plenamente difundido en el uso informático cotidiano, paso por varias instancias antes de consolidarse como un estándar para el intercambio de información &amp;ndash;aunque hay otros que vienen surgiendo&amp;ndash; entre las tantas cosas que he leído quisiera compartir estas dos notas.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Opciones tipográficas</title>
-      <link>https://albertomoyano.github.io/gbTeXpublisher/post/condicional-minion/</link>
+      <link>https://albertomoyano.github.io/blog-gbtexpublisher/post/condicional-minion/</link>
       <pubDate>Thu, 13 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://albertomoyano.github.io/gbTeXpublisher/post/condicional-minion/</guid>
+      <guid>https://albertomoyano.github.io/blog-gbtexpublisher/post/condicional-minion/</guid>
       <description>&lt;p&gt;Este artículo pretende desarrollar un ejercicio con las &lt;em&gt;features&lt;/em&gt; que poseen las tipografías &lt;a href=&#34;https://es.wikipedia.org/wiki/OpenType&#34;&gt;OpenType&lt;/a&gt; y mostrar:&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Edición literada</title>
-      <link>https://albertomoyano.github.io/gbTeXpublisher/post/edicion-literada/</link>
+      <link>https://albertomoyano.github.io/blog-gbtexpublisher/post/edicion-literada/</link>
       <pubDate>Wed, 29 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://albertomoyano.github.io/gbTeXpublisher/post/edicion-literada/</guid>
+      <guid>https://albertomoyano.github.io/blog-gbtexpublisher/post/edicion-literada/</guid>
       <description>&lt;p&gt;Creo que es posible decir que la edición es íntegramente digital desde comienzo de los noventa, ya que los diferentes intervinientes del proceso editorial, han terminado incorporando a las computadoras en su uso diario para escribir y producir, así también podemos asegurar que hoy las imprentas (por dar un ejemplo del proceso) solo reciben trabajos en formato digital.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>PreText y el uso de XML</title>
-      <link>https://albertomoyano.github.io/gbTeXpublisher/post/2020-12-30-005/</link>
+      <link>https://albertomoyano.github.io/blog-gbtexpublisher/post/2020-12-30-005/</link>
       <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://albertomoyano.github.io/gbTeXpublisher/post/2020-12-30-005/</guid>
+      <guid>https://albertomoyano.github.io/blog-gbtexpublisher/post/2020-12-30-005/</guid>
       <description>&lt;p&gt;Desde hace más de un año que vengo siguiendo el proyecto &lt;a href=&#34;https://pretextbook.org&#34;&gt;PreText&lt;/a&gt;, he realizado algunos ejercicios llegando hasta la edición «casi» completa de un libro de mediana complejidad y observo que algunas cosas han mejorado mucho. El lenguaje de trabajo es básicamente &lt;a href=&#34;https://es.wikipedia.org/wiki/Extensible_Markup_Language&#34;&gt;XML&lt;/a&gt;, con salida a xHTML, ePub o PDF.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Rich Content</title>
-      <link>https://albertomoyano.github.io/gbTeXpublisher/post/rich-content/</link>
+      <link>https://albertomoyano.github.io/blog-gbtexpublisher/post/rich-content/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://albertomoyano.github.io/gbTeXpublisher/post/rich-content/</guid>
+      <guid>https://albertomoyano.github.io/blog-gbtexpublisher/post/rich-content/</guid>
       <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Placeholder Text</title>
-      <link>https://albertomoyano.github.io/gbTeXpublisher/post/placeholder-text/</link>
+      <link>https://albertomoyano.github.io/blog-gbtexpublisher/post/placeholder-text/</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://albertomoyano.github.io/gbTeXpublisher/post/placeholder-text/</guid>
+      <guid>https://albertomoyano.github.io/blog-gbtexpublisher/post/placeholder-text/</guid>
       <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Math Typesetting</title>
-      <link>https://albertomoyano.github.io/gbTeXpublisher/post/math-typesetting/</link>
+      <link>https://albertomoyano.github.io/blog-gbtexpublisher/post/math-typesetting/</link>
       <pubDate>Fri, 08 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://albertomoyano.github.io/gbTeXpublisher/post/math-typesetting/</guid>
+      <guid>https://albertomoyano.github.io/blog-gbtexpublisher/post/math-typesetting/</guid>
       <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Emoji Support</title>
-      <link>https://albertomoyano.github.io/gbTeXpublisher/post/emoji-support/</link>
+      <link>https://albertomoyano.github.io/blog-gbtexpublisher/post/emoji-support/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://albertomoyano.github.io/gbTeXpublisher/post/emoji-support/</guid>
+      <guid>https://albertomoyano.github.io/blog-gbtexpublisher/post/emoji-support/</guid>
       <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Composición tipográfica</title>
-      <link>https://albertomoyano.github.io/gbTeXpublisher/post/editores-procesadores/</link>
+      <link>https://albertomoyano.github.io/blog-gbtexpublisher/post/editores-procesadores/</link>
       <pubDate>Sat, 22 Jun 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://albertomoyano.github.io/gbTeXpublisher/post/editores-procesadores/</guid>
+      <guid>https://albertomoyano.github.io/blog-gbtexpublisher/post/editores-procesadores/</guid>
       <description>&lt;p&gt;En este artículo se leerán términos que si no son entendidos en su correcto valor pueden originar confusiones, por eso me parece oportuno antes que nada aclarar algunos conceptos.&lt;/p&gt;</description>
     </item>
     

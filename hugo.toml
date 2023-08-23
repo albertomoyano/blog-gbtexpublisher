@@ -1,4 +1,4 @@
-baseURL = 'https://albertomoyano.github.io/gbTeXpublisher'
+baseURL = 'https://albertomoyano.github.io/blog-gbtexpublisher/'
 title = 'gbTeXpublisher'
 theme = "hugo-texify2"
 publishDir = "docs"
