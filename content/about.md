@@ -14,7 +14,7 @@ author = "albertomoyano"
 
 **gbTeXpublisher** es una aplicación que permite gestionar los procesos de producción editorial de manera fácil y con pocos conocimientos, me gusta pensar en esta aplicación como un facilitador, ya que todo lo que se puede hacer con ella, también se puede hacer sin ella, la diferencia radica en la facilidad que otorga su interfaz.
 
-Nada de todo esto sería posible si no fuera por el enorme trabajo de muchas personas, pero quiero hacer una mención especial a [Donald Knuth](https://es.wikipedia.org/wiki/Donald_Knuth), [Benoît Minisini](https://en.wikipedia.org/wiki/Beno%C3%AEt_Minisini), también a los participantes de los foros de CervanTeX y Gambas, dejo para lo último a [Michal Hoftich](https://github.com/michal-h21), el aporte de su desarrollo a sido clave en el rumbo que tomaron mis decisiones.
+**gbTeXpublisher** es también el resultado del enorme trabajo de muchas personas (a quienes en su gran mayoría no conozco personalmente), quiero hacer una mención especial para [Donald Knuth](https://es.wikipedia.org/wiki/Donald_Knuth), [Benoît Minisini](https://en.wikipedia.org/wiki/Beno%C3%AEt_Minisini) y los foros de CervanTeX y Gambas, dejo para lo último a [Michal Hoftich](https://github.com/michal-h21), el aporte de su desarrollo a sido clave en el rumbo que tomaron mis decisiones de producción.
 
 **gbTeXpublisher** posee liciencia [GPL3](https://es.wikipedia.org/wiki/GNU_General_Public_License).
 
