@@ -1,0 +1,26 @@
+baseURL = 'https://albertomoyano.github.io/gbTeXpublisher'
+title = 'gbTeXpublisher'
+theme = "hugo-texify2"
+publishDir = "docs"
+paginate = 5
+languageCode = "es"
+DefaultContentLanguage = "es"
+
+[params.commentEngine]
+code = """
+<script src="https://giscus.app/client.js"
+        data-repo="albertomoyano/gbTeXpublisher"
+        data-repo-id="R_kgDOKJoX4A"
+        data-category-id="DIC_kwDOKJoX4M4CYwyU"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="es"
+        crossorigin="anonymous"
+        async>
+</script>
+"""
+
