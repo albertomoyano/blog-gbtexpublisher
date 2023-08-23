@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LaTeX on gbTeXpublisher</title>
+    <link>https://albertomoyano.github.io/gbTeXpublisher/tags/latex/</link>
+    <description>Recent content in LaTeX on gbTeXpublisher</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Tue, 21 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://albertomoyano.github.io/gbTeXpublisher/tags/latex/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>URL largas en los libros</title>
+      <link>https://albertomoyano.github.io/gbTeXpublisher/post/2023-03-15-urllargas/</link>
+      <pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://albertomoyano.github.io/gbTeXpublisher/post/2023-03-15-urllargas/</guid>
+      <description>&lt;p&gt;Esta situación la vengo revisando desde hace mucho tiempo, pero aún hoy, no sé que solución es la más satisfactoria. El avance de la informatización de los contenidos, va generando inexorablemente más recursos en línea y los autores se ven en la necesidad de indicarlos en sus referencias bibliográficas y citas. Pero cuando una URL no tiene una estructura básica y legible por humanos, del estilo &lt;strong&gt;miweb.com&lt;/strong&gt;, la experiencia (propia y ajena) me dice que no tiene ninguna utilidad en un texto impreso; en libros digitales y/o electrónicos es harina de otro costal.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Opciones tipográficas</title>
+      <link>https://albertomoyano.github.io/gbTeXpublisher/post/condicional-minion/</link>
+      <pubDate>Thu, 13 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://albertomoyano.github.io/gbTeXpublisher/post/condicional-minion/</guid>
+      <description>&lt;p&gt;Este artículo pretende desarrollar un ejercicio con las &lt;em&gt;features&lt;/em&gt; que poseen las tipografías &lt;a href=&#34;https://es.wikipedia.org/wiki/OpenType&#34;&gt;OpenType&lt;/a&gt; y mostrar:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Edición literada</title>
+      <link>https://albertomoyano.github.io/gbTeXpublisher/post/edicion-literada/</link>
+      <pubDate>Wed, 29 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://albertomoyano.github.io/gbTeXpublisher/post/edicion-literada/</guid>
+      <description>&lt;p&gt;Creo que es posible decir que la edición es íntegramente digital desde comienzo de los noventa, ya que los diferentes intervinientes del proceso editorial, han terminado incorporando a las computadoras en su uso diario para escribir y producir, así también podemos asegurar que hoy las imprentas (por dar un ejemplo del proceso) solo reciben trabajos en formato digital.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Composición tipográfica</title>
+      <link>https://albertomoyano.github.io/gbTeXpublisher/post/editores-procesadores/</link>
+      <pubDate>Sat, 22 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://albertomoyano.github.io/gbTeXpublisher/post/editores-procesadores/</guid>
+      <description>&lt;p&gt;En este artículo se leerán términos que si no son entendidos en su correcto valor pueden originar confusiones, por eso me parece oportuno antes que nada aclarar algunos conceptos.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
