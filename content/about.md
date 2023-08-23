@@ -16,7 +16,7 @@ author = "albertomoyano"
 
 **gbTeXpublisher** es también el resultado del enorme trabajo de muchas personas (a quienes en su gran mayoría no conozco personalmente), quiero hacer una mención especial para [Donald Knuth](https://es.wikipedia.org/wiki/Donald_Knuth), [Benoît Minisini](https://en.wikipedia.org/wiki/Beno%C3%AEt_Minisini) y los foros de CervanTeX y Gambas, dejo para lo último a [Michal Hoftich](https://github.com/michal-h21), el aporte de su desarrollo a sido clave en el rumbo que tomaron mis decisiones de producción.
 
-**gbTeXpublisher** posee liciencia [GPL3](https://es.wikipedia.org/wiki/GNU_General_Public_License).
+**gbTeXpublisher** posee licencia [GPL3](https://es.wikipedia.org/wiki/GNU_General_Public_License).
 
 Si consideras que vale la pena apoyar este proyecto y puedes hacerlo, no dejes pasar la oportunidad.
 
