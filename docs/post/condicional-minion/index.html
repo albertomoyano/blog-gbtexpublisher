@@ -166,17 +166,17 @@
 </ol>
 <p>En algunas tipografías está presente una quinta variación para valores mayores a 72 puntos (<strong>Poster</strong>).</p>
 <p>Básicamente, las modificaciones en el diseño se encuentran en las <strong>zonas críticas</strong> de algunos caracteres, en la figura a continuación se pueden observar fácilmente las diferencias.</p>
-<p><img src="https://albertomoyano.github.io/gbTeXpublisher/images/letraA.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/letraA.png" alt=""></p>
 <p>Este es un ejemplo de Minion Pro (para un mismo cuerpo), vemos la letra <strong>a</strong> en bold, de: <strong>Caption</strong>, <strong>Text</strong>, <strong>Subhead</strong> y <strong>Display</strong>.</p>
 <h2 id="haciendo-una-pausa">Haciendo una pausa</h2>
 <p>Excede el propósito de este artículo hablar de la tecnología OpenType, solo me voy a limitar a decir y mostrar que en este formato de fuente el diseñador de la tipografía puede incluir una gran cantidad de <em>features</em>, con la aplicación <a href="https://www.lcdf.org/type/otfinfo.1.html">otfinfo</a> podemos saber cuales están disponibles, la figura a continuación muestra el listado disponible en la tipografía Minion Pro, otra forma de saber cuáles <em>features</em> están en el diseño de la tipografía, es abrirla con algún editor de fuentes, por ejemplo con <a href="https://fontforge.org/en-US/">fontforge</a>.</p>
-<p><img src="https://albertomoyano.github.io/gbTeXpublisher/images/dolphin1.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/dolphin1.png" alt=""></p>
 <p>Como ejemplo comparativo, a continuación podemos observar que el diseño de <a href="http://linuxlibertine.sourceforge.net/Libertine-EN.html">Linux Libertine</a> es más generoso en cuanto a cantidad de <em>features</em>.</p>
-<p><img src="https://albertomoyano.github.io/gbTeXpublisher/images/libertine.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/libertine.png" alt=""></p>
 <p>La mayoría de los programas de <a href="https://es.wikipedia.org/wiki/Autoedici%C3%B3n">DTP</a> traen acceso al uso de algunas de estas <em>features</em>, pero no a todas, ya que su configuración es muy compleja de llevar a una interfaz gráfica (hablo desde la programación), lo que deja como resultado que muchas de las <em>features</em> disponibles en una fuente tipográfica no puedan ser utilizadas en estos programas.</p>
 <h2 id="y-los-estilos">¿Y los estilos?</h2>
 <p>Los estilos tipográficos son básicamente las diferentes características visuales (tamaño, color y posición) aplicados como atributos a las distintas partes del texto (títulos, párrafos, epígrafes, etcétera). Y la herencia de estilos, es básicamente la capacidad de transportar los valores de un estilo a otro nuevo para en él hacer cambios en alguno de sus atributos. La imagen a continuación es una captura parcial de <a href="https://www.scribus.net/">Scribus</a> 1.5.7 y difiere con la de InDesign o Quark Xpress en su diseño y ubicación de los elementos, pero no más que eso.</p>
-<p><img src="https://albertomoyano.github.io/gbTeXpublisher/images/scribus.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/scribus.png" alt=""></p>
 <p>Una <strong>incapacidad concreta en todos los programas de DTP</strong>, es no poder hacer un uso intensivo del valor (y sub) del atributo <em>fontfamily</em> que poseen las tipografías, por ejemplo, si quisiéramos trabajar con Minion Pro y utilizar la variante <strong>Text</strong> para el cuerpo del texto principal y la variante <strong>Subhead</strong> para los títulos, necesitamos hacer 2 estilos separados, ya que las tipografías no son vistas por el programa como una sola.</p>
 <h2 id="trabajando-con-fontspec">Trabajando con <em>fontspec</em></h2>
 <p>En función de lo dicho en el párrafo anterior, el objetivo es mostrar que &ndash;en este caso, LaTeX mediante&ndash; Minion Pro puede ser tratada como una sola fuente tipográfica y que la elección de cuál corresponde usar en cada oportunidad, se relacione directamente con el tamaño del cuerpo tipográfico involucrado.</p>
@@ -217,9 +217,9 @@ BoldItalicFont=*-SemiboldIt]
 {\parindent}{1pc plus .1pc minus -.2pc}{.5pc}
 </code></pre>
 <p>Veamos en la siguiente imagen el resultado del procesamiento.</p>
-<p><img src="https://albertomoyano.github.io/gbTeXpublisher/images/ejemplo-minion1.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/ejemplo-minion1.png" alt=""></p>
 <p>Y en esta imagen podemos observar que el PDF contiene empotradas la tipografía en sus variantes Regular (<strong>Text</strong>) y <strong>Subhead</strong>, junto con otras que se utilizan en el pdf.</p>
-<p><img src="https://albertomoyano.github.io/gbTeXpublisher/images/ejemplo-minion2.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/ejemplo-minion2.png" alt=""></p>
 <div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>

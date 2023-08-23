@@ -29,11 +29,11 @@ La idea que propongo consiste en trabajar sobre un modelo de edición estandariz
 
 Podemos observar en la figura a continuación que la edición cíclica se concentra en la posibilidad de producir al mismo tiempo para varios soportes de salida (un inicio A, deriva en un destino B, C, etc.), tratando de conservar la idea de que la publicación (en nuestro caso un libro) tiene un solo camino a seguir. Este método de trabajo está arraigado en la idea de que el *software* de alguna multinacional haga el trabajo milagroso de hacerlo posible, otorgándonos tranquilidad al concebir la conversión a diferentes formatos. Solo cuando se toma conciencia *real* de la pérdida en la calidad técnica y editorial, se hace patente que la edición cíclica no es el método más óptimo para una producción multiformato y multisoporte.
 
-![Método cíclico de producción de libros, concebido desde la invención de los tipos móviles.](images/ciclos.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/ciclos.png)
 
 Pero es entendible que esto haya pasado, si observamos como era el modelo de producción editorial antes de la era digital.
 
-![No es casualidad la coincidencia lógica entre esta figura y la anterior](images/gutenberg.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/gutenberg.png)
 
 ## Edición literada
 
@@ -43,7 +43,7 @@ Para realizar este modelo de trabajo se utiliza un lenguaje de marcas, es la mej
 
 La figura a continuación nos muestra un posible modelo de edición literada, donde no existe una secuencia de A con B, sino un inicio de (A) con diversos caminos (B, C, D, etc.), algunos pueden frenar su andar (llegar a su destino final), otros se pueden desprender y convertirse en el inicio de otros nuevos caminos.
 
-![](images/completo.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/completo.png)
 
 Este es un posible camino, que tiene su base en el lenguaje de marcas [Markdown](blank:#https://es.wikipedia.org/wiki/Markdown), pero también existen otros lenguajes como [asciidoc](blank:#https://asciidoc-py.github.io/index.html) y [Org Mode](blank:#https://orgmode.org/) por ejemplo.
 
