@@ -19,13 +19,13 @@ Esta situación la vengo revisando desde hace mucho tiempo, pero aún hoy, no s�
 
 Observemos la figura a continuación, alguien realmente se pone a tipear una dirección así, personalmente si me interesa acceder a esa URL, termino buscando por el título y/o el autor.
 
-![](https://albertomoyano.github.io/gbTeXpublisher/images/url1.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/url1.png)
 
 En los libros impresos, creo que una URL debería ser una ruta fácil de escribir en el buscador. Algunas direcciones son especialmente largas, engorrosas (por los tipos de caracteres que llevan) y de difícil abreviación. Es posible utilizar algún servicio para acortar direcciones de internet --[bitly](https://bitly.com/) es un ejemplo-- pero no siempre resultan prácticos, además se pasa a depender de terceros, incluso cuando la dirección que pone el autor sea el resultado de una busqueda --debo aclarar que estas también se puede simplificar-- sigue siendo de dificil comprensión.
 
 Y para cerrar este incordio, se suma cómo y por dónde partir las URL largas. Existen normas puntuales al respecto, pero después de lidiar durante mucho tiempo sobre este tema, he encontrado que utilizar el paquete [url](https://ctan.org/pkg/url) en LaTeX es lo más cómodo, ya que puede cortar las direcciones sin ningún tipo de escrúpulo y, lo más importante, sin utilizar la raya del medio en el salto de línea, ya que la misma (de agregarla) podría ser interpretada como parte de la dirección y esto --corresponde aclaralo-- es un error de ortografía.
 
-![](https://albertomoyano.github.io/gbTeXpublisher/images/url3.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/url3.png)
 
 En fin, la pregunta sigue en pie: ¿en un texto destinado a ser impreso, son útiles las direcciones de internet largas e ilegibles?
 
@@ -39,14 +39,12 @@ Una solución acabada sería imprimir un código QR en lugar de la ruta de la UR
 
 La figura a continuación ilustra como se vería el reemplazo de la URL de Ediciones Imago Mundi en la página de legales, la figura puede ser leída con cualquier aplicación lectora de QR desde el celular o tableta y de este modo acceder directamente a la dirección indicada.
 
-![](https://albertomoyano.github.io/gbTeXpublisher/images/qr1.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/qr1.png)
 
 El código que genera esta salida de manera automática es el siguiente,
 
-{{< highlight latex >}}
-\noindent \textcopyright~2022, Ediciones Imago Mundi \\
-\qrcode[height=0.5in]{https://www.edicionesimagomundi.com/}\\
-{{< /highlight >}}
+    \noindent \textcopyright~2022, Ediciones Imago Mundi \\
+    \qrcode[height=0.5in]{https://www.edicionesimagomundi.com/}\\
 
 pero sería realmente automática si me permitiera modificar la salida en función de cada necesidad (PDF para imprenta, PDF para pantalla y libro electrónico), ahí es donde entra a jugar el uso de los condicionales, en este caso para LaTeX, pero también cuando utilizo Asciidoc (aunque la codificación es diferente).
 
@@ -54,33 +52,31 @@ pero sería realmente automática si me permitiera modificar la salida en funci�
 
 Existen varias formas de plantear el uso de condicionales, para este ejercicio voy a utilizar un método eficaz (que permite una lectura fácil a quienes recién empiezan con los lenguajes de marcas), conciente de que hay métodos más eficientes, el código en LaTeX utilizando condicionales para este ejercicio queda entonces de la siguiente manera
 
-{{< highlight latex >}}
-\newif\ifincludeQR
-\ifdefined\public\else\includeQRtrue\fi
-\newif\ifincludeNOMBRE
-\ifdefined\public\else\includeNOMBREfalse\fi
+    \newif\ifincludeQR
+    \ifdefined\public\else\includeQRtrue\fi
+    \newif\ifincludeNOMBRE
+    \ifdefined\public\else\includeNOMBREfalse\fi
 
-(...)
+    (...)
 
-\ifincludeQR
-\noindent \textcopyright 2022, Ediciones Imago Mundi \\
-\qrcode[height=0.5in]{https://www.edicionesimagomundi.com/}\\
-\fi
+    \ifincludeQR
+    \noindent \textcopyright 2022, Ediciones Imago Mundi \\
+    \qrcode[height=0.5in]{https://www.edicionesimagomundi.com/}\\
+    \fi
 
-\ifincludeNOMBRE
-\noindent \textcopyright 2022, \href{https://www.edicionesimagomundi.com/}{Ediciones Imago Mundi} \\
-\fi
-{{< /highlight >}}
+    \ifincludeNOMBRE
+    \noindent \textcopyright 2022, \href{https://www.edicionesimagomundi.com/}{Ediciones Imago Mundi} \\
+    \fi
 
 Solo es necesario cambiar de **true** a **false** las opciones antes de compilar, y obtendremos un PDF para imprenta (primera imagen) y un PDF para pantalla con hipervínculo activo (segunda imagen).
 
-![](https://albertomoyano.github.io/gbTeXpublisher/images/qr1.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/qr1.png)
 
-![](https://albertomoyano.github.io/gbTeXpublisher/images/qr3.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/qr3.png)
 
 También puede modificarse la ruta de la función **\href** para obtener algo así.
 
-![](https://albertomoyano.github.io/gbTeXpublisher/images/qr2.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/qr2.png)
 
 Queda para otro artículo (es muy extenso y lo tengo en desarrollo) poder mostrar como realizar estos cambios en las URL de los archivos **.bib** en tiempo de compilación, algo que se logra gracias a la integración de LUA con LaTeX.
 

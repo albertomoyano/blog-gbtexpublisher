@@ -147,10 +147,10 @@
     
     <p>Esta situación la vengo revisando desde hace mucho tiempo, pero aún hoy, no sé que solución es la más satisfactoria. El avance de la informatización de los contenidos, va generando inexorablemente más recursos en línea y los autores se ven en la necesidad de indicarlos en sus referencias bibliográficas y citas. Pero cuando una URL no tiene una estructura básica y legible por humanos, del estilo <strong>miweb.com</strong>, la experiencia (propia y ajena) me dice que no tiene ninguna utilidad en un texto impreso; en libros digitales y/o electrónicos es harina de otro costal.</p>
 <p>Observemos la figura a continuación, alguien realmente se pone a tipear una dirección así, personalmente si me interesa acceder a esa URL, termino buscando por el título y/o el autor.</p>
-<p><img src="https://albertomoyano.github.io/gbTeXpublisher/images/url1.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/url1.png" alt=""></p>
 <p>En los libros impresos, creo que una URL debería ser una ruta fácil de escribir en el buscador. Algunas direcciones son especialmente largas, engorrosas (por los tipos de caracteres que llevan) y de difícil abreviación. Es posible utilizar algún servicio para acortar direcciones de internet &ndash;<a href="https://bitly.com/">bitly</a> es un ejemplo&ndash; pero no siempre resultan prácticos, además se pasa a depender de terceros, incluso cuando la dirección que pone el autor sea el resultado de una busqueda &ndash;debo aclarar que estas también se puede simplificar&ndash; sigue siendo de dificil comprensión.</p>
 <p>Y para cerrar este incordio, se suma cómo y por dónde partir las URL largas. Existen normas puntuales al respecto, pero después de lidiar durante mucho tiempo sobre este tema, he encontrado que utilizar el paquete <a href="https://ctan.org/pkg/url">url</a> en LaTeX es lo más cómodo, ya que puede cortar las direcciones sin ningún tipo de escrúpulo y, lo más importante, sin utilizar la raya del medio en el salto de línea, ya que la misma (de agregarla) podría ser interpretada como parte de la dirección y esto &ndash;corresponde aclaralo&ndash; es un error de ortografía.</p>
-<p><img src="https://albertomoyano.github.io/gbTeXpublisher/images/url3.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/url3.png" alt=""></p>
 <p>En fin, la pregunta sigue en pie: ¿en un texto destinado a ser impreso, son útiles las direcciones de internet largas e ilegibles?</p>
 <p>Personalmente creo que si no son cortas y prácticas para el lector, la respuesta inmediata es «no». Pero qué pueden hacer los autores (y los correctores) frente a esto, ya que la cita no puede ser eliminada, veamos que solución considero hoy es posible utilizar.</p>
 <h2 id="qr-al-rescate">QR al rescate</h2>
@@ -159,35 +159,37 @@
 </blockquote>
 <p>Una solución acabada sería imprimir un código QR en lugar de la ruta de la URL, ahora bien, esto es ágil si está automatizado, caso contrario la solución se convierte en una tortura (huyamos del DTP).</p>
 <p>La figura a continuación ilustra como se vería el reemplazo de la URL de Ediciones Imago Mundi en la página de legales, la figura puede ser leída con cualquier aplicación lectora de QR desde el celular o tableta y de este modo acceder directamente a la dirección indicada.</p>
-<p><img src="https://albertomoyano.github.io/gbTeXpublisher/images/qr1.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/qr1.png" alt=""></p>
 <p>El código que genera esta salida de manera automática es el siguiente,</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#66d9ef">\noindent</span> <span style="color:#66d9ef">\textcopyright</span>~2022, Ediciones Imago Mundi <span style="color:#66d9ef">\\</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\qrcode</span><span style="color:#a6e22e">[height=0.5in]</span>{https://www.edicionesimagomundi.com/}<span style="color:#66d9ef">\\</span></span></span></code></pre></div>
+<pre><code>\noindent \textcopyright~2022, Ediciones Imago Mundi \\
+\qrcode[height=0.5in]{https://www.edicionesimagomundi.com/}\\
+</code></pre>
 <p>pero sería realmente automática si me permitiera modificar la salida en función de cada necesidad (PDF para imprenta, PDF para pantalla y libro electrónico), ahí es donde entra a jugar el uso de los condicionales, en este caso para LaTeX, pero también cuando utilizo Asciidoc (aunque la codificación es diferente).</p>
 <blockquote>
 <p>Se puede utilizar la sentencia IF para determinar el flujo del programa en función de la evaluación de la expresión. Si el valor de la expresión es verdadero, se ejecutan las sentencias THEN. Si el valor de la expresión es falso, se omiten las sentencias THEN y se ejecutan las sentencias ELSE (IBM).</p>
 </blockquote>
 <p>Existen varias formas de plantear el uso de condicionales, para este ejercicio voy a utilizar un método eficaz (que permite una lectura fácil a quienes recién empiezan con los lenguajes de marcas), conciente de que hay métodos más eficientes, el código en LaTeX utilizando condicionales para este ejercicio queda entonces de la siguiente manera</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#66d9ef">\newif\ifincludeQR</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\ifdefined\public\else\includeQRtrue\fi</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\newif\ifincludeNOMBRE</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\ifdefined\public\else\includeNOMBREfalse\fi</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>(...)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\ifincludeQR</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\noindent</span> <span style="color:#66d9ef">\textcopyright</span> 2022, Ediciones Imago Mundi <span style="color:#66d9ef">\\</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\qrcode</span><span style="color:#a6e22e">[height=0.5in]</span>{https://www.edicionesimagomundi.com/}<span style="color:#66d9ef">\\</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\fi</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\ifincludeNOMBRE</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\noindent</span> <span style="color:#66d9ef">\textcopyright</span> 2022, <span style="color:#66d9ef">\href</span>{https://www.edicionesimagomundi.com/}{Ediciones Imago Mundi} <span style="color:#66d9ef">\\</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\fi</span></span></span></code></pre></div>
+<pre><code>\newif\ifincludeQR
+\ifdefined\public\else\includeQRtrue\fi
+\newif\ifincludeNOMBRE
+\ifdefined\public\else\includeNOMBREfalse\fi
+
+(...)
+
+\ifincludeQR
+\noindent \textcopyright 2022, Ediciones Imago Mundi \\
+\qrcode[height=0.5in]{https://www.edicionesimagomundi.com/}\\
+\fi
+
+\ifincludeNOMBRE
+\noindent \textcopyright 2022, \href{https://www.edicionesimagomundi.com/}{Ediciones Imago Mundi} \\
+\fi
+</code></pre>
 <p>Solo es necesario cambiar de <strong>true</strong> a <strong>false</strong> las opciones antes de compilar, y obtendremos un PDF para imprenta (primera imagen) y un PDF para pantalla con hipervínculo activo (segunda imagen).</p>
-<p><img src="https://albertomoyano.github.io/gbTeXpublisher/images/qr1.png" alt=""></p>
-<p><img src="https://albertomoyano.github.io/gbTeXpublisher/images/qr3.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/qr1.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/qr3.png" alt=""></p>
 <p>También puede modificarse la ruta de la función <strong>\href</strong> para obtener algo así.</p>
-<p><img src="https://albertomoyano.github.io/gbTeXpublisher/images/qr2.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/qr2.png" alt=""></p>
 <p>Queda para otro artículo (es muy extenso y lo tengo en desarrollo) poder mostrar como realizar estos cambios en las URL de los archivos <strong>.bib</strong> en tiempo de compilación, algo que se logra gracias a la integración de LUA con LaTeX.</p>
 <h2 id="un-plus-de-uso-para-qr">Un plus de uso para QR</h2>
 <p>Como hemos observado, los usos para QR dentro de un libro impreso pueden extender las fronteras hoy conocidas, navegar (o consultar) parte del libro en la web es una posibilidad, por ejemplo para,</p>
