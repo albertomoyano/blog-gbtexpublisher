@@ -1,7 +1,7 @@
 +++
 author = "Alberto Moyano"
 title= "URL largas en los libros"
-date= "2023-03-21"
+date= "2023-03-22"
 description = "URL largas en libros. ¿Son un problema?"
 tags = [
     "LaTeX",
