@@ -8,6 +8,15 @@
     <language>es</language>
     <lastBuildDate>Tue, 21 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://albertomoyano.github.io/blog-gbtexpublisher/tags/edici%C3%B3n/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Trabajo editorial en el aparato crítico</title>
+      <link>https://albertomoyano.github.io/blog-gbtexpublisher/post/ibidem/</link>
+      <pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://albertomoyano.github.io/blog-gbtexpublisher/post/ibidem/</guid>
+      <description>&lt;p&gt;Este listado de abreviaturas es de uso general, pero las aclaraciones al final se limitan al estándar desarrollado por &lt;a href=&#34;https://www.ctan.org/pkg/biblatex-philosophy&#34;&gt;Iván Valbusa&lt;/a&gt;, él toma como base el &lt;em&gt;default&lt;/em&gt; de BibLaTeX; que si bien tiene muchas similitudes con otros estándares (APA, Chicago, Harvard, etc.), también tiene sutiles diferencias.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>URL largas en los libros</title>
       <link>https://albertomoyano.github.io/blog-gbtexpublisher/post/2023-03-15-urllargas/</link>
       <pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate>
