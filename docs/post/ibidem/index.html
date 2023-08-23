@@ -52,7 +52,7 @@
   <meta itemprop="name" content="Trabajo editorial en el aparato crítico">
 <meta itemprop="description" content="Sobre abreviaturas utilizadas en el aparato crítico"><meta itemprop="datePublished" content="2023-03-21T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-03-21T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1555"><meta itemprop="image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images"/>
+<meta itemprop="wordCount" content="1531"><meta itemprop="image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images"/>
 <meta itemprop="keywords" content="LaTeX,edición,bibtex," />
 
   
@@ -205,7 +205,29 @@
 <h1 id="algunas-particularidades-al-trabajar-con-latex-y-biblatex">Algunas particularidades al trabajar con LaTeX y BibLaTeX</h1>
 <p>Antes que nada es preciso aclarar que el trabajo mostrado a continuación difiere del modelo lineal que es el más común de encontrar, donde el trabajo mostrado es propio (casi exclusivo) de la corrección &ndash;y no, de la persona que diseña o maqueta&ndash;, en LaTeX los 3 roles (edición, corrección y maquetación) se pueden cruzar durante el proceso, lo que no invalida que estos puedan estar separados en un flujo de producción multidisciplinario. La figura a continuación ilustra la idea.</p>
 <p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/circular.png" alt=""></p>
-<p>Este es el código que utilizo generalmente con BibLaTeX para el modelo autor/año, vale aclarar que las opciones se declaran para modificar el valor por <em>default</em> que trae la función (este es el modelo de trabajo <strong>para todo</strong> en LaTeX), en este caso si escribo lowscauthors=true,<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> es porque su <em>default</em> es false.</p>
+<p>Este es el código que utilizo generalmente con BibLaTeX para el modelo autor/año, vale aclarar que las opciones se declaran para modificar el valor por <em>default</em> que trae la función (este es el modelo de trabajo <strong>para todo</strong> en LaTeX), en este caso si escribo <code>lowscauthors=true</code> (convertir a minúsculas los nombres de los autores, para que en la conversión a versalitas con la opción <code>scauthorsbib=true</code>, haya uniformidad tipográfica), es porque su <em>default</em> es false.</p>
+<pre><code>\usepackage[style=philosophy-modern,
+lowscauthors=true,
+scauthorsbib=true,
+annotation=true,
+backend=biber,
+labeldateparts=true,
+sortcites=true,
+backref=true,
+useprefix=true,
+citereset=chapter,
+indexing=cite,
+relatedformat=brackets,
+publocformat=loccolonpub,
+volnumformat=strings,
+latinemph=true,
+inbeforejournal=true,
+shorthandintro=true,
+texencoding=utf8,
+bibencoding=utf8,
+uniquelist=minyear,
+autolang=hyphen]{biblatex}
+</code></pre>
 <p>Y este para el modelo nota a pie de página.</p>
 <pre><code>\usepackage[style=philosophy-verbose,
 ibidpage=true,
@@ -229,10 +251,10 @@ uniquelist=minyear,
 hyperref=true]{biblatex}
 </code></pre>
 <h3 id="sobre-el-ibidem-y-el-op-cit">Sobre el ibidem y el op. cit.</h3>
-<p>Por <em>default</em> la compilación trae habilitada la ruptura del ibidpage <strong>solo</strong> para el listado de la salida, el concepto que se maneja es el de hacer fácil la lectura, entonces, el <em>ibid</em><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> del autor aparece unicamente sobre la página enfrentada (<strong>de par a impar</strong>), si el autor de la referencia se repite en la página siguiente (<strong>de impar a par</strong>), el compilador va a repetir todos los datos del autor, el objetivo es simple, que el lector no tenga que voltear la página hacia atrás para ver de quién es la autoría, esto se comprende mejor en las 2 imágenes a continuación (hacer clic para zoom si no se ve bien).</p>
+<p>Por <em>default</em> la compilación trae habilitada la ruptura del ibidpage <strong>solo</strong> para el listado de la salida, el concepto que se maneja es el de hacer fácil la lectura, entonces, el <em>ibid</em><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> del autor aparece unicamente sobre la página enfrentada (<strong>de par a impar</strong>), si el autor de la referencia se repite en la página siguiente (<strong>de impar a par</strong>), el compilador va a repetir todos los datos del autor, el objetivo es simple, que el lector no tenga que voltear la página hacia atrás para ver de quién es la autoría, esto se comprende mejor en las 2 imágenes a continuación (hacer clic para zoom si no se ve bien).</p>
 <p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/ibid1.png" alt=""></p>
 <p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/ibid2.png" alt=""></p>
-<p>Ahora veamos el tratamiento del <em>ibidem</em> y el <em>op. cit.</em> dentro del cuerpo de libro para cuando trabajo con notas a pie de página, en la línea 2 del código anterior (resaltada en gris) se observa que habilité el ibidpage=true, esto es para que el compilador maneje el concepto explicado anteriormente, pero dentro del texto, las figuras a continuación ilustran la codificación y la salida.</p>
+<p>Ahora veamos el tratamiento del <em>ibidem</em> y el <em>op. cit.</em> dentro del cuerpo de libro para cuando trabajo con notas a pie de página, en la línea 2 del código anterior se observa que habilité el <code>ibidpage=true</code>, esto es para que el compilador maneje el concepto explicado anteriormente, pero dentro del texto, las figuras a continuación ilustran la codificación y la salida.</p>
 <p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/ibid0.png" alt=""></p>
 <p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/ibid3.png" alt=""></p>
 <p>Alguien ya me lo preguntó una vez, así que mejor explicitar lo obvio. <strong>Con este sistema, el corrector elimina como parte de su trabajo controlar de donde vienen y si se corresponden los ibidem y los op. cit.</strong></p>
@@ -248,39 +270,12 @@ hyperref=true]{biblatex}
 <p><strong>Qué se entiende por apunte:</strong> a información secundaria a la estructura de datos de la referencia misma, tales como la ubicación de los textos originales, notas históricas, etcétera. Esta se imprime dentro del párrafo que construye la referencia.</p>
 <p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/apunte1.png" alt=""></p>
 <p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/apunte2.png" alt=""></p>
-<p>La cantidad de opciones de configuración exceden este <em>post</em>, esto son solo apuntes generales, la suma de los tres principales manuales para manejo de bibliografía en BibLaTeX suman más de 1.000 páginas.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
+<p>La cantidad de opciones de configuración exceden este <em>post</em>, esto son solo apuntes generales, el desarrollo de las macros y estándares para biblatex sigue en pleno proceso de crecimiento.</p>
 <div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
 <li id="fn:1">
-<p>Convertir a minúsculas los nombres de los autores, para que en la conversión a versalitas con la opción scauthorsbib=true, haya uniformidad tipográfica.</p>
-<p>\usepackage[style=philosophy-modern,
-lowscauthors=true,
-scauthorsbib=true,
-annotation=true,
-backend=biber,
-labeldateparts=true,
-sortcites=true,
-backref=true,
-useprefix=true,
-citereset=chapter,
-indexing=cite,
-relatedformat=brackets,
-publocformat=loccolonpub,
-volnumformat=strings,
-latinemph=true,
-inbeforejournal=true,
-shorthandintro=true,
-texencoding=utf8,
-bibencoding=utf8,
-uniquelist=minyear,
-autolang=hyphen]{biblatex}&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-<li id="fn:2">
-<p>El ibid refiere al concepto de no repetir el nombre del autor, en otros diseños de salida es común que se utilice una raya media.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-<li id="fn:3">
-<p>Si se suman todos los manuales de todos los estilos que maneja BibLaTeX, son más de 4.000 páginas.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>El ibid refiere al concepto de no repetir el nombre del autor, en otros diseños de salida es común que se utilice una raya media.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </div>

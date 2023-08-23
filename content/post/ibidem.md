@@ -88,9 +88,7 @@ Antes que nada es preciso aclarar que el trabajo mostrado a continuación difier
 
 ![](https://albertomoyano.github.io/blog-gbtexpublisher/images/circular.png)
 
-Este es el código que utilizo generalmente con BibLaTeX para el modelo autor/año, vale aclarar que las opciones se declaran para modificar el valor por *default* que trae la función (este es el modelo de trabajo **para todo** en LaTeX), en este caso si escribo lowscauthors=true,[^1] es porque su *default* es false.
-
-[^1]: Convertir a minúsculas los nombres de los autores, para que en la conversión a versalitas con la opción scauthorsbib=true, haya uniformidad tipográfica.
+Este es el código que utilizo generalmente con BibLaTeX para el modelo autor/año, vale aclarar que las opciones se declaran para modificar el valor por *default* que trae la función (este es el modelo de trabajo **para todo** en LaTeX), en este caso si escribo `lowscauthors=true` (convertir a minúsculas los nombres de los autores, para que en la conversión a versalitas con la opción `scauthorsbib=true`, haya uniformidad tipográfica), es porque su *default* es false.
 
     \usepackage[style=philosophy-modern,
     lowscauthors=true,
@@ -147,7 +145,7 @@ Por *default* la compilación trae habilitada la ruptura del ibidpage **solo** p
 
 ![](https://albertomoyano.github.io/blog-gbtexpublisher/images/ibid2.png)
 
-Ahora veamos el tratamiento del *ibidem* y el *op. cit.* dentro del cuerpo de libro para cuando trabajo con notas a pie de página, en la línea 2 del código anterior (resaltada en gris) se observa que habilité el ibidpage=true, esto es para que el compilador maneje el concepto explicado anteriormente, pero dentro del texto, las figuras a continuación ilustran la codificación y la salida.
+Ahora veamos el tratamiento del *ibidem* y el *op. cit.* dentro del cuerpo de libro para cuando trabajo con notas a pie de página, en la línea 2 del código anterior se observa que habilité el `ibidpage=true`, esto es para que el compilador maneje el concepto explicado anteriormente, pero dentro del texto, las figuras a continuación ilustran la codificación y la salida.
 
 ![](https://albertomoyano.github.io/blog-gbtexpublisher/images/ibid0.png)
 
@@ -179,6 +177,7 @@ Existen dos posibilidades de agregar información a las referencias, este trabaj
 
 ![](https://albertomoyano.github.io/blog-gbtexpublisher/images/apunte2.png)
 
-La cantidad de opciones de configuración exceden este *post*, esto son solo apuntes generales, la suma de los tres principales manuales para manejo de bibliografía en BibLaTeX suman más de 1.000 páginas.[^bib]
+La cantidad de opciones de configuración exceden este *post*, esto son solo apuntes generales, el desarrollo de las macros y estándares para biblatex sigue en pleno proceso de crecimiento.
 
-[^bib]: Si se suman todos los manuales de todos los estilos que maneja BibLaTeX, son más de 4.000 páginas.
+
+
