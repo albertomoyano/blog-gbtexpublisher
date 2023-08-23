@@ -8,14 +8,15 @@ author = "albertomoyano"
 
 ## Acerca del software
 
-**gbTeXpublisher** nace como resultado de una necesidad concreta --*la mía*-- ya que desde hace bastante tiempo adhiero a la edición literada[^nota1] y encuentro en LaTeX la vía apropiada para conseguirlo, hice intentos con [markdown](https://es.wikipedia.org/wiki/Markdown), [asciidoc](https://asciidoc.org/) y [asciidoctor](https://asciidoctor.org/), pero al final del recorrido siempre encontraba problemas, fundamentalmente en la salida a pdf.
+**gbTeXpublisher** nace como resultado de una necesidad concreta --*la mía*-- ya que desde hace bastante tiempo adhiero a la edición literada[^nota1] y encuentro en LaTeX la vía apropiada para conseguirlo, hice intentos con [markdown](https://es.wikipedia.org/wiki/Markdown), [asciidoc](https://asciidoc.org/) y [asciidoctor](https://asciidoctor.org/), pero al final del recorrido siempre encontraba problemas, fundamentalmente en la salida a pdf, me estoy refiriendo a una salida con un alto estándar de calidad tipográfico.
 
 [^nota1]: Estoy convencido de que la producción editorial avanza inexorablemente hacia un modelo de edición literada (esto es, un solo origen con múltiples salidas), el mundo editorial se encuentra inmerso en un proceso de cambios –con ejemplos a la vista– del que no hay retorno.
 
-El desarrollo de [Michal Hoftich](https://github.com/michal-h21) fue clave para mi toma de decisión.
+**gbTeXpublisher** es una aplicación que permite gestionar los procesos de producción editorial de manera fácil y con pocos conocimientos, me gusta pensar en esta aplicación como un facilitador, ya que todo lo que se puede hacer con ella, también se puede hacer sin ella, la diferencia radica en la facilidad que otorga su interfaz.
 
-Continuar...
+Nada de todo esto sería posible si no fuera por el enorme trabajo de muchas personas, pero quiero hacer una mención especial a [Donald Knuth](https://es.wikipedia.org/wiki/Donald_Knuth), [Benoît Minisini](https://en.wikipedia.org/wiki/Beno%C3%AEt_Minisini), también a los participantes de los foros de CervanTeX y Gambas, dejo para lo último a [Michal Hoftich](https://github.com/michal-h21), el aporte de su desarrollo a sido clave en el rumbo que tomaron mis decisiones.
 
+**gbTeXpublisher** posee liciencia [GPL3](https://es.wikipedia.org/wiki/GNU_General_Public_License).
 
 Si consideras que vale la pena apoyar este proyecto y puedes hacerlo, no dejes pasar la oportunidad.
 
