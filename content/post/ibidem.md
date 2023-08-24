@@ -88,7 +88,7 @@ Antes que nada es preciso aclarar que el trabajo mostrado a continuación difier
 
 ![](https://albertomoyano.github.io/blog-gbtexpublisher/images/circular.png)
 
-Este es el código que utilizo generalmente con BibLaTeX para el modelo autor/año, vale aclarar que las opciones se declaran para modificar el valor por *default* que trae la función (este es el modelo de trabajo **para todo** en LaTeX), en este caso si escribo `lowscauthors=true` (convertir a minúsculas los nombres de los autores, para que en la conversión a versalitas con la opción `scauthorsbib=true`, haya uniformidad tipográfica), es porque su *default* es false.
+Este es el código que utilizo generalmente con BibLaTeX para el modelo autor/año, vale aclarar que las opciones se declaran para modificar el valor por *default* que trae la función (este es el modelo de trabajo **para todo** en LaTeX), en este caso si escribo **`lowscauthors=true`** (convertir a minúsculas los nombres de los autores, para que en la conversión a versalitas con la opción **`scauthorsbib=true`**, haya uniformidad tipográfica), es porque su *default* es false.
 
     \usepackage[style=philosophy-modern,
     lowscauthors=true,
@@ -145,7 +145,7 @@ Por *default* la compilación trae habilitada la ruptura del ibidpage **solo** p
 
 ![](https://albertomoyano.github.io/blog-gbtexpublisher/images/ibid2.png)
 
-Ahora veamos el tratamiento del *ibidem* y el *op. cit.* dentro del cuerpo de libro para cuando trabajo con notas a pie de página, en la línea 2 del código anterior se observa que habilité el `ibidpage=true`, esto es para que el compilador maneje el concepto explicado anteriormente, pero dentro del texto, las figuras a continuación ilustran la codificación y la salida.
+Ahora veamos el tratamiento del *ibidem* y el *op. cit.* dentro del cuerpo de libro para cuando trabajo con notas a pie de página, en la línea 2 del código anterior se observa que habilité **`ibidpage=true`**, esto es para que el compilador maneje el concepto explicado anteriormente, pero dentro del texto, las figuras a continuación ilustran la codificación y la salida.
 
 ![](https://albertomoyano.github.io/blog-gbtexpublisher/images/ibid0.png)
 

@@ -52,7 +52,7 @@
   <meta itemprop="name" content="Trabajo editorial en el aparato crítico">
 <meta itemprop="description" content="Sobre abreviaturas utilizadas en el aparato crítico"><meta itemprop="datePublished" content="2023-03-21T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-03-21T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1531"><meta itemprop="image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images"/>
+<meta itemprop="wordCount" content="1530"><meta itemprop="image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images"/>
 <meta itemprop="keywords" content="LaTeX,edición,bibtex," />
 
   
@@ -205,7 +205,7 @@
 <h1 id="algunas-particularidades-al-trabajar-con-latex-y-biblatex">Algunas particularidades al trabajar con LaTeX y BibLaTeX</h1>
 <p>Antes que nada es preciso aclarar que el trabajo mostrado a continuación difiere del modelo lineal que es el más común de encontrar, donde el trabajo mostrado es propio (casi exclusivo) de la corrección &ndash;y no, de la persona que diseña o maqueta&ndash;, en LaTeX los 3 roles (edición, corrección y maquetación) se pueden cruzar durante el proceso, lo que no invalida que estos puedan estar separados en un flujo de producción multidisciplinario. La figura a continuación ilustra la idea.</p>
 <p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/circular.png" alt=""></p>
-<p>Este es el código que utilizo generalmente con BibLaTeX para el modelo autor/año, vale aclarar que las opciones se declaran para modificar el valor por <em>default</em> que trae la función (este es el modelo de trabajo <strong>para todo</strong> en LaTeX), en este caso si escribo <code>lowscauthors=true</code> (convertir a minúsculas los nombres de los autores, para que en la conversión a versalitas con la opción <code>scauthorsbib=true</code>, haya uniformidad tipográfica), es porque su <em>default</em> es false.</p>
+<p>Este es el código que utilizo generalmente con BibLaTeX para el modelo autor/año, vale aclarar que las opciones se declaran para modificar el valor por <em>default</em> que trae la función (este es el modelo de trabajo <strong>para todo</strong> en LaTeX), en este caso si escribo <strong><code>lowscauthors=true</code></strong> (convertir a minúsculas los nombres de los autores, para que en la conversión a versalitas con la opción <strong><code>scauthorsbib=true</code></strong>, haya uniformidad tipográfica), es porque su <em>default</em> es false.</p>
 <pre><code>\usepackage[style=philosophy-modern,
 lowscauthors=true,
 scauthorsbib=true,
@@ -254,7 +254,7 @@ hyperref=true]{biblatex}
 <p>Por <em>default</em> la compilación trae habilitada la ruptura del ibidpage <strong>solo</strong> para el listado de la salida, el concepto que se maneja es el de hacer fácil la lectura, entonces, el <em>ibid</em><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> del autor aparece unicamente sobre la página enfrentada (<strong>de par a impar</strong>), si el autor de la referencia se repite en la página siguiente (<strong>de impar a par</strong>), el compilador va a repetir todos los datos del autor, el objetivo es simple, que el lector no tenga que voltear la página hacia atrás para ver de quién es la autoría, esto se comprende mejor en las 2 imágenes a continuación (hacer clic para zoom si no se ve bien).</p>
 <p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/ibid1.png" alt=""></p>
 <p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/ibid2.png" alt=""></p>
-<p>Ahora veamos el tratamiento del <em>ibidem</em> y el <em>op. cit.</em> dentro del cuerpo de libro para cuando trabajo con notas a pie de página, en la línea 2 del código anterior se observa que habilité el <code>ibidpage=true</code>, esto es para que el compilador maneje el concepto explicado anteriormente, pero dentro del texto, las figuras a continuación ilustran la codificación y la salida.</p>
+<p>Ahora veamos el tratamiento del <em>ibidem</em> y el <em>op. cit.</em> dentro del cuerpo de libro para cuando trabajo con notas a pie de página, en la línea 2 del código anterior se observa que habilité <strong><code>ibidpage=true</code></strong>, esto es para que el compilador maneje el concepto explicado anteriormente, pero dentro del texto, las figuras a continuación ilustran la codificación y la salida.</p>
 <p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/ibid0.png" alt=""></p>
 <p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/ibid3.png" alt=""></p>
 <p>Alguien ya me lo preguntó una vez, así que mejor explicitar lo obvio. <strong>Con este sistema, el corrector elimina como parte de su trabajo controlar de donde vienen y si se corresponden los ibidem y los op. cit.</strong></p>
