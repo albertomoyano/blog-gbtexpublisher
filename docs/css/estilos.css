@@ -7,7 +7,7 @@
 
 .content p {
     text-align: left;
-    line-height: 1.7em;
+    line-height: 1.6em;
 }
 
 .content h1 {
@@ -17,6 +17,8 @@
 
 #wrapper {
     font-family: 'Georgia', 'Times New Roman', serif;
+    color: #302c20;
+    background-color: #efecdf;
 }
 
 #main > .post + .post {
