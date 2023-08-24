@@ -17,8 +17,10 @@
 
 #wrapper {
     font-family: 'Georgia', 'Times New Roman', serif;
-    color: #302c20;
-    background-color: #efecdf;
+    background-color: #f7f5ef ;
+    text-align: inherit;
+    text-transform: initial;
+    color: #23221f;
 }
 
 #main > .post + .post {
