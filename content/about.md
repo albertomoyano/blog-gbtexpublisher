@@ -18,10 +18,6 @@ author = "albertomoyano"
 
 **gbTeXpublisher** posee licencia [GPL3](https://es.wikipedia.org/wiki/GNU_General_Public_License).
 
-Si consideras que vale la pena apoyar este proyecto y puedes hacerlo, no dejes pasar la oportunidad.
-
-[![Invitame un café en cafecito.app](https://cdn.cafecito.app/imgs/buttons/button_2.svg)](https://cafecito.app/gbtexpublisher)
-
 ## Acerca de mí
 
 Soy editor especializado en textos académicos y científicos desde hace más de 30 años y asisto a lxs investigadorxs a editar y publicar sus trabajos con estándares internacionales, este trabajo lo realizo desde dos lugares diferentes que no colisionan entre sí:
