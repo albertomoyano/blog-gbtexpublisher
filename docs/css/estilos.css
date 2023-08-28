@@ -33,6 +33,22 @@
     margin-bottom: 1rem;
 }
 
+#header > h1 {
+  font-size: 2.2rem;
+}
+
+#searchbox > #search > input {
+  font-size: .8rem;
+}
+
+#header > nav > span > a {
+  font-size: 1rem;
+}
+
+#footer {
+  font-size: .8rem;
+}
+
 .content h1 {
     font-size: 2rem;
 }
@@ -52,3 +68,5 @@
 .content h5 {
     font-size: 1.1rem;
 }
+
+
