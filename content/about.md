@@ -29,9 +29,9 @@ Soy editor especializado en textos académicos y científicos desde hace más de
 1. de manera personal, me pueden contactar por [e-mail](mailto:alberto.alejandro.moyano@gmail.com);
 2. desde [Ediciones Imago Mundi](https://www.edicionesimagomundi.com/), una editorial con más de 30 años en el mercado.
 
-### Objetivos
+## Objetivos
 
-Me propongo dejar constancia con mi trabajo diario utilizando LaTeX y gbTeXpublisher de los cambios permanentes que se dan en el proceso de edición, desde este lugar se podrán observar diferentes modos de producción –y la realización genuina de trabajos– de libros editados en la vida real.
+Espero poder dejar constancia con mi trabajo diario utilizando LaTeX y gbTeXpublisher de los cambios permanentes que se dan en el proceso de edición, desde este lugar se podrán observar diferentes modos de producción –y la realización genuina de trabajos– de libros editados en la vida real.
 
 De los modelos de producción que hoy conviven --digamos que sin problemas-- veremos:
 
