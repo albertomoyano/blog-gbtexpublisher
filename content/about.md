@@ -8,9 +8,11 @@ author = "albertomoyano"
 
 ## Acerca del software
 
-**gbTeXpublisher** nace como resultado de una necesidad concreta --*la mía*-- ya que desde hace bastante tiempo adhiero a la edición literada[^nota1] y encuentro en LaTeX la vía apropiada para conseguirlo, hice intentos con [markdown](https://es.wikipedia.org/wiki/Markdown), [asciidoc](https://asciidoc.org/) y [asciidoctor](https://asciidoctor.org/), pero al final del recorrido siempre encontraba problemas, fundamentalmente en la salida a pdf, me estoy refiriendo a una salida con un alto estándar de calidad tipográfico.
+**gbTeXpublisher** nace como resultado de una necesidad concreta --*la mía*-- ya que desde hace bastante tiempo adhiero a la edición literada[^nota1] y encuentro en LaTeX la vía apropiada para conseguirlo, hice intentos con [markdown](https://es.wikipedia.org/wiki/Markdown), [asciidoc](https://asciidoc.org/) y [asciidoctor](https://asciidoctor.org/),[^orgmode] pero al final del recorrido siempre encontraba problemas, fundamentalmente en la salida a pdf, me estoy refiriendo a una salida con un alto estándar de calidad tipográfica.
 
 [^nota1]: Estoy convencido de que la producción editorial avanza inexorablemente hacia un modelo de edición literada (esto es, un solo origen con múltiples salidas), el mundo editorial se encuentra inmerso en un proceso de cambios –con ejemplos a la vista– del que no hay retorno.
+
+[^orgmode]: También hice algunos intentos con [OrgMode](https://orgmode.org/) pero el hecho de su dependencia exclusiva con [GNU Emacs](https://www.gnu.org/software/emacs/) y lo poco amigable de sus procesos me hicieron descartarlo.
 
 **gbTeXpublisher** es una aplicación que permite gestionar los procesos de producción editorial de manera fácil y con pocos conocimientos, me gusta pensar en esta aplicación como un facilitador, ya que todo lo que se puede hacer con ella, también se puede hacer sin ella, la diferencia radica en la facilidad que otorga su interfaz.
 
