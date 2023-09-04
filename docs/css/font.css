@@ -33,34 +33,34 @@
 }
 
     @font-face {
-    font-family: 'Georgia Regular';
+    font-family: 'Miller, Expandida';
     font-style: normal;
     font-weight: normal;
-    src: url('../font/Georgia.woff');
+    src: url('../font/MT-Roman.woff');
     }
 
 
     @font-face {
-    font-family: 'Georgia Italic';
+    font-family: 'Miller, Expandida Cursiva';
     font-style: normal;
     font-weight: normal;
-    src: url('../font/georgiai.woff');
+    src: url('../font/MT-Italic.woff');
     }
 
 
     @font-face {
-    font-family: 'Georgia Bold';
+    font-family: 'Miller, Demi Negrita Expandida';
     font-style: normal;
     font-weight: normal;
-    src: url('../font/georgiab.woff');
+    src: url('../font/MT-Semibold.woff');
     }
 
 
     @font-face {
-    font-family: 'Georgia Bold Italic';
+    font-family: 'Miller, Demi Negrita Expandida Cursiva';
     font-style: normal;
     font-weight: normal;
-    src: url('../font/georgiaz.woff');
+    src: url('../font/MT-SemiBold-Italic.woff');
     }
 
 
