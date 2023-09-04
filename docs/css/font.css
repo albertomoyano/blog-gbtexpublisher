@@ -39,27 +39,26 @@
     src: url('../font/georgia.woff');
     }
 
-
     @font-face {
-    font-family: 'Georgia Italic';
-    font-style: normal;
+    font-family: 'Georgia';
+    font-style: italic;
     font-weight: normal;
     src: url('../font/georgiai.woff');
     }
 
 
     @font-face {
-    font-family: 'Georgia Bold';
+    font-family: 'Georgia';
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     src: url('../font/georgiab.woff');
     }
 
 
     @font-face {
-    font-family: 'Georgia Bold Italic';
-    font-style: normal;
-    font-weight: normal;
+    font-family: 'Georgia';
+    font-style: italic;
+    font-weight: bold;
     src: url('../font/georgiaz.woff');
     }
 
