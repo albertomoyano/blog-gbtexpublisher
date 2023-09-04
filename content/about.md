@@ -20,10 +20,7 @@ author = "albertomoyano"
 
 ## Acerca de mí
 
-Soy editor especializado en textos académicos y científicos desde hace más de 30 años y asisto a lxs investigadorxs a editar y publicar sus trabajos con estándares internacionales, este trabajo lo realizo desde dos lugares diferentes que no colisionan entre sí:
-
-1. de manera personal, me pueden contactar por [e-mail](mailto:alberto.alejandro.moyano@gmail.com);
-2. desde [Ediciones Imago Mundi](https://www.edicionesimagomundi.com/), una editorial con más de 30 años en el mercado.
+Soy editor especializado en textos académicos y científicos desde hace más de 30 años y asisto a lxs investigadorxs a editar y publicar sus trabajos con estándares internacionales, si quieren saber más sobre mis servicios me pueden contactar a través de [LinkedIn](https://www.linkedin.com/in/edicion-cientifica/) o por [e-mail](mailto:alberto.alejandro.moyano@gmail.com).
 
 ## Objetivos
 
