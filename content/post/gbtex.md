@@ -303,7 +303,7 @@ Por _default_ gbTeXpublisher para la clase _book_ entrega un archivo configurado
 
 La información contenida en el formulario de metadatos es utilizada en las diferentes salidas, a la derecha los íconos muestran en que salida impacta esa información.
 
-![](https://albertomoyano.github.io/blog-personal/images/metadatos.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/metadatos.png)
 
 Los metadatos específicos de los autores y las colecciones se trabajan desde otras tablas de la base de datos para evitar la redundancia.
 
