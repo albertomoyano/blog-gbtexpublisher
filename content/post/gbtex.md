@@ -378,7 +378,7 @@ Estudiar cómo a sido editado un libro o artículo a través de los resultados e
 
 ## Logfile
 
-En LaTeX existen diferentes tipos de errores, yo los voy a agrupar en 2 categorias: _suaves_ y _duros_, los primeros no afectan la generación de la salida, los segundos directamente abortan el proceso de compilación. Por ello es que LaTeX (como todos los lenguajes de programación) provee un archivo de salida que registra todo el proceso de compilación, ya que en caso de ser necesario se lo puede consultar para empezar a indagar por donde vienen los conflictos.
+En LaTeX existen diferentes tipos de errores, los voy a agrupar en 2 categorias: _suaves_ y _duros_, los primeros no afectan la generación de la salida, los segundos directamente abortan el proceso de compilación. Por ello es que LaTeX (como todos los lenguajes de programación) provee un archivo de salida que registra todo el proceso de compilación, ya que en caso de ser necesario se lo puede consultar para empezar a indagar por donde vienen los conflictos.
 
 ![](https://albertomoyano.github.io/blog-personal/images/logfile.png)
 
