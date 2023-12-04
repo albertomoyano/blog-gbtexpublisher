@@ -6,11 +6,11 @@
     <description>Recent content on gbTeXpublisher</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Tue, 21 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://albertomoyano.github.io/blog-gbtexpublisher/tags/gbtexpublisher/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://albertomoyano.github.io/blog-gbtexpublisher/tags/gbtexpublisher/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Presentación de gbTeXpublisher</title>
       <link>https://albertomoyano.github.io/blog-gbtexpublisher/post/gbtex/</link>
-      <pubDate>Tue, 21 Nov 2023 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 04 Dec 2023 00:00:00 +0000</pubDate>
       
       <guid>https://albertomoyano.github.io/blog-gbtexpublisher/post/gbtex/</guid>
       <description>&lt;p&gt;gbTeXpublisher nace como resultado de una necesidad concreta –la mía– ya que desde hace bastante tiempo adhiero a la edición ramificada y encuentro en &lt;a href=&#34;https://es.wikipedia.org/wiki/LaTeX&#34;&gt;LaTeX&lt;/a&gt; la vía apropiada para conseguirlo, hice intentos con markdown, asciidoc y asciidoctor, pero al final del recorrido siempre encontraba problemas, fundamentalmente en la salida a PDF, me estoy refiriendo a una salida con un alto estándar de calidad tipográfica.&lt;/p&gt;</description>

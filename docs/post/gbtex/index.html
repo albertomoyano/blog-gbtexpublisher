@@ -40,8 +40,8 @@
 <meta property="og:description" content="Presentación de gbTeXpublisher, marco teórico" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://albertomoyano.github.io/blog-gbtexpublisher/post/gbtex/" /><meta property="og:image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images"/><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2023-11-21T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-11-21T00:00:00+00:00" /><meta property="og:site_name" content="gbTeXpublisher" />
+<meta property="article:published_time" content="2023-12-04T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-12-04T00:00:00+00:00" /><meta property="og:site_name" content="gbTeXpublisher" />
 
 
 
@@ -51,9 +51,9 @@
   
   
   <meta itemprop="name" content="Presentación de gbTeXpublisher">
-<meta itemprop="description" content="Presentación de gbTeXpublisher, marco teórico"><meta itemprop="datePublished" content="2023-11-21T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2023-11-21T00:00:00+00:00" />
-<meta itemprop="wordCount" content="3670"><meta itemprop="image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images"/>
+<meta itemprop="description" content="Presentación de gbTeXpublisher, marco teórico"><meta itemprop="datePublished" content="2023-12-04T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-12-04T00:00:00+00:00" />
+<meta itemprop="wordCount" content="3707"><meta itemprop="image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images"/>
 <meta itemprop="keywords" content="LaTeX,gbTeXpublisher," />
 
   
@@ -136,7 +136,7 @@
     <div class="toc"><nav id="TableOfContents">
   <ul>
     <li><a href="#heading">&hellip;</a></li>
-    <li><a href="#los-comienzos">Los comienzos</a></li>
+    <li><a href="#edición-cíclica">Edición cíclica</a></li>
     <li><a href="#edición-ramificada">Edición ramificada</a></li>
     <li><a href="#algunos-desarrollos-que-investigué">Algunos desarrollos que investigué</a></li>
     <li><a href="#todos-los-caminos-conducen-a-latex">Todos los caminos conducen a LaTeX</a>
@@ -183,18 +183,18 @@
 <p>Sin embargo, se puede observar que la tradición editorial no ha podido &ndash;o sabido&ndash; captar que este cambio en la forma de producir no refiere solo al hecho de utilizar nuevas técnicas, herramientas o dispositivos, sino también, a la pérdida de parte de los fundamentos básicos que existen en el proceso de edición.</p>
 <p>La idea que propongo consiste en trabajar sobre un modelo de edición estandarizada, automatizada, multiformato y multisoporte (y que no atenta contra el diseño), conocida como <strong>edición ramificada</strong>. Para lograr esto es necesario evitar cualquier tipo de enfoque <a href="https://es.wikipedia.org/wiki/WYSIWYG">WYSIWYG</a>.</p>
 <p><a href="https://es.wikipedia.org/wiki/Brian_Kernighan">Brian Kernighan</a> dijo alguna vez que el problema con el WYSIWYG (<em>lo que ves es lo que obtienes</em>) es que en realidad lo que ves es <strong>TODO</strong> lo que obtienes. Las interfaces gráficas son excelentes para muchas cosas, yo las utilizo de manera constante, tampoco escapo a ellas. Pero también uso la consola con un <em>Shell</em> cuando necesito elasticidad, ya que es mucho mas práctica y potente para algunas tareas.</p>
-<h2 id="los-comienzos">Los comienzos</h2>
+<h2 id="edición-cíclica">Edición cíclica</h2>
 <p>Podemos observar en la figura a continuación que la edición cíclica se concentra en la posibilidad de producir al mismo tiempo para varios soportes de salida (un inicio A, deriva en un destino B, C, etc.), tratando de conservar la idea de que la publicación (en nuestro caso un libro) tiene un solo camino a seguir. Este método de trabajo está arraigado en la idea de que el <em>software</em> de alguna multinacional hará el trabajo milagroso de hacerlo posible, otorgándonos tranquilidad al concebir la conversión a diferentes formatos. Solo cuando se toma conciencia <em>real</em> de la pérdida que tenemos en la calidad técnica y editorial, se hace patente que la edición cíclica no es un método óptimo para la producción multiformato y multisoporte.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/ciclos.png" alt=""></p>
 <p>Pero es entendible que esto haya pasado, si observamos como era el modelo de producción editorial antes de la era digital.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/gutenberg.png" alt=""></p>
 <h2 id="edición-ramificada">Edición ramificada</h2>
 <p>Cambiemos la perspectiva. ¿Si en lugar de concentrarnos en los diferentes formatos finales, realizamos un ejercicio de pensamiento lateral?<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> La idea es simple: <strong>no nos concentremos en los formatos de salida, sino en los caminos que conducen a ellos</strong>. La conclusión se hace evidente: a múltiples caminos, múltiples formatos.</p>
-<p>Para realizar este modelo de trabajo se utiliza un lenguaje de marcas, es la mejor forma de etiquetar un documento, ya que se pueden incorporar las marcas que contienen las indicaciones adicionales acerca de la estructura y el diseño necesarios para la representación del texto en la salida buscada.</p>
-<p>La figura a continuación nos muestra un modelo (de todos los posibles) de edición ramificada, donde no existe una secuencia de A con B, sino un inicio de (A) con diversos caminos (B, C, D, etc.), algunos pueden frenar su andar (llegar a su destino final), otros se pueden desprender y convertirse en el inicio de otros nuevos caminos.</p>
+<p>Para realizar este modelo de trabajo es necesario utilizar un lenguaje de marcas, la mejor forma conocida de etiquetar las partes de un documento, ya que se pueden incorporar las marcas que contienen las indicaciones adicionales acerca de la estructura y el diseño necesarios para la representación del texto en la salida buscada.</p>
+<p>La figura a continuación nos muestra un modelo (de todos los posibles) de edición ramificada, donde no existe una secuencia de A con B, sino un inicio de (A) con posibles caminos continuadores (B, C, D, etc.), algunos pueden frenar su andar al llegar a su destino final, otros se pueden bifurcarse y convertirse en el inicio de un nuevo camino.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/completo.png" alt=""></p>
-<p>Este es un posible camino, que tiene su base en el lenguaje de marcas <a href="https://es.wikipedia.org/wiki/Markdown">Markdown</a>, pero también existen otros lenguajes como <a href="https://asciidoc-py.github.io/index.html">asciidoc</a>, <a href="https://orgmode.org/">Org Mode</a> y por supuesto LaTeX.</p>
-<p>La principal consigna de este método es ir de lo simple a lo complejo. Cada formato de salida tiene sus propias necesidades particulares. Para el PDF de imprenta se requieren ajustes por cuestiones ortotipográficas y de diseño; en el ePub puede hacerse necesario configurar de otra manera las figuras o cuadros para una correcta visualización, en una lectura <em>on line</em> se puede sacar provecho de la visualización interactiva y así un largo etcétera. Por consiguiente, lo que se hace imperioso es <strong>evitar la herencia de características</strong>, que es el principal problema que conlleva la metodología cíclica, a diferencia de esta, la edición ramificada se inicia con un documento simple de <a href="https://es.wikipedia.org/wiki/Archivo_de_texto">texto plano</a> que <strong>contiene solo las marcas</strong> de los elementos estructurales (que a su vez pueden contener el diseño), para luego con ajustes automatizados obtener cada salida y que estas no tengan errores.</p>
+<p>El ejemplo de la figura es uno posible, que tiene su base en el lenguaje de marcas <a href="https://es.wikipedia.org/wiki/Markdown">Markdown</a>, pero también existen otros lenguajes como <a href="https://asciidoc-py.github.io/index.html">asciidoc</a>, <a href="https://orgmode.org/">Org Mode</a> y por supuesto <a href="https://es.wikipedia.org/wiki/LaTeX">LaTeX</a>.</p>
+<p>La principal consigna que persigue este modelo es ir de lo simple a lo complejo. Cada formato de salida tiene sus propias necesidades particulares. Para el PDF de imprenta se requieren ajustes por cuestiones ortotipográficas y de diseño; en el ePub puede hacerse necesario configurar de otra manera las figuras o cuadros para una correcta visualización, en una lectura <em>on line</em> se puede sacar provecho de la visualización interactiva y así un largo etcétera y como punto de inflexión vamos a encontrar la cuestión de los metadatos, donde las diferentes salidas poseen solo un pequeño grupo de coincidencias. Por consiguiente, lo que se hace imperioso es <strong>evitar la herencia de características</strong>, que es el principal problema que conlleva la metodología cíclica, a diferencia de esta, la edición ramificada se inicia con un documento simple de <a href="https://es.wikipedia.org/wiki/Archivo_de_texto">texto plano</a> que <strong>contiene solo las marcas</strong> de los elementos estructurales (que a su vez pueden contener el diseño), para luego con ajustes manuales o automatizados obtener cada salida y que estas no contengan errores heredados.</p>
 <p>Ejemplo conceptual de la lógica a seguir, supongamos que tengo una marca de cita:<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
 <ol>
 <li>Si la salida es a PDF se aplica «Q» diseño y valor de estructura.</li>

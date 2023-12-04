@@ -1,7 +1,7 @@
 +++
 author = "Alberto Moyano"
 title= "Presentación de gbTeXpublisher"
-date = 2023-11-21
+date = 2023-12-04
 description = "Presentación de gbTeXpublisher, marco teórico"
 tags = ["LaTeX", "gbTeXpublisher",]
 pin = true
@@ -29,7 +29,7 @@ La idea que propongo consiste en trabajar sobre un modelo de edición estandariz
 
 [Brian Kernighan](https://es.wikipedia.org/wiki/Brian_Kernighan) dijo alguna vez que el problema con el WYSIWYG (*lo que ves es lo que obtienes*) es que en realidad lo que ves es **TODO** lo que obtienes. Las interfaces gráficas son excelentes para muchas cosas, yo las utilizo de manera constante, tampoco escapo a ellas. Pero también uso la consola con un _Shell_ cuando necesito elasticidad, ya que es mucho mas práctica y potente para algunas tareas.
 
-## Los comienzos
+## Edición cíclica
 
 Podemos observar en la figura a continuación que la edición cíclica se concentra en la posibilidad de producir al mismo tiempo para varios soportes de salida (un inicio A, deriva en un destino B, C, etc.), tratando de conservar la idea de que la publicación (en nuestro caso un libro) tiene un solo camino a seguir. Este método de trabajo está arraigado en la idea de que el *software* de alguna multinacional hará el trabajo milagroso de hacerlo posible, otorgándonos tranquilidad al concebir la conversión a diferentes formatos. Solo cuando se toma conciencia *real* de la pérdida que tenemos en la calidad técnica y editorial, se hace patente que la edición cíclica no es un método óptimo para la producción multiformato y multisoporte.
 
@@ -43,15 +43,15 @@ Pero es entendible que esto haya pasado, si observamos como era el modelo de pro
 
 Cambiemos la perspectiva. ¿Si en lugar de concentrarnos en los diferentes formatos finales, realizamos un ejercicio de pensamiento lateral?[^1] La idea es simple: **no nos concentremos en los formatos de salida, sino en los caminos que conducen a ellos**. La conclusión se hace evidente: a múltiples caminos, múltiples formatos.
 
-Para realizar este modelo de trabajo se utiliza un lenguaje de marcas, es la mejor forma de etiquetar un documento, ya que se pueden incorporar las marcas que contienen las indicaciones adicionales acerca de la estructura y el diseño necesarios para la representación del texto en la salida buscada.
+Para realizar este modelo de trabajo es necesario utilizar un lenguaje de marcas, la mejor forma conocida de etiquetar las partes de un documento, ya que se pueden incorporar las marcas que contienen las indicaciones adicionales acerca de la estructura y el diseño necesarios para la representación del texto en la salida buscada.
 
-La figura a continuación nos muestra un modelo (de todos los posibles) de edición ramificada, donde no existe una secuencia de A con B, sino un inicio de (A) con diversos caminos (B, C, D, etc.), algunos pueden frenar su andar (llegar a su destino final), otros se pueden desprender y convertirse en el inicio de otros nuevos caminos.
+La figura a continuación nos muestra un modelo (de todos los posibles) de edición ramificada, donde no existe una secuencia de A con B, sino un inicio de (A) con posibles caminos continuadores (B, C, D, etc.), algunos pueden frenar su andar al llegar a su destino final, otros se pueden bifurcarse y convertirse en el inicio de un nuevo camino.
 
 ![](https://albertomoyano.github.io/blog-personal/images/completo.png)
 
-Este es un posible camino, que tiene su base en el lenguaje de marcas [Markdown](https://es.wikipedia.org/wiki/Markdown), pero también existen otros lenguajes como [asciidoc](https://asciidoc-py.github.io/index.html), [Org Mode](https://orgmode.org/) y por supuesto LaTeX.
+El ejemplo de la figura es uno posible, que tiene su base en el lenguaje de marcas [Markdown](https://es.wikipedia.org/wiki/Markdown), pero también existen otros lenguajes como [asciidoc](https://asciidoc-py.github.io/index.html), [Org Mode](https://orgmode.org/) y por supuesto [LaTeX](https://es.wikipedia.org/wiki/LaTeX).
 
-La principal consigna de este método es ir de lo simple a lo complejo. Cada formato de salida tiene sus propias necesidades particulares. Para el PDF de imprenta se requieren ajustes por cuestiones ortotipográficas y de diseño; en el ePub puede hacerse necesario configurar de otra manera las figuras o cuadros para una correcta visualización, en una lectura _on line_ se puede sacar provecho de la visualización interactiva y así un largo etcétera. Por consiguiente, lo que se hace imperioso es **evitar la herencia de características**, que es el principal problema que conlleva la metodología cíclica, a diferencia de esta, la edición ramificada se inicia con un documento simple de [texto plano](https://es.wikipedia.org/wiki/Archivo_de_texto) que **contiene solo las marcas** de los elementos estructurales (que a su vez pueden contener el diseño), para luego con ajustes automatizados obtener cada salida y que estas no tengan errores.
+La principal consigna que persigue este modelo es ir de lo simple a lo complejo. Cada formato de salida tiene sus propias necesidades particulares. Para el PDF de imprenta se requieren ajustes por cuestiones ortotipográficas y de diseño; en el ePub puede hacerse necesario configurar de otra manera las figuras o cuadros para una correcta visualización, en una lectura _on line_ se puede sacar provecho de la visualización interactiva y así un largo etcétera y como punto de inflexión vamos a encontrar la cuestión de los metadatos, donde las diferentes salidas poseen solo un pequeño grupo de coincidencias. Por consiguiente, lo que se hace imperioso es **evitar la herencia de características**, que es el principal problema que conlleva la metodología cíclica, a diferencia de esta, la edición ramificada se inicia con un documento simple de [texto plano](https://es.wikipedia.org/wiki/Archivo_de_texto) que **contiene solo las marcas** de los elementos estructurales (que a su vez pueden contener el diseño), para luego con ajustes manuales o automatizados obtener cada salida y que estas no contengan errores heredados.
 
 Ejemplo conceptual de la lógica a seguir, supongamos que tengo una marca de cita:[^cita]
 
