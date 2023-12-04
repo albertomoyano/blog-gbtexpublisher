@@ -362,9 +362,11 @@ El PDF que obtengo lo llevo a un directorio en donde se encuentran todas las pá
 
 ## Git local y remoto como copia de seguridad temporal
 
-Hace un tiempo (largo) vi una imagen en la red [linkedin](https://www.linkedin.com/in/edicion-cientifica/) que a simple vista (antes de leer el artículo) pensé que era un meme,[^meme] en la misma había muchos archivos MS Word, nombrados: versión final, versión final final, esta es la última versión, ahora sí la última; y así muchas copias de un word con todos los nombres que se pudieran imaginar. Trabajar con LaTeX utilizando esa metodología sería un despropósito. Git fue desarrollado por [Linus Torvalds](https://es.wikipedia.org/wiki/Linus_Torvalds) como resultado de sus necesidades puntuales al frente del equipo de desarrolladores del kernel de Linux, yo le doy un giro más a la rosca y lo empiezo a utilizar en la producción editorial, gbTeXpublisher trabaja con [GitLab](https://es.wikipedia.org/wiki/GitLab), en su versión gratuita es quien mejor cumple con la ecuación costo/beneficio, ya que su función de respaldo de imágines y capacidad de almacenaje son más que suficientes para el proceso de producción.
+Hace un tiempo (largo) vi una imagen en la red [linkedin](https://www.linkedin.com/in/edicion-cientifica/) que a simple vista (antes de leer el artículo) pensé que era un meme,[^meme] en la misma había muchos archivos MS Word, nombrados: versión final, versión final final, esta es la última versión, ahora sí la última; y así muchas copias de un word con todos los nombres que se pudieran imaginar. Trabajar con LaTeX utilizando esa metodología sería un despropósito.
 
-Si se desea trabajar solo con respaldo local, no es necesario tener cuenta en GitLab.
+Git fue desarrollado por [Linus Torvalds](https://es.wikipedia.org/wiki/Linus_Torvalds) como resultado de sus necesidades puntuales al frente del equipo de desarrolladores del kernel de Linux, yo le doy un giro más a la rosca y lo empiezo a utilizar en la producción editorial, gbTeXpublisher trabaja con [GitLab](https://es.wikipedia.org/wiki/GitLab), en su versión gratuita es quien mejor cumple con la ecuación costo/beneficio, ya que su función de generación de imágenes y capacidad de almacenaje son más que suficientes para el proceso de producción.
+
+Si se desea trabajar solo en modo local, no es necesario tener cuenta en GitLab.
 
 ![](https://albertomoyano.github.io/blog-personal/images/pantalla14.png)
 
