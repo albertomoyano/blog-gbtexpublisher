@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="es" style="font-size: 120%">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  
+  <meta name="author" content="">
+
+  
+  
+  <meta name="description" content="Presentación de gbTeXpublisher, marco teórico">
+  
+
+  
+  <link rel="icon" href="https://albertomoyano.github.io/blog-gbtexpublisher/">
+
+  
+  
+  <meta name="keywords" content="latex book edition publisher">
+  
+
+  
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
+<script type="module">
+    import renderMathInElement from "https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.mjs";
+    renderMathInElement(document.body);
+</script>
+
+  
+
+  
+  
+
+  
+  <meta property="og:title" content="Presentación de gbTeXpublisher" />
+<meta property="og:description" content="Presentación de gbTeXpublisher, marco teórico" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://albertomoyano.github.io/blog-gbtexpublisher/post/gbtex/" /><meta property="og:image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images"/><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-11-21T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-11-21T00:00:00+00:00" /><meta property="og:site_name" content="gbTeXpublisher" />
+
+
+
+  
+  <link rel="canonical" href="https://albertomoyano.github.io/blog-gbtexpublisher/post/gbtex/">
+
+  
+  
+  <meta itemprop="name" content="Presentación de gbTeXpublisher">
+<meta itemprop="description" content="Presentación de gbTeXpublisher, marco teórico"><meta itemprop="datePublished" content="2023-11-21T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-11-21T00:00:00+00:00" />
+<meta itemprop="wordCount" content="3670"><meta itemprop="image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images"/>
+<meta itemprop="keywords" content="LaTeX,gbTeXpublisher," />
+
+  
+  <link media="screen" rel="stylesheet" href='https://albertomoyano.github.io/blog-gbtexpublisher/css/common.css'>
+  <link media="screen" rel="stylesheet" href='https://albertomoyano.github.io/blog-gbtexpublisher/css/content.css'>
+
+  
+  
+  <title>Presentación de gbTeXpublisher - gbTeXpublisher</title>
+  
+
+  
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images"/>
+
+<meta name="twitter:title" content="Presentación de gbTeXpublisher"/>
+<meta name="twitter:description" content="Presentación de gbTeXpublisher, marco teórico"/>
+
+
+  
+<link rel="stylesheet" href='https://albertomoyano.github.io/blog-gbtexpublisher/css/single.css'>
+<link rel="stylesheet" href='https://albertomoyano.github.io/blog-gbtexpublisher/css/sharingbuttons.css'>
+
+</head>
+
+<body>
+  <div id="wrapper">
+    
+
+
+<header id="header">
+  <h1>
+    <a href="https://albertomoyano.github.io/blog-gbtexpublisher/">gbTeXpublisher</a>
+  </h1>
+
+  <nav>
+    
+    <span class="nav-bar-item">
+      <a class="link" href="/blog-gbtexpublisher/">Artículos</a>
+    </span>
+    
+    <span class="nav-bar-item">
+      <a class="link" href="/blog-gbtexpublisher/post/">Historial</a>
+    </span>
+    
+    <span class="nav-bar-item">
+      <a class="link" href="/blog-gbtexpublisher/about/">Acerca de...</a>
+    </span>
+    
+  </nav>
+  
+  <div id="searchbox">
+    <form method="get" id="search" target="_blank" action="https://duckduckgo.com/">
+      <input type="hidden" name="sites" value="albertomoyano.github.io">
+      <input type="text" name="q" placeholder="Buscar...">
+    </form>
+  </div>
+  
+</header>
+
+    
+<main id="main" class="post">
+  
+  <h1>Presentación de gbTeXpublisher</h1>
+  
+  <div>
+    
+    <a class="link" href='https://albertomoyano.github.io/blog-gbtexpublisher/tags/latex'>#LaTeX</a>
+    
+    <a class="link" href='https://albertomoyano.github.io/blog-gbtexpublisher/tags/gbtexpublisher'>#gbTeXpublisher</a>
+    
+  </div>
+  
+  
+  
+  <details>
+    <summary>
+      <b>Sumario</b>
+    </summary>
+    <div class="toc"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#heading">&hellip;</a></li>
+    <li><a href="#los-comienzos">Los comienzos</a></li>
+    <li><a href="#edición-ramificada">Edición ramificada</a></li>
+    <li><a href="#algunos-desarrollos-que-investigué">Algunos desarrollos que investigué</a></li>
+    <li><a href="#todos-los-caminos-conducen-a-latex">Todos los caminos conducen a LaTeX</a>
+      <ul>
+        <li><a href="#botones-para-muestra">Botones para muestra</a></li>
+        <li><a href="#homeoarchy">Homeoarchy</a></li>
+        <li><a href="#formateo-automático-ortotipográfico">Formateo automático ortotipográfico</a></li>
+        <li><a href="#posición-de-los-objetos-en-la-página">Posición de los objetos en la página</a></li>
+      </ul>
+    </li>
+    <li><a href="#pequeña-radiografía-de-latex">Pequeña radiografía de LaTeX</a></li>
+    <li><a href="#entonces">¿Entonces?</a></li>
+    <li><a href="#gambas">Gambas</a></li>
+    <li><a href="#algunas-aclaraciones-sobre-linux">Algunas aclaraciones sobre Linux</a></li>
+    <li><a href="#descarga-e-instalación-de-gbtexpublisher">Descarga e instalación de gbTeXpublisher</a></li>
+    <li><a href="#comenzando-con-gbtexpublisher">Comenzando con gbTeXpublisher</a></li>
+    <li><a href="#configurando-las-salidas">Configurando las salidas</a></li>
+    <li><a href="#ahora-bien-comenzamos-con-el-trabajo">Ahora bien, comenzamos con el trabajo</a></li>
+    <li><a href="#referencias-bibliográficas">Referencias bibliográficas</a></li>
+    <li><a href="#metadatos">Metadatos</a></li>
+    <li><a href="#siglas-y-glosarios">Siglas y glosarios</a></li>
+    <li><a href="#catálogo-automatizado">Catálogo automatizado</a></li>
+    <li><a href="#estadísticas">Estadísticas</a></li>
+    <li><a href="#logfile">Logfile</a></li>
+    <li><a href="#git-local-y-remoto-como-copia-de-seguridad-temporal">Git local y remoto como copia de seguridad temporal</a></li>
+    <li><a href="#el-trabajo-en-equipo">El trabajo en equipo</a></li>
+    <li><a href="#copia-de-seguridad-del-trabajo-terminado">Copia de seguridad del trabajo terminado</a></li>
+    <li><a href="#veamos-todo-esto-en-un-video">Veamos todo esto en un video</a></li>
+    <li><a href="#comentario-final">Comentario final</a></li>
+  </ul>
+</nav></div>
+  </details>
+  
+  
+  <article class="content">
+    
+    <p>gbTeXpublisher nace como resultado de una necesidad concreta –la mía– ya que desde hace bastante tiempo adhiero a la edición ramificada y encuentro en <a href="https://es.wikipedia.org/wiki/LaTeX">LaTeX</a> la vía apropiada para conseguirlo, hice intentos con markdown, asciidoc y asciidoctor, pero al final del recorrido siempre encontraba problemas, fundamentalmente en la salida a PDF, me estoy refiriendo a una salida con un alto estándar de calidad tipográfica.</p>
+<p>gbTeXpublisher es una aplicación de escritorio que permite gestionar los procesos de producción editorial de manera fácil, me gusta pensar en esta aplicación como un facilitador, ya que todo lo que se puede hacer <strong>con</strong> gbTeXpublisher, también se puede hacer <strong>sin</strong> gbTeXpublisher, la diferencia radica en la facilidad que otorga su interfaz.</p>
+<p>gbTeXpublisher es también el resultado del enorme trabajo de muchas personas, quisiera hacer una mención de agradecimiento especial para <a href="https://es.wikipedia.org/wiki/Donald_Knuth">Donald Knuth</a>, <a href="https://en.wikipedia.org/wiki/Beno%C3%AEt_Minisini">Benoît Minisini</a> y los foros de <a href="http://cervantex.es/">CervanTeX</a> y <a href="https://es.wikipedia.org/wiki/Gambas">Gambas</a>, dejo para lo último a <a href="https://www.kodymirus.cz/">Michal Hoftich</a>, el aporte de su desarrollo a sido clave en el rumbo que tomaron mis decisiones de producción.</p>
+<p>gbTeXpublisher posee <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">licencia GPL3</a>, por consiguiente se concede permiso para copiar, distribuir y/o modificar este software según los términos de dicha licencia.</p>
+<p>Este artículo es un intento de presentación formal (aunque todavía el desarrollo se encuentre en estado <em>beta</em>) y me parece oportuno comenzar con una introducción teórica sobre los modelos de producción editorial al día de hoy.</p>
+<h2 id="heading">&hellip;</h2>
+<p>Es posible observar que la edición es íntegramente digital desde comienzo de los noventa, ya que los diferentes intervinientes en el proceso editorial, han terminado incorporando a los sistemas informáticos en su uso diario, ya sea para escribir o producción editorial, también podemos asegurar que las imprentas (por dar un ejemplo del proceso) hoy solo reciben trabajos en formato digital.</p>
+<p>Sin embargo, se puede observar que la tradición editorial no ha podido &ndash;o sabido&ndash; captar que este cambio en la forma de producir no refiere solo al hecho de utilizar nuevas técnicas, herramientas o dispositivos, sino también, a la pérdida de parte de los fundamentos básicos que existen en el proceso de edición.</p>
+<p>La idea que propongo consiste en trabajar sobre un modelo de edición estandarizada, automatizada, multiformato y multisoporte (y que no atenta contra el diseño), conocida como <strong>edición ramificada</strong>. Para lograr esto es necesario evitar cualquier tipo de enfoque <a href="https://es.wikipedia.org/wiki/WYSIWYG">WYSIWYG</a>.</p>
+<p><a href="https://es.wikipedia.org/wiki/Brian_Kernighan">Brian Kernighan</a> dijo alguna vez que el problema con el WYSIWYG (<em>lo que ves es lo que obtienes</em>) es que en realidad lo que ves es <strong>TODO</strong> lo que obtienes. Las interfaces gráficas son excelentes para muchas cosas, yo las utilizo de manera constante, tampoco escapo a ellas. Pero también uso la consola con un <em>Shell</em> cuando necesito elasticidad, ya que es mucho mas práctica y potente para algunas tareas.</p>
+<h2 id="los-comienzos">Los comienzos</h2>
+<p>Podemos observar en la figura a continuación que la edición cíclica se concentra en la posibilidad de producir al mismo tiempo para varios soportes de salida (un inicio A, deriva en un destino B, C, etc.), tratando de conservar la idea de que la publicación (en nuestro caso un libro) tiene un solo camino a seguir. Este método de trabajo está arraigado en la idea de que el <em>software</em> de alguna multinacional hará el trabajo milagroso de hacerlo posible, otorgándonos tranquilidad al concebir la conversión a diferentes formatos. Solo cuando se toma conciencia <em>real</em> de la pérdida que tenemos en la calidad técnica y editorial, se hace patente que la edición cíclica no es un método óptimo para la producción multiformato y multisoporte.</p>
+<p><img src="https://albertomoyano.github.io/blog-personal/images/ciclos.png" alt=""></p>
+<p>Pero es entendible que esto haya pasado, si observamos como era el modelo de producción editorial antes de la era digital.</p>
+<p><img src="https://albertomoyano.github.io/blog-personal/images/gutenberg.png" alt=""></p>
+<h2 id="edición-ramificada">Edición ramificada</h2>
+<p>Cambiemos la perspectiva. ¿Si en lugar de concentrarnos en los diferentes formatos finales, realizamos un ejercicio de pensamiento lateral?<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> La idea es simple: <strong>no nos concentremos en los formatos de salida, sino en los caminos que conducen a ellos</strong>. La conclusión se hace evidente: a múltiples caminos, múltiples formatos.</p>
+<p>Para realizar este modelo de trabajo se utiliza un lenguaje de marcas, es la mejor forma de etiquetar un documento, ya que se pueden incorporar las marcas que contienen las indicaciones adicionales acerca de la estructura y el diseño necesarios para la representación del texto en la salida buscada.</p>
+<p>La figura a continuación nos muestra un modelo (de todos los posibles) de edición ramificada, donde no existe una secuencia de A con B, sino un inicio de (A) con diversos caminos (B, C, D, etc.), algunos pueden frenar su andar (llegar a su destino final), otros se pueden desprender y convertirse en el inicio de otros nuevos caminos.</p>
+<p><img src="https://albertomoyano.github.io/blog-personal/images/completo.png" alt=""></p>
+<p>Este es un posible camino, que tiene su base en el lenguaje de marcas <a href="https://es.wikipedia.org/wiki/Markdown">Markdown</a>, pero también existen otros lenguajes como <a href="https://asciidoc-py.github.io/index.html">asciidoc</a>, <a href="https://orgmode.org/">Org Mode</a> y por supuesto LaTeX.</p>
+<p>La principal consigna de este método es ir de lo simple a lo complejo. Cada formato de salida tiene sus propias necesidades particulares. Para el PDF de imprenta se requieren ajustes por cuestiones ortotipográficas y de diseño; en el ePub puede hacerse necesario configurar de otra manera las figuras o cuadros para una correcta visualización, en una lectura <em>on line</em> se puede sacar provecho de la visualización interactiva y así un largo etcétera. Por consiguiente, lo que se hace imperioso es <strong>evitar la herencia de características</strong>, que es el principal problema que conlleva la metodología cíclica, a diferencia de esta, la edición ramificada se inicia con un documento simple de <a href="https://es.wikipedia.org/wiki/Archivo_de_texto">texto plano</a> que <strong>contiene solo las marcas</strong> de los elementos estructurales (que a su vez pueden contener el diseño), para luego con ajustes automatizados obtener cada salida y que estas no tengan errores.</p>
+<p>Ejemplo conceptual de la lógica a seguir, supongamos que tengo una marca de cita:<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
+<ol>
+<li>Si la salida es a PDF se aplica «Q» diseño y valor de estructura.</li>
+<li>Si la salida es a ePub se aplica «X» diseño y valor de estructura.</li>
+<li>Si la salida es a XML se aplica «Y» diseño y valor de estructura.</li>
+<li>Si la salida es a HTML se aplica «Z» diseño y valor de estructura.</li>
+</ol>
+<p>Cada salida tiene su propia lógica para su destino, subordinada a un solo patrón de diseño estructural.</p>
+<p>Furtado<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> plantea que en una primera aproximación, las ediciones se diferencian entre ellas por la predominancia que tienen las actividades primarias en la transformación físico-técnica del contenido, esto implica que, desde el punto de vista de la edición, el <em>diseño estructural</em> goza de muchísimo valor.</p>
+<h2 id="algunos-desarrollos-que-investigué">Algunos desarrollos que investigué</h2>
+<ol>
+<li><a href="https://programando.li/bros/">Pecas</a></li>
+</ol>
+<p>El proyecto está archivado, su desarrollador (Ramiro, alias <a href="https://git.cuates.net/perro">perro tuerto</a>) en una comunicación telefónica que tuvimos hace unos años, me dijo que el proyecto tiene errores de diseño que no le permiten evolucionar, pero tal como está, si lo que se prentende es solo obtener una salida a ePub desde markdown, el software no tiene fallas, y doy fe, lo utilice para hacer ejercicios y funciona, pero tiene tanta solidez como limitaciones.</p>
+<ol start="2">
+<li><a href="https://www.softcover.io/start">Softcover</a></li>
+</ol>
+<p>Es básicamente un sistema de publicación, posee salida a HTML, ePub y PDF &ndash;y funciona muy bien&ndash; lo utilicé durante un tiempo, para textos simples se puede escribir directamente en markdown (el sistema hace la conversión a LaTeX) o en su defecto en LaTeX. Está escrito en lenguaje Ruby y algunas partes del sistema son muy cerradas (en su diseño) lo cual hace muy cuesta arriba pretender hacer modificaciones al código. Pero si la matriz de producción editorial está definida y es simple, es una buena opción para trabajar.</p>
+<ol start="3">
+<li><a href="https://transpect.github.io/">Transpect</a></li>
+</ol>
+<p>En el sitio de Transpect se explica muy simple:</p>
+<blockquote>
+<p>Transspect fue diseñado para proporcionar módulos genéricos y estables para tareas comunes de conversión y verificación. Para abordar datos complejos y diversos, transspect ofrece una configuración en cascada para anular reglas específicas de transformación y verificación. Cada componente dentro del marco es de código abierto y utiliza tecnologías estándar como XSLT 2.0 y XProc.</p>
+</blockquote>
+<p>Este proyecto es, lo más de lo más (utiliza TeX y XML como base), pero cuando intenté ponerlo en marcha me di cuenta de que solo es viable en grupos editoriales con altos volúmenes de producción, ya que su implementación no es simple, sino más bien lo contrario. Solo alcanza con ver los clientes de <a href="https://www.le-tex.de/en/customers.html">le-tex</a>, que son los desarrolladores, para entender esto.</p>
+<ol start="4">
+<li><a href="https://orgmode.org/">Orgmode</a></li>
+</ol>
+<p>Un ecosistema en si mismo&hellip;</p>
+<p>Luego de varios intentos me dí por vencido, esta <a href="https://i.pinimg.com/736x/11/01/3c/11013c0024bd466791a8b0489340d3d7.jpg">imagen</a> de <em>El Eternauta</em>, se me vino a la mente cuando escribía este artículo.</p>
+<h2 id="todos-los-caminos-conducen-a-latex">Todos los caminos conducen a LaTeX</h2>
+<p>Conocí LaTeX en el año 1993, de la mano de Horacio Suárez, recién llegado de México venía de trabajar en una editorial orientada a las matemáticas, me lo mostro en una máquina corriendo <a href="https://es.wikipedia.org/wiki/MS-DOS">MS-DOS</a> y ejecutando el editor <a href="https://lugaru.com/">epsilon</a>, me sorprendió mucho, pero no fue hasta 10 años después, cuando abandone la preprensa y la imprenta para dedicarme de lleno a la edición que le empecé a dar un uso intenso.</p>
+<p>Esto no impide que en los últimos años también haya trabajado con <a href="https://es.wikipedia.org/wiki/Markdown">Markdown</a> y <a href="https://en.wikipedia.org/wiki/AsciiDoc">AsciiDoc</a> (con el intérprete <a href="https://asciidoctor.org/">asciidoctor</a>), y aún hoy los sigo usando (los artículos de este blog los escribo en markdown).</p>
+<h3 id="botones-para-muestra">Botones para muestra</h3>
+<p>Para poder graficar mejor lo dicho en el párrafo anterior, dejo muestras de características obtenidas en mi trabajo diario con LaTeX, que son imposibles de obtener con otros lenguajes (o con programas para DTP del mercado) que explican mejor a que me refiero cuando utilizo la expresión <strong>alta calidad tipográfica</strong>.</p>
+<h3 id="homeoarchy">Homeoarchy</h3>
+<p>Control de inconsistencia de principio y fin de linea.</p>
+<p><img src="https://albertomoyano.github.io/blog-personal/images/home.png" alt=""></p>
+<h3 id="formateo-automático-ortotipográfico">Formateo automático ortotipográfico</h3>
+<p>Se puede observar que la tabla de la base de datos, no contiene bastardillas, ni puntos, ni versalitas, etc.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@Book{Mazlish1995,
+</span></span><span style="display:flex;"><span>  hyphenation  = {spanish},
+</span></span><span style="display:flex;"><span>  author       = {Mazlish, Bruce},
+</span></span><span style="display:flex;"><span>  date         = {1995},
+</span></span><span style="display:flex;"><span>  keywords     = {listar},
+</span></span><span style="display:flex;"><span>  location     = {Madrid},
+</span></span><span style="display:flex;"><span>  publisher    = {Alianza Editorial},
+</span></span><span style="display:flex;"><span>  title        = {La cuarta discontinuidad},
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>Y esta es la salida que se obtiene en el PDF.</p>
+<p><img src="https://albertomoyano.github.io/blog-personal/images/mazlish.png" alt=""></p>
+<h3 id="posición-de-los-objetos-en-la-página">Posición de los objetos en la página</h3>
+<p>Se tiene control absoluto sobre cualquier posición <em>x-y</em> de la página para posicionar objetos, incluso otra página (que también se interpreta como un objeto).</p>
+<p><img src="https://albertomoyano.github.io/blog-personal/images/objeto.png" alt=""></p>
+<p>Estos ejemplos son solo la punta del iceberg, puede sonar exagerado, pero se entiende mejor cuando se asimila a LaTeX como lo que es, <em>un lenguaje de programación para la composición tipográfica</em>, y <strong>no</strong> como un programa de armado.</p>
+<h2 id="pequeña-radiografía-de-latex">Pequeña radiografía de LaTeX</h2>
+<p>LaTeX es un sistema de composición tipográfica, orientado a la creación de documentos escritos con una alta calidad tipográfica. Por sus características y posibilidades, es usado de manera intensiva en la generación de textos científicos. Fue escrito por <a href="https://es.wikipedia.org/wiki/Leslie_Lamport">Leslie Lamport</a> en 1984, con la intención de facilitar el uso del lenguaje de composición tipográfica <a href="https://es.wikipedia.org/wiki/TeX">TeX</a>, creado por <a href="https://es.wikipedia.org/wiki/Donald_Knuth">Donald Knuth</a>. A resumidas cuentas, LaTeX es un conjunto de macros de TeX, y se encuentra bajo <a href="https://es.wikipedia.org/wiki/LaTeX_Project_Public_License">licencia LPPL</a>.</p>
+<p>Los archivos de LaTeX presentan una primera división de dos partes:</p>
+<ol>
+<li>Preámbulo (documentclass)</li>
+<li>Documento (document)</li>
+</ol>
+<p>Podemos decir que los archivos son la suma del contenido en texto plano, más intrucciones y marcas, también en texto plano.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span><span style="color:#66d9ef">\documentclass</span>{book}<span style="color:#75715e">% acá comienza el preámbulo
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% carga de paquetes y funciones
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\begin</span>{document}<span style="color:#75715e">% acá comienza en documento
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% contenido y funciones
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\end</span>{document}</span></span></code></pre></div>
+<p>A su vez, la segunda parte (document), también tiene divisiones internas.</p>
+<ol>
+<li>Frontmatter</li>
+<li>Mainmatter</li>
+<li>Appendix</li>
+<li>Backmatter</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\begin</span>{document}<span style="color:#75715e">% acá comienza en documento
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\frontmatter</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% en el mundo editorial este espacio también es conocido como «primeras».
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\mainmatter</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% cuerpo principal del texto
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\appendix</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% apéndices
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\backmatter</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% listado de índices
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\end</span>{document}</span></span></code></pre></div>
+<p>Este artículo no es un curso de LaTeX, en la red hay a montones, pero con esta aclaración particular se va a entender como trabaja gbTeXpublisher.</p>
+<h2 id="entonces">¿Entonces?</h2>
+<p>DESARROLLAR</p>
+<p><img src="https://albertomoyano.github.io/blog-personal/images/archivo.png" alt=""></p>
+<p>La figura a continuación muestra un resumen de cómo es el flujo de trabajo, es importante resaltar la posibilidad que existe de recuperar cualquier trabajo antiguo, indistintamente del formato que tenga.</p>
+<p><img src="https://albertomoyano.github.io/blog-personal/images/literada.png" alt=""></p>
+<h2 id="gambas">Gambas</h2>
+<p>No soy programador, me identifico plenamente como editor con una fuerte formación en artes gráficas (tuve taller de preprensa e imprenta durante muchos años), así que mis conocimientos son en base a mucha lectura y práctica. Estuve durante mucho tiempo lidiando con <a href="https://es.wikipedia.org/wiki/Python">Python</a>, Objet Pascal <a href="https://es.wikipedia.org/wiki/Lazarus_(entorno_de_desarrollo)">(Lazarus)</a> y algo de <a href="https://es.wikipedia.org/wiki/Ruby">Ruby</a>, y reconozco ventajas en todos estos lenguajes, pero mi reflexión en la búsqueda de una solución informática consideró primordialmente el balance entre: calidad, desempeño, facilidad de uso y productividad, el resultado me llevo a encarar gbTeXpublisher con <a href="https://gambas.sourceforge.net/en/main.html">Gambas</a>.</p>
+<blockquote>
+<p>Gambas es un lenguaje de programación libre derivado de BASIC (de ahí que Gambas quiere decir <strong>G</strong>ambas <strong>A</strong>lmost <strong>M</strong>eans <strong>Bas</strong>ic). Se distribuye con licencia GNU GPL. Cabe destacar que presenta ciertas similitudes con Java, ya que para la ejecución de cualquier aplicación, se requiere un intérprete previamente instalado (Gambas Runtime) que entienda el bytecode de las aplicaciones desarrolladas y lo convierta en código ejecutable por el computador <a href="https://es.wikipedia.org/wiki/Gambas">(wikipedia)</a>.</p>
+</blockquote>
+<p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla10.png" alt=""></p>
+<p>Y si bien los motivos en mi elección son varios, también entiendo que puedan ser cuestionados, dejo aquí cuáles fueron los más importantes para mi elección:</p>
+<ol>
+<li>No programo para terceros, lo hago para mí uso personal.</li>
+<li>Utilizo Linux (desde hace 30 años, desde 1993) en el 90% de mis tareas, y me siento muy cómodo con el entorno de trabajo.</li>
+<li>No soy fanático del 100% comandos, ni del 100% mouse, creo en un equilibrio que saque lo mejor de cada modelo, según la necesidad.</li>
+<li>Gambas es un <a href="https://es.wikipedia.org/wiki/Desarrollo_r%C3%A1pido_de_aplicaciones">RAD</a>.</li>
+<li>Es muy rápido y potente <a href="https://gambas.sourceforge.net/en/main.html#">(Benchmarks)</a>.</li>
+</ol>
+<h2 id="algunas-aclaraciones-sobre-linux">Algunas aclaraciones sobre Linux</h2>
+<p>Por motivos que superan las expectativas de este artículo y sabiendo que todas las distribuciones de GNU Linux tienen diferencias en las librerías gráficas, voy a mostrar cual es el equipo con el que desarrollo y trabajo a diario utilizando gbTeXpublisher, cualquier persona que este intentando utilizar la aplicación y tenga diferencias en la distribución de los elementos de la interfaz gráfica, me puede contactar indicando que distribución utiliza, con cuál librería gráfica y entorno de escritorio y veré de hacer pruebas de control.</p>
+<p><img src="https://albertomoyano.github.io/blog-personal/images/manjaro.png" alt=""></p>
+<h2 id="descarga-e-instalación-de-gbtexpublisher">Descarga e instalación de gbTeXpublisher</h2>
+<p>El programa tiene dependencia de <a href="https://git-scm.com/">Git</a>, Pandoc y <a href="https://sigil-ebook.com/sigil/">Sigil</a>, doy por descartado que LaTeX ya está instalado, sugiero tener instalada la versión <em>full</em> (aproximadamente 4 gigas).</p>
+<p>También es necesario tener una cuenta en <a href="https://gitlab.com/">gitlab</a>, la versión gratuita es más que suficiente.</p>
+<p>Si bien en gambas se puede hacer el empaquetado para las principales distribuciones de GNU Linux, para evitar posibles conflictos, lo que está disponible es un empaquetado <strong>autotools</strong>.</p>
+<p>El video del siguiente enlace explica el procedimiento de uso <a href="https://www.dropbox.com/scl/fi/atk3ply6qro7ndo17zed3/gbTeXpublisher-0.0.431.tar.gz?rlkey=u26d712eg85tpmpptbr5yim31&amp;dl=1">(ver video)</a>.</p>
+<p>Este es el <em>link</em> de descarga para la última versión disponible <a href="https://www.dropbox.com/scl/fi/atk3ply6qro7ndo17zed3/gbTeXpublisher-0.0.431.tar.gz?rlkey=u26d712eg85tpmpptbr5yim31&amp;dl=1">(gbTeXpublisher v431)</a>.</p>
+<p>Para los que quieran hacer una bifurcación del proyecto, este es la ruta de <a href="https://gitlab.com/alberto.alejandro.moyano/gbtexpublisher">gbTeXpublisher</a> para compilar desde las fuentes.</p>
+<p>Los usuarios de windows pueden utilizar el software con <a href="https://learn.microsoft.com/es-es/windows/wsl/install">WSL</a>.</p>
+<h2 id="comenzando-con-gbtexpublisher">Comenzando con gbTeXpublisher</h2>
+<p>Cuando se está editando un solo libro, se pueden tener ciertas libertades, pero cuando se tienen 7 o 9 libros de manera constante en el flujo de producción, la cosa cambia. El orden y el principio de <a href="https://es.wikipedia.org/wiki/No_te_repitas">DRY</a> se vuelve más que importante si queremos tener una sana optimización de los recursos. En gbTeXpublisher se van a encontar funciones predefinidas (y rígidas) que aseguran comportamientos estables y predecibles.</p>
+<p>Luego de instalar gbTeXpublisher encontraremos una carpeta oculta dentro del <strong><code>home.user</code></strong> (léase carpeta personal), donde se alojara la base de datos, el proceso de instalación copia una base de datos con un número determinado de entradas que sirven como ejemplo, esto vale para las notas y las referencias bibliográficas. En la figura a continuación lo resalto con una línea roja.</p>
+<p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla11.png" alt=""></p>
+<p>El programa no trabaja <strong>sobre</strong> el archivo de LaTeX, sino que lo hace con una <strong>copia</strong>. Esto da plena y absoluta libertad de trabajar el texto con el editor que mejor le plazca al usuario. De ahí que su interfaz de incio pueda sorprender &ndash;ya que no dice nada&ndash; esto también se observa al notar que algunos menúes están deshabilitados y se activan una vez que se haya elegido un archivo con el cual trabajar. La imagen a continuación lo ilustra.</p>
+<p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla01.png" alt=""></p>
+<p>Una vez que hayamos seleccionado un archivo para trabajar, la pantalla puede parecerse a esta.</p>
+<p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla02.png" alt=""></p>
+<p>Volviendo al inicio, en un párrafo anterior dije que algunos menúes están deshabilitados hasta que se elija un archivo <strong><code>.tex</code></strong> para trabajar, pero otros sí están habilitados.</p>
+<p>El primero que encontramos es el formulario para la conversión de archivos word (<strong><code>.docx</code></strong>) a formato <strong><code>.tex</code></strong>, el proceso se realiza utilizando <a href="https://pandoc.org/">pandoc</a>, junto con la conversión se realizan otras dos tareas más: 1) se crean dos carpetas &ndash;originales y media&ndash; dentro del directorio de trabajo y 2) se mueve el archivo word a la carpeta originales.</p>
+<p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla06.png" alt=""></p>
+<p>El segundo es el formulario de apuntes, su idea y desarrollo surgieron de manera natural. Antes de gbTeXpublisher, a medida que iba trabajando tomaba apuntes sobre el proceso, ya sea consultas que debía hacer, buscar en otros archivos ese pedazo de código que alguna vez use o simplemente apuntes de ayuda memoria temporal, todo eso es lo que se vuelca en este formulario, la información queda almacenada en la base de datos para ser recuperada cada vez que sea necesario.</p>
+<p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla08.png" alt=""></p>
+<h2 id="configurando-las-salidas">Configurando las salidas</h2>
+<p>Existen 4 archivos de configuración, el programa instala una configuración base que sirve para una gran  mayoría de casos, en estos archivos es en donde se hacen cambios cuando se pretende alterar la salida más allá del diseño visual.</p>
+<p><img src="https://albertomoyano.github.io/blog-personal/images/build.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-personal/images/configepub.png" alt=""></p>
+<h2 id="ahora-bien-comenzamos-con-el-trabajo">Ahora bien, comenzamos con el trabajo</h2>
+<p>Luego de seleccionar un archivo, si miramos la carpeta contenedora del proyecto, veremos que se han creado nuevos directorios:</p>
+<ol>
+<li>catalogo</li>
+<li>correcciones</li>
+<li>files</li>
+<li>media</li>
+<li>originales</li>
+<li>tapa</li>
+</ol>
+<p>Si los directorios <strong>originales</strong> y <strong>media</strong>, ya existian porque se hizo la conversión de <strong><code>.docx</code></strong> a <strong><code>.tex</code></strong> utilizando gbTeXpublisher, estos no se sobreescriben y se mantiene sin modificaciones su contenido.</p>
+<p><img src="https://albertomoyano.github.io/blog-personal/images/sample.png" alt=""></p>
+<p>Dentro del directorio <strong>files</strong> se agregaran los archivos auxiliares y complementarios para la compilación, estos son los diferentes preámbulos y archivos de configuración, si cualquiera de estos archivos fuera modificado (no importa si desde gbTeXpublisher o desde un editor externo), no será reemplazado al volver (en un momento diferente) a cargar la aplicación, solo será agregado nuevamente aquél archivo que por error hubiera sido eliminado.</p>
+<p><img src="https://albertomoyano.github.io/blog-personal/images/sample2.png" alt=""></p>
+<h2 id="referencias-bibliográficas">Referencias bibliográficas</h2>
+<p>A continuación vemos el formulario para manejar las referencias bibliográficas, el programa trabaja con la base de datos <a href="https://es.wikipedia.org/wiki/SQLite">SQLite</a>, que para trabajar de manera individual, es lo mejor que conozco, pero si el trabajo se quisiera realizar en modo colaborativo (en red, abierta o cerrada), debería migrar a otro motor (analizo <a href="https://es.wikipedia.org/wiki/MariaDB">MaríaDB</a> como opción).</p>
+<p>Todas las entradas están basadas en <a href="https://www.ctan.org/pkg/biblatex">BibLaTeX</a> que es una reimplementación completa de las funciones bibliográficas proporcionadas por LaTeX. El formato está completamente controlado por macros de LaTeX. BibLaTeX utiliza su propio analizador de datos llamado <a href="https://biblatex-biber.sourceforge.net/">biber</a> (escrito en <a href="https://es.wikipedia.org/wiki/Perl">Perl</a>) para procesar los datos bibliográficos.</p>
+<p>Por <em>default</em> gbTeXpublisher para la clase <em>book</em> entrega un archivo configurado para la salida a PDF con el diseño autor-año desarrollado por Ivan Valbusa (<a href="https://ctan.org/pkg/biblatex-philosophy">biblatex-philosophy</a>) y el estándar autor-año de bibLaTeX para el resto de las salidas, para la clase <em>article</em> entrega un archivo con el diseño autor-año de <a href="https://www.ctan.org/pkg/biblatex-apa">biblatex-APA</a> y, por supuesto, todas estas salidas son modificables.</p>
+<p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla07.png" alt=""></p>
+<h2 id="metadatos">Metadatos</h2>
+<p>La información contenida en el formulario de metadatos es utilizada en las diferentes salidas, a la derecha los íconos muestran en que salida impacta esa información.</p>
+<p><img src="https://albertomoyano.github.io/blog-personal/images/metadatos.png" alt=""></p>
+<p>Los metadatos específicos de los autores y las colecciones se trabajan desde otras tablas de la base de datos para evitar la redundancia.</p>
+<p><img src="https://albertomoyano.github.io/blog-personal/images/autores.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-personal/images/coleccion.png" alt=""></p>
+<h2 id="siglas-y-glosarios">Siglas y glosarios</h2>
+<p>Las siglas y glosarios se pueden dar de alta desde este formulario, lo que implica que quedan registrados en la base de datos, esto permite la reutilización de los valores, también es posible agregar entradas directamente en el archivo <strong><code>.tex</code></strong>.</p>
+<p><img src="https://albertomoyano.github.io/blog-personal/images/glosarios.png" alt=""></p>
+<h2 id="catálogo-automatizado">Catálogo automatizado</h2>
+<p>Una de las cuestiones que necesitaba resolver de manera automatizada, era el catálogo en formato PDF, hasta la versión actual la construcción se hace con una plantilla fija, los datos se toman de los metadatos y solo quedan unos pocos datos para agregar manualmente, en un futuro espero agregar plantillas para disponer de diferentes diseños.</p>
+<p>El PDF que obtengo lo llevo a un directorio en donde se encuentran todas las páginas de los diferentes libros y un <em>script</em> hace el trabajo de <em>costura</em> sumando todos los archivos más una tapa en un solo archivo resultante.</p>
+<p><img src="https://albertomoyano.github.io/blog-personal/images/catalogo.png" alt=""></p>
+<h2 id="estadísticas">Estadísticas</h2>
+<p><img src="https://albertomoyano.github.io/blog-personal/images/estadisticas.png" alt=""></p>
+<h2 id="logfile">Logfile</h2>
+<p><img src="https://albertomoyano.github.io/blog-personal/images/logfile.png" alt=""></p>
+<h2 id="git-local-y-remoto-como-copia-de-seguridad-temporal">Git local y remoto como copia de seguridad temporal</h2>
+<p><a href="https://es.wikipedia.org/wiki/GitLab">GitLab</a></p>
+<p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla14.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla15.png" alt=""></p>
+<h2 id="el-trabajo-en-equipo">El trabajo en equipo</h2>
+<blockquote>
+<p>Kanban, cuyo significado es letrero o tarjeta en japonés,​ es un sistema de información que controla de modo armónico la fabricación de los productos necesarios en la cantidad y tiempo necesarios en cada uno de los procesos que tienen lugar tanto en el interior de la fábrica, como entre distintas empresas <a href="https://es.wikipedia.org/wiki/Kanban">(Wikipedia)</a>.</p>
+</blockquote>
+<p>Kanban en GitLab</p>
+<p><img src="https://albertomoyano.github.io/blog-personal/images/kanban.png" alt=""></p>
+<h2 id="copia-de-seguridad-del-trabajo-terminado">Copia de seguridad del trabajo terminado</h2>
+<p>Llegado a este punto, el trabajo está terminado, el libro impreso, la versión electrónica subida al repositorio, etcétera. Ha llegado el momento de guardar todo en un depósito de respaldo, yo personalmente utilizo <a href="https://es.wikipedia.org/wiki/Mega_(sitio_web)">Mega</a>, su relación costo/beneficio para este menester es la mejor (hay más opciones, por supuesto), también tengo un abono en Google para expandir mi cuota en Drive, pero lo utilizo para otras cosas. El menú <strong>Comprimir directorio para respaldo</strong>, básicamente lo que hace es una copia comprimiendo todo en formato <a href="https://es.wikipedia.org/wiki/Tar"><strong><code>.tar.gz</code></strong></a>, la imagen a continuación lo dice todo. Después solo resta llevar ese archivo al repositorio de respaldo.</p>
+<p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla17.png" alt=""></p>
+<h2 id="veamos-todo-esto-en-un-video">Veamos todo esto en un video</h2>
+<h2 id="comentario-final">Comentario final</h2>
+<p>La edición científica necesita una transformación &ndash;esencialmente enriquecedora&ndash; sobre su modelo de producción, a efectos de poder garantizar &ndash;sin fechas de vencimiento&ndash; su capacidad de poder mantenerse en el tiempo asegurando el procesamiento y la difusión de sus contenidos. El método elegido para la edición científica, es en gran medida responsable de la calidad de las fuentes de información que produce. Los variados saberes involucrados, le otorgan a esta profesión un desempeño interdisciplinario complejo dentro del campo de la producción del conocimiento.</p>
+<p>Matthew Carter en una exposición en el 2014 lo planteó en términos muy simples:</p>
+<blockquote>
+<p>La pregunta es, ¿una restricción obliga a un compromiso? Aceptando una restricción, ¿estás trabajando a un nivel inferior? (&hellip;). La distinción entre una restricción y un compromiso es, obviamente, muy sutil, pero es muy central en mi actitud hacia el trabajo (min. 4:57).</p>
+</blockquote>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/xjxyEwjG2Es" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>De Bono, Edward (1967). <a href="https://books.google.com.ar/books/about/El_pensamiento_lateral_pr%C3%A1ctico.html?id=ir_PDOmfHBwC&amp;printsec=frontcover&amp;source=kp_read_button&amp;hl=es-419&amp;redir_esc=y#v=onepage&amp;q&amp;f=false"><em>New Think: The Use of Lateral thinking</em></a>, Avon Books.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>Puede ser cualquier valor de la estructura: título, referencia, fórmula, etcétera.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>Furtado, José Afonso (2014). <a href="https://www.eduvim.com.ar/libro/9789876991735-la-edicion-de-libros-y-la-gestion-estrategica"><em>La edición de libros y la gestión estratégica</em></a>, Córdoba: EDUVIM.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+    
+  </article>
+  
+
+<div id="sharingbuttons">
+    
+    
+    <a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2falbertomoyano.github.io%2fblog-gbtexpublisher%2fpost%2fgbtex%2f" target="_blank" rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"/></svg>
+        </div>
+      </div>
+    </a>
+    
+
+    
+    
+    <a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?text=Presentaci%c3%b3n%20de%20gbTeXpublisher&amp;url=https%3a%2f%2falbertomoyano.github.io%2fblog-gbtexpublisher%2fpost%2fgbtex%2f" target="_blank" rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z"/></svg>
+        </div>
+      </div>
+    </a>
+    
+
+    
+    
+    <a class="resp-sharing-button__link" href="mailto:?subject=Presentaci%c3%b3n%20de%20gbTeXpublisher&amp;body=https%3a%2f%2falbertomoyano.github.io%2fblog-gbtexpublisher%2fpost%2fgbtex%2f" target="_self" rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 4H2C.9 4 0 4.9 0 6v12c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM7.25 14.43l-3.5 2c-.08.05-.17.07-.25.07-.17 0-.34-.1-.43-.25-.14-.24-.06-.55.18-.68l3.5-2c.24-.14.55-.06.68.18.14.24.06.55-.18.68zm4.75.07c-.1 0-.2-.03-.27-.08l-8.5-5.5c-.23-.15-.3-.46-.15-.7.15-.22.46-.3.7-.14L12 13.4l8.23-5.32c.23-.15.54-.08.7.15.14.23.07.54-.16.7l-8.5 5.5c-.08.04-.17.07-.27.07zm8.93 1.75c-.1.16-.26.25-.43.25-.08 0-.17-.02-.25-.07l-3.5-2c-.24-.13-.32-.44-.18-.68s.44-.32.68-.18l3.5 2c.24.13.32.44.18.68z"/></svg>
+        </div>
+      </div>
+    </a>
+    
+
+    
+    
+    <a class="resp-sharing-button__link" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2falbertomoyano.github.io%2fblog-gbtexpublisher%2fpost%2fgbtex%2f" target="_blank" rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z"/></svg>
+        </div>
+      </div>
+    </a>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <a class="resp-sharing-button__link" href="https://telegram.me/share/url?text=Presentaci%c3%b3n%20de%20gbTeXpublisher&amp;url=https%3a%2f%2falbertomoyano.github.io%2fblog-gbtexpublisher%2fpost%2fgbtex%2f" target="_blank" rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--telegram resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M.707 8.475C.275 8.64 0 9.508 0 9.508s.284.867.718 1.03l5.09 1.897 1.986 6.38a1.102 1.102 0 0 0 1.75.527l2.96-2.41a.405.405 0 0 1 .494-.013l5.34 3.87a1.1 1.1 0 0 0 1.046.135 1.1 1.1 0 0 0 .682-.803l3.91-18.795A1.102 1.102 0 0 0 22.5.075L.706 8.475z"/></svg>
+        </div>
+      </div>
+    </a>
+    
+</div>
+
+  <div class="paginator">
+    
+    <a class="link" href="https://albertomoyano.github.io/blog-gbtexpublisher/post/2023-03-15-urllargas/">← anterior</a>
+    
+    
+    <a></a>
+    
+  </div>
+  <div class="comment">
+    
+    
+    
+    <script src="https://giscus.app/client.js"
+        data-repo="albertomoyano/blog-gbtexpublisher"
+        data-repo-id="R_kgDOKKd0Qg"
+        data-category-id="DIC_kwDOKKd0Qs4CYzSf"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="es"
+        crossorigin="anonymous"
+        async>
+</script>
+
+  </div>
+  
+
+</main>
+
+    <footer id="footer">
+  <div>
+    <span>© 2013</span> - <span>2023</span>
+  </div>
+
+  <div>
+    <span>Desarrollado con </span>
+    <a class="link" target="_blank" href="https://gohugo.io/">Hugo</a>
+    <span> 🍦 Esquema </span>
+    <a class="link" target="_blank" href="https://texify2.io">TeXify2</a>
+  </div>
+
+  <div class="footnote">
+    <span>Me pueden encontrar en <a class=link href=https://www.linkedin.com/in/edicion-cientifica/ target=_blank rel=noopener>LinkedIn</a> | Licencia
+<a class=link href=https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en target=_blank rel=noopener>CC BY-NC-SA 4.0</a>
+</span>
+  </div>
+</footer>
+
+  </div>
+
+  
+  
+  <link media="screen" rel="stylesheet" href="https://albertomoyano.github.io/blog-gbtexpublisher/css/estilos.css" />
+  
+  <link media="screen" rel="stylesheet" href="https://albertomoyano.github.io/blog-gbtexpublisher/css/font.css" />
+  
+
+  
+  
+
+  
+  
+
+</body>
+
+</html>

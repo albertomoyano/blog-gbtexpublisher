@@ -6,14 +6,23 @@
     <description>Recent content on gbTeXpublisher</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Wed, 22 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://albertomoyano.github.io/blog-gbtexpublisher/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://albertomoyano.github.io/blog-gbtexpublisher/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Presentación de gbTeXpublisher</title>
+      <link>https://albertomoyano.github.io/blog-gbtexpublisher/post/gbtex/</link>
+      <pubDate>Tue, 21 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://albertomoyano.github.io/blog-gbtexpublisher/post/gbtex/</guid>
+      <description>&lt;p&gt;gbTeXpublisher nace como resultado de una necesidad concreta –la mía– ya que desde hace bastante tiempo adhiero a la edición ramificada y encuentro en &lt;a href=&#34;https://es.wikipedia.org/wiki/LaTeX&#34;&gt;LaTeX&lt;/a&gt; la vía apropiada para conseguirlo, hice intentos con markdown, asciidoc y asciidoctor, pero al final del recorrido siempre encontraba problemas, fundamentalmente en la salida a PDF, me estoy refiriendo a una salida con un alto estándar de calidad tipográfica.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>URL largas en los libros</title>
       <link>https://albertomoyano.github.io/blog-gbtexpublisher/post/2023-03-15-urllargas/</link>
       <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://albertomoyano.github.io/blog-gbtexpublisher/post/2023-03-15-urllargas/</guid>
-      <description>&lt;p&gt;Esta situación la vengo revisando desde hace mucho tiempo, pero aún hoy, no sé que solución es la más satisfactoria. El avance de la informatización de los contenidos, va generando inexorablemente más recursos en línea y los autores se ven en la necesidad de indicarlos en sus referencias bibliográficas y citas. Pero cuando una URL no tiene una estructura básica y legible por humanos, del estilo &lt;strong&gt;miweb.com&lt;/strong&gt;, la experiencia (propia y ajena) me dice que no tiene ninguna utilidad en un texto impreso; en libros digitales y/o electrónicos es harina de otro costal.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Esta situación la vengo revisando desde hace mucho tiempo, pero aún hoy, no sé que solución es la más satisfactoria.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -41,15 +50,6 @@
       
       <guid>https://albertomoyano.github.io/blog-gbtexpublisher/post/markdown-syntax/</guid>
       <description>&lt;p&gt;Este artículo ofrece una muestra de la sintaxis básica de Markdown que se puede usar en los archivos de contenido de Hugo, y también muestra si los elementos HTML básicos están decorados con CSS en un tema de Hugo.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Historia del PDF</title>
-      <link>https://albertomoyano.github.io/blog-gbtexpublisher/post/historia-pdf/</link>
-      <pubDate>Sun, 30 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://albertomoyano.github.io/blog-gbtexpublisher/post/historia-pdf/</guid>
-      <description>&lt;p&gt;El formato &lt;a href=&#34;https://es.wikipedia.org/wiki/PDF&#34;&gt;PDF&lt;/a&gt;, plenamente difundido en el uso informático cotidiano, paso por varias instancias antes de consolidarse como un estándar para el intercambio de información &amp;ndash;aunque hay otros que vienen surgiendo&amp;ndash; entre las tantas cosas que he leído quisiera compartir estas dos notas.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -86,15 +86,6 @@
       
       <guid>https://albertomoyano.github.io/blog-gbtexpublisher/post/peliculas/</guid>
       <description>&lt;p&gt;Ya llevo varios libros editados que involucran películas (creo que son más de 12) y en todo este tiempo he estado lidiando con parches y diciéndome que en algún momento voy a tener que parametrizar una salida para las referencias de películas.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Edición literada</title>
-      <link>https://albertomoyano.github.io/blog-gbtexpublisher/post/edicion-literada/</link>
-      <pubDate>Wed, 29 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://albertomoyano.github.io/blog-gbtexpublisher/post/edicion-literada/</guid>
-      <description>&lt;p&gt;Creo que es posible decir que la edición es íntegramente digital desde comienzo de los noventa, ya que los diferentes intervinientes del proceso editorial, han terminado incorporando a las computadoras en su uso diario para escribir y producir, así también podemos asegurar que hoy las imprentas (por dar un ejemplo del proceso) solo reciben trabajos en formato digital.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -149,24 +140,6 @@
       
       <guid>https://albertomoyano.github.io/blog-gbtexpublisher/post/emoji-support/</guid>
       <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>¿Cómo cierran los pliegos?</title>
-      <link>https://albertomoyano.github.io/blog-gbtexpublisher/post/pliegos/</link>
-      <pubDate>Wed, 07 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://albertomoyano.github.io/blog-gbtexpublisher/post/pliegos/</guid>
-      <description>&lt;p&gt;Tiempo atrás, debatía con un colega sobre el inconveniente que existe a la hora de producir libros con programas convencionales de armado en lo referente a la cantidad de páginas: libros en donde al terminarlos sobran más de 2 páginas, o que terminan bien en páginas, pero mal a la vista (por la compresión o expansión de caracteres o líneas), o capítulos que tienen todas las notas o pies de página apuntadas en su final (situación aceptable solo cuando son pocas y no molesta a la lectura del texto central). Entonces, frente a la pregunta, ¿qué hacer para solucionarlo?, la respuesta es &lt;strong&gt;nada&lt;/strong&gt;, a menos que el editor esté dispuesto a pagar el trabajo de armado nuevamente.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Composición tipográfica</title>
-      <link>https://albertomoyano.github.io/blog-gbtexpublisher/post/editores-procesadores/</link>
-      <pubDate>Sat, 22 Jun 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://albertomoyano.github.io/blog-gbtexpublisher/post/editores-procesadores/</guid>
-      <description>&lt;p&gt;En este artículo se leerán términos que si no son entendidos en su correcto valor pueden originar confusiones, por eso me parece oportuno antes que nada aclarar algunos conceptos.&lt;/p&gt;</description>
     </item>
     
   </channel>

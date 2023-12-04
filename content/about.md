@@ -8,7 +8,7 @@ author = "albertomoyano"
 
 ## Acerca del software
 
-**gbTeXpublisher** nace como resultado de una necesidad concreta --*la mía*-- ya que desde hace bastante tiempo adhiero a la edición literada[^nota1] y encuentro en LaTeX la vía apropiada para conseguirlo, hice intentos con [markdown](https://es.wikipedia.org/wiki/Markdown), [asciidoc](https://asciidoc.org/) y [asciidoctor](https://asciidoctor.org/),[^orgmode] pero al final del recorrido siempre encontraba problemas, fundamentalmente en la salida a pdf, me estoy refiriendo a una salida con un alto estándar de calidad tipográfica.
+**gbTeXpublisher** nace como resultado de una necesidad concreta --*la mía*-- ya que desde hace bastante tiempo adhiero a la edición literada[^nota1] y encuentro en LaTeX la vía apropiada para conseguirlo, hice intentos con [markdown](https://es.wikipedia.org/wiki/Markdown), [asciidoc](https://asciidoc.org/) y [asciidoctor](https://asciidoctor.org/),[^orgmode] pero al final del recorrido siempre encontraba problemas, fundamentalmente en la salida a PDF, me estoy refiriendo a una salida con un alto estándar de calidad tipográfica.
 
 [^nota1]: Estoy convencido de que la producción editorial avanza inexorablemente hacia un modelo de edición literada (esto es, un solo origen con múltiples salidas), el mundo editorial se encuentra inmerso en un proceso de cambios –con ejemplos a la vista– del que no hay retorno.
 

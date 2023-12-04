@@ -2,11 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://albertomoyano.github.io/blog-gbtexpublisher/</loc>
+    <lastmod>2023-11-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://albertomoyano.github.io/blog-gbtexpublisher/tags/gbtexpublisher/</loc>
+    <lastmod>2023-11-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://albertomoyano.github.io/blog-gbtexpublisher/tags/latex/</loc>
+    <lastmod>2023-11-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://albertomoyano.github.io/blog-gbtexpublisher/post/</loc>
+    <lastmod>2023-11-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://albertomoyano.github.io/blog-gbtexpublisher/post/gbtex/</loc>
+    <lastmod>2023-11-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://albertomoyano.github.io/blog-gbtexpublisher/tags/</loc>
+    <lastmod>2023-11-21T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://albertomoyano.github.io/blog-gbtexpublisher/about/</loc>
     <lastmod>2023-07-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://albertomoyano.github.io/blog-gbtexpublisher/</loc>
-    <lastmod>2023-03-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://albertomoyano.github.io/blog-gbtexpublisher/categories/</loc>
     <lastmod>2023-03-22T00:00:00+00:00</lastmod>
@@ -14,16 +29,7 @@
     <loc>https://albertomoyano.github.io/blog-gbtexpublisher/tags/edici%C3%B3n/</loc>
     <lastmod>2023-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://albertomoyano.github.io/blog-gbtexpublisher/tags/latex/</loc>
-    <lastmod>2023-03-22T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://albertomoyano.github.io/blog-gbtexpublisher/categories/libros/</loc>
-    <lastmod>2023-03-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://albertomoyano.github.io/blog-gbtexpublisher/post/</loc>
-    <lastmod>2023-03-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://albertomoyano.github.io/blog-gbtexpublisher/tags/</loc>
     <lastmod>2023-03-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://albertomoyano.github.io/blog-gbtexpublisher/tags/url/</loc>
@@ -65,18 +71,6 @@
     <loc>https://albertomoyano.github.io/blog-gbtexpublisher/categories/themes/</loc>
     <lastmod>2022-07-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://albertomoyano.github.io/blog-gbtexpublisher/post/historia-pdf/</loc>
-    <lastmod>2022-01-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://albertomoyano.github.io/blog-gbtexpublisher/categories/pdf/</loc>
-    <lastmod>2022-01-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://albertomoyano.github.io/blog-gbtexpublisher/tags/pdf/</loc>
-    <lastmod>2022-01-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://albertomoyano.github.io/blog-gbtexpublisher/tags/postscript/</loc>
-    <lastmod>2022-01-30T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://albertomoyano.github.io/blog-gbtexpublisher/post/enfasis/</loc>
     <lastmod>2022-01-18T00:00:00+00:00</lastmod>
   </url><url>
@@ -94,9 +88,6 @@
   </url><url>
     <loc>https://albertomoyano.github.io/blog-gbtexpublisher/post/peliculas/</loc>
     <lastmod>2021-12-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://albertomoyano.github.io/blog-gbtexpublisher/post/edicion-literada/</loc>
-    <lastmod>2021-12-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://albertomoyano.github.io/blog-gbtexpublisher/post/rae/</loc>
     <lastmod>2021-12-27T00:00:00+00:00</lastmod>
@@ -142,18 +133,6 @@
   </url><url>
     <loc>https://albertomoyano.github.io/blog-gbtexpublisher/post/emoji-support/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://albertomoyano.github.io/blog-gbtexpublisher/post/pliegos/</loc>
-    <lastmod>2017-06-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://albertomoyano.github.io/blog-gbtexpublisher/post/editores-procesadores/</loc>
-    <lastmod>2013-06-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://albertomoyano.github.io/blog-gbtexpublisher/tags/editores/</loc>
-    <lastmod>2013-06-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://albertomoyano.github.io/blog-gbtexpublisher/tags/procesadores/</loc>
-    <lastmod>2013-06-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://albertomoyano.github.io/blog-gbtexpublisher/tags/index/</loc>
   </url>

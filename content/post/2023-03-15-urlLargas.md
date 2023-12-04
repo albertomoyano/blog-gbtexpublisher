@@ -11,11 +11,14 @@ tags = [
 categories = [
     "libros",
 ]
+pin= true
 +++
 
-Esta situación la vengo revisando desde hace mucho tiempo, pero aún hoy, no sé que solución es la más satisfactoria. El avance de la informatización de los contenidos, va generando inexorablemente más recursos en línea y los autores se ven en la necesidad de indicarlos en sus referencias bibliográficas y citas. Pero cuando una URL no tiene una estructura básica y legible por humanos, del estilo **miweb.com**, la experiencia (propia y ajena) me dice que no tiene ninguna utilidad en un texto impreso; en libros digitales y/o electrónicos es harina de otro costal.
+Esta situación la vengo revisando desde hace mucho tiempo, pero aún hoy, no sé que solución es la más satisfactoria.
 
 <!--more-->
+
+El avance de la informatización de los contenidos, va generando inexorablemente más recursos en línea y los autores se ven en la necesidad de indicarlos en sus referencias bibliográficas y citas. Pero cuando una URL no tiene una estructura básica y legible por humanos, del estilo **miweb.com**, la experiencia (propia y ajena) me dice que no tiene ninguna utilidad en un texto impreso; en libros digitales y/o electrónicos es harina de otro costal.
 
 Observemos la figura a continuación, alguien realmente se pone a tipear una dirección así, personalmente si me interesa acceder a esa URL, termino buscando por el título y/o el autor.
 
