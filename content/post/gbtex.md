@@ -362,17 +362,21 @@ El PDF que obtengo lo llevo a un directorio en donde se encuentran todas las pá
 
 ## Git local y remoto como copia de seguridad temporal
 
-[GitLab](https://es.wikipedia.org/wiki/GitLab)
+Hace un tiempo (largo) vi una imagen en la red [linkedin](https://www.linkedin.com/in/edicion-cientifica/) que a simple vista (antes de leer el artículo) pensé que era un meme,[^meme] en la misma había muchos archivos MS Word, nombrados: versión final, versión final final, esta es la última versión, ahora sí la última; y así muchas copias de un word con todos los nombres que se pudieran imaginar. Trabajar con LaTeX utilizando esa metodología sería un despropósito. Git fue desarrollado por [Linus Torvalds](https://es.wikipedia.org/wiki/Linus_Torvalds) como resultado de sus necesidades puntuales al frente del equipo de desarrolladores del kernel de Linux, yo le doy un giro más a la rosca y lo empiezo a utilizar en la producción editorial, gbTeXpublisher trabaja con [GitLab](https://es.wikipedia.org/wiki/GitLab), en su versión gratuita es quien mejor cumple con la ecuación costo/beneficio, ya que su función de respaldo de imágines y capacidad de almacenaje son más que suficientes para el proceso de producción.
+
+Si se desea trabajar solo con respaldo local, no es necesario tener cuenta en GitLab.
 
 ![](https://albertomoyano.github.io/blog-personal/images/pantalla14.png)
 
 ![](https://albertomoyano.github.io/blog-personal/images/pantalla15.png)
 
-## El trabajo en equipo
+### Controlando los tiempos y las cargas de trabajo
+
+Aún trabajando solo, a veces es aconsejable saber cuanto tiempo y esfuerzo (léase dinero) le hemos asignado a un trabajo, la capacidad de Kanban en GitLab es ideal para esto.
 
 > Kanban, cuyo significado es letrero o tarjeta en japonés,​ es un sistema de información que controla de modo armónico la fabricación de los productos necesarios en la cantidad y tiempo necesarios en cada uno de los procesos que tienen lugar tanto en el interior de la fábrica, como entre distintas empresas [(Wikipedia)](https://es.wikipedia.org/wiki/Kanban).
 
-Kanban en GitLab
+Ni que decir, si el trabajo es en equipo (no confundir trabajar en equipo con trabajar en red), donde todos acceden a los mismos archivos.
 
 ![](https://albertomoyano.github.io/blog-personal/images/kanban.png)
 
@@ -400,3 +404,5 @@ Matthew Carter en una exposición en el 2014 lo planteó en términos muy simple
 [^2]: Furtado, José Afonso (2014). [*La edición de libros y la gestión estratégica*](https://www.eduvim.com.ar/libro/9789876991735-la-edicion-de-libros-y-la-gestion-estrategica), Córdoba: EDUVIM.
 
 [^cita]: Puede ser cualquier valor de la estructura: título, referencia, fórmula, etcétera.
+
+[^meme]: Un meme es un tipo de contenido que consta de varios elementos (por ejemplo, una imagen y un texto) relacionados en una misma unidad significante, para representar una idea, concepto, opinión o situación. Generalmente, su tono es humorístico, irónico o satírico y se crean para transmitir un mensaje o una idea de manera rápida y efectiva.

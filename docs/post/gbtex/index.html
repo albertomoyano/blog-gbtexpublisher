@@ -53,7 +53,7 @@
   <meta itemprop="name" content="Presentación de gbTeXpublisher">
 <meta itemprop="description" content="Presentación de gbTeXpublisher, marco teórico"><meta itemprop="datePublished" content="2023-12-04T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-12-04T00:00:00+00:00" />
-<meta itemprop="wordCount" content="4161"><meta itemprop="image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images"/>
+<meta itemprop="wordCount" content="4436"><meta itemprop="image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images"/>
 <meta itemprop="keywords" content="LaTeX,gbTeXpublisher," />
 
   
@@ -161,8 +161,11 @@
     <li><a href="#catálogo-automatizado">Catálogo automatizado</a></li>
     <li><a href="#estadísticas">Estadísticas</a></li>
     <li><a href="#logfile">Logfile</a></li>
-    <li><a href="#git-local-y-remoto-como-copia-de-seguridad-temporal">Git local y remoto como copia de seguridad temporal</a></li>
-    <li><a href="#el-trabajo-en-equipo">El trabajo en equipo</a></li>
+    <li><a href="#git-local-y-remoto-como-copia-de-seguridad-temporal">Git local y remoto como copia de seguridad temporal</a>
+      <ul>
+        <li><a href="#controlando-los-tiempos-y-las-cargas-de-trabajo">Controlando los tiempos y las cargas de trabajo</a></li>
+      </ul>
+    </li>
     <li><a href="#copia-de-seguridad-del-trabajo-terminado">Copia de seguridad del trabajo terminado</a></li>
     <li><a href="#veamos-todo-esto-en-un-video">Veamos todo esto en un video</a></li>
     <li><a href="#comentario-final">Comentario final</a></li>
@@ -411,14 +414,16 @@
 <h2 id="logfile">Logfile</h2>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/logfile.png" alt=""></p>
 <h2 id="git-local-y-remoto-como-copia-de-seguridad-temporal">Git local y remoto como copia de seguridad temporal</h2>
-<p><a href="https://es.wikipedia.org/wiki/GitLab">GitLab</a></p>
+<p>Hace un tiempo (largo) vi una imagen en la red <a href="https://www.linkedin.com/in/edicion-cientifica/">linkedin</a> que a simple vista (antes de leer el artículo) pensé que era un meme,<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> en la misma había muchos archivos MS Word, nombrados: versión final, versión final final, esta es la última versión, ahora sí la última; y así muchas copias de un word con todos los nombres que se pudieran imaginar. Trabajar con LaTeX utilizando esa metodología sería un despropósito. Git fue desarrollado por <a href="https://es.wikipedia.org/wiki/Linus_Torvalds">Linus Torvalds</a> como resultado de sus necesidades puntuales al frente del equipo de desarrolladores del kernel de Linux, yo le doy un giro más a la rosca y lo empiezo a utilizar en la producción editorial, gbTeXpublisher trabaja con <a href="https://es.wikipedia.org/wiki/GitLab">GitLab</a>, en su versión gratuita es quien mejor cumple con la ecuación costo/beneficio, ya que su función de respaldo de imágines y capacidad de almacenaje son más que suficientes para el proceso de producción.</p>
+<p>Si se desea trabajar solo con respaldo local, no es necesario tener cuenta en GitLab.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla14.png" alt=""></p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla15.png" alt=""></p>
-<h2 id="el-trabajo-en-equipo">El trabajo en equipo</h2>
+<h3 id="controlando-los-tiempos-y-las-cargas-de-trabajo">Controlando los tiempos y las cargas de trabajo</h3>
+<p>Aún trabajando solo, a veces es aconsejable saber cuanto tiempo y esfuerzo (léase dinero) le hemos asignado a un trabajo, la capacidad de Kanban en GitLab es ideal para esto.</p>
 <blockquote>
 <p>Kanban, cuyo significado es letrero o tarjeta en japonés,​ es un sistema de información que controla de modo armónico la fabricación de los productos necesarios en la cantidad y tiempo necesarios en cada uno de los procesos que tienen lugar tanto en el interior de la fábrica, como entre distintas empresas <a href="https://es.wikipedia.org/wiki/Kanban">(Wikipedia)</a>.</p>
 </blockquote>
-<p>Kanban en GitLab</p>
+<p>Ni que decir, si el trabajo es en equipo (no confundir trabajar en equipo con trabajar en red), donde todos acceden a los mismos archivos.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/kanban.png" alt=""></p>
 <h2 id="copia-de-seguridad-del-trabajo-terminado">Copia de seguridad del trabajo terminado</h2>
 <p>Llegado a este punto, el trabajo está terminado, el libro impreso, la versión electrónica subida al repositorio, etcétera. Ha llegado el momento de guardar todo en un depósito de respaldo, yo personalmente utilizo <a href="https://es.wikipedia.org/wiki/Mega_(sitio_web)">Mega</a>, su relación costo/beneficio para este menester es la mejor (hay más opciones, por supuesto), también tengo un abono en Google para expandir mi cuota en Drive, pero lo utilizo para otras cosas. El menú <strong>Comprimir directorio para respaldo</strong>, básicamente lo que hace es una copia comprimiendo todo en formato <a href="https://es.wikipedia.org/wiki/Tar"><strong><code>.tar.gz</code></strong></a>, la imagen a continuación lo dice todo. Después solo resta llevar ese archivo al repositorio de respaldo.</p>
@@ -446,6 +451,9 @@
 </li>
 <li id="fn:3">
 <p>Furtado, José Afonso (2014). <a href="https://www.eduvim.com.ar/libro/9789876991735-la-edicion-de-libros-y-la-gestion-estrategica"><em>La edición de libros y la gestión estratégica</em></a>, Córdoba: EDUVIM.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>Un meme es un tipo de contenido que consta de varios elementos (por ejemplo, una imagen y un texto) relacionados en una misma unidad significante, para representar una idea, concepto, opinión o situación. Generalmente, su tono es humorístico, irónico o satírico y se crean para transmitir un mensaje o una idea de manera rápida y efectiva.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </div>
