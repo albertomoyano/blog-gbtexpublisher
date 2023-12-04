@@ -190,7 +190,7 @@ Este artículo no es un curso de LaTeX, en la red hay a montones, pero con esta 
 El preámbulo es la parte en donde se declaran las diferentes macros que darán instrucciones precisas al compilador para la salida que se desea obtener, ahora bien, los paquetes están condicionados a lo siguiente.
 
 1. afectan a la salida (por ejemplo _geometry_ que permite manipular la estructura de la página).
-2. intervienen en el contenido (por ejemlo _csquotes_ que automatiza el manejo de las comillas).
+2. intervienen en el contenido (por ejemplo _csquotes_ que automatiza el manejo de las comillas).
 
 A su vez, los paquetes que afectan solo a la salida, pueden:
 
