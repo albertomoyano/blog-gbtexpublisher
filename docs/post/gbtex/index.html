@@ -53,7 +53,7 @@
   <meta itemprop="name" content="Presentación de gbTeXpublisher">
 <meta itemprop="description" content="Presentación de gbTeXpublisher, marco teórico"><meta itemprop="datePublished" content="2023-12-04T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-12-04T00:00:00+00:00" />
-<meta itemprop="wordCount" content="4439"><meta itemprop="image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images"/>
+<meta itemprop="wordCount" content="4669"><meta itemprop="image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images"/>
 <meta itemprop="keywords" content="LaTeX,gbTeXpublisher," />
 
   
@@ -156,7 +156,7 @@
     <li><a href="#configurando-las-salidas">Configurando las salidas</a></li>
     <li><a href="#ahora-bien-comenzamos-con-el-trabajo">Ahora bien, comenzamos con el trabajo</a></li>
     <li><a href="#referencias-bibliográficas">Referencias bibliográficas</a></li>
-    <li><a href="#metadatos">Metadatos</a></li>
+    <li><a href="#trabajando-con-lo-metadatos">Trabajando con lo metadatos</a></li>
     <li><a href="#siglas-y-glosarios">Siglas y glosarios</a></li>
     <li><a href="#catálogo-automatizado">Catálogo automatizado</a></li>
     <li><a href="#estadísticas">Estadísticas</a></li>
@@ -320,8 +320,8 @@
 <p>El segundo obliga a tener que estudiar que no exista el punto 1 entre las dependencias.</p>
 <p>Frente a la cantidad abrumadora de paquetes (macros) disponibles en LaTeX, sin contar con la posibilidad de escribir las propias o incluso de usar otros lenguajes, lo primero a resolver era cuál camino seguir.</p>
 <ol>
-<li>un preámbulo único, regido exclusivamente por condicionales que controlen todo el flujo, con el nivel de riesgo que esto conlleva, ya que cualquier cambio &ndash;por mas simple que fuera&ndash; puede alterar toda la cadena del flujo a seguir.</li>
-<li>varios preámbulos, ajustados a cada tipo de salida, trabajando con un solo condicional para todas las salidas.</li>
+<li><strong>un preámbulo único</strong>, regido exclusivamente por condicionales que controlen todo el flujo, con el nivel de riesgo que esto conlleva, ya que cualquier cambio &ndash;por mas simple que fuera&ndash; puede alterar toda la cadena del flujo a seguir.</li>
+<li><strong>varios preámbulos</strong>, ajustados a cada tipo de salida, trabajando con un solo condicional para todas las salidas.</li>
 </ol>
 <p>El camino que tome es el 2. No es el camino esperado por muchos programadores con los que hablé, pero no soy programador. La figura a continuación ilustra la idea.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/archivo.png" alt=""></p>
@@ -358,7 +358,7 @@
 <p>A los usuarios de MacOS, no sé que decirles, no tengo acceso a esos equipos desde hace muchos años. Si alguien quiere hacer pruebas quedo a disposición para ayudarlo en lo que pueda.</p>
 <h2 id="comenzando-con-gbtexpublisher">Comenzando con gbTeXpublisher</h2>
 <p>Cuando se está editando un solo libro, se pueden tener ciertas libertades, pero cuando se tienen 7 o 9 libros de manera constante en el flujo de producción, la cosa cambia. El orden y el principio de <a href="https://es.wikipedia.org/wiki/No_te_repitas">DRY</a> se vuelve más que importante si queremos tener una sana optimización de los recursos. En gbTeXpublisher se van a encontar funciones predefinidas (y rígidas) que aseguran comportamientos estables y predecibles.</p>
-<p>Luego de instalar gbTeXpublisher encontraremos una carpeta oculta dentro del <strong><code>home.user</code></strong> (léase carpeta personal), donde se alojara la base de datos, el proceso de instalación copia una base de datos con un número determinado de entradas que sirven como ejemplo, esto vale para las notas y las referencias bibliográficas. En la figura a continuación lo resalto con una línea roja.</p>
+<p>Luego de instalar gbTeXpublisher encontraremos una carpeta oculta dentro del <strong><code>home.user</code></strong> (léase carpeta personal), donde se alojara la base de datos, el proceso de instalación copia una base de datos con un número determinado de entradas que sirven como ejemplo, esto vale para las notas, las siglas y las referencias bibliográficas. En la figura a continuación lo resalto con una línea roja.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla11.png" alt=""></p>
 <p>El programa no trabaja <strong>sobre</strong> el archivo de LaTeX, sino que lo hace con una <strong>copia</strong>. Esto da plena y absoluta libertad de trabajar el texto con el editor que mejor le plazca al usuario. De ahí que su interfaz de incio pueda sorprender &ndash;ya que no dice nada&ndash; esto también se observa al notar que algunos menúes están deshabilitados y se activan una vez que se haya elegido un archivo con el cual trabajar. La imagen a continuación lo ilustra.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla01.png" alt=""></p>
@@ -372,11 +372,15 @@
 </ol>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla06.png" alt=""></p>
 <p>El segundo es el formulario de apuntes, su idea y desarrollo surgieron de manera natural. Antes de gbTeXpublisher, a medida que iba trabajando tomaba apuntes sobre el proceso, ya sea consultas que debía hacer (al autor, al corrector o a mi cliente), buscar en otros archivos ese pedazo de código que alguna vez use o simplemente apuntes de ayuda memoria temporal, todo eso es lo que se vuelca en este formulario, la información queda almacenada en la base de datos para ser recuperada cada vez que sea necesario.</p>
+<p>Las notas pueden ser exportadas a formato <strong><code>.docx</code></strong> para ser enviadas por correo o impresas.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla08.png" alt=""></p>
 <h2 id="configurando-las-salidas">Configurando las salidas</h2>
 <p>Existen 4 archivos de configuración, el programa instala una configuración base que sirve para una gran  mayoría de casos, en estos archivos es en donde se hacen cambios cuando se pretende alterar la salida más allá del diseño visual.</p>
+<p>El archivo <strong><code>build.lua</code></strong> trae por <em>default</em> una configuración base pensada para no dejar ninguna posibilidad fuera de su alcance, si alguna de sus instrucciones no fuesen necesarias (por las características del archivo con el que se está trabajando), no es problemático dejarlas, ya que el error que nos dará el compilador es del tipo <em>suave</em>, y por supuesto, si el archivo con el que trabajamos lo requiere, este archivo de configuración puede modificarse sin problemas.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/build.png" alt=""></p>
+<p>Para los archivos de configuración para ePub, HTML y JATS, la suerte es la misma, quiero decir, contemplan una salida <em>generosa</em> en términos de posibilidades, pero pueden ser modificados según cada necesidad.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/configepub.png" alt=""></p>
+<p>No hay un archivo de configuración para PDF, esta es la salida natural del compilador, por consiguiente, todas sus características están dadas en el propio código del archivo.</p>
 <h2 id="ahora-bien-comenzamos-con-el-trabajo">Ahora bien, comenzamos con el trabajo</h2>
 <p>Luego de seleccionar un archivo, si miramos la carpeta contenedora del proyecto, veremos que se han creado nuevos directorios:</p>
 <ol>
@@ -396,9 +400,14 @@
 <p>Todas las entradas están basadas en <a href="https://www.ctan.org/pkg/biblatex">BibLaTeX</a> que es una reimplementación completa de las funciones bibliográficas proporcionadas por LaTeX. El formato está completamente controlado por macros de LaTeX. BibLaTeX utiliza su propio analizador de datos llamado <a href="https://biblatex-biber.sourceforge.net/">biber</a> (escrito en <a href="https://es.wikipedia.org/wiki/Perl">Perl</a>) para procesar los datos bibliográficos.</p>
 <p>Por <em>default</em> gbTeXpublisher para la clase <em>book</em> entrega un archivo configurado para la salida a PDF con el diseño autor-año desarrollado por Ivan Valbusa (<a href="https://ctan.org/pkg/biblatex-philosophy">biblatex-philosophy</a>) y el estándar autor-año de bibLaTeX para el resto de las salidas, para la clase <em>article</em> entrega un archivo con el diseño autor-año de <a href="https://www.ctan.org/pkg/biblatex-apa">biblatex-APA</a> y, por supuesto, todas estas salidas son modificables.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla07.png" alt=""></p>
-<h2 id="metadatos">Metadatos</h2>
+<h2 id="trabajando-con-lo-metadatos">Trabajando con lo metadatos</h2>
 <p>La información contenida en el formulario de metadatos es utilizada en las diferentes salidas, a la derecha los íconos muestran en que salida impacta esa información.</p>
+<p>La carga de datos en este formulario es crucial, si faltan, la compilación no da error, pero se desperdicia la posibilidad de incrustar metadatos en los diferentes formatos de salida, por ejemplo, la salida a PDF tiene soporte para <a href="https://es.wikipedia.org/wiki/XMP">XMP</a>, muchos indexadores toman los metadatos leyendolos del PDF y no de la etiqueta asociada en el repositorio (por ejemplo en OJS).</p>
 <p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/metadatos.png" alt=""></p>
+<p>Las siguientes capturas muestran de donde leen los indexadores los metadatos en los PDF.</p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/xmp1.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/xmp2.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/xmp3.png" alt=""></p>
 <p>Los metadatos específicos de los autores y las colecciones se trabajan desde otras tablas de la base de datos para evitar la redundancia.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/autores.png" alt=""></p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/coleccion.png" alt=""></p>
