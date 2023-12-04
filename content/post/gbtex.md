@@ -372,9 +372,13 @@ El PDF que obtengo lo llevo a un directorio en donde se encuentran todas las pá
 
 ## Estadísticas
 
+Estudiar cómo a sido editado un libro o artículo a través de los resultados estadísticos de su interior es lo que permite este módulo, básicamente el contador rastrilla todo el proyecto y lo informa en diferentes planos.
+
 ![](https://albertomoyano.github.io/blog-personal/images/estadisticas.png)
 
 ## Logfile
+
+En LaTeX existen diferentes tipos de errores, yo los voy a agrupar en 2 categorias: _suaves_ y _duros_, los primeros no afectan la generación de la salida, los segundos directamente abortan el proceso de compilación. Por ello es que LaTeX (como todos los lenguajes de programación) provee un archivo de salida que registra todo el proceso de compilación, ya que en caso de ser necesario se lo puede consultar para empezar a indagar por donde vienen los conflictos.
 
 ![](https://albertomoyano.github.io/blog-personal/images/logfile.png)
 
