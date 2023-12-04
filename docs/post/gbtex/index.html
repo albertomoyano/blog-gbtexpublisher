@@ -53,7 +53,7 @@
   <meta itemprop="name" content="Presentación de gbTeXpublisher">
 <meta itemprop="description" content="Presentación de gbTeXpublisher, marco teórico"><meta itemprop="datePublished" content="2023-12-04T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-12-04T00:00:00+00:00" />
-<meta itemprop="wordCount" content="3707"><meta itemprop="image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images"/>
+<meta itemprop="wordCount" content="4161"><meta itemprop="image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images"/>
 <meta itemprop="keywords" content="LaTeX,gbTeXpublisher," />
 
   
@@ -150,7 +150,7 @@
     <li><a href="#pequeña-radiografía-de-latex">Pequeña radiografía de LaTeX</a></li>
     <li><a href="#entonces">¿Entonces?</a></li>
     <li><a href="#gambas">Gambas</a></li>
-    <li><a href="#algunas-aclaraciones-sobre-linux">Algunas aclaraciones sobre Linux</a></li>
+    <li><a href="#algunas-aclaraciones-sobre-mi-plataforma-de-trabajo">Algunas aclaraciones sobre mi plataforma de trabajo</a></li>
     <li><a href="#descarga-e-instalación-de-gbtexpublisher">Descarga e instalación de gbTeXpublisher</a></li>
     <li><a href="#comenzando-con-gbtexpublisher">Comenzando con gbTeXpublisher</a></li>
     <li><a href="#configurando-las-salidas">Configurando las salidas</a></li>
@@ -236,15 +236,16 @@
 <p><img src="https://albertomoyano.github.io/blog-personal/images/home.png" alt=""></p>
 <h3 id="formateo-automático-ortotipográfico">Formateo automático ortotipográfico</h3>
 <p>Se puede observar que la tabla de la base de datos, no contiene bastardillas, ni puntos, ni versalitas, etc.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@Book{Mazlish1995,
-</span></span><span style="display:flex;"><span>  hyphenation  = {spanish},
-</span></span><span style="display:flex;"><span>  author       = {Mazlish, Bruce},
-</span></span><span style="display:flex;"><span>  date         = {1995},
-</span></span><span style="display:flex;"><span>  keywords     = {listar},
-</span></span><span style="display:flex;"><span>  location     = {Madrid},
-</span></span><span style="display:flex;"><span>  publisher    = {Alianza Editorial},
-</span></span><span style="display:flex;"><span>  title        = {La cuarta discontinuidad},
-</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<pre><code>@Book{Mazlish1995,
+  hyphenation  = {spanish},
+  author       = {Mazlish, Bruce},
+  date         = {1995},
+  keywords     = {listar},
+  location     = {Madrid},
+  publisher    = {Alianza Editorial},
+  title        = {La cuarta discontinuidad},
+}
+</code></pre>
 <p>Y esta es la salida que se obtiene en el PDF.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/mazlish.png" alt=""></p>
 <h3 id="posición-de-los-objetos-en-la-página">Posición de los objetos en la página</h3>
@@ -255,52 +256,77 @@
 <p>LaTeX es un sistema de composición tipográfica, orientado a la creación de documentos escritos con una alta calidad tipográfica. Por sus características y posibilidades, es usado de manera intensiva en la generación de textos científicos. Fue escrito por <a href="https://es.wikipedia.org/wiki/Leslie_Lamport">Leslie Lamport</a> en 1984, con la intención de facilitar el uso del lenguaje de composición tipográfica <a href="https://es.wikipedia.org/wiki/TeX">TeX</a>, creado por <a href="https://es.wikipedia.org/wiki/Donald_Knuth">Donald Knuth</a>. A resumidas cuentas, LaTeX es un conjunto de macros de TeX, y se encuentra bajo <a href="https://es.wikipedia.org/wiki/LaTeX_Project_Public_License">licencia LPPL</a>.</p>
 <p>Los archivos de LaTeX presentan una primera división de dos partes:</p>
 <ol>
-<li>Preámbulo (documentclass)</li>
-<li>Documento (document)</li>
+<li>Preámbulo (<em>documentclass</em>)</li>
+<li>Documento (<em>document</em>)</li>
 </ol>
-<p>Podemos decir que los archivos son la suma del contenido en texto plano, más intrucciones y marcas, también en texto plano.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span><span style="color:#66d9ef">\documentclass</span>{book}<span style="color:#75715e">% acá comienza el preámbulo
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">% carga de paquetes y funciones
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\begin</span>{document}<span style="color:#75715e">% acá comienza en documento
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">% contenido y funciones
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\end</span>{document}</span></span></code></pre></div>
-<p>A su vez, la segunda parte (document), también tiene divisiones internas.</p>
+<p>Podemos decir que los archivos son la suma del contenido en texto plano, más instrucciones y marcas, también en texto plano.</p>
+<pre><code>\documentclass{book}% acá comienza el preámbulo
+
+% carga de paquetes y funciones
+
+\begin{document}% acá comienza en documento
+
+% contenido y funciones
+
+\end{document}% fin del documento
+</code></pre>
+<p>A su vez, la segunda parte (<em>document</em>), también tiene divisiones internas.</p>
 <ol>
-<li>Frontmatter</li>
-<li>Mainmatter</li>
-<li>Appendix</li>
-<li>Backmatter</li>
+<li><em>Frontmatter</em></li>
+<li><em>Mainmatter</em></li>
+<li><em>Appendix</em></li>
+<li><em>Backmatter</em></li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>...
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\begin</span>{document}<span style="color:#75715e">% acá comienza en documento
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\frontmatter</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">% en el mundo editorial este espacio también es conocido como «primeras».
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\mainmatter</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">% cuerpo principal del texto
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\appendix</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">% apéndices
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\backmatter</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">% listado de índices
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\end</span>{document}</span></span></code></pre></div>
+<p>La siguiente es una descripción básica</p>
+<pre><code>...
+
+\begin{document}% acá comienza en documento
+\frontmatter
+
+% en el mundo editorial este espacio también es conocido como «primeras»
+% y se autonumera con romanos en mayúscula para español
+% y en minúscula para inglés (por ejemplo).
+
+\mainmatter
+
+% cuerpo principal del texto dividido en capítulos
+
+\appendix
+
+% apéndices
+
+\backmatter
+
+% listado de índices
+
+\end{document}
+</code></pre>
 <p>Este artículo no es un curso de LaTeX, en la red hay a montones, pero con esta aclaración particular se va a entender como trabaja gbTeXpublisher.</p>
 <h2 id="entonces">¿Entonces?</h2>
-<p>DESARROLLAR</p>
+<p>El preámbulo es la parte en donde se declaran las diferentes macros que darán instrucciones precisas al compilador para la salida que se desea obtener, ahora bien, los paquetes están condicionados a lo siguiente.</p>
+<ol>
+<li>afectan a la salida (por ejemplo <em>geometry</em> que permite manipular la estructura de la página).</li>
+<li>intervienen en el contenido (por ejemlo <em>csquotes</em> que automatiza el manejo de las comillas).</li>
+</ol>
+<p>A su vez, los paquetes que afectan solo a la salida, pueden:</p>
+<ol>
+<li>ser incompatibles entre sí</li>
+<li>tener dependencia de otros paquetes</li>
+</ol>
+<p>El primer caso es el más gravoso, ya que no permite que dos paquetes convivan dentro del preámbulo, no es objetivo de este artículo explicar porque existe esta situación y como se resuelve (cuando se puede, que no es siempre).</p>
+<p>El segundo obliga a tener que estudiar que no exista el punto 1 entre las dependencias.</p>
+<p>Frente a la cantidad abrumadora de paquetes (macros) disponibles en LaTeX, sin contar con la posibilidad de escribir las propias o incluso de usar otros lenguajes, lo primero a resolver era cuál camino seguir.</p>
+<ol>
+<li>un preámbulo único, regido exclusivamente por condicionales que controlen todo el flujo, con el nivel de riesgo que esto conlleva, ya que cualquier cambio &ndash;por mas simple que fuera&ndash; puede alterar toda la cadena del flujo a seguir.</li>
+<li>varios preámbulos, ajustados a cada tipo de salida, trabajando con un solo condicional para todas las salidas.</li>
+</ol>
+<p>El camino que tome es el 2. No es el camino esperado por muchos programadores con los que hablé, pero no soy programador. La figura a continuación ilustra la idea.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/archivo.png" alt=""></p>
+<p>Entonces, como sigue; gbTeXpublisher lo que hace básicamente es concatenar el preámbulo más la configuración más el contenido en un solo archivo y pasárselo al compilador para que haga su trabajo.</p>
+<p>Lo más importante que rescato de este modelo, es que si me encuentro con la necesidad de cambiar el diseño de la salida, poder modificar los diferentes archivos involucrados en cada compilación es fácil y con poco (casi nulo) margen de error, no confundir esto con manejar el lenguaje LaTeX, esto último es excluyente.</p>
 <p>La figura a continuación muestra un resumen de cómo es el flujo de trabajo, es importante resaltar la posibilidad que existe de recuperar cualquier trabajo antiguo, indistintamente del formato que tenga.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/literada.png" alt=""></p>
+<p>El motor SQL lleva la tarea de centralizar toda aquella información que pudiera ser reutilizada, evitando la redundancia de datos. La inyección de los datos se hace de manera automática y los datos se trabajan desde los diferentes formularios que posee gbTeXpublisher.</p>
 <h2 id="gambas">Gambas</h2>
 <p>No soy programador, me identifico plenamente como editor con una fuerte formación en artes gráficas (tuve taller de preprensa e imprenta durante muchos años), así que mis conocimientos son en base a mucha lectura y práctica. Estuve durante mucho tiempo lidiando con <a href="https://es.wikipedia.org/wiki/Python">Python</a>, Objet Pascal <a href="https://es.wikipedia.org/wiki/Lazarus_(entorno_de_desarrollo)">(Lazarus)</a> y algo de <a href="https://es.wikipedia.org/wiki/Ruby">Ruby</a>, y reconozco ventajas en todos estos lenguajes, pero mi reflexión en la búsqueda de una solución informática consideró primordialmente el balance entre: calidad, desempeño, facilidad de uso y productividad, el resultado me llevo a encarar gbTeXpublisher con <a href="https://gambas.sourceforge.net/en/main.html">Gambas</a>.</p>
 <blockquote>
@@ -310,12 +336,12 @@
 <p>Y si bien los motivos en mi elección son varios, también entiendo que puedan ser cuestionados, dejo aquí cuáles fueron los más importantes para mi elección:</p>
 <ol>
 <li>No programo para terceros, lo hago para mí uso personal.</li>
-<li>Utilizo Linux (desde hace 30 años, desde 1993) en el 90% de mis tareas, y me siento muy cómodo con el entorno de trabajo.</li>
+<li>Utilizo GNU Linux (desde hace 30 años, desde 1993) en el 90% de mis tareas, y me siento muy cómodo con el entorno de trabajo.</li>
 <li>No soy fanático del 100% comandos, ni del 100% mouse, creo en un equilibrio que saque lo mejor de cada modelo, según la necesidad.</li>
 <li>Gambas es un <a href="https://es.wikipedia.org/wiki/Desarrollo_r%C3%A1pido_de_aplicaciones">RAD</a>.</li>
 <li>Es muy rápido y potente <a href="https://gambas.sourceforge.net/en/main.html#">(Benchmarks)</a>.</li>
 </ol>
-<h2 id="algunas-aclaraciones-sobre-linux">Algunas aclaraciones sobre Linux</h2>
+<h2 id="algunas-aclaraciones-sobre-mi-plataforma-de-trabajo">Algunas aclaraciones sobre mi plataforma de trabajo</h2>
 <p>Por motivos que superan las expectativas de este artículo y sabiendo que todas las distribuciones de GNU Linux tienen diferencias en las librerías gráficas, voy a mostrar cual es el equipo con el que desarrollo y trabajo a diario utilizando gbTeXpublisher, cualquier persona que este intentando utilizar la aplicación y tenga diferencias en la distribución de los elementos de la interfaz gráfica, me puede contactar indicando que distribución utiliza, con cuál librería gráfica y entorno de escritorio y veré de hacer pruebas de control.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/manjaro.png" alt=""></p>
 <h2 id="descarga-e-instalación-de-gbtexpublisher">Descarga e instalación de gbTeXpublisher</h2>
@@ -326,6 +352,7 @@
 <p>Este es el <em>link</em> de descarga para la última versión disponible <a href="https://www.dropbox.com/scl/fi/atk3ply6qro7ndo17zed3/gbTeXpublisher-0.0.431.tar.gz?rlkey=u26d712eg85tpmpptbr5yim31&amp;dl=1">(gbTeXpublisher v431)</a>.</p>
 <p>Para los que quieran hacer una bifurcación del proyecto, este es la ruta de <a href="https://gitlab.com/alberto.alejandro.moyano/gbtexpublisher">gbTeXpublisher</a> para compilar desde las fuentes.</p>
 <p>Los usuarios de windows pueden utilizar el software con <a href="https://learn.microsoft.com/es-es/windows/wsl/install">WSL</a>.</p>
+<p>A los usuarios de MacOS, no sé que decirles, no tengo acceso a esos equipos desde hace muchos años. Si alguien quiere hacer pruebas quedo a disposición para ayudarlo en lo que pueda.</p>
 <h2 id="comenzando-con-gbtexpublisher">Comenzando con gbTeXpublisher</h2>
 <p>Cuando se está editando un solo libro, se pueden tener ciertas libertades, pero cuando se tienen 7 o 9 libros de manera constante en el flujo de producción, la cosa cambia. El orden y el principio de <a href="https://es.wikipedia.org/wiki/No_te_repitas">DRY</a> se vuelve más que importante si queremos tener una sana optimización de los recursos. En gbTeXpublisher se van a encontar funciones predefinidas (y rígidas) que aseguran comportamientos estables y predecibles.</p>
 <p>Luego de instalar gbTeXpublisher encontraremos una carpeta oculta dentro del <strong><code>home.user</code></strong> (léase carpeta personal), donde se alojara la base de datos, el proceso de instalación copia una base de datos con un número determinado de entradas que sirven como ejemplo, esto vale para las notas y las referencias bibliográficas. En la figura a continuación lo resalto con una línea roja.</p>
@@ -335,9 +362,13 @@
 <p>Una vez que hayamos seleccionado un archivo para trabajar, la pantalla puede parecerse a esta.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla02.png" alt=""></p>
 <p>Volviendo al inicio, en un párrafo anterior dije que algunos menúes están deshabilitados hasta que se elija un archivo <strong><code>.tex</code></strong> para trabajar, pero otros sí están habilitados.</p>
-<p>El primero que encontramos es el formulario para la conversión de archivos word (<strong><code>.docx</code></strong>) a formato <strong><code>.tex</code></strong>, el proceso se realiza utilizando <a href="https://pandoc.org/">pandoc</a>, junto con la conversión se realizan otras dos tareas más: 1) se crean dos carpetas &ndash;originales y media&ndash; dentro del directorio de trabajo y 2) se mueve el archivo word a la carpeta originales.</p>
+<p>El primero que encontramos es el formulario para la conversión de archivos word (<strong><code>.docx</code></strong>) a formato <strong><code>.tex</code></strong>, el proceso se realiza utilizando <a href="https://pandoc.org/">pandoc</a>, junto con la conversión se realizan otras dos tareas más:</p>
+<ol>
+<li>se crean dos carpetas &ndash;originales y media&ndash; dentro del directorio de trabajo;</li>
+<li>se mueve el archivo word a la carpeta originales.</li>
+</ol>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla06.png" alt=""></p>
-<p>El segundo es el formulario de apuntes, su idea y desarrollo surgieron de manera natural. Antes de gbTeXpublisher, a medida que iba trabajando tomaba apuntes sobre el proceso, ya sea consultas que debía hacer, buscar en otros archivos ese pedazo de código que alguna vez use o simplemente apuntes de ayuda memoria temporal, todo eso es lo que se vuelca en este formulario, la información queda almacenada en la base de datos para ser recuperada cada vez que sea necesario.</p>
+<p>El segundo es el formulario de apuntes, su idea y desarrollo surgieron de manera natural. Antes de gbTeXpublisher, a medida que iba trabajando tomaba apuntes sobre el proceso, ya sea consultas que debía hacer (al autor, al corrector o a mi cliente), buscar en otros archivos ese pedazo de código que alguna vez use o simplemente apuntes de ayuda memoria temporal, todo eso es lo que se vuelca en este formulario, la información queda almacenada en la base de datos para ser recuperada cada vez que sea necesario.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla08.png" alt=""></p>
 <h2 id="configurando-las-salidas">Configurando las salidas</h2>
 <p>Existen 4 archivos de configuración, el programa instala una configuración base que sirve para una gran  mayoría de casos, en estos archivos es en donde se hacen cambios cuando se pretende alterar la salida más allá del diseño visual.</p>
@@ -358,7 +389,7 @@
 <p>Dentro del directorio <strong>files</strong> se agregaran los archivos auxiliares y complementarios para la compilación, estos son los diferentes preámbulos y archivos de configuración, si cualquiera de estos archivos fuera modificado (no importa si desde gbTeXpublisher o desde un editor externo), no será reemplazado al volver (en un momento diferente) a cargar la aplicación, solo será agregado nuevamente aquél archivo que por error hubiera sido eliminado.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/sample2.png" alt=""></p>
 <h2 id="referencias-bibliográficas">Referencias bibliográficas</h2>
-<p>A continuación vemos el formulario para manejar las referencias bibliográficas, el programa trabaja con la base de datos <a href="https://es.wikipedia.org/wiki/SQLite">SQLite</a>, que para trabajar de manera individual, es lo mejor que conozco, pero si el trabajo se quisiera realizar en modo colaborativo (en red, abierta o cerrada), debería migrar a otro motor (analizo <a href="https://es.wikipedia.org/wiki/MariaDB">MaríaDB</a> como opción).</p>
+<p>A continuación vemos el formulario para manejar las referencias bibliográficas, el programa trabaja con la base de datos <a href="https://es.wikipedia.org/wiki/SQLite">SQLite</a>, que para trabajar de manera individual, es lo mejor que conozco, pero si el trabajo se quisiera realizar en modo colaborativo (en red, abierta o cerrada), se debería migrar a otro motor.</p>
 <p>Todas las entradas están basadas en <a href="https://www.ctan.org/pkg/biblatex">BibLaTeX</a> que es una reimplementación completa de las funciones bibliográficas proporcionadas por LaTeX. El formato está completamente controlado por macros de LaTeX. BibLaTeX utiliza su propio analizador de datos llamado <a href="https://biblatex-biber.sourceforge.net/">biber</a> (escrito en <a href="https://es.wikipedia.org/wiki/Perl">Perl</a>) para procesar los datos bibliográficos.</p>
 <p>Por <em>default</em> gbTeXpublisher para la clase <em>book</em> entrega un archivo configurado para la salida a PDF con el diseño autor-año desarrollado por Ivan Valbusa (<a href="https://ctan.org/pkg/biblatex-philosophy">biblatex-philosophy</a>) y el estándar autor-año de bibLaTeX para el resto de las salidas, para la clase <em>article</em> entrega un archivo con el diseño autor-año de <a href="https://www.ctan.org/pkg/biblatex-apa">biblatex-APA</a> y, por supuesto, todas estas salidas son modificables.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla07.png" alt=""></p>

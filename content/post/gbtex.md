@@ -108,17 +108,15 @@ Control de inconsistencia de principio y fin de linea.
 
 Se puede observar que la tabla de la base de datos, no contiene bastardillas, ni puntos, ni versalitas, etc.
 
-{{< highlight tex >}}
-@Book{Mazlish1995,
-  hyphenation  = {spanish},
-  author       = {Mazlish, Bruce},
-  date         = {1995},
-  keywords     = {listar},
-  location     = {Madrid},
-  publisher    = {Alianza Editorial},
-  title        = {La cuarta discontinuidad},
-}
-{{< /highlight >}}
+    @Book{Mazlish1995,
+      hyphenation  = {spanish},
+      author       = {Mazlish, Bruce},
+      date         = {1995},
+      keywords     = {listar},
+      location     = {Madrid},
+      publisher    = {Alianza Editorial},
+      title        = {La cuarta discontinuidad},
+    }
 
 Y esta es la salida que se obtiene en el PDF.
 
@@ -138,65 +136,89 @@ LaTeX es un sistema de composición tipográfica, orientado a la creación de do
 
 Los archivos de LaTeX presentan una primera división de dos partes:
 
-1. Preámbulo (documentclass)
-2. Documento (document)
+1. Preámbulo (_documentclass_)
+2. Documento (_document_)
 
-Podemos decir que los archivos son la suma del contenido en texto plano, más intrucciones y marcas, también en texto plano.
+Podemos decir que los archivos son la suma del contenido en texto plano, más instrucciones y marcas, también en texto plano.
 
-{{< highlight tex >}}
-\documentclass{book}% acá comienza el preámbulo
+    \documentclass{book}% acá comienza el preámbulo
 
-% carga de paquetes y funciones
+    % carga de paquetes y funciones
 
-\begin{document}% acá comienza en documento
+    \begin{document}% acá comienza en documento
 
-% contenido y funciones
+    % contenido y funciones
 
-\end{document}
-{{< /highlight >}}
+    \end{document}% fin del documento
 
-A su vez, la segunda parte (document), también tiene divisiones internas.
+A su vez, la segunda parte (_document_), también tiene divisiones internas.
 
-1. Frontmatter
-2. Mainmatter
-3. Appendix
-4. Backmatter
+1. _Frontmatter_
+2. _Mainmatter_
+3. _Appendix_
+4. _Backmatter_
 
-{{< highlight tex >}}
+La siguiente es una descripción básica
 
-...
+    ...
 
-\begin{document}% acá comienza en documento
-\frontmatter
+    \begin{document}% acá comienza en documento
+    \frontmatter
 
-% en el mundo editorial este espacio también es conocido como «primeras».
+    % en el mundo editorial este espacio también es conocido como «primeras»
+    % y se autonumera con romanos en mayúscula para español
+    % y en minúscula para inglés (por ejemplo).
 
-\mainmatter
+    \mainmatter
 
-% cuerpo principal del texto
+    % cuerpo principal del texto dividido en capítulos
 
-\appendix
+    \appendix
 
-% apéndices
+    % apéndices
 
-\backmatter
+    \backmatter
 
-% listado de índices
+    % listado de índices
 
-\end{document}
-{{< /highlight >}}
+    \end{document}
 
 Este artículo no es un curso de LaTeX, en la red hay a montones, pero con esta aclaración particular se va a entender como trabaja gbTeXpublisher.
 
 ## ¿Entonces?
 
-DESARROLLAR
+El preámbulo es la parte en donde se declaran las diferentes macros que darán instrucciones precisas al compilador para la salida que se desea obtener, ahora bien, los paquetes están condicionados a lo siguiente.
+
+1. afectan a la salida (por ejemplo _geometry_ que permite manipular la estructura de la página).
+2. intervienen en el contenido (por ejemlo _csquotes_ que automatiza el manejo de las comillas).
+
+A su vez, los paquetes que afectan solo a la salida, pueden:
+
+1. ser incompatibles entre sí
+2. tener dependencia de otros paquetes
+
+El primer caso es el más gravoso, ya que no permite que dos paquetes convivan dentro del preámbulo, no es objetivo de este artículo explicar porque existe esta situación y como se resuelve (cuando se puede, que no es siempre).
+
+El segundo obliga a tener que estudiar que no exista el punto 1 entre las dependencias.
+
+Frente a la cantidad abrumadora de paquetes (macros) disponibles en LaTeX, sin contar con la posibilidad de escribir las propias o incluso de usar otros lenguajes, lo primero a resolver era cuál camino seguir.
+
+1. un preámbulo único, regido exclusivamente por condicionales que controlen todo el flujo, con el nivel de riesgo que esto conlleva, ya que cualquier cambio --por mas simple que fuera-- puede alterar toda la cadena del flujo a seguir.
+2. varios preámbulos, ajustados a cada tipo de salida, trabajando con un solo condicional para todas las salidas.
+
+El camino que tome es el 2. No es el camino esperado por muchos programadores con los que hablé, pero no soy programador. La figura a continuación ilustra la idea.
 
 ![](https://albertomoyano.github.io/blog-personal/images/archivo.png)
+
+Entonces, como sigue; gbTeXpublisher lo que hace básicamente es concatenar el preámbulo más la configuración más el contenido en un solo archivo y pasárselo al compilador para que haga su trabajo.
+
+Lo más importante que rescato de este modelo, es que si me encuentro con la necesidad de cambiar el diseño de la salida, poder modificar los diferentes archivos involucrados en cada compilación es fácil y con poco (casi nulo) margen de error, no confundir esto con manejar el lenguaje LaTeX, esto último es excluyente.
 
 La figura a continuación muestra un resumen de cómo es el flujo de trabajo, es importante resaltar la posibilidad que existe de recuperar cualquier trabajo antiguo, indistintamente del formato que tenga.
 
 ![](https://albertomoyano.github.io/blog-personal/images/literada.png)
+
+El motor SQL lleva la tarea de centralizar toda aquella información que pudiera ser reutilizada, evitando la redundancia de datos. La inyección de los datos se hace de manera automática y los datos se trabajan desde los diferentes formularios que posee gbTeXpublisher.
 
 ## Gambas
 
@@ -209,12 +231,12 @@ No soy programador, me identifico plenamente como editor con una fuerte formaci�
 Y si bien los motivos en mi elección son varios, también entiendo que puedan ser cuestionados, dejo aquí cuáles fueron los más importantes para mi elección:
 
 1. No programo para terceros, lo hago para mí uso personal.
-2. Utilizo Linux (desde hace 30 años, desde 1993) en el 90% de mis tareas, y me siento muy cómodo con el entorno de trabajo.
+2. Utilizo GNU Linux (desde hace 30 años, desde 1993) en el 90% de mis tareas, y me siento muy cómodo con el entorno de trabajo.
 3. No soy fanático del 100% comandos, ni del 100% mouse, creo en un equilibrio que saque lo mejor de cada modelo, según la necesidad.
 4. Gambas es un [RAD](https://es.wikipedia.org/wiki/Desarrollo_r%C3%A1pido_de_aplicaciones).
 5. Es muy rápido y potente [(Benchmarks)](https://gambas.sourceforge.net/en/main.html#).
 
-## Algunas aclaraciones sobre Linux
+## Algunas aclaraciones sobre mi plataforma de trabajo
 
 Por motivos que superan las expectativas de este artículo y sabiendo que todas las distribuciones de GNU Linux tienen diferencias en las librerías gráficas, voy a mostrar cual es el equipo con el que desarrollo y trabajo a diario utilizando gbTeXpublisher, cualquier persona que este intentando utilizar la aplicación y tenga diferencias en la distribución de los elementos de la interfaz gráfica, me puede contactar indicando que distribución utiliza, con cuál librería gráfica y entorno de escritorio y veré de hacer pruebas de control.
 
@@ -236,6 +258,8 @@ Para los que quieran hacer una bifurcación del proyecto, este es la ruta de [gb
 
 Los usuarios de windows pueden utilizar el software con [WSL](https://learn.microsoft.com/es-es/windows/wsl/install).
 
+A los usuarios de MacOS, no sé que decirles, no tengo acceso a esos equipos desde hace muchos años. Si alguien quiere hacer pruebas quedo a disposición para ayudarlo en lo que pueda.
+
 ## Comenzando con gbTeXpublisher
 
 Cuando se está editando un solo libro, se pueden tener ciertas libertades, pero cuando se tienen 7 o 9 libros de manera constante en el flujo de producción, la cosa cambia. El orden y el principio de [DRY](https://es.wikipedia.org/wiki/No_te_repitas) se vuelve más que importante si queremos tener una sana optimización de los recursos. En gbTeXpublisher se van a encontar funciones predefinidas (y rígidas) que aseguran comportamientos estables y predecibles.
@@ -254,11 +278,14 @@ Una vez que hayamos seleccionado un archivo para trabajar, la pantalla puede par
 
 Volviendo al inicio, en un párrafo anterior dije que algunos menúes están deshabilitados hasta que se elija un archivo **`.tex`** para trabajar, pero otros sí están habilitados.
 
-El primero que encontramos es el formulario para la conversión de archivos word (**`.docx`**) a formato **`.tex`**, el proceso se realiza utilizando [pandoc](https://pandoc.org/), junto con la conversión se realizan otras dos tareas más: 1) se crean dos carpetas --originales y media-- dentro del directorio de trabajo y 2) se mueve el archivo word a la carpeta originales.
+El primero que encontramos es el formulario para la conversión de archivos word (**`.docx`**) a formato **`.tex`**, el proceso se realiza utilizando [pandoc](https://pandoc.org/), junto con la conversión se realizan otras dos tareas más:
+
+1. se crean dos carpetas --originales y media-- dentro del directorio de trabajo;
+2. se mueve el archivo word a la carpeta originales.
 
 ![](https://albertomoyano.github.io/blog-personal/images/pantalla06.png)
 
-El segundo es el formulario de apuntes, su idea y desarrollo surgieron de manera natural. Antes de gbTeXpublisher, a medida que iba trabajando tomaba apuntes sobre el proceso, ya sea consultas que debía hacer, buscar en otros archivos ese pedazo de código que alguna vez use o simplemente apuntes de ayuda memoria temporal, todo eso es lo que se vuelca en este formulario, la información queda almacenada en la base de datos para ser recuperada cada vez que sea necesario.
+El segundo es el formulario de apuntes, su idea y desarrollo surgieron de manera natural. Antes de gbTeXpublisher, a medida que iba trabajando tomaba apuntes sobre el proceso, ya sea consultas que debía hacer (al autor, al corrector o a mi cliente), buscar en otros archivos ese pedazo de código que alguna vez use o simplemente apuntes de ayuda memoria temporal, todo eso es lo que se vuelca en este formulario, la información queda almacenada en la base de datos para ser recuperada cada vez que sea necesario.
 
 ![](https://albertomoyano.github.io/blog-personal/images/pantalla08.png)
 
@@ -291,7 +318,7 @@ Dentro del directorio **files** se agregaran los archivos auxiliares y complemen
 
 ## Referencias bibliográficas
 
-A continuación vemos el formulario para manejar las referencias bibliográficas, el programa trabaja con la base de datos [SQLite](https://es.wikipedia.org/wiki/SQLite), que para trabajar de manera individual, es lo mejor que conozco, pero si el trabajo se quisiera realizar en modo colaborativo (en red, abierta o cerrada), debería migrar a otro motor (analizo [MaríaDB](https://es.wikipedia.org/wiki/MariaDB) como opción).
+A continuación vemos el formulario para manejar las referencias bibliográficas, el programa trabaja con la base de datos [SQLite](https://es.wikipedia.org/wiki/SQLite), que para trabajar de manera individual, es lo mejor que conozco, pero si el trabajo se quisiera realizar en modo colaborativo (en red, abierta o cerrada), se debería migrar a otro motor.
 
 Todas las entradas están basadas en [BibLaTeX](https://www.ctan.org/pkg/biblatex) que es una reimplementación completa de las funciones bibliográficas proporcionadas por LaTeX. El formato está completamente controlado por macros de LaTeX. BibLaTeX utiliza su propio analizador de datos llamado [biber](https://biblatex-biber.sourceforge.net/) (escrito en [Perl](https://es.wikipedia.org/wiki/Perl)) para procesar los datos bibliográficos.
 
