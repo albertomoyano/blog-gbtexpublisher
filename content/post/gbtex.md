@@ -134,6 +134,8 @@ Estos ejemplos son solo la punta del iceberg, puede sonar exagerado, pero se ent
 
 LaTeX es un sistema de composición tipográfica, orientado a la creación de documentos escritos con un **alto estándar de calidad tipográfica**. Por sus características y posibilidades, es usado de manera intensiva en la generación de textos científicos. Fue escrito por [Leslie Lamport](https://es.wikipedia.org/wiki/Leslie_Lamport) en 1984, con la intención de facilitar el uso del lenguaje de composición tipográfica [TeX](https://es.wikipedia.org/wiki/TeX), creado por [Donald Knuth](https://es.wikipedia.org/wiki/Donald_Knuth). A resumidas cuentas, LaTeX es un conjunto de macros de TeX, y se encuentra bajo [licencia LPPL](https://es.wikipedia.org/wiki/LaTeX_Project_Public_License).
 
+El patrón de escritura que maneja LaTeX (no es el único) es separar la estructura del contenido, aún teniendo todo dentro de un mismo archivo de texto plano.
+
 Los archivos de LaTeX presentan una primera división de dos partes:
 
 1. Preámbulo (_documentclass_)
@@ -192,6 +194,8 @@ El preámbulo es la parte en donde se declaran las diferentes macros que darán 
 1. **trabajan sobre la salida** (por ejemplo _geometry_ que permite manipular el diseño y la estructura de la página).
 2. **intervienen en el contenido** (por ejemplo _csquotes_ que automatiza el manejo de las comillas).
 
+El punto 1 es crucial entenderlo, ya que es donde todos los sistemas fallan, **las necesidades que tiene una salida (no importa cual) no son necesariamente las mismas que tiene otro tipo de salida (no importa cual)**. Aquí es donde mejor se comprende porqué es necesario **evitar la herencia de características**.
+
 A su vez, los paquetes que trabajan sobre la salida, pueden:
 
 1. ser incompatibles entre sí;
@@ -201,7 +205,7 @@ El primer caso es el más gravoso, ya que no permite que dos paquetes convivan d
 
 El segundo obliga a tener que estudiar que no exista el punto 1 entre las dependencias.
 
-Frente a la cantidad abrumadora de paquetes (macros) disponibles en LaTeX, sin contar con la posibilidad de escribir las propias o incluso de usar otros lenguajes, lo primero a resolver era cuál camino seguir.
+Frente a la cantidad abrumadora de paquetes (macros) disponibles en LaTeX, sin contar que está la posibilidad de escribir las propias o incluso de interacturar otros lenguajes (por ejemplo [Tikz](https://es.wikipedia.org/wiki/PGF/TikZ) o [Lua](https://es.wikipedia.org/wiki/Lua)), lo primero a resolver era cuál camino seguir.
 
 1. **un preámbulo único**, regido exclusivamente por condicionales que controlen todo el flujo, con el nivel de riesgo que esto conlleva, ya que cualquier cambio --por mas simple que fuera-- puede alterar toda la cadena del flujo a seguir.
 2. **varios preámbulos**, ajustados a cada tipo de salida, trabajando con un solo condicional para todas las salidas.
@@ -250,9 +254,11 @@ También es necesario tener una cuenta en [gitlab](https://gitlab.com/), la vers
 
 Si bien en gambas se puede hacer el empaquetado para las principales distribuciones de GNU Linux, para evitar posibles conflictos, lo que está disponible es un empaquetado **autotools**.
 
-El video del siguiente enlace explica el procedimiento de uso [(ver video)](https://www.dropbox.com/scl/fi/atk3ply6qro7ndo17zed3/gbTeXpublisher-0.0.431.tar.gz?rlkey=u26d712eg85tpmpptbr5yim31&dl=1).
+Este es el _link_ de descarga para la última versión disponible [(gbTeXpublisher v463)](https://www.dropbox.com/scl/fi/qbpyz87xowtt4hu46aht4/gbTeXpublisher-0.0.463.tar.gz?rlkey=0chveagm6cjrvfdng37gof172&dl=1).
 
-Este es el _link_ de descarga para la última versión disponible [(gbTeXpublisher v431)](https://www.dropbox.com/scl/fi/atk3ply6qro7ndo17zed3/gbTeXpublisher-0.0.431.tar.gz?rlkey=u26d712eg85tpmpptbr5yim31&dl=1).
+En el siguiente video muestro el proceso de instalación.
+
+{{< youtube U4Lj_12Yb3A >}}
 
 Para los que quieran hacer una bifurcación del proyecto, este es la ruta de [gbTeXpublisher](https://gitlab.com/alberto.alejandro.moyano/gbtexpublisher) para compilar desde las fuentes.
 

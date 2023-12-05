@@ -53,7 +53,7 @@
   <meta itemprop="name" content="Presentación de gbTeXpublisher">
 <meta itemprop="description" content="Presentación de gbTeXpublisher, marco teórico"><meta itemprop="datePublished" content="2023-12-04T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-12-04T00:00:00+00:00" />
-<meta itemprop="wordCount" content="4823"><meta itemprop="image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images"/>
+<meta itemprop="wordCount" content="4905"><meta itemprop="image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images"/>
 <meta itemprop="keywords" content="LaTeX,gbTeXpublisher," />
 
   
@@ -254,6 +254,7 @@
 <p>Estos ejemplos son solo la punta del iceberg, puede sonar exagerado, pero se entiende mejor cuando se asimila a LaTeX como lo que es, <em>un lenguaje de programación para la composición tipográfica</em>, y <strong>no</strong> como un programa de armado.</p>
 <h2 id="pequeña-radiografía-de-latex">Pequeña radiografía de LaTeX</h2>
 <p>LaTeX es un sistema de composición tipográfica, orientado a la creación de documentos escritos con un <strong>alto estándar de calidad tipográfica</strong>. Por sus características y posibilidades, es usado de manera intensiva en la generación de textos científicos. Fue escrito por <a href="https://es.wikipedia.org/wiki/Leslie_Lamport">Leslie Lamport</a> en 1984, con la intención de facilitar el uso del lenguaje de composición tipográfica <a href="https://es.wikipedia.org/wiki/TeX">TeX</a>, creado por <a href="https://es.wikipedia.org/wiki/Donald_Knuth">Donald Knuth</a>. A resumidas cuentas, LaTeX es un conjunto de macros de TeX, y se encuentra bajo <a href="https://es.wikipedia.org/wiki/LaTeX_Project_Public_License">licencia LPPL</a>.</p>
+<p>El patrón de escritura que maneja LaTeX (no es el único) es separar la estructura del contenido, aún teniendo todo dentro de un mismo archivo de texto plano.</p>
 <p>Los archivos de LaTeX presentan una primera división de dos partes:</p>
 <ol>
 <li>Preámbulo (<em>documentclass</em>)</li>
@@ -308,6 +309,7 @@
 <li><strong>trabajan sobre la salida</strong> (por ejemplo <em>geometry</em> que permite manipular el diseño y la estructura de la página).</li>
 <li><strong>intervienen en el contenido</strong> (por ejemplo <em>csquotes</em> que automatiza el manejo de las comillas).</li>
 </ol>
+<p>El punto 1 es crucial entenderlo, ya que es donde todos los sistemas fallan, <strong>las necesidades que tiene una salida (no importa cual) no son necesariamente las mismas que tiene otro tipo de salida (no importa cual)</strong>. Aquí es donde mejor se comprende porqué es necesario <strong>evitar la herencia de características</strong>.</p>
 <p>A su vez, los paquetes que trabajan sobre la salida, pueden:</p>
 <ol>
 <li>ser incompatibles entre sí;</li>
@@ -315,7 +317,7 @@
 </ol>
 <p>El primer caso es el más gravoso, ya que no permite que dos paquetes convivan dentro del preámbulo, no es objetivo de este artículo explicar porque existe esta situación y como se resuelve (cuando se puede, que no es siempre).</p>
 <p>El segundo obliga a tener que estudiar que no exista el punto 1 entre las dependencias.</p>
-<p>Frente a la cantidad abrumadora de paquetes (macros) disponibles en LaTeX, sin contar con la posibilidad de escribir las propias o incluso de usar otros lenguajes, lo primero a resolver era cuál camino seguir.</p>
+<p>Frente a la cantidad abrumadora de paquetes (macros) disponibles en LaTeX, sin contar que está la posibilidad de escribir las propias o incluso de interacturar otros lenguajes (por ejemplo <a href="https://es.wikipedia.org/wiki/PGF/TikZ">Tikz</a> o <a href="https://es.wikipedia.org/wiki/Lua">Lua</a>), lo primero a resolver era cuál camino seguir.</p>
 <ol>
 <li><strong>un preámbulo único</strong>, regido exclusivamente por condicionales que controlen todo el flujo, con el nivel de riesgo que esto conlleva, ya que cualquier cambio &ndash;por mas simple que fuera&ndash; puede alterar toda la cadena del flujo a seguir.</li>
 <li><strong>varios preámbulos</strong>, ajustados a cada tipo de salida, trabajando con un solo condicional para todas las salidas.</li>
@@ -348,8 +350,13 @@
 <p>El programa tiene dependencia de <a href="https://git-scm.com/">Git</a>, Pandoc y <a href="https://sigil-ebook.com/sigil/">Sigil</a>, doy por descartado que LaTeX ya está instalado, sugiero tener instalada la versión <em>full</em> (aproximadamente 4 gigas).</p>
 <p>También es necesario tener una cuenta en <a href="https://gitlab.com/">gitlab</a>, la versión gratuita es más que suficiente.</p>
 <p>Si bien en gambas se puede hacer el empaquetado para las principales distribuciones de GNU Linux, para evitar posibles conflictos, lo que está disponible es un empaquetado <strong>autotools</strong>.</p>
-<p>El video del siguiente enlace explica el procedimiento de uso <a href="https://www.dropbox.com/scl/fi/atk3ply6qro7ndo17zed3/gbTeXpublisher-0.0.431.tar.gz?rlkey=u26d712eg85tpmpptbr5yim31&amp;dl=1">(ver video)</a>.</p>
-<p>Este es el <em>link</em> de descarga para la última versión disponible <a href="https://www.dropbox.com/scl/fi/atk3ply6qro7ndo17zed3/gbTeXpublisher-0.0.431.tar.gz?rlkey=u26d712eg85tpmpptbr5yim31&amp;dl=1">(gbTeXpublisher v431)</a>.</p>
+<p>Este es el <em>link</em> de descarga para la última versión disponible <a href="https://www.dropbox.com/scl/fi/qbpyz87xowtt4hu46aht4/gbTeXpublisher-0.0.463.tar.gz?rlkey=0chveagm6cjrvfdng37gof172&amp;dl=1">(gbTeXpublisher v463)</a>.</p>
+<p>En el siguiente video muestro el proceso de instalación.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/U4Lj_12Yb3A" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
 <p>Para los que quieran hacer una bifurcación del proyecto, este es la ruta de <a href="https://gitlab.com/alberto.alejandro.moyano/gbtexpublisher">gbTeXpublisher</a> para compilar desde las fuentes.</p>
 <p>Los usuarios de windows pueden utilizar el software a través de <a href="https://learn.microsoft.com/es-es/windows/wsl/install">WSL</a>.</p>
 <p>A los usuarios de MacOS, no sé que decirles, no tengo acceso a esos equipos desde hace muchos años. Si alguien quiere hacer pruebas quedo a disposición para ayudarlo en lo que pueda.</p>
