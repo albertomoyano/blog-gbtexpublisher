@@ -41,9 +41,17 @@ Pero es entendible que esto haya pasado, si observamos como era el modelo de pro
 
 ## Edición ramificada
 
-Cambiemos la perspectiva. ¿Si en lugar de concentrarnos en los diferentes formatos finales, realizamos un ejercicio de pensamiento lateral?[^1] La idea es simple: **no nos concentremos en los formatos de salida, sino en los caminos que conducen a ellos**. La conclusión se hace evidente: a múltiples caminos, múltiples formatos.
+La edición ramificada es un modelo de producción que implica una apertura en diversos aspectos, para comprender mejor esto, se puede recurrir al término _single source_ (fuente única), que refiere a la práctica de mantener un único origen para el contenido y este puede ser utilizado para obtener múltiples destinos de salida. Esto puede aplicarse tanto a la creación como a la gestión y al mantenimiento de los contenidos.
 
-Para realizar este modelo de trabajo es necesario utilizar un lenguaje de marcas, la mejor forma conocida de etiquetar las partes de un documento, ya que se pueden incorporar las marcas que contienen las indicaciones adicionales acerca de la estructura y el diseño necesarios para la representación del texto en la salida buscada.
+En el tema que nos involucra --la edición de libros y revistas-- _single source_ implica tener un único origen para el contenido del libro o revista, que luego se puede adaptar para generar diferentes formatos de salida, como impresión, ePub, HTML o XML.
+
+La edición ramificada facilita la consistencia de los datos y la eficiencia en su manipulación, ya que en lugar de mantener y actualizar varios formatos de salida de un mismo contenido, se trabaja en un único archivo de origen (fuente) desde donde se generan diferentes salidas según sea necesario.
+
+En la edición técnica y en los sistemas de documentación, la edición ramificada también se utiliza para describir el enfoque de mantener una única fuente de información para la creación de manuales, catálogos u otros materiales, lo que facilita la actualización y consistencia en diferentes contextos de uso.
+
+Ahora bien, para empezar a involucrarnos en este modelo hagamos el ejercicio de cambiar la perspectiva de producción, realicemos un ejercicio de pensamiento lateral.[^1] La idea es simple: **no nos concentremos en los formatos de salida, sino en los caminos que conducen a ellos**. La conclusión se hace evidente: a múltiples caminos, múltiples formatos.
+
+Para trabajar con este modelo de producción es necesario utilizar un lenguaje de marcas,[^marcas] ¿porqué?, hasta ahora es la mejor forma conocida de producir es separando la estructura del contenido de su modelo de representación visual y esto se consigue etiquetando (aplicando marcas) a las partes de un documento, ya que se pueden incorporar todas las que sean necesarias para las indicaciones acerca de la estructura y el diseño para la representación del texto en la salida buscada.
 
 La figura a continuación nos muestra un modelo (de todos los posibles) de edición ramificada, donde no existe una secuencia de A con B, sino un inicio de (A) con posibles caminos continuadores (B, C, D, etc.), algunos pueden frenar su andar al llegar a su destino final, otros se pueden bifurcarse y convertirse en el inicio de un nuevo camino.
 
@@ -340,6 +348,10 @@ Por _default_ gbTeXpublisher para la clase _book_ entrega un archivo configurado
 
 ![](https://albertomoyano.github.io/blog-personal/images/pantalla07.png)
 
+Para mostrar todas las solapas y explicar la lógica de trabajo me parece que lo mejor es ver un video puntual sobre el módulo.
+
+{{< youtube xjxyEwjG2Es >}}
+
 ## Trabajando con lo metadatos
 
 La información contenida en el formulario de metadatos es utilizada en las diferentes salidas, a la derecha los íconos muestran en que salida impacta esa información.
@@ -439,3 +451,5 @@ Matthew Carter en una exposición en el 2014 lo planteó en términos muy simple
 [^cita]: Puede ser cualquier valor de la estructura: título, referencia, fórmula, etcétera.
 
 [^meme]: Un meme es un tipo de contenido que consta de varios elementos (por ejemplo, una imagen y un texto) relacionados en una misma unidad significante, para representar una idea, concepto, opinión o situación. Generalmente, su tono es humorístico, irónico o satírico y se crean para transmitir un mensaje o una idea de manera rápida y efectiva.
+
+[^marcas]: Un lenguaje de marcas es un sistema de codificación que utiliza etiquetas o marcas para definir y estructurar el contenido de un documento. A diferencia de los lenguajes de programación tradicionales, los lenguajes de marcas no se centran en instrucciones para la ejecución de programas, sino en la presentación y estructuración de datos.
