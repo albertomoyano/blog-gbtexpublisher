@@ -187,15 +187,15 @@ Este artículo no es un curso de LaTeX, en la red hay a montones, pero con esta 
 
 ## ¿Entonces?
 
-El preámbulo es la parte en donde se declaran las diferentes macros que darán instrucciones precisas al compilador para la salida que se desea obtener, ahora bien, los paquetes están condicionados a lo siguiente.
+El preámbulo es la parte en donde se declaran las diferentes macros que darán instrucciones precisas al compilador para la salida que se desea obtener, ahora bien, los paquetes están sujetos a 2 características principales.
 
-1. **afectan a la salida** (por ejemplo _geometry_ que permite manipular la estructura de la página).
+1. **trabajan sobre la salida** (por ejemplo _geometry_ que permite manipular el diseño y la estructura de la página).
 2. **intervienen en el contenido** (por ejemplo _csquotes_ que automatiza el manejo de las comillas).
 
-A su vez, los paquetes que afectan a la salida, pueden:
+A su vez, los paquetes que trabajan sobre la salida, pueden:
 
-1. ser incompatibles entre sí
-2. tener dependencia de otros paquetes
+1. ser incompatibles entre sí;
+2. tener dependencia de otros paquetes.
 
 El primer caso es el más gravoso, ya que no permite que dos paquetes convivan dentro del preámbulo, no es objetivo de este artículo explicar porque existe esta situación y como se resuelve (cuando se puede, que no es siempre).
 
@@ -212,7 +212,7 @@ El camino que tome es el 2. No es el camino esperado por muchos programadores co
 
 Entonces, como sigue; gbTeXpublisher lo que hace básicamente es concatenar el preámbulo más la configuración más el contenido en un solo archivo y pasárselo al compilador para que haga su trabajo.
 
-Lo más importante que rescato de este modelo, es que si me encuentro con la necesidad de cambiar el diseño de la salida, poder modificar los diferentes archivos involucrados en cada compilación es fácil y con poco (casi nulo) margen de error, no confundir esto con manejar el lenguaje LaTeX, esto último es excluyente.
+Lo más importante que rescato de este modelo, es que si me encuentro con la necesidad de cambiar el diseño (visual o estructural) de la salida, poder modificar los diferentes archivos involucrados en cada compilación es fácil y con poco (casi nulo) margen de error, no confundir esto con manejar el lenguaje LaTeX, esto último es excluyente.
 
 La figura a continuación muestra un resumen de cómo es el flujo de trabajo, es importante resaltar la posibilidad que existe de recuperar cualquier trabajo antiguo, indistintamente del formato que tenga.
 
@@ -256,7 +256,7 @@ Este es el _link_ de descarga para la última versión disponible [(gbTeXpublish
 
 Para los que quieran hacer una bifurcación del proyecto, este es la ruta de [gbTeXpublisher](https://gitlab.com/alberto.alejandro.moyano/gbtexpublisher) para compilar desde las fuentes.
 
-Los usuarios de windows pueden utilizar el software con [WSL](https://learn.microsoft.com/es-es/windows/wsl/install).
+Los usuarios de windows pueden utilizar el software a través de [WSL](https://learn.microsoft.com/es-es/windows/wsl/install).
 
 A los usuarios de MacOS, no sé que decirles, no tengo acceso a esos equipos desde hace muchos años. Si alguien quiere hacer pruebas quedo a disposición para ayudarlo en lo que pueda.
 
@@ -394,7 +394,7 @@ Si se desea trabajar solo en modo local, no es necesario tener cuenta en GitLab.
 
 ![](https://albertomoyano.github.io/blog-personal/images/pantalla15.png)
 
-### Controlando los tiempos y las cargas de trabajo
+## Controlando los tiempos y las cargas de trabajo
 
 Aún trabajando solo, a veces es aconsejable saber cuanto tiempo y esfuerzo (léase dinero) le hemos asignado a un trabajo, la capacidad de Kanban en GitLab es ideal para esto.
 
@@ -412,6 +412,9 @@ Llegado a este punto, el trabajo está terminado, el libro impreso, la versión 
 
 ## Veamos todo esto en un video
 
+Es oportuno aclarar que, así como gbTeXpublisher se encuentra en estado _beta_, este artículo también puede ser modificado a medida que pasa el tiempo, y por consiguiente el video quedar desactualizado.
+
+{{< youtube xjxyEwjG2Es >}}
 
 ## Comentario final
 

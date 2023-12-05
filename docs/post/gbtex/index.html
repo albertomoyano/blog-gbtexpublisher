@@ -53,7 +53,7 @@
   <meta itemprop="name" content="Presentación de gbTeXpublisher">
 <meta itemprop="description" content="Presentación de gbTeXpublisher, marco teórico"><meta itemprop="datePublished" content="2023-12-04T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-12-04T00:00:00+00:00" />
-<meta itemprop="wordCount" content="4783"><meta itemprop="image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images"/>
+<meta itemprop="wordCount" content="4823"><meta itemprop="image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images"/>
 <meta itemprop="keywords" content="LaTeX,gbTeXpublisher," />
 
   
@@ -161,11 +161,8 @@
     <li><a href="#catálogo-automatizado">Catálogo automatizado</a></li>
     <li><a href="#estadísticas">Estadísticas</a></li>
     <li><a href="#logfile">Logfile</a></li>
-    <li><a href="#git-local-y-remoto-como-copia-de-seguridad-temporal">Git local y remoto como copia de seguridad temporal</a>
-      <ul>
-        <li><a href="#controlando-los-tiempos-y-las-cargas-de-trabajo">Controlando los tiempos y las cargas de trabajo</a></li>
-      </ul>
-    </li>
+    <li><a href="#git-local-y-remoto-como-copia-de-seguridad-temporal">Git local y remoto como copia de seguridad temporal</a></li>
+    <li><a href="#controlando-los-tiempos-y-las-cargas-de-trabajo">Controlando los tiempos y las cargas de trabajo</a></li>
     <li><a href="#copia-de-seguridad-del-trabajo-terminado">Copia de seguridad del trabajo terminado</a></li>
     <li><a href="#veamos-todo-esto-en-un-video">Veamos todo esto en un video</a></li>
     <li><a href="#comentario-final">Comentario final</a></li>
@@ -306,15 +303,15 @@
 </code></pre>
 <p>Este artículo no es un curso de LaTeX, en la red hay a montones, pero con esta aclaración particular se va a entender como trabaja gbTeXpublisher.</p>
 <h2 id="entonces">¿Entonces?</h2>
-<p>El preámbulo es la parte en donde se declaran las diferentes macros que darán instrucciones precisas al compilador para la salida que se desea obtener, ahora bien, los paquetes están condicionados a lo siguiente.</p>
+<p>El preámbulo es la parte en donde se declaran las diferentes macros que darán instrucciones precisas al compilador para la salida que se desea obtener, ahora bien, los paquetes están sujetos a 2 características principales.</p>
 <ol>
-<li><strong>afectan a la salida</strong> (por ejemplo <em>geometry</em> que permite manipular la estructura de la página).</li>
+<li><strong>trabajan sobre la salida</strong> (por ejemplo <em>geometry</em> que permite manipular el diseño y la estructura de la página).</li>
 <li><strong>intervienen en el contenido</strong> (por ejemplo <em>csquotes</em> que automatiza el manejo de las comillas).</li>
 </ol>
-<p>A su vez, los paquetes que afectan a la salida, pueden:</p>
+<p>A su vez, los paquetes que trabajan sobre la salida, pueden:</p>
 <ol>
-<li>ser incompatibles entre sí</li>
-<li>tener dependencia de otros paquetes</li>
+<li>ser incompatibles entre sí;</li>
+<li>tener dependencia de otros paquetes.</li>
 </ol>
 <p>El primer caso es el más gravoso, ya que no permite que dos paquetes convivan dentro del preámbulo, no es objetivo de este artículo explicar porque existe esta situación y como se resuelve (cuando se puede, que no es siempre).</p>
 <p>El segundo obliga a tener que estudiar que no exista el punto 1 entre las dependencias.</p>
@@ -326,7 +323,7 @@
 <p>El camino que tome es el 2. No es el camino esperado por muchos programadores con los que hablé, pero no soy programador. La figura a continuación ilustra la idea.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/archivo.png" alt=""></p>
 <p>Entonces, como sigue; gbTeXpublisher lo que hace básicamente es concatenar el preámbulo más la configuración más el contenido en un solo archivo y pasárselo al compilador para que haga su trabajo.</p>
-<p>Lo más importante que rescato de este modelo, es que si me encuentro con la necesidad de cambiar el diseño de la salida, poder modificar los diferentes archivos involucrados en cada compilación es fácil y con poco (casi nulo) margen de error, no confundir esto con manejar el lenguaje LaTeX, esto último es excluyente.</p>
+<p>Lo más importante que rescato de este modelo, es que si me encuentro con la necesidad de cambiar el diseño (visual o estructural) de la salida, poder modificar los diferentes archivos involucrados en cada compilación es fácil y con poco (casi nulo) margen de error, no confundir esto con manejar el lenguaje LaTeX, esto último es excluyente.</p>
 <p>La figura a continuación muestra un resumen de cómo es el flujo de trabajo, es importante resaltar la posibilidad que existe de recuperar cualquier trabajo antiguo, indistintamente del formato que tenga.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/literada.png" alt=""></p>
 <p>El motor SQL lleva la tarea de centralizar toda aquella información que pudiera ser reutilizada, evitando la redundancia de datos. La inyección de los datos se hace de manera automática y los datos se trabajan desde los diferentes formularios que posee gbTeXpublisher.</p>
@@ -354,7 +351,7 @@
 <p>El video del siguiente enlace explica el procedimiento de uso <a href="https://www.dropbox.com/scl/fi/atk3ply6qro7ndo17zed3/gbTeXpublisher-0.0.431.tar.gz?rlkey=u26d712eg85tpmpptbr5yim31&amp;dl=1">(ver video)</a>.</p>
 <p>Este es el <em>link</em> de descarga para la última versión disponible <a href="https://www.dropbox.com/scl/fi/atk3ply6qro7ndo17zed3/gbTeXpublisher-0.0.431.tar.gz?rlkey=u26d712eg85tpmpptbr5yim31&amp;dl=1">(gbTeXpublisher v431)</a>.</p>
 <p>Para los que quieran hacer una bifurcación del proyecto, este es la ruta de <a href="https://gitlab.com/alberto.alejandro.moyano/gbtexpublisher">gbTeXpublisher</a> para compilar desde las fuentes.</p>
-<p>Los usuarios de windows pueden utilizar el software con <a href="https://learn.microsoft.com/es-es/windows/wsl/install">WSL</a>.</p>
+<p>Los usuarios de windows pueden utilizar el software a través de <a href="https://learn.microsoft.com/es-es/windows/wsl/install">WSL</a>.</p>
 <p>A los usuarios de MacOS, no sé que decirles, no tengo acceso a esos equipos desde hace muchos años. Si alguien quiere hacer pruebas quedo a disposición para ayudarlo en lo que pueda.</p>
 <h2 id="comenzando-con-gbtexpublisher">Comenzando con gbTeXpublisher</h2>
 <p>Cuando se está editando un solo libro, se pueden tener ciertas libertades, pero cuando se tienen 7 o 9 libros de manera constante en el flujo de producción, la cosa cambia. El orden y el principio de <a href="https://es.wikipedia.org/wiki/No_te_repitas">DRY</a> se vuelve más que importante si queremos tener una sana optimización de los recursos. En gbTeXpublisher se van a encontar funciones predefinidas (y rígidas) que aseguran comportamientos estables y predecibles.</p>
@@ -430,7 +427,7 @@
 <p>Si se desea trabajar solo en modo local, no es necesario tener cuenta en GitLab.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla14.png" alt=""></p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla15.png" alt=""></p>
-<h3 id="controlando-los-tiempos-y-las-cargas-de-trabajo">Controlando los tiempos y las cargas de trabajo</h3>
+<h2 id="controlando-los-tiempos-y-las-cargas-de-trabajo">Controlando los tiempos y las cargas de trabajo</h2>
 <p>Aún trabajando solo, a veces es aconsejable saber cuanto tiempo y esfuerzo (léase dinero) le hemos asignado a un trabajo, la capacidad de Kanban en GitLab es ideal para esto.</p>
 <blockquote>
 <p>Kanban, cuyo significado es letrero o tarjeta en japonés,​ es un sistema de información que controla de modo armónico la fabricación de los productos necesarios en la cantidad y tiempo necesarios en cada uno de los procesos que tienen lugar tanto en el interior de la fábrica, como entre distintas empresas <a href="https://es.wikipedia.org/wiki/Kanban">(Wikipedia)</a>.</p>
@@ -441,6 +438,12 @@
 <p>Llegado a este punto, el trabajo está terminado, el libro impreso, la versión electrónica subida al repositorio, etcétera. Ha llegado el momento de guardar todo en un depósito de respaldo, yo personalmente utilizo <a href="https://es.wikipedia.org/wiki/Mega_(sitio_web)">Mega</a>, su relación costo/beneficio para este menester es la mejor (hay más opciones, por supuesto), también tengo un abono en Google para expandir mi cuota en Drive, pero lo utilizo para otras cosas. El menú <strong>Comprimir directorio para respaldo</strong>, básicamente lo que hace es una copia comprimiendo todo en formato <a href="https://es.wikipedia.org/wiki/Tar"><strong><code>.tar.gz</code></strong></a>, la imagen a continuación lo dice todo. Después solo resta llevar ese archivo al repositorio de respaldo.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla17.png" alt=""></p>
 <h2 id="veamos-todo-esto-en-un-video">Veamos todo esto en un video</h2>
+<p>Es oportuno aclarar que, así como gbTeXpublisher se encuentra en estado <em>beta</em>, este artículo también puede ser modificado a medida que pasa el tiempo, y por consiguiente el video quedar desactualizado.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/xjxyEwjG2Es" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
 <h2 id="comentario-final">Comentario final</h2>
 <p>La edición científica necesita una transformación &ndash;esencialmente enriquecedora&ndash; sobre su modelo de producción, a efectos de poder garantizar &ndash;sin fechas de vencimiento&ndash; su capacidad de poder mantenerse en el tiempo asegurando el procesamiento y la difusión de sus contenidos. El método elegido para la edición científica, es en gran medida responsable de la calidad de las fuentes de información que produce. Los variados saberes involucrados, le otorgan a esta profesión un desempeño interdisciplinario complejo dentro del campo de la producción del conocimiento.</p>
 <p>Matthew Carter en una exposición en el 2014 lo planteó en términos muy simples:</p>
