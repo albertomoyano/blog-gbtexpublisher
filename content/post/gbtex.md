@@ -117,13 +117,13 @@ Control de inconsistencia de principio y fin de linea.
 Se puede observar que la tabla de la base de datos, no contiene bastardillas, ni puntos, ni versalitas, etc.
 
     @Book{Mazlish1995,
-      hyphenation  = {spanish},
-      author       = {Mazlish, Bruce},
-      date         = {1995},
-      keywords     = {listar},
-      location     = {Madrid},
-      publisher    = {Alianza Editorial},
-      title        = {La cuarta discontinuidad},
+    hyphenation  = {spanish},
+    author       = {Mazlish, Bruce},
+    date         = {1995},
+    keywords     = {listar},
+    location     = {Madrid},
+    publisher    = {Alianza Editorial},
+    title        = {La cuarta discontinuidad},
     }
 
 Y esta es la salida que se obtiene en el PDF.
@@ -240,13 +240,14 @@ No soy programador, me identifico plenamente como editor con una fuerte formaci�
 
 ![](https://albertomoyano.github.io/blog-personal/images/pantalla10.png)
 
-Y si bien los motivos en mi elección son varios, también entiendo que puedan ser cuestionados, dejo aquí cuáles fueron los más importantes para mi elección:
+Y si bien los motivos en mi elección son varios, también entiendo que puedan ser cuestionados, dejo aquí cuáles fueron los más importantes para que mi elección no se corra del entorno en el que me muevo a diario:
 
 1. No programo para terceros, lo hago para mí uso personal.
-2. Utilizo GNU Linux (desde hace 30 años, desde 1993) en el 90% de mis tareas, y me siento muy cómodo con el entorno de trabajo.
+2. Utilizo GNU Linux (desde hace 30 años, desde 1993) en el 90% de mis tareas.
 3. No soy fanático del 100% comandos, ni del 100% mouse, creo en un equilibrio que saque lo mejor de cada modelo, según la necesidad.
 4. Gambas es un [RAD](https://es.wikipedia.org/wiki/Desarrollo_r%C3%A1pido_de_aplicaciones).
-5. Es muy rápido y potente [(Benchmarks)](https://gambas.sourceforge.net/en/main.html#).
+5. Es rápido y potente [(Benchmarks)](https://gambas.sourceforge.net/en/main.html#).
+6. Es muy fácil de aprender.
 
 ## Algunas aclaraciones sobre mi plataforma de trabajo
 
@@ -256,7 +257,9 @@ Por motivos que superan las expectativas de este artículo y sabiendo que todas 
 
 ## Descarga e instalación de gbTeXpublisher
 
-El programa tiene dependencia de [Git](https://git-scm.com/), Pandoc y [Sigil](https://sigil-ebook.com/sigil/), doy por descartado que LaTeX ya está instalado, sugiero tener instalada la versión _full_ (aproximadamente 4 gigas).
+El programa tiene dependencia de [Git](https://git-scm.com/), [Pandoc](https://pandoc.org/) y [Sigil](https://sigil-ebook.com/sigil/), doy por descartado que LaTeX ya está instalado, sugiero tener instalada la versión _full_ (aproximadamente 4 gigas).
+
+Para editar utilizo [TeXstudio](https://www.texstudio.org/) desde hace varios años, pero cualquiera de los editores de texto para LaTeX que hay dando vueltas sirven.
 
 También es necesario tener una cuenta en [gitlab](https://gitlab.com/), la versión gratuita es más que suficiente.
 
@@ -268,7 +271,7 @@ En el siguiente video muestro el proceso de instalación.
 
 {{< youtube U4Lj_12Yb3A >}}
 
-Para los que quieran hacer una bifurcación del proyecto, este es la ruta de [gbTeXpublisher](https://gitlab.com/alberto.alejandro.moyano/gbtexpublisher) para compilar desde las fuentes.
+Para los que quieran hacer una bifurcación del proyecto o descargarlo y compilar desde las fuentes, este es la ruta de [gbTeXpublisher](https://gitlab.com/alberto.alejandro.moyano/gbtexpublisher) en GitLab.
 
 Los usuarios de windows pueden utilizar el software a través de [WSL](https://learn.microsoft.com/es-es/windows/wsl/install).
 
@@ -307,9 +310,13 @@ Las notas pueden ser exportadas a formato **`.docx`** para ser enviadas por corr
 
 ## Configurando las salidas
 
+
+
 Existen 4 archivos de configuración, el programa instala una configuración base que sirve para una gran  mayoría de casos, en estos archivos es en donde se hacen cambios cuando se pretende alterar la salida más allá del diseño visual.
 
 El archivo **`build.lua`** trae por _default_ una configuración base pensada para no dejar ninguna posibilidad fuera de su alcance, si alguna de sus instrucciones no fuesen necesarias (por las características del archivo con el que se está trabajando), no es problemático dejarlas, ya que el error que nos dará el compilador es del tipo _suave_, y por supuesto, si el archivo con el que trabajamos lo requiere, este archivo de configuración puede modificarse sin problemas.
+
+La indexación para las siglas y el glosario está codificado en el preámbulo que viene por _default_.
 
 ![](https://albertomoyano.github.io/blog-personal/images/build.png)
 
@@ -348,7 +355,7 @@ Por _default_ gbTeXpublisher para la clase _book_ entrega un archivo configurado
 
 ![](https://albertomoyano.github.io/blog-personal/images/pantalla07.png)
 
-Para mostrar todas las solapas y explicar la lógica de trabajo me parece que lo mejor es ver un video puntual sobre el módulo.
+Para mostrar todas las solapas y explicar la lógica de trabajo que muestra como se separa la estructura del contenido de la representación visual de la salida, me parece que la mejor forma de explicarlo es con un video específico.
 
 {{< youtube xjxyEwjG2Es >}}
 
@@ -356,7 +363,7 @@ Para mostrar todas las solapas y explicar la lógica de trabajo me parece que lo
 
 La información contenida en el formulario de metadatos es utilizada en las diferentes salidas, a la derecha los íconos muestran en que salida impacta esa información.
 
-La carga de datos en este formulario es crucial, si faltan, la compilación no da error, pero se desperdicia la posibilidad de incrustar metadatos en los diferentes formatos de salida, por ejemplo, la salida a PDF tiene soporte para [XMP](https://es.wikipedia.org/wiki/XMP), muchos indexadores toman los metadatos leyendolos del PDF y no de la etiqueta asociada en el repositorio (por ejemplo en OJS).
+La carga de datos en este formulario es crucial, si faltan, la compilación no da error, pero se desperdicia la posibilidad de incrustar metadatos en los diferentes formatos de salida, por ejemplo, la salida a PDF tiene soporte para [XMP](https://es.wikipedia.org/wiki/XMP), muchos indexadores toman los metadatos leyéndolos del PDF y no de la etiqueta asociada en el repositorio.
 
 ![](https://albertomoyano.github.io/blog-gbtexpublisher/images/metadatos.png)
 
@@ -402,7 +409,7 @@ En LaTeX existen diferentes tipos de errores, los voy a agrupar en 2 categorias:
 
 ## Git local y remoto como copia de seguridad temporal
 
-Hace un tiempo (largo) vi una imagen en la red [linkedin](https://www.linkedin.com/in/edicion-cientifica/) que a simple vista (antes de leer el artículo) pensé que era un meme,[^meme] en la misma había muchos archivos MS Word, nombrados: versión final, versión final final, esta es la última versión, ahora sí la última; y así muchas copias de un word con todos los nombres que se pudieran imaginar. Trabajar con LaTeX utilizando esa metodología sería un despropósito.
+Hace un tiempo (largo) vi una imagen en la red [linkedin](https://www.linkedin.com/in/edicion-cientifica/) que a simple vista (antes de leer el artículo) pensé que era un meme,[^meme] en la misma había muchos archivos MS Word, nombrados: versión final, versión final final, esta es la última versión, ahora sí la última; y así muchas copias de un word con todos los nombres que se pudieran imaginar.
 
 Git fue desarrollado por [Linus Torvalds](https://es.wikipedia.org/wiki/Linus_Torvalds) como resultado de sus necesidades puntuales al frente del equipo de desarrolladores del kernel de Linux, yo le doy un giro más a la rosca y lo empiezo a utilizar en la producción editorial, gbTeXpublisher trabaja con [GitLab](https://es.wikipedia.org/wiki/GitLab), en su versión gratuita es quien mejor cumple con la ecuación costo/beneficio, ya que su función de generación de instantáneas y capacidad de almacenaje son más que suficientes para el proceso de producción.
 
@@ -430,7 +437,7 @@ Llegado a este punto, el trabajo está terminado, el libro impreso, la versión 
 
 ## Veamos todo esto en un video
 
-Es oportuno aclarar que, así como gbTeXpublisher se encuentra en estado _beta_, este artículo también puede ser modificado a medida que pasa el tiempo, y por consiguiente el video quedar desactualizado.
+Es oportuno aclarar que, así como gbTeXpublisher se encuentra en desarrollo, este artículo también, y puede ser modificado a medida que pasa el tiempo.
 
 {{< youtube xjxyEwjG2Es >}}
 
@@ -443,6 +450,7 @@ Matthew Carter en una exposición en el 2014 lo planteó en términos muy simple
 > La pregunta es, ¿una restricción obliga a un compromiso? Aceptando una restricción, ¿estás trabajando a un nivel inferior? (...). La distinción entre una restricción y un compromiso es, obviamente, muy sutil, pero es muy central en mi actitud hacia el trabajo (min. 4:57).
 
 {{< youtube xjxyEwjG2Es >}}
+
 
 [^1]: De Bono, Edward (1967). [*New Think: The Use of Lateral thinking*](https://books.google.com.ar/books/about/El_pensamiento_lateral_pr%C3%A1ctico.html?id=ir_PDOmfHBwC&printsec=frontcover&source=kp_read_button&hl=es-419&redir_esc=y#v=onepage&q&f=false), Avon Books.
 
