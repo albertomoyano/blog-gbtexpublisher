@@ -240,14 +240,13 @@ No soy programador, me identifico plenamente como editor con una fuerte formaci�
 
 ![](https://albertomoyano.github.io/blog-personal/images/pantalla10.png)
 
-Y si bien los motivos en mi elección son varios, también entiendo que puedan ser cuestionados, dejo aquí cuáles fueron los más importantes para que mi elección no se corra del entorno en el que me muevo a diario:
+Y si bien los motivos en mi elección son varios, también entiendo que puedan ser cuestionados al decidir trabajar solo con GNU Linux, dejo aquí cuáles fueron los más importantes para que mi elección no se corra del entorno en el que me muevo a diario:
 
 1. No programo para terceros, lo hago para mí uso personal.
-2. Utilizo GNU Linux (desde hace 30 años, desde 1993) en el 90% de mis tareas.
-3. No soy fanático del 100% comandos, ni del 100% mouse, creo en un equilibrio que saque lo mejor de cada modelo, según la necesidad.
-4. Gambas es un [RAD](https://es.wikipedia.org/wiki/Desarrollo_r%C3%A1pido_de_aplicaciones).
-5. Es rápido y potente [(Benchmarks)](https://gambas.sourceforge.net/en/main.html#).
-6. Es muy fácil de aprender.
+2. Utilizo GNU Linux desde hace 30 años.[^saveas]
+3. Gambas es un [RAD](https://es.wikipedia.org/wiki/Desarrollo_r%C3%A1pido_de_aplicaciones).
+4. Es rápido y potente [(Benchmarks)](https://gambas.sourceforge.net/en/main.html#).
+5. Es muy fácil de aprender.
 
 ## Algunas aclaraciones sobre mi plataforma de trabajo
 
@@ -470,3 +469,5 @@ Es oportuno aclarar que, así como gbTeXpublisher se encuentra en desarrollo, es
 [^ctan]: CTAN (Comprehensive TeX Archive Network) es el lugar central para todo tipo de material relacionado con TeX. CTAN cuenta actualmente (06/12/2023) con 6521 paquetes. Con 2957 contribuyentes trabajando en ello. La mayoría de los paquetes son gratuitos y se pueden descargar y utilizar de inmediato.
 
 [^lua]: En este video (https://www.youtube.com/watch?v=h7gsqTQq8VU) de Juan Macías --un excelente ortotipógrafo español-- se puede observar todo el potencial que hay en el uso de Lua con LaTeX.
+
+[^saveas]: En el año 1993 fundé SaveAs... un taller de preimpresión.
