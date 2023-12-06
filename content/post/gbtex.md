@@ -437,11 +437,11 @@ Llegado a este punto, el trabajo está terminado, el libro impreso, la versión 
 
 ![](https://albertomoyano.github.io/blog-personal/images/pantalla17.png)
 
-## Veamos todo esto en un video
+<!-- ## Veamos todo esto en un video
 
 Es oportuno aclarar que, así como gbTeXpublisher se encuentra en desarrollo, este artículo también, y puede ser modificado a medida que pasa el tiempo.
 
-{{< youtube xjxyEwjG2Es >}}
+{{< youtube xjxyEwjG2Es >}} -->
 
 ## Comentario final
 
