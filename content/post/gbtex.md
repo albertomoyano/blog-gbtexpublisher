@@ -51,7 +51,7 @@ En la edición técnica y en los sistemas de documentación, la edición ramific
 
 Ahora bien, para empezar a involucrarnos en este modelo hagamos el ejercicio de cambiar la perspectiva de producción, realicemos un ejercicio de pensamiento lateral.[^1] La idea es simple: **no nos concentremos en los formatos de salida, sino en los caminos que conducen a ellos**. La conclusión se hace evidente: a múltiples caminos, múltiples formatos.
 
-Para trabajar con este modelo de producción es necesario utilizar un lenguaje de marcas,[^marcas] ¿porqué?, hasta ahora la mejor forma conocida de producir es separando la estructura del contenido de su modelo de representación visual y esto se consigue etiquetando (aplicando marcas) a las partes de un documento, ya que se pueden incorporar todas las que sean necesarias para las indicaciones acerca de la estructura y el diseño para la representación del texto en la salida buscada.
+Para trabajar con este modelo de producción es necesario utilizar un lenguaje de marcas,[^marcas] ¿porqué?, hasta ahora la mejor forma conocida de producir es separando **la estructura del contenido de su modelo de representación visual** y esto se consigue aplicando marcas (etiquetando) a las partes del documento, ya que se pueden incorporar todas las que sean necesarias acerca de la estructura y el diseño para la representación del texto en la salida buscada.
 
 La figura a continuación nos muestra un modelo (de todos los posibles) de edición ramificada, donde no existe una secuencia de A con B, sino un inicio de (A) con posibles caminos continuadores (B, C, D, etc.), algunos pueden frenar su andar al llegar a su destino final, otros pueden bifurcarse y convertirse en el inicio de un nuevo camino.
 
@@ -142,14 +142,14 @@ Estos ejemplos son solo la punta del iceberg, puede sonar exagerado, pero se ent
 
 LaTeX es un sistema de composición tipográfica, orientado a la creación de documentos escritos con un **alto estándar de calidad tipográfica**. Por sus características y posibilidades, es usado de manera intensiva en la generación de textos científicos. Fue escrito por [Leslie Lamport](https://es.wikipedia.org/wiki/Leslie_Lamport) en 1984, con la intención de facilitar el uso del lenguaje de composición tipográfica [TeX](https://es.wikipedia.org/wiki/TeX), creado por [Donald Knuth](https://es.wikipedia.org/wiki/Donald_Knuth). A resumidas cuentas, LaTeX es un conjunto de macros de TeX, y se encuentra bajo [licencia LPPL](https://es.wikipedia.org/wiki/LaTeX_Project_Public_License).
 
-El patrón de escritura que maneja LaTeX (no es el único) es separar la estructura del contenido, aún teniendo todo dentro de un mismo archivo de texto plano.
+El patrón de escritura que maneja LaTeX (no es el único lenguaje que trabaja de esta manera) es separar la estructura del contenido, aún teniendo todo dentro de un mismo archivo de texto plano.
 
 Los archivos de LaTeX presentan una primera división de dos partes:
 
 1. Preámbulo (_documentclass_)
 2. Documento (_document_)
 
-Podemos decir que los archivos son la suma del contenido en texto plano, más instrucciones y marcas, también en texto plano.
+Podemos decir que un archivo de LaTeX es la suma del contenido mismo en texto plano, más las instrucciones (etiquetas), también en texto plano.
 
     \documentclass{book}% acá comienza el preámbulo
 
@@ -161,14 +161,14 @@ Podemos decir que los archivos son la suma del contenido en texto plano, más in
 
     \end{document}% fin del documento
 
-A su vez, la segunda parte (_document_), también tiene divisiones internas.
+A su vez, la segunda parte (_document_), en su estructura también tiene divisiones internas.
 
 1. _Frontmatter_
 2. _Mainmatter_
 3. _Appendix_
 4. _Backmatter_
 
-La siguiente es una descripción básica
+La siguiente es una descripción básica, la división estructural se puede incrementar aún más.
 
     ...
 
@@ -193,7 +193,7 @@ La siguiente es una descripción básica
 
     \end{document}
 
-Este artículo no es un curso de LaTeX, en la red hay a montones, pero con esta aclaración particular se va a entender como trabaja gbTeXpublisher.
+Este artículo no es un curso de LaTeX, en la red hay a montones,[^cursos] pero con esta explicación particular se va a entender como trabaja gbTeXpublisher.
 
 ## ¿Entonces?
 
@@ -213,7 +213,7 @@ El primer caso es el más gravoso, ya que no permite que dos paquetes convivan d
 
 El segundo obliga a tener que estudiar que no exista el punto 1 entre las dependencias.
 
-Frente a la cantidad abrumadora de paquetes (macros) disponibles en LaTeX, sin contar que está la posibilidad de escribir las propias o incluso de interacturar otros lenguajes (por ejemplo [Tikz](https://es.wikipedia.org/wiki/PGF/TikZ) o [Lua](https://es.wikipedia.org/wiki/Lua)), lo primero a resolver era cuál camino seguir.
+Frente a la cantidad abrumadora de paquetes disponibles en el [CTAN](https://www.ctan.org/),[^ctan] sin contar que está la posibilidad de escribir macros propias o incluso de interactuar con otros lenguajes (por ejemplo [Lua](https://es.wikipedia.org/wiki/Lua))[^lua] o metalenguajes (por ejemplo [Tikz](https://es.wikipedia.org/wiki/PGF/TikZ)), lo primero a resolver era cuál camino seguir.
 
 1. **un preámbulo único**, regido exclusivamente por condicionales que controlen todo el flujo, con el nivel de riesgo que esto conlleva, ya que cualquier cambio --por mas simple que fuera-- puede alterar toda la cadena del flujo a seguir.
 2. **varios preámbulos**, ajustados a cada tipo de salida, trabajando con un solo condicional para todas las salidas.
@@ -259,7 +259,7 @@ Por motivos que superan las expectativas de este artículo y sabiendo que todas 
 
 El programa tiene dependencia de [Git](https://git-scm.com/), [Pandoc](https://pandoc.org/) y [Sigil](https://sigil-ebook.com/sigil/), doy por descartado que LaTeX ya está instalado, sugiero tener instalada la versión _full_ (aproximadamente 4 gigas).
 
-Para editar utilizo [TeXstudio](https://www.texstudio.org/) desde hace varios años, pero cualquiera de los editores de texto para LaTeX que hay dando vueltas sirven.
+Para editar utilizo [TeXstudio](https://www.texstudio.org/) desde hace varios años, pero cualquiera de los editores de texto para LaTeX que hay dando vueltas sirve.
 
 También es necesario tener una cuenta en [gitlab](https://gitlab.com/), la versión gratuita es más que suficiente.
 
@@ -324,7 +324,7 @@ Para los archivos de configuración para ePub, HTML y JATS, la suerte es la mism
 
 ![](https://albertomoyano.github.io/blog-personal/images/configepub.png)
 
-No hay un archivo de configuración para PDF, esta es la salida natural del compilador, por consiguiente, todas sus características están dadas en el propio código del archivo.
+No hay un archivo de configuración para PDF, esta es la salida natural, por consiguiente, todas sus características están dadas en el propio código del archivo.
 
 ## Ahora bien, comenzamos con el trabajo
 
@@ -347,7 +347,7 @@ Dentro del directorio **files** se agregaran los archivos auxiliares y complemen
 
 ## Referencias bibliográficas
 
-A continuación vemos el formulario para manejar las referencias bibliográficas, el programa trabaja con la base de datos [SQLite](https://es.wikipedia.org/wiki/SQLite), que para trabajar de manera individual, es lo mejor que conozco, pero si el trabajo se quisiera realizar en modo colaborativo (en red, abierta o cerrada), se debería migrar a otro motor.
+A continuación vemos el formulario para manejar las referencias bibliográficas, el programa trabaja con un motor de base de datos [SQLite](https://es.wikipedia.org/wiki/SQLite), que para trabajar en modo local, es lo mejor que conozco, pero si el trabajo se quisiera realizar en modo colaborativo (en red, abierta o cerrada), se debería migrar a otro motor.
 
 Todas las entradas están basadas en [BibLaTeX](https://www.ctan.org/pkg/biblatex) que es una reimplementación completa de las funciones bibliográficas proporcionadas por LaTeX. El formato está completamente controlado por macros de LaTeX. BibLaTeX utiliza su propio analizador de datos llamado [biber](https://biblatex-biber.sourceforge.net/) (escrito en [Perl](https://es.wikipedia.org/wiki/Perl)) para procesar los datos bibliográficos.
 
@@ -355,11 +355,11 @@ Por _default_ gbTeXpublisher para la clase _book_ entrega un archivo configurado
 
 ![](https://albertomoyano.github.io/blog-personal/images/pantalla07.png)
 
-Para mostrar todas las solapas y explicar la lógica de trabajo que muestra como se separa la estructura del contenido de la representación visual de la salida, me parece que la mejor forma de explicarlo es con un video específico.
+Para mostrar y explicar el uso de todas las solapas junto a la lógica de trabajo que muestra cómo se separa **la estructura del contenido** de la **representación visual de la salida**, una buena forma es a través de un video.
 
 {{< youtube xjxyEwjG2Es >}}
 
-## Trabajando con lo metadatos
+## Trabajando con los metadatos
 
 La información contenida en el formulario de metadatos es utilizada en las diferentes salidas, a la derecha los íconos muestran en que salida impacta esa información.
 
@@ -367,7 +367,7 @@ La carga de datos en este formulario es crucial, si faltan, la compilación no d
 
 ![](https://albertomoyano.github.io/blog-gbtexpublisher/images/metadatos.png)
 
-Las siguientes capturas muestran de donde leen los indexadores los metadatos en los PDF.
+Las siguientes capturas muestran que metadatos son leídos en el PDF por los indexadores.
 
 ![](https://albertomoyano.github.io/blog-gbtexpublisher/images/xmp1.png)
 
@@ -461,3 +461,9 @@ Matthew Carter en una exposición en el 2014 lo planteó en términos muy simple
 [^meme]: Un meme es un tipo de contenido que consta de varios elementos (por ejemplo, una imagen y un texto) relacionados en una misma unidad significante, para representar una idea, concepto, opinión o situación. Generalmente, su tono es humorístico, irónico o satírico y se crean para transmitir un mensaje o una idea de manera rápida y efectiva.
 
 [^marcas]: Un lenguaje de marcas es un sistema de codificación que utiliza etiquetas o marcas para definir y estructurar el contenido de un documento. A diferencia de los lenguajes de programación tradicionales, los lenguajes de marcas no se centran en instrucciones para la ejecución de programas, sino en la presentación y estructuración de datos.
+
+[^cursos]: Hacer un listado de todo lo que circula en Internet sería un sinsentido, dejo aquí este que además de gratuito está bien estructurado https://www.learnlatex.org/es/.
+
+[^ctan]: CTAN (Comprehensive TeX Archive Network) es el lugar central para todo tipo de material relacionado con TeX. CTAN cuenta actualmente (06/12/2023) con 6521 paquetes. Con 2957 contribuyentes trabajando en ello. La mayoría de los paquetes son gratuitos y se pueden descargar y utilizar de inmediato.
+
+[^lua]: En este video (https://www.youtube.com/watch?v=h7gsqTQq8VU) de Juan Macías --un excelente ortotipógrafo español-- se puede observar todo el potencial que hay en el uso de Lua con LaTeX.

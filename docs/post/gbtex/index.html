@@ -53,7 +53,7 @@
   <meta itemprop="name" content="Presentación de gbTeXpublisher">
 <meta itemprop="description" content="Presentación de gbTeXpublisher, marco teórico"><meta itemprop="datePublished" content="2023-12-04T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-12-04T00:00:00+00:00" />
-<meta itemprop="wordCount" content="5274"><meta itemprop="image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images"/>
+<meta itemprop="wordCount" content="5390"><meta itemprop="image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images"/>
 <meta itemprop="keywords" content="LaTeX,gbTeXpublisher," />
 
   
@@ -156,7 +156,7 @@
     <li><a href="#configurando-las-salidas">Configurando las salidas</a></li>
     <li><a href="#ahora-bien-comenzamos-con-el-trabajo">Ahora bien, comenzamos con el trabajo</a></li>
     <li><a href="#referencias-bibliográficas">Referencias bibliográficas</a></li>
-    <li><a href="#trabajando-con-lo-metadatos">Trabajando con lo metadatos</a></li>
+    <li><a href="#trabajando-con-los-metadatos">Trabajando con los metadatos</a></li>
     <li><a href="#siglas-y-glosarios">Siglas y glosarios</a></li>
     <li><a href="#catálogo-automatizado">Catálogo automatizado</a></li>
     <li><a href="#estadísticas">Estadísticas</a></li>
@@ -194,7 +194,7 @@
 <p>La edición ramificada facilita la consistencia de los datos y la eficiencia en su manipulación, ya que en lugar de mantener y actualizar varios formatos de salida de un mismo contenido, se trabaja en un único archivo de origen (fuente) desde donde se generan diferentes salidas según sea necesario.</p>
 <p>En la edición técnica y en los sistemas de documentación, la edición ramificada también se utiliza para describir el enfoque de mantener una única fuente de información para la creación de manuales, catálogos u otros materiales, lo que facilita la actualización y consistencia en diferentes contextos de uso.</p>
 <p>Ahora bien, para empezar a involucrarnos en este modelo hagamos el ejercicio de cambiar la perspectiva de producción, realicemos un ejercicio de pensamiento lateral.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> La idea es simple: <strong>no nos concentremos en los formatos de salida, sino en los caminos que conducen a ellos</strong>. La conclusión se hace evidente: a múltiples caminos, múltiples formatos.</p>
-<p>Para trabajar con este modelo de producción es necesario utilizar un lenguaje de marcas,<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> ¿porqué?, hasta ahora la mejor forma conocida de producir es separando la estructura del contenido de su modelo de representación visual y esto se consigue etiquetando (aplicando marcas) a las partes de un documento, ya que se pueden incorporar todas las que sean necesarias para las indicaciones acerca de la estructura y el diseño para la representación del texto en la salida buscada.</p>
+<p>Para trabajar con este modelo de producción es necesario utilizar un lenguaje de marcas,<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> ¿porqué?, hasta ahora la mejor forma conocida de producir es separando <strong>la estructura del contenido de su modelo de representación visual</strong> y esto se consigue aplicando marcas (etiquetando) a las partes del documento, ya que se pueden incorporar todas las que sean necesarias acerca de la estructura y el diseño para la representación del texto en la salida buscada.</p>
 <p>La figura a continuación nos muestra un modelo (de todos los posibles) de edición ramificada, donde no existe una secuencia de A con B, sino un inicio de (A) con posibles caminos continuadores (B, C, D, etc.), algunos pueden frenar su andar al llegar a su destino final, otros pueden bifurcarse y convertirse en el inicio de un nuevo camino.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/completo.png" alt=""></p>
 <p>El ejemplo de la figura es uno de los tantos posibles, que tiene su base en el lenguaje de marcas <a href="https://es.wikipedia.org/wiki/Markdown">Markdown</a>, pero también existen otros lenguajes como <a href="https://asciidoc-py.github.io/index.html">asciidoc</a>, <a href="https://orgmode.org/">Org Mode</a> y por supuesto <a href="https://es.wikipedia.org/wiki/LaTeX">LaTeX</a>.</p>
@@ -258,13 +258,13 @@ title        = {La cuarta discontinuidad},
 <p>Estos ejemplos son solo la punta del iceberg, puede sonar exagerado, pero se entiende mejor cuando se asimila a LaTeX como lo que es, <em>un lenguaje de programación para la composición tipográfica</em>, y <strong>no</strong> como un programa de armado.</p>
 <h2 id="pequeña-radiografía-de-latex">Pequeña radiografía de LaTeX</h2>
 <p>LaTeX es un sistema de composición tipográfica, orientado a la creación de documentos escritos con un <strong>alto estándar de calidad tipográfica</strong>. Por sus características y posibilidades, es usado de manera intensiva en la generación de textos científicos. Fue escrito por <a href="https://es.wikipedia.org/wiki/Leslie_Lamport">Leslie Lamport</a> en 1984, con la intención de facilitar el uso del lenguaje de composición tipográfica <a href="https://es.wikipedia.org/wiki/TeX">TeX</a>, creado por <a href="https://es.wikipedia.org/wiki/Donald_Knuth">Donald Knuth</a>. A resumidas cuentas, LaTeX es un conjunto de macros de TeX, y se encuentra bajo <a href="https://es.wikipedia.org/wiki/LaTeX_Project_Public_License">licencia LPPL</a>.</p>
-<p>El patrón de escritura que maneja LaTeX (no es el único) es separar la estructura del contenido, aún teniendo todo dentro de un mismo archivo de texto plano.</p>
+<p>El patrón de escritura que maneja LaTeX (no es el único lenguaje que trabaja de esta manera) es separar la estructura del contenido, aún teniendo todo dentro de un mismo archivo de texto plano.</p>
 <p>Los archivos de LaTeX presentan una primera división de dos partes:</p>
 <ol>
 <li>Preámbulo (<em>documentclass</em>)</li>
 <li>Documento (<em>document</em>)</li>
 </ol>
-<p>Podemos decir que los archivos son la suma del contenido en texto plano, más instrucciones y marcas, también en texto plano.</p>
+<p>Podemos decir que un archivo de LaTeX es la suma del contenido mismo en texto plano, más las instrucciones (etiquetas), también en texto plano.</p>
 <pre><code>\documentclass{book}% acá comienza el preámbulo
 
 % carga de paquetes y funciones
@@ -275,14 +275,14 @@ title        = {La cuarta discontinuidad},
 
 \end{document}% fin del documento
 </code></pre>
-<p>A su vez, la segunda parte (<em>document</em>), también tiene divisiones internas.</p>
+<p>A su vez, la segunda parte (<em>document</em>), en su estructura también tiene divisiones internas.</p>
 <ol>
 <li><em>Frontmatter</em></li>
 <li><em>Mainmatter</em></li>
 <li><em>Appendix</em></li>
 <li><em>Backmatter</em></li>
 </ol>
-<p>La siguiente es una descripción básica</p>
+<p>La siguiente es una descripción básica, la división estructural se puede incrementar aún más.</p>
 <pre><code>...
 
 \begin{document}% acá comienza en documento
@@ -306,7 +306,7 @@ title        = {La cuarta discontinuidad},
 
 \end{document}
 </code></pre>
-<p>Este artículo no es un curso de LaTeX, en la red hay a montones, pero con esta aclaración particular se va a entender como trabaja gbTeXpublisher.</p>
+<p>Este artículo no es un curso de LaTeX, en la red hay a montones,<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> pero con esta explicación particular se va a entender como trabaja gbTeXpublisher.</p>
 <h2 id="entonces">¿Entonces?</h2>
 <p>El preámbulo es la parte en donde se declaran las diferentes macros que darán instrucciones precisas al compilador para la salida que se desea obtener, ahora bien, los paquetes están sujetos a 2 características principales.</p>
 <ol>
@@ -321,7 +321,7 @@ title        = {La cuarta discontinuidad},
 </ol>
 <p>El primer caso es el más gravoso, ya que no permite que dos paquetes convivan dentro del preámbulo, no es objetivo de este artículo explicar porque existe esta situación y como se resuelve (cuando se puede, que no es siempre).</p>
 <p>El segundo obliga a tener que estudiar que no exista el punto 1 entre las dependencias.</p>
-<p>Frente a la cantidad abrumadora de paquetes (macros) disponibles en LaTeX, sin contar que está la posibilidad de escribir las propias o incluso de interacturar otros lenguajes (por ejemplo <a href="https://es.wikipedia.org/wiki/PGF/TikZ">Tikz</a> o <a href="https://es.wikipedia.org/wiki/Lua">Lua</a>), lo primero a resolver era cuál camino seguir.</p>
+<p>Frente a la cantidad abrumadora de paquetes disponibles en el <a href="https://www.ctan.org/">CTAN</a>,<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup> sin contar que está la posibilidad de escribir macros propias o incluso de interactuar con otros lenguajes (por ejemplo <a href="https://es.wikipedia.org/wiki/Lua">Lua</a>)<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup> o metalenguajes (por ejemplo <a href="https://es.wikipedia.org/wiki/PGF/TikZ">Tikz</a>), lo primero a resolver era cuál camino seguir.</p>
 <ol>
 <li><strong>un preámbulo único</strong>, regido exclusivamente por condicionales que controlen todo el flujo, con el nivel de riesgo que esto conlleva, ya que cualquier cambio &ndash;por mas simple que fuera&ndash; puede alterar toda la cadena del flujo a seguir.</li>
 <li><strong>varios preámbulos</strong>, ajustados a cada tipo de salida, trabajando con un solo condicional para todas las salidas.</li>
@@ -353,7 +353,7 @@ title        = {La cuarta discontinuidad},
 <p><img src="https://albertomoyano.github.io/blog-personal/images/manjaro.png" alt=""></p>
 <h2 id="descarga-e-instalación-de-gbtexpublisher">Descarga e instalación de gbTeXpublisher</h2>
 <p>El programa tiene dependencia de <a href="https://git-scm.com/">Git</a>, <a href="https://pandoc.org/">Pandoc</a> y <a href="https://sigil-ebook.com/sigil/">Sigil</a>, doy por descartado que LaTeX ya está instalado, sugiero tener instalada la versión <em>full</em> (aproximadamente 4 gigas).</p>
-<p>Para editar utilizo <a href="https://www.texstudio.org/">TeXstudio</a> desde hace varios años, pero cualquiera de los editores de texto para LaTeX que hay dando vueltas sirven.</p>
+<p>Para editar utilizo <a href="https://www.texstudio.org/">TeXstudio</a> desde hace varios años, pero cualquiera de los editores de texto para LaTeX que hay dando vueltas sirve.</p>
 <p>También es necesario tener una cuenta en <a href="https://gitlab.com/">gitlab</a>, la versión gratuita es más que suficiente.</p>
 <p>Si bien en gambas se puede hacer el empaquetado para las principales distribuciones de GNU Linux, para evitar posibles conflictos, lo que está disponible es un empaquetado <strong>autotools</strong>.</p>
 <p>Este es el <em>link</em> de descarga para la última versión disponible <a href="https://www.dropbox.com/scl/fi/qbpyz87xowtt4hu46aht4/gbTeXpublisher-0.0.463.tar.gz?rlkey=0chveagm6cjrvfdng37gof172&amp;dl=1">(gbTeXpublisher v463)</a>.</p>
@@ -391,7 +391,7 @@ title        = {La cuarta discontinuidad},
 <p><img src="https://albertomoyano.github.io/blog-personal/images/build.png" alt=""></p>
 <p>Para los archivos de configuración para ePub, HTML y JATS, la suerte es la misma, quiero decir, contemplan una salida <em>generosa</em> en términos de posibilidades, pero pueden ser modificados según cada necesidad.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/configepub.png" alt=""></p>
-<p>No hay un archivo de configuración para PDF, esta es la salida natural del compilador, por consiguiente, todas sus características están dadas en el propio código del archivo.</p>
+<p>No hay un archivo de configuración para PDF, esta es la salida natural, por consiguiente, todas sus características están dadas en el propio código del archivo.</p>
 <h2 id="ahora-bien-comenzamos-con-el-trabajo">Ahora bien, comenzamos con el trabajo</h2>
 <p>Luego de seleccionar un archivo, si miramos la carpeta contenedora del proyecto, veremos que se han creado nuevos directorios:</p>
 <ol>
@@ -407,21 +407,21 @@ title        = {La cuarta discontinuidad},
 <p>Dentro del directorio <strong>files</strong> se agregaran los archivos auxiliares y complementarios para la compilación, estos son los diferentes preámbulos y archivos de configuración, si cualquiera de estos archivos fuera modificado (no importa si desde gbTeXpublisher o desde un editor externo), no será reemplazado al volver (en un momento diferente) a cargar la aplicación, solo será agregado nuevamente aquél archivo que por error hubiera sido eliminado.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/sample2.png" alt=""></p>
 <h2 id="referencias-bibliográficas">Referencias bibliográficas</h2>
-<p>A continuación vemos el formulario para manejar las referencias bibliográficas, el programa trabaja con la base de datos <a href="https://es.wikipedia.org/wiki/SQLite">SQLite</a>, que para trabajar de manera individual, es lo mejor que conozco, pero si el trabajo se quisiera realizar en modo colaborativo (en red, abierta o cerrada), se debería migrar a otro motor.</p>
+<p>A continuación vemos el formulario para manejar las referencias bibliográficas, el programa trabaja con un motor de base de datos <a href="https://es.wikipedia.org/wiki/SQLite">SQLite</a>, que para trabajar en modo local, es lo mejor que conozco, pero si el trabajo se quisiera realizar en modo colaborativo (en red, abierta o cerrada), se debería migrar a otro motor.</p>
 <p>Todas las entradas están basadas en <a href="https://www.ctan.org/pkg/biblatex">BibLaTeX</a> que es una reimplementación completa de las funciones bibliográficas proporcionadas por LaTeX. El formato está completamente controlado por macros de LaTeX. BibLaTeX utiliza su propio analizador de datos llamado <a href="https://biblatex-biber.sourceforge.net/">biber</a> (escrito en <a href="https://es.wikipedia.org/wiki/Perl">Perl</a>) para procesar los datos bibliográficos.</p>
 <p>Por <em>default</em> gbTeXpublisher para la clase <em>book</em> entrega un archivo configurado para la salida a PDF con el diseño autor-año desarrollado por Ivan Valbusa (<a href="https://ctan.org/pkg/biblatex-philosophy">biblatex-philosophy</a>) y el estándar autor-año de bibLaTeX para el resto de las salidas, para la clase <em>article</em> entrega un archivo con el diseño autor-año de <a href="https://www.ctan.org/pkg/biblatex-apa">biblatex-APA</a> y, por supuesto, todas estas salidas son modificables.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla07.png" alt=""></p>
-<p>Para mostrar todas las solapas y explicar la lógica de trabajo que muestra como se separa la estructura del contenido de la representación visual de la salida, me parece que la mejor forma de explicarlo es con un video específico.</p>
+<p>Para mostrar y explicar el uso de todas las solapas junto a la lógica de trabajo que muestra cómo se separa <strong>la estructura del contenido</strong> de la <strong>representación visual de la salida</strong>, una buena forma es a través de un video.</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/xjxyEwjG2Es" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-<h2 id="trabajando-con-lo-metadatos">Trabajando con lo metadatos</h2>
+<h2 id="trabajando-con-los-metadatos">Trabajando con los metadatos</h2>
 <p>La información contenida en el formulario de metadatos es utilizada en las diferentes salidas, a la derecha los íconos muestran en que salida impacta esa información.</p>
 <p>La carga de datos en este formulario es crucial, si faltan, la compilación no da error, pero se desperdicia la posibilidad de incrustar metadatos en los diferentes formatos de salida, por ejemplo, la salida a PDF tiene soporte para <a href="https://es.wikipedia.org/wiki/XMP">XMP</a>, muchos indexadores toman los metadatos leyéndolos del PDF y no de la etiqueta asociada en el repositorio.</p>
 <p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/metadatos.png" alt=""></p>
-<p>Las siguientes capturas muestran de donde leen los indexadores los metadatos en los PDF.</p>
+<p>Las siguientes capturas muestran que metadatos son leídos en el PDF por los indexadores.</p>
 <p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/xmp1.png" alt=""></p>
 <p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/xmp2.png" alt=""></p>
 <p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/xmp3.png" alt=""></p>
@@ -442,7 +442,7 @@ title        = {La cuarta discontinuidad},
 <p>En LaTeX existen diferentes tipos de errores, los voy a agrupar en 2 categorias: <em>suaves</em> y <em>duros</em>, los primeros no afectan la generación de la salida, los segundos directamente abortan el proceso de compilación. Por ello es que LaTeX (como todos los lenguajes de programación) provee un archivo de salida que registra todo el proceso de compilación, ya que en caso de ser necesario se lo puede consultar para empezar a indagar por donde vienen los conflictos.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/logfile.png" alt=""></p>
 <h2 id="git-local-y-remoto-como-copia-de-seguridad-temporal">Git local y remoto como copia de seguridad temporal</h2>
-<p>Hace un tiempo (largo) vi una imagen en la red <a href="https://www.linkedin.com/in/edicion-cientifica/">linkedin</a> que a simple vista (antes de leer el artículo) pensé que era un meme,<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> en la misma había muchos archivos MS Word, nombrados: versión final, versión final final, esta es la última versión, ahora sí la última; y así muchas copias de un word con todos los nombres que se pudieran imaginar.</p>
+<p>Hace un tiempo (largo) vi una imagen en la red <a href="https://www.linkedin.com/in/edicion-cientifica/">linkedin</a> que a simple vista (antes de leer el artículo) pensé que era un meme,<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup> en la misma había muchos archivos MS Word, nombrados: versión final, versión final final, esta es la última versión, ahora sí la última; y así muchas copias de un word con todos los nombres que se pudieran imaginar.</p>
 <p>Git fue desarrollado por <a href="https://es.wikipedia.org/wiki/Linus_Torvalds">Linus Torvalds</a> como resultado de sus necesidades puntuales al frente del equipo de desarrolladores del kernel de Linux, yo le doy un giro más a la rosca y lo empiezo a utilizar en la producción editorial, gbTeXpublisher trabaja con <a href="https://es.wikipedia.org/wiki/GitLab">GitLab</a>, en su versión gratuita es quien mejor cumple con la ecuación costo/beneficio, ya que su función de generación de instantáneas y capacidad de almacenaje son más que suficientes para el proceso de producción.</p>
 <p>Si se desea trabajar solo en modo local, no es necesario tener cuenta en GitLab.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla14.png" alt=""></p>
@@ -491,7 +491,16 @@ title        = {La cuarta discontinuidad},
 <p>Furtado, José Afonso (2014). <a href="https://www.eduvim.com.ar/libro/9789876991735-la-edicion-de-libros-y-la-gestion-estrategica"><em>La edición de libros y la gestión estratégica</em></a>, Córdoba: EDUVIM.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:5">
-<p>Un meme es un tipo de contenido que consta de varios elementos (por ejemplo, una imagen y un texto) relacionados en una misma unidad significante, para representar una idea, concepto, opinión o situación. Generalmente, su tono es humorístico, irónico o satírico y se crean para transmitir un mensaje o una idea de manera rápida y efectiva.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Hacer un listado de todo lo que circula en Internet sería un sinsentido, dejo aquí este que además de gratuito está bien estructurado <a href="https://www.learnlatex.org/es/">https://www.learnlatex.org/es/</a>.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6">
+<p>CTAN (Comprehensive TeX Archive Network) es el lugar central para todo tipo de material relacionado con TeX. CTAN cuenta actualmente (06/12/2023) con 6521 paquetes. Con 2957 contribuyentes trabajando en ello. La mayoría de los paquetes son gratuitos y se pueden descargar y utilizar de inmediato.&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7">
+<p>En este video (<a href="https://www.youtube.com/watch?v=h7gsqTQq8VU">https://www.youtube.com/watch?v=h7gsqTQq8VU</a>) de Juan Macías &ndash;un excelente ortotipógrafo español&ndash; se puede observar todo el potencial que hay en el uso de Lua con LaTeX.&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:8">
+<p>Un meme es un tipo de contenido que consta de varios elementos (por ejemplo, una imagen y un texto) relacionados en una misma unidad significante, para representar una idea, concepto, opinión o situación. Generalmente, su tono es humorístico, irónico o satírico y se crean para transmitir un mensaje o una idea de manera rápida y efectiva.&#160;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </div>
