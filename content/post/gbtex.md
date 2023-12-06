@@ -55,7 +55,7 @@ Para trabajar con este modelo de producción es necesario utilizar un lenguaje d
 
 La figura a continuación nos muestra un modelo (de todos los posibles) de edición ramificada, donde no existe una secuencia de A con B, sino un inicio de (A) con posibles caminos continuadores (B, C, D, etc.), algunos pueden frenar su andar al llegar a su destino final, otros pueden bifurcarse y convertirse en el inicio de un nuevo camino.
 
-![](https://albertomoyano.github.io/blog-personal/images/completo.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/completo.png)
 
 El ejemplo de la figura es uno de los tantos posibles, que tiene su base en el lenguaje de marcas [Markdown](https://es.wikipedia.org/wiki/Markdown), pero también existen otros lenguajes como [asciidoc](https://asciidoc-py.github.io/index.html), [Org Mode](https://orgmode.org/) y por supuesto [LaTeX](https://es.wikipedia.org/wiki/LaTeX).
 
@@ -363,7 +363,7 @@ Las siglas y glosarios se pueden dar de alta desde este formulario, lo que impli
 
 ![](https://albertomoyano.github.io/blog-personal/images/glosarios.png)
 
-Al igual que con las referencias bibliográficas, en el siguiente video doy un vista general del modelo de trabajo.
+Al igual que con las referencias bibliográficas, en el siguiente video doy una vista general del modelo de trabajo.
 
 {{< youtube xjxyEwjG2Es >}}
 
