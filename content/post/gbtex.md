@@ -230,7 +230,7 @@ La figura a continuación muestra un resumen de cómo es el flujo de trabajo, es
 
 ![](https://albertomoyano.github.io/blog-personal/images/literada.png)
 
-El motor SQL lleva la tarea de centralizar toda aquella información que pudiera ser reutilizada, evitando la redundancia de datos. La inyección de los datos se hace de manera automática y los datos se trabajan desde los diferentes formularios que posee gbTeXpublisher.
+El [motor SQL](https://es.wikipedia.org/wiki/SQL) lleva la tarea de centralizar toda aquella información que pudiera ser reutilizada, evitando la redundancia de datos. La inyección de los datos se hace de manera automática y el ABM (alta, baja y modificación) de los datos se trabajan desde los diferentes formularios que posee gbTeXpublisher.
 
 ## Gambas
 
