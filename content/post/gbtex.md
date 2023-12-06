@@ -240,7 +240,7 @@ No soy programador, me identifico plenamente como editor con una fuerte formaci�
 
 ![](https://albertomoyano.github.io/blog-personal/images/pantalla10.png)
 
-Y si bien los motivos en mi elección son varios, también entiendo que puedan ser cuestionados al decidir trabajar solo con GNU Linux, dejo aquí cuáles fueron los más importantes para que mi elección no se corra del entorno en el que me muevo a diario:
+Y si bien los motivos en mi elección son varios, también entiendo que puedan ser cuestionados al decidir trabajar solo con GNU Linux, dejo aquí cuáles fueron los más importantes para mi elección:
 
 1. No programo para terceros, lo hago para mí uso personal.
 2. Utilizo GNU Linux desde hace 30 años.[^saveas]
@@ -470,4 +470,4 @@ Es oportuno aclarar que, así como gbTeXpublisher se encuentra en desarrollo, es
 
 [^lua]: En este video (https://www.youtube.com/watch?v=h7gsqTQq8VU) de Juan Macías --un excelente ortotipógrafo español-- se puede observar todo el potencial que hay en el uso de Lua con LaTeX.
 
-[^saveas]: En el año 1993 fundé SaveAs... un taller de preimpresión.
+[^saveas]: En el año 1993 fundé SaveAs... un taller de preimpresión en el que tenía 4 servidores con [Debian](https://www.debian.org/index.es.html).
