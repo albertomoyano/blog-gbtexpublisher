@@ -453,6 +453,7 @@ Matthew Carter en una exposición en el 2014 lo planteó en términos muy simple
 
 {{< youtube xjxyEwjG2Es >}}
 
+Es oportuno aclarar que, así como gbTeXpublisher se encuentra en desarrollo, este artículo también, y puede ser modificado a medida que pasa el tiempo.
 
 [^1]: De Bono, Edward (1967). [*New Think: The Use of Lateral thinking*](https://books.google.com.ar/books/about/El_pensamiento_lateral_pr%C3%A1ctico.html?id=ir_PDOmfHBwC&printsec=frontcover&source=kp_read_button&hl=es-419&redir_esc=y#v=onepage&q&f=false), Avon Books.
 
