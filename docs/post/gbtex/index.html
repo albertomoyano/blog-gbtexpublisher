@@ -53,7 +53,7 @@
   <meta itemprop="name" content="Presentación de gbTeXpublisher">
 <meta itemprop="description" content="Presentación de gbTeXpublisher, marco teórico"><meta itemprop="datePublished" content="2023-12-04T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-12-04T00:00:00+00:00" />
-<meta itemprop="wordCount" content="5390"><meta itemprop="image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images"/>
+<meta itemprop="wordCount" content="5409"><meta itemprop="image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images"/>
 <meta itemprop="keywords" content="LaTeX,gbTeXpublisher," />
 
   
@@ -156,8 +156,8 @@
     <li><a href="#configurando-las-salidas">Configurando las salidas</a></li>
     <li><a href="#ahora-bien-comenzamos-con-el-trabajo">Ahora bien, comenzamos con el trabajo</a></li>
     <li><a href="#referencias-bibliográficas">Referencias bibliográficas</a></li>
-    <li><a href="#trabajando-con-los-metadatos">Trabajando con los metadatos</a></li>
     <li><a href="#siglas-y-glosarios">Siglas y glosarios</a></li>
+    <li><a href="#trabajando-con-los-metadatos">Trabajando con los metadatos</a></li>
     <li><a href="#catálogo-automatizado">Catálogo automatizado</a></li>
     <li><a href="#estadísticas">Estadísticas</a></li>
     <li><a href="#logfile">Logfile</a></li>
@@ -262,7 +262,7 @@ title        = {La cuarta discontinuidad},
 <p>Los archivos de LaTeX presentan una primera división de dos partes:</p>
 <ol>
 <li>Preámbulo (<em>documentclass</em>)</li>
-<li>Documento (<em>document</em>)</li>
+<li>Contenido (<em>document</em>)</li>
 </ol>
 <p>Podemos decir que un archivo de LaTeX es la suma del contenido mismo en texto plano, más las instrucciones (etiquetas), también en texto plano.</p>
 <pre><code>\documentclass{book}% acá comienza el preámbulo
@@ -417,6 +417,15 @@ title        = {La cuarta discontinuidad},
   <iframe src="https://www.youtube.com/embed/xjxyEwjG2Es" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
+<h2 id="siglas-y-glosarios">Siglas y glosarios</h2>
+<p>Las siglas y glosarios se pueden dar de alta desde este formulario, lo que implica que quedan registrados en la base de datos, esto permite la reutilización de los valores, también es posible agregar entradas directamente en el archivo <strong><code>.tex</code></strong>.</p>
+<p><img src="https://albertomoyano.github.io/blog-personal/images/glosarios.png" alt=""></p>
+<p>Al igual que con las referencias bibliográficas, en el siguiente video doy un vista general del modelo de trabajo.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/xjxyEwjG2Es" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
 <h2 id="trabajando-con-los-metadatos">Trabajando con los metadatos</h2>
 <p>La información contenida en el formulario de metadatos es utilizada en las diferentes salidas, a la derecha los íconos muestran en que salida impacta esa información.</p>
 <p>La carga de datos en este formulario es crucial, si faltan, la compilación no da error, pero se desperdicia la posibilidad de incrustar metadatos en los diferentes formatos de salida, por ejemplo, la salida a PDF tiene soporte para <a href="https://es.wikipedia.org/wiki/XMP">XMP</a>, muchos indexadores toman los metadatos leyéndolos del PDF y no de la etiqueta asociada en el repositorio.</p>
@@ -428,9 +437,6 @@ title        = {La cuarta discontinuidad},
 <p>Los metadatos específicos de los autores y las colecciones se trabajan desde otras tablas de la base de datos para evitar la redundancia.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/autores.png" alt=""></p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/coleccion.png" alt=""></p>
-<h2 id="siglas-y-glosarios">Siglas y glosarios</h2>
-<p>Las siglas y glosarios se pueden dar de alta desde este formulario, lo que implica que quedan registrados en la base de datos, esto permite la reutilización de los valores, también es posible agregar entradas directamente en el archivo <strong><code>.tex</code></strong>.</p>
-<p><img src="https://albertomoyano.github.io/blog-personal/images/glosarios.png" alt=""></p>
 <h2 id="catálogo-automatizado">Catálogo automatizado</h2>
 <p>Una de las cuestiones que necesitaba resolver de manera automatizada, era el catálogo en formato PDF, hasta la versión actual la construcción se hace con una plantilla fija, los datos se toman de los metadatos y solo quedan unos pocos datos para agregar manualmente, en un futuro espero agregar plantillas para disponer de diferentes diseños.</p>
 <p>El PDF que obtengo lo llevo a un directorio en donde se encuentran todas las páginas de los diferentes libros y un <em>script</em> hace el trabajo de <em>costura</em> sumando todos los archivos más una tapa en un solo archivo resultante.</p>

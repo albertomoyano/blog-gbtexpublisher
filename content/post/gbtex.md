@@ -147,7 +147,7 @@ El patrón de escritura que maneja LaTeX (no es el único lenguaje que trabaja d
 Los archivos de LaTeX presentan una primera división de dos partes:
 
 1. Preámbulo (_documentclass_)
-2. Documento (_document_)
+2. Contenido (_document_)
 
 Podemos decir que un archivo de LaTeX es la suma del contenido mismo en texto plano, más las instrucciones (etiquetas), también en texto plano.
 
@@ -310,8 +310,6 @@ Las notas pueden ser exportadas a formato **`.docx`** para ser enviadas por corr
 
 ## Configurando las salidas
 
-
-
 Existen 4 archivos de configuración, el programa instala una configuración base que sirve para una gran  mayoría de casos, en estos archivos es en donde se hacen cambios cuando se pretende alterar la salida más allá del diseño visual.
 
 El archivo **`build.lua`** trae por _default_ una configuración base pensada para no dejar ninguna posibilidad fuera de su alcance, si alguna de sus instrucciones no fuesen necesarias (por las características del archivo con el que se está trabajando), no es problemático dejarlas, ya que el error que nos dará el compilador es del tipo _suave_, y por supuesto, si el archivo con el que trabajamos lo requiere, este archivo de configuración puede modificarse sin problemas.
@@ -359,6 +357,16 @@ Para mostrar y explicar el uso de todas las solapas junto a la lógica de trabaj
 
 {{< youtube xjxyEwjG2Es >}}
 
+## Siglas y glosarios
+
+Las siglas y glosarios se pueden dar de alta desde este formulario, lo que implica que quedan registrados en la base de datos, esto permite la reutilización de los valores, también es posible agregar entradas directamente en el archivo **`.tex`**.
+
+![](https://albertomoyano.github.io/blog-personal/images/glosarios.png)
+
+Al igual que con las referencias bibliográficas, en el siguiente video doy un vista general del modelo de trabajo.
+
+{{< youtube xjxyEwjG2Es >}}
+
 ## Trabajando con los metadatos
 
 La información contenida en el formulario de metadatos es utilizada en las diferentes salidas, a la derecha los íconos muestran en que salida impacta esa información.
@@ -380,12 +388,6 @@ Los metadatos específicos de los autores y las colecciones se trabajan desde ot
 ![](https://albertomoyano.github.io/blog-personal/images/autores.png)
 
 ![](https://albertomoyano.github.io/blog-personal/images/coleccion.png)
-
-## Siglas y glosarios
-
-Las siglas y glosarios se pueden dar de alta desde este formulario, lo que implica que quedan registrados en la base de datos, esto permite la reutilización de los valores, también es posible agregar entradas directamente en el archivo **`.tex`**.
-
-![](https://albertomoyano.github.io/blog-personal/images/glosarios.png)
 
 ## Catálogo automatizado
 
