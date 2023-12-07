@@ -264,7 +264,7 @@ También es necesario tener una cuenta en [gitlab](https://gitlab.com/), la vers
 
 Si bien en gambas se puede hacer el empaquetado para las principales distribuciones de GNU Linux, para evitar posibles conflictos, lo que está disponible es un empaquetado **autotools**.
 
-Este es el _link_ de descarga para la última versión disponible [(gbTeXpublisher v463)](https://www.dropbox.com/scl/fi/qbpyz87xowtt4hu46aht4/gbTeXpublisher-0.0.463.tar.gz?rlkey=0chveagm6cjrvfdng37gof172&dl=1).
+Este es el _link_ de descarga para la última versión disponible [(gbTeXpublisher v472)](https://www.dropbox.com/scl/fi/iiy6nrq755lqxitmhfjhu/gbTeXpublisher-0.0.472.tar.gz?rlkey=zcdf99qci3fwmvkxwnys0m6ss&dl=1).
 
 En el siguiente video muestro el proceso de instalación.
 
@@ -348,11 +348,11 @@ A continuación vemos el formulario para manejar las referencias bibliográficas
 
 Todas las entradas están basadas en [BibLaTeX](https://www.ctan.org/pkg/biblatex) que es una reimplementación completa de las funciones bibliográficas proporcionadas por LaTeX. El formato está completamente controlado por macros de LaTeX. BibLaTeX utiliza su propio analizador de datos llamado [biber](https://biblatex-biber.sourceforge.net/) (escrito en [Perl](https://es.wikipedia.org/wiki/Perl)) para procesar los datos bibliográficos.
 
-Por _default_ gbTeXpublisher para la clase _book_ entrega un archivo configurado para la salida a PDF con el diseño autor-año desarrollado por Ivan Valbusa ([biblatex-philosophy](https://ctan.org/pkg/biblatex-philosophy)), para la salida a ePub utiliza el modelo autor-año del estándar [ISO 690](biblatex-iso690), para la clase _article_ entrega un archivo con el estándar de [APA](https://www.ctan.org/pkg/biblatex-apa) y, por supuesto, todas estas salidas son modificables.
+Por _default_ gbTeXpublisher para la clase _book_ entrega un archivo configurado para la salida a PDF con el estándar autor-año (diseño moderno) desarrollado por Ivan Valbusa en la Universidad de Verona ([biblatex-philosophy](https://ctan.org/pkg/biblatex-philosophy)), para la salida a ePub se utiliza el estándar autor-año (diseño clásico) del mismo desarrollador y para la clase _article_ se utiliza el estándar de [APA](https://www.ctan.org/pkg/biblatex-apa) y, por supuesto, todas estas salidas se pueden modificar e incluso cambiar.
 
 ![](https://albertomoyano.github.io/blog-personal/images/pantalla07.png)
 
-Para mostrar y explicar el uso de todas las solapas junto a la lógica de trabajo que muestra cómo se separa **la estructura del contenido** de la **representación visual de la salida**, una buena forma es a través de un video.
+Para explicar el uso de las referencias junto a la lógica que muestra cómo se separa **la estructura del contenido** de la **representación visual de la salida**, la mejor forma es a través de un video.
 
 {{< youtube xjxyEwjG2Es >}}
 
