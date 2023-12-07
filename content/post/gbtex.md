@@ -142,7 +142,7 @@ Estos ejemplos son solo la punta del iceberg, puede sonar exagerado, pero se ent
 
 LaTeX es un sistema de composición tipográfica, orientado a la creación de documentos escritos con un **alto estándar de calidad tipográfica**. Por sus características y posibilidades, es usado de manera intensiva en la generación de textos científicos. Fue escrito por [Leslie Lamport](https://es.wikipedia.org/wiki/Leslie_Lamport) en 1984, con la intención de facilitar el uso del lenguaje de composición tipográfica [TeX](https://es.wikipedia.org/wiki/TeX), creado por [Donald Knuth](https://es.wikipedia.org/wiki/Donald_Knuth). A resumidas cuentas, LaTeX es un conjunto de macros de TeX, y se encuentra bajo [licencia LPPL](https://es.wikipedia.org/wiki/LaTeX_Project_Public_License).
 
-El patrón de escritura que maneja LaTeX (no es el único lenguaje que trabaja de esta manera) es separar la estructura del contenido, aún teniendo todo dentro de un mismo archivo de texto plano.
+El patrón de escritura que maneja LaTeX (no es el único lenguaje que trabaja de esta manera) es separar **la estructura del contenido** de la **representación visual de la salida**, aún teniendo todo dentro de un mismo archivo de texto plano.
 
 Los archivos de LaTeX presentan una primera división de dos partes:
 
@@ -270,7 +270,7 @@ En el siguiente video muestro el proceso de instalación.
 
 {{< youtube U4Lj_12Yb3A >}}
 
-Para los que quieran hacer una bifurcación del proyecto o descargarlo y compilar desde las fuentes, este es la ruta de [gbTeXpublisher](https://gitlab.com/alberto.alejandro.moyano/gbtexpublisher) en GitLab.
+Para los que quieran hacer una bifurcación del proyecto o descargarlo y compilar desde las fuentes, esta es la ruta de [gbTeXpublisher](https://gitlab.com/alberto.alejandro.moyano/gbtexpublisher) en GitLab.
 
 Los usuarios de windows pueden utilizar el software a través de [WSL](https://learn.microsoft.com/es-es/windows/wsl/install).
 
@@ -444,7 +444,11 @@ Es oportuno aclarar que, así como gbTeXpublisher se encuentra en desarrollo, es
 
 ## Comentario final
 
-La edición científica necesita una transformación --esencialmente enriquecedora-- sobre su modelo de producción, a efectos de poder garantizar --sin fechas de vencimiento-- su capacidad de poder mantenerse en el tiempo asegurando el procesamiento y la difusión de sus contenidos. El método elegido para la edición científica, es en gran medida responsable de la calidad de las fuentes de información que produce. Los variados saberes involucrados, le otorgan a esta profesión un desempeño interdisciplinario complejo dentro del campo de la producción del conocimiento.
+No se requiere que los editores de libros tengan conocimientos de programación de manera obligatoria. La función principal de un editor de libros es y seguirá siendo trabajar con el contenido, asegurándose de que sea claro y coherente con una estructura lógica y gramatical. Sin embargo, vivimos en un mundo en donde la tecnología desempeña un papel clave en la producción y distribución de contenidos, y esto incluye a los libros.
+
+En el contexto actual, tener conocimientos --básicos-- de programación será beneficioso para un editor de libros. Esto se debe a que la publicación digital y la distribución en línea, son cada vez más comunes. La comprensión de conceptos técnicos sobre formatos de archivos, condicionales, expresiones regulares y seguridad, por nombrar algunos, serán útiles para aquellos que trabajan en la industria editorial.
+
+No tengo dudas de que el espacio editorial en el que me desempeño --la edición científica-- necesita una transformación enriquecedora sobre su modelo de producción, a efectos de poder garantizar --sin fechas de vencimiento-- su capacidad de poder mantenerse en el tiempo, asegurando el procesamiento y la difusión de sus contenidos. El método elegido para la edición científica, es en gran medida responsable de la calidad de las fuentes de información que produce. No tengo dudas de que los variados saberes involucrados, le otorgan a esta profesión un desempeño interdisciplinario complejo dentro del campo de la producción del conocimiento.
 
 Matthew Carter en una exposición en el 2014 lo planteó en términos muy simples:
 
