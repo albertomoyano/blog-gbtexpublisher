@@ -264,7 +264,7 @@ También es necesario tener una cuenta en [gitlab](https://gitlab.com/), la vers
 
 Si bien en gambas se puede hacer el empaquetado para las principales distribuciones de GNU Linux, para evitar posibles conflictos, lo que está disponible es un empaquetado **autotools**.
 
-Este es el _link_ de descarga para la última versión disponible [(gbTeXpublisher v472)](https://www.dropbox.com/scl/fi/iiy6nrq755lqxitmhfjhu/gbTeXpublisher-0.0.472.tar.gz?rlkey=zcdf99qci3fwmvkxwnys0m6ss&dl=1).
+Este es el _link_ de descarga para la última versión disponible [(gbTeXpublisher v477)](https://www.dropbox.com/scl/fi/ut8tvyo6qwo7k2f24rzkc/gbTeXpublisher-0.0.477.tar.gz?rlkey=tnfq7shmjt8ewiruih8nmpq04&dl=1).
 
 En el siguiente video muestro el proceso de instalación.
 
