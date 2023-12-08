@@ -354,7 +354,7 @@ Por _default_ gbTeXpublisher para la clase _book_ entrega un archivo configurado
 
 Para explicar el uso de las referencias junto a la lógica que muestra cómo se separa **la estructura del contenido** de la **representación visual de la salida**, la mejor forma es a través de un video.
 
-{{< youtube xjxyEwjG2Es >}}
+{{< youtube VV5XUvY7v2U >}}
 
 ## Siglas y glosarios
 
