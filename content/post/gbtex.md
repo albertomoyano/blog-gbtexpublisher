@@ -364,7 +364,7 @@ Las siglas y glosarios se pueden dar de alta desde este formulario, lo que impli
 
 Al igual que con las referencias bibliográficas, en el siguiente video doy una vista general del modelo de trabajo.
 
-{{< youtube xjxyEwjG2Es >}}
+{{< youtube 5HOcjV5Y2no >}}
 
 ## Trabajando con los metadatos
 
