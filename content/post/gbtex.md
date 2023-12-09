@@ -427,7 +427,11 @@ Hace un tiempo (largo) vi una imagen en la red [linkedin](https://www.linkedin.c
 
 ![](https://albertomoyano.github.io/blog-personal/images/pantalla14.png)
 
-![](https://albertomoyano.github.io/blog-personal/images/pantalla15.png)
+En el siguiente video, muestro como es el uso diario.
+
+{{< youtube 8-yvRbc0LoU >}}
+
+<!-- [](https://albertomoyano.github.io/blog-personal/images/pantalla15.png) -->
 
 ## Controlando los tiempos y las cargas de trabajo
 
