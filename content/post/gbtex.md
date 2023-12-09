@@ -238,33 +238,11 @@ La figura a continuación muestra un resumen de cómo es el flujo de trabajo, es
 
 El [motor SQL](https://es.wikipedia.org/wiki/SQL) lleva la tarea de centralizar toda aquella información que pudiera ser reutilizada, evitando la redundancia de datos. La inyección de los datos se hace de manera automática y el ABM (alta, baja y modificación) de los datos se trabajan desde los diferentes formularios que posee gbTeXpublisher.
 
-## Gambas y solo GNU Linux
-
-No soy programador, me identifico plenamente como editor con una fuerte formación en artes gráficas (tuve taller de preprensa e imprenta durante muchos años), así que mis conocimientos son en base a mucha lectura y práctica. Estuve durante mucho tiempo lidiando con [Python](https://es.wikipedia.org/wiki/Python), Objet Pascal [(Lazarus)](https://es.wikipedia.org/wiki/Lazarus_(entorno_de_desarrollo)) y algo de [Ruby](https://es.wikipedia.org/wiki/Ruby), y reconozco ventajas en todos estos lenguajes, pero mi reflexión en la búsqueda de una solución informática consideró primordialmente el balance entre: calidad, desempeño, facilidad de uso y productividad, el resultado me llevo a encarar gbTeXpublisher con [Gambas](https://gambas.sourceforge.net/en/main.html).
-
-> Gambas es un lenguaje de programación libre derivado de BASIC (de ahí que Gambas quiere decir **G**ambas **A**lmost **M**eans **Bas**ic). Se distribuye con licencia GNU GPL. Cabe destacar que presenta ciertas similitudes con Java, ya que para la ejecución de cualquier aplicación, se requiere un intérprete previamente instalado (Gambas Runtime) que entienda el bytecode de las aplicaciones desarrolladas y lo convierta en código ejecutable por el computador [(wikipedia)](https://es.wikipedia.org/wiki/Gambas).
-
-![](https://albertomoyano.github.io/blog-personal/images/pantalla10.png)
-
-Y si bien los motivos en mi elección son varios, también entiendo que puedan ser cuestionados al decidir trabajar solo con GNU Linux, dejo aquí cuáles fueron los más importantes para mi elección:
-
-1. No programo para terceros, lo hago para mí uso personal.
-2. Utilizo GNU Linux desde hace 30 años.[^saveas]
-3. Gambas es un [RAD](https://es.wikipedia.org/wiki/Desarrollo_r%C3%A1pido_de_aplicaciones).
-4. Es rápido y potente [(Benchmarks)](https://gambas.sourceforge.net/en/main.html#).
-5. Es muy fácil de aprender.
-
-## Algunas aclaraciones sobre mi plataforma de trabajo
-
-Por motivos que superan las expectativas de este artículo y sabiendo que todas las distribuciones de GNU Linux tienen diferencias en las librerías gráficas, voy a mostrar cual es el equipo con el que desarrollo y trabajo a diario utilizando gbTeXpublisher, cualquier persona que este intentando utilizar la aplicación y tenga diferencias en la distribución de los elementos de la interfaz gráfica, me puede contactar indicando que distribución utiliza, con cuál librería gráfica y entorno de escritorio y veré de hacer pruebas de control.
-
-![](https://albertomoyano.github.io/blog-personal/images/manjaro.png)
-
 ## Descarga e instalación de gbTeXpublisher
 
 El programa tiene dependencia de [Git](https://git-scm.com/), [Pandoc](https://pandoc.org/) y [Sigil](https://sigil-ebook.com/sigil/), doy por descartado que LaTeX ya está instalado, sugiero tener instalada la versión _full_ (aproximadamente 4 gigas).
 
-Para editar utilizo [TeXstudio](https://www.texstudio.org/) desde hace varios años, pero cualquiera de los editores de texto para LaTeX que hay dando vueltas sirve.
+Para editar utilizo [TeXstudio](https://www.texstudio.org/) desde hace varios años, pero sirve cualquiera de los editores de texto para LaTeX que se encuentran en Internet.
 
 También es necesario tener una cuenta en [gitlab](https://gitlab.com/), la versión gratuita es más que suficiente.
 
@@ -399,29 +377,9 @@ Los metadatos específicos de los autores y las colecciones se trabajan desde ot
 
 ![](https://albertomoyano.github.io/blog-personal/images/coleccion.png) -->
 
-## Catálogo automatizado
-
-Una de las cuestiones que necesitaba resolver de manera automatizada, era el catálogo en formato PDF, hasta la versión actual la construcción se hace con una plantilla fija, los datos se toman de los metadatos y solo quedan unos pocos datos para agregar manualmente, en un futuro espero agregar plantillas para disponer de diferentes diseños.
-
-El PDF que obtengo lo llevo a un directorio en donde se encuentran todas las páginas de los diferentes libros y un _script_ hace el trabajo de _costura_ sumando todos los archivos más una tapa en un solo archivo resultante.
-
-![](https://albertomoyano.github.io/blog-personal/images/catalogo.png)
-
-## Obteniendo estadísticas
-
-Estudiar cómo a sido editado un libro o artículo a través de los resultados estadísticos de su interior es lo que permite este módulo, básicamente el contador rastrilla todo el proyecto y lo informa en diferentes planos.
-
-![](https://albertomoyano.github.io/blog-personal/images/estadisticas.png)
-
-## Control de errores desde el logfile
-
-En LaTeX existen diferentes tipos de errores, los voy a agrupar en 2 categorias: _suaves_ y _duros_, los primeros no afectan la generación de la salida, los segundos directamente abortan el proceso de compilación. Por ello es que LaTeX (como todos los lenguajes de programación) provee un archivo de salida que registra todo el proceso de compilación, ya que en caso de ser necesario se lo puede consultar para empezar a indagar por donde vienen los conflictos.
-
-![](https://albertomoyano.github.io/blog-personal/images/logfile.png)
-
 ## Git local y remoto como copia de seguridad temporal
 
-Hace un tiempo (largo) vi una imagen en la red [linkedin](https://www.linkedin.com/in/edicion-cientifica/) que a simple vista (antes de leer el artículo) pensé que era un meme,[^meme] en la misma había muchos archivos MS Word, nombrados: versión final, versión final final, esta es la última versión, ahora sí la última; y así muchas copias de un word con todos los nombres que se pudieran imaginar, la imagen buscaba encontrar quiénes se identificaban con la imagen.
+Hace un tiempo (largo) vi una imagen en la red [linkedin](https://www.linkedin.com/in/edicion-cientifica/) que a simple vista (antes de leer el artículo) pensé que era un meme,[^meme] en la misma había muchos archivos MS Word, nombrados: versión final, versión final final, esta es la última versión, ahora sí la última; y así muchas copias de un word con todos los nombres que se pudieran imaginar, la imagen buscaba encontrar quiénes se identificaban con la misma.
 
 [Git](https://es.wikipedia.org/wiki/Git) es un sistema de control de versiones distribuido, ampliamente utilizado para el seguimiento de cambios. Fue creado por [Linus Torvalds](https://es.wikipedia.org/wiki/Linus_Torvalds) en 2005, es una herramienta poderosa y flexible, fundamental para el trabajo en equipo. Puede llevar algo de tiempo acostumbrarse --a su lógica de uso--, pero una vez aprendidos sus conceptos se vuelve esencial para trabajar de manera sólida y segura. Si se desea trabajar solo en modo local no es necesario tener una cuenta en GitLab.
 
@@ -443,6 +401,27 @@ Ni que decir, si el trabajo es en equipo (no confundir trabajar en equipo con tr
 
 ![](https://albertomoyano.github.io/blog-personal/images/kanban.png)
 
+
+## Catálogo automatizado
+
+Una de las cuestiones que necesitaba resolver de manera automatizada, era el catálogo en formato PDF, hasta la versión actual la construcción se hace con una plantilla fija, los datos se toman de los metadatos y solo quedan unos pocos datos para agregar manualmente, en un futuro espero agregar plantillas para disponer de diferentes diseños.
+
+El PDF que obtengo lo llevo a un directorio en donde se encuentran todas las páginas de los diferentes libros y un _script_ hace el trabajo de _costura_ sumando todos los archivos más una tapa en un solo archivo resultante.
+
+![](https://albertomoyano.github.io/blog-personal/images/catalogo.png)
+
+## Obteniendo estadísticas
+
+Estudiar cómo a sido editado un libro o artículo a través de los resultados estadísticos de su interior es lo que permite este módulo, básicamente el contador rastrilla todo el proyecto y lo informa en diferentes planos.
+
+![](https://albertomoyano.github.io/blog-personal/images/estadisticas.png)
+
+## Control de errores desde el logfile
+
+En LaTeX existen diferentes tipos de errores, los voy a agrupar en 2 categorias: _suaves_ y _duros_, los primeros no afectan la generación de la salida, los segundos directamente abortan el proceso de compilación. Por ello es que LaTeX (como todos los lenguajes de programación) provee un archivo de salida que registra todo el proceso de compilación, ya que en caso de ser necesario se lo puede consultar para empezar a indagar por donde vienen los conflictos.
+
+![](https://albertomoyano.github.io/blog-personal/images/logfile.png)
+
 ## Copia de seguridad del trabajo terminado
 
 Llegado a este punto, el trabajo está terminado, el libro impreso, la versión electrónica subida al repositorio, etcétera. Ha llegado el momento de guardar todo en un depósito de respaldo, yo personalmente utilizo [Mega](https://es.wikipedia.org/wiki/Mega_(sitio_web)), su relación costo/beneficio para este menester es la mejor (hay más opciones, por supuesto), también tengo un abono en Google para expandir mi cuota en Drive, pero lo utilizo para otras cosas. El menú **Comprimir directorio para respaldo**, básicamente lo que hace es una copia comprimiendo todo en formato [**`.tar.gz`**](https://es.wikipedia.org/wiki/Tar), la imagen a continuación lo dice todo. Después solo resta llevar ese archivo al repositorio de respaldo.
@@ -457,7 +436,7 @@ Es oportuno aclarar que, así como gbTeXpublisher se encuentra en desarrollo, es
 
 ## Comentario final
 
-No se requiere que los editores de libros tengan conocimientos de programación de manera obligatoria. La función principal de un editor de libros es y seguirá siendo trabajar con el contenido, asegurándose de que sea claro y coherente con una estructura lógica y gramatical. Sin embargo, vivimos en un mundo en donde la tecnología desempeña un papel clave en la producción y distribución de contenidos, y esto incluye a los libros.
+No se requiere que los editores de libros tengan conocimientos de programación de manera obligatoria. La función principal de un editor de libros y revistas es y seguirá siendo trabajar con el contenido, asegurándose de que sea claro y coherente con una estructura lógica y gramatical. Sin embargo, vivimos en un mundo en donde la tecnología desempeña un papel clave en la producción y distribución de contenidos, y esto incluye a los libros y las revistas.
 
 En el contexto actual, tener conocimientos --básicos-- de programación será beneficioso para un editor de libros. Esto se debe a que la publicación digital y la distribución en línea, son cada vez más comunes. La comprensión de conceptos técnicos sobre formatos de archivos, condicionales, expresiones regulares y seguridad, por nombrar algunos, serán útiles para aquellos que trabajan en la industria editorial.
 
@@ -470,6 +449,28 @@ Matthew Carter en una exposición en el 2014 lo planteó en términos muy simple
 {{< youtube xjxyEwjG2Es >}}
 
 Es oportuno aclarar que, así como gbTeXpublisher se encuentra en desarrollo, este artículo también, y puede ser modificado a medida que pasa el tiempo.
+
+## Gambas y solo GNU Linux
+
+No soy programador, me identifico plenamente como editor con una fuerte formación en artes gráficas (tuve taller de preprensa e imprenta durante muchos años), así que mis conocimientos son en base a mucha lectura y práctica. Estuve durante mucho tiempo lidiando con [Python](https://es.wikipedia.org/wiki/Python), Objet Pascal [(Lazarus)](https://es.wikipedia.org/wiki/Lazarus_(entorno_de_desarrollo)) y algo de [Ruby](https://es.wikipedia.org/wiki/Ruby), y reconozco ventajas en todos estos lenguajes, pero mi reflexión en la búsqueda de una solución informática consideró primordialmente el balance entre: calidad, desempeño, facilidad de uso y productividad, el resultado me llevo a encarar gbTeXpublisher con [Gambas](https://gambas.sourceforge.net/en/main.html).
+
+> Gambas es un lenguaje de programación libre derivado de BASIC (de ahí que Gambas quiere decir **G**ambas **A**lmost **M**eans **Bas**ic). Se distribuye con licencia GNU GPL. Cabe destacar que presenta ciertas similitudes con Java, ya que para la ejecución de cualquier aplicación, se requiere un intérprete previamente instalado (Gambas Runtime) que entienda el bytecode de las aplicaciones desarrolladas y lo convierta en código ejecutable por el computador [(wikipedia)](https://es.wikipedia.org/wiki/Gambas).
+
+![](https://albertomoyano.github.io/blog-personal/images/pantalla10.png)
+
+Y si bien los motivos en mi elección son varios, también entiendo que puedan ser cuestionados al decidir trabajar solo con GNU Linux, dejo aquí cuáles fueron los más importantes para mi elección:
+
+1. No programo para terceros, lo hago para mí uso personal.
+2. Utilizo GNU Linux desde hace 30 años.[^saveas]
+3. Gambas es un [RAD](https://es.wikipedia.org/wiki/Desarrollo_r%C3%A1pido_de_aplicaciones).
+4. Es rápido y potente [(Benchmarks)](https://gambas.sourceforge.net/en/main.html#).
+5. Es muy fácil de aprender.
+
+## Algunas aclaraciones sobre mi plataforma de trabajo
+
+Por motivos que superan las expectativas de este artículo y sabiendo que todas las distribuciones de GNU Linux tienen diferencias en las librerías gráficas, voy a mostrar cual es el equipo con el que desarrollo y trabajo a diario utilizando gbTeXpublisher, cualquier persona que este intentando utilizar la aplicación y tenga diferencias en la distribución de los elementos de la interfaz gráfica, me puede contactar indicando que distribución utiliza, con cuál librería gráfica y entorno de escritorio y veré de hacer pruebas de control.
+
+![](https://albertomoyano.github.io/blog-personal/images/manjaro.png)
 
 [^1]: De Bono, Edward (1967). [*New Think: The Use of Lateral thinking*](https://books.google.com.ar/books/about/El_pensamiento_lateral_pr%C3%A1ctico.html?id=ir_PDOmfHBwC&printsec=frontcover&source=kp_read_button&hl=es-419&redir_esc=y#v=onepage&q&f=false), Avon Books.
 
