@@ -7,9 +7,11 @@ tags = ["LaTeX", "gbTeXpublisher",]
 pin = true
 +++
 
-gbTeXpublisher nace como resultado de una necesidad concreta –la mía– ya que desde hace bastante tiempo adhiero a la edición ramificada y encuentro en [LaTeX](https://es.wikipedia.org/wiki/LaTeX) la vía apropiada para conseguirlo, hice intentos con markdown, asciidoc y asciidoctor, pero al final del recorrido siempre encontraba problemas, fundamentalmente en la salida a PDF, me estoy refiriendo a una salida con un **alto estándar de calidad tipográfica**.
+gbTeXpublisher es una aplicación orientada a la producción editorial, si sos editor, corrector y/o diseñador de libros con una fuerte impronta en la edición científica, este artículo introductorio te puede interesar.
 
 <!--more-->
+
+gbTeXpublisher nace como resultado de una necesidad concreta –[mi producción editorial](https://www.edicionesimagomundi.com/)–, desde hace bastante tiempo adhiero al modelo de edición ramificada y encuentro en [LaTeX](https://es.wikipedia.org/wiki/LaTeX) la vía apropiada para conseguirlo, hice intentos con markdown, asciidoc y asciidoctor, pero al final del recorrido siempre encontraba problemas, fundamentalmente en la salida a PDF, me estoy refiriendo a una salida con un **alto estándar de calidad tipográfica**.
 
 gbTeXpublisher es una aplicación de escritorio que permite gestionar los procesos de producción editorial de manera fácil, me gusta pensar en esta aplicación como un facilitador, ya que todo lo que se puede hacer **con** gbTeXpublisher, también se puede hacer **sin** gbTeXpublisher, la diferencia radica en la facilidad que otorga su interfaz.
 
@@ -19,7 +21,7 @@ gbTeXpublisher posee [licencia GPL3](https://www.gnu.org/licenses/gpl-3.0.en.htm
 
 Este artículo es un intento de presentación formal (aunque todavía el desarrollo se encuentre en estado _beta_) y me parece oportuno comenzar con una introducción teórica sobre los modelos de producción editorial al día de hoy.
 
-## ...
+## Pequeña introducción
 
 Es posible observar que la edición es íntegramente digital desde comienzo de los noventa, ya que los diferentes intervinientes en el proceso editorial, han terminado incorporando a los sistemas informáticos en su uso diario, ya sea para escribir o producción editorial, también podemos asegurar que las imprentas (por dar un ejemplo del proceso) hoy solo reciben trabajos en formato digital.
 
@@ -29,9 +31,9 @@ La idea que propongo consiste en trabajar sobre un modelo de edición estandariz
 
 [Brian Kernighan](https://es.wikipedia.org/wiki/Brian_Kernighan) dijo alguna vez que el problema con el WYSIWYG (*lo que ves es lo que obtienes*) es que en realidad lo que ves es **TODO** lo que obtienes. Las interfaces gráficas son excelentes para muchas cosas, yo las utilizo de manera constante, tampoco escapo a ellas. Pero también uso la consola con un _Shell_ cuando necesito elasticidad, ya que es mucho mas práctica y potente para algunas tareas.
 
-## Edición cíclica
+## El modelo cíclico (la edición que conocemos)
 
-Podemos observar en la figura a continuación que la edición cíclica se concentra en la posibilidad de producir al mismo tiempo para varios soportes de salida (un inicio A, deriva en un destino B, C, etc.), tratando de conservar la idea de que la publicación (en nuestro caso un libro) tiene un solo camino a seguir. Este método de trabajo está arraigado en la idea de que el *software* de alguna multinacional hará el trabajo milagroso de hacerlo posible, otorgándonos tranquilidad al concebir la conversión a diferentes formatos. Solo cuando se toma conciencia *real* de la pérdida que tenemos en la calidad técnica y editorial, se hace patente que la edición cíclica no es un método óptimo para la producción multiformato y multisoporte.
+Podemos observar en la figura a continuación que la edición cíclica se concentra en la posibilidad de producir al mismo tiempo para varios soportes de salida (un inicio A, deriva en un destino B, C, etc.), tratando de conservar la idea de que la publicación (en nuestro caso un libro) tiene un solo camino a seguir. Este método de trabajo está arraigado en la idea de que algún *software* hará el trabajo milagroso de hacerlo posible, otorgándonos tranquilidad al concebir la conversión a diferentes formatos. Solo cuando se toma conciencia *real* de la pérdida que tenemos en la calidad técnica y editorial, se hace patente que la edición cíclica no es un método óptimo para la producción multiformato y multisoporte.
 
 ![](https://albertomoyano.github.io/blog-personal/images/ciclos.png)
 
@@ -39,9 +41,9 @@ Pero es entendible que esto haya pasado, si observamos como era el modelo de pro
 
 ![](https://albertomoyano.github.io/blog-personal/images/gutenberg.png)
 
-## Edición ramificada
+## La edición ramificada (el futuro por venir)
 
-La edición ramificada es un modelo de producción que implica una apertura en diversos aspectos, para comprender mejor esto se puede recurrir al término _single source_ (fuente única), que refiere a la práctica de mantener un único origen para el contenido y este puede ser utilizado para obtener múltiples destinos de salida. Esto puede aplicarse tanto a la creación como a la gestión y al mantenimiento de los contenidos.
+La edición ramificada es un modelo de producción que implica una apertura en diversos aspectos, para comprender mejor esto se puede recurrir al término _single source_ (fuente única), que refiere a la práctica de mantener un único origen para el contenido y que pueda ser utilizado en diversos procesos y así obtener múltiples destinos de salida. Esto puede aplicarse tanto a la creación como a la gestión y al mantenimiento de los contenidos.
 
 En el tema que nos involucra --la edición de libros y revistas-- _single source_ implica tener un único origen para el contenido del libro o revista, que luego se puede adaptar para generar diferentes formatos de salida, como impresión, ePub, HTML o XML.
 
@@ -49,9 +51,11 @@ La edición ramificada facilita la consistencia de los datos y la eficiencia en 
 
 En la edición técnica y en los sistemas de documentación, la edición ramificada también se utiliza para describir el enfoque de mantener una única fuente de información para la creación de manuales, catálogos u otros materiales, lo que facilita la actualización y consistencia en diferentes contextos de uso.
 
-Ahora bien, para empezar a involucrarnos en este modelo hagamos el ejercicio de cambiar la perspectiva de producción, realicemos un ejercicio de pensamiento lateral.[^1] La idea es simple: **no nos concentremos en los formatos de salida, sino en los caminos que conducen a ellos**. La conclusión se hace evidente: a múltiples caminos, múltiples formatos.
+Ahora bien, para empezar a involucrarnos en este modelo hagamos el ejercicio de cambiar la perspectiva de producción, realicemos un ejercicio de pensamiento lateral.[^1] La idea es simple: **no nos concentremos en los formatos de salida, sino en los caminos que conducen a ellos**.
 
-Para trabajar con este modelo de producción es necesario utilizar un lenguaje de marcas,[^marcas] ¿porqué?, hasta ahora la mejor forma conocida de producir es separando **la estructura del contenido de su modelo de representación visual** y esto se consigue aplicando marcas (etiquetando) a las partes del documento, ya que se pueden incorporar todas las que sean necesarias acerca de la estructura y el diseño para la representación del texto en la salida buscada.
+Para una mejor comprensión de lo que digo, pensemos que tenemos un archivo fuente, tomamos el camino para obtener un PDF y el resultado es perfecto, bien, ahora con el mismo archivo fuente tomamos el camino para obtener un ePub y encontramos errores (de diseño, estructura, índice, etc., no importa de qué) los arreglos se deben realizar en el archivo fuente, **no en el ePub**, esto es lo que nos permite mantener consistencia en el origen de los datos.
+
+Para trabajar con este modelo de producción es necesario utilizar algún lenguaje de marcas,[^marcas] ¿porqué?, porque hasta ahora la mejor forma conocida de producir es separando **la estructura del contenido** de su **modelo de representación visual** y esto se consigue aplicando marcas (etiquetando) a las partes del documento, ya que se pueden incorporar todas las que sean necesarias acerca de la estructura y el diseño para la representación del texto en la salida buscada.
 
 La figura a continuación nos muestra un modelo (de todos los posibles) de edición ramificada, donde no existe una secuencia de A con B, sino un inicio de (A) con posibles caminos continuadores (B, C, D, etc.), algunos pueden frenar su andar al llegar a su destino final, otros pueden bifurcarse y convertirse en el inicio de un nuevo camino.
 
@@ -98,9 +102,11 @@ Luego de varios intentos me dí por vencido, esta [imagen](https://i.pinimg.com/
 
 ## Todos los caminos conducen a LaTeX
 
-Conocí LaTeX en el año 1993, de la mano de Horacio Suárez, recién llegado de México venía de trabajar en una editorial orientada a las matemáticas, me lo mostro en una máquina corriendo [MS-DOS](https://es.wikipedia.org/wiki/MS-DOS) y ejecutando el editor [epsilon](https://lugaru.com/), me sorprendió mucho, pero no fue hasta 10 años después, cuando abandone la preprensa y la imprenta para dedicarme de lleno a la edición que le empecé a dar un uso intenso.
+Conocí LaTeX en el año 1993, de la mano de Horacio Suárez, él venía de trabajar en una editorial orientada a las matemáticas, me lo mostró en una PC corriendo [MS-DOS](https://es.wikipedia.org/wiki/MS-DOS) y ejecutando el editor [epsilon](https://lugaru.com/), recuerdo que me sorprendió mucho, pero no fue hasta 10 años después, cuando abandone la preprensa y la imprenta para dedicarme de lleno a la edición científica que le empecé a dar un uso intenso.
 
-Esto no impide que en los últimos años también haya trabajado con [Markdown](https://es.wikipedia.org/wiki/Markdown) y [AsciiDoc](https://en.wikipedia.org/wiki/AsciiDoc) (con el intérprete [asciidoctor](https://asciidoctor.org/)), y aún hoy los sigo usando (los artículos de este blog los escribo en markdown).
+Esto no me impidió en los últimos años también haber trabajado con [Markdown](https://es.wikipedia.org/wiki/Markdown) y [AsciiDoc](https://en.wikipedia.org/wiki/AsciiDoc) (con el intérprete [asciidoctor](https://asciidoctor.org/)), y aún hoy los sigo usando (los artículos de este blog los escribo en markdown).
+
+Intentar hacer una muestra de las capacidades de LaTeX en la producción editorial sería interminable, ya que no hay límites como los que se pueden encontrar en una aplicación de DTP (donde el programa determina que se puede hacer y que no) en LaTeX el límite lo pone el propio conocimiento que se tenga de él (por eso es un lenguaje).
 
 ### Botones para muestra
 
@@ -108,7 +114,7 @@ Para poder graficar mejor lo dicho en el párrafo anterior, dejo muestras de car
 
 ### Homeoarchy
 
-Control de inconsistencia de principio y fin de linea.
+Control de inconsistencia de principio y fin de linea.[^home]
 
 ![](https://albertomoyano.github.io/blog-personal/images/home.png)
 
@@ -126,7 +132,7 @@ Se puede observar que la tabla de la base de datos, no contiene bastardillas, ni
     title        = {La cuarta discontinuidad},
     }
 
-Y esta es la salida que se obtiene en el PDF.
+Y esta es la salida que se obtiene en el PDF para el modelo autor-año con el estándar del paquete [biblatex-philosophy](https://ctan.org/pkg/biblatex-philosophy).
 
 ![](https://albertomoyano.github.io/blog-personal/images/mazlish.png)
 
@@ -232,7 +238,7 @@ La figura a continuación muestra un resumen de cómo es el flujo de trabajo, es
 
 El [motor SQL](https://es.wikipedia.org/wiki/SQL) lleva la tarea de centralizar toda aquella información que pudiera ser reutilizada, evitando la redundancia de datos. La inyección de los datos se hace de manera automática y el ABM (alta, baja y modificación) de los datos se trabajan desde los diferentes formularios que posee gbTeXpublisher.
 
-## Gambas
+## Gambas y solo GNU Linux
 
 No soy programador, me identifico plenamente como editor con una fuerte formación en artes gráficas (tuve taller de preprensa e imprenta durante muchos años), así que mis conocimientos son en base a mucha lectura y práctica. Estuve durante mucho tiempo lidiando con [Python](https://es.wikipedia.org/wiki/Python), Objet Pascal [(Lazarus)](https://es.wikipedia.org/wiki/Lazarus_(entorno_de_desarrollo)) y algo de [Ruby](https://es.wikipedia.org/wiki/Ruby), y reconozco ventajas en todos estos lenguajes, pero mi reflexión en la búsqueda de una solución informática consideró primordialmente el balance entre: calidad, desempeño, facilidad de uso y productividad, el resultado me llevo a encarar gbTeXpublisher con [Gambas](https://gambas.sourceforge.net/en/main.html).
 
@@ -308,6 +314,8 @@ Las notas pueden ser exportadas a formato **`.docx`** para ser enviadas por corr
 ![](https://albertomoyano.github.io/blog-personal/images/pantalla08.png)
 
 ## Configurando las salidas
+
+gbTeXpublisher utiliza como motor de conversión subyacente [make4ht](https://www.ctan.org/pkg/make4ht) que es un sistema de compilación simple para [tex4ht](https://www.ctan.org/pkg/tex4ebook?lang=en).
 
 Existen 4 archivos de configuración, el programa instala una configuración base que sirve para una gran  mayoría de casos, en estos archivos es en donde se hacen cambios cuando se pretende alterar la salida más allá del diseño visual.
 
@@ -475,3 +483,5 @@ Es oportuno aclarar que, así como gbTeXpublisher se encuentra en desarrollo, es
 [^lua]: En este video (https://www.youtube.com/watch?v=h7gsqTQq8VU) de Juan Macías --un excelente ortotipógrafo español-- se puede observar todo el potencial que hay en el uso de Lua con LaTeX.
 
 [^saveas]: En el año 1993 fundé SaveAs... un taller de preimpresión en el que tenía 4 servidores con [Debian](https://www.debian.org/index.es.html).
+
+[^home]: Una traducción posible de _homeoarchy_ sería: omisión accidental de una línea de texto durante la lectura, debido a similitudes en su contenido inicial.

@@ -13,7 +13,7 @@
       <pubDate>Mon, 04 Dec 2023 00:00:00 +0000</pubDate>
       
       <guid>https://albertomoyano.github.io/blog-gbtexpublisher/post/gbtex/</guid>
-      <description>&lt;p&gt;gbTeXpublisher nace como resultado de una necesidad concreta –la mía– ya que desde hace bastante tiempo adhiero a la edición ramificada y encuentro en &lt;a href=&#34;https://es.wikipedia.org/wiki/LaTeX&#34;&gt;LaTeX&lt;/a&gt; la vía apropiada para conseguirlo, hice intentos con markdown, asciidoc y asciidoctor, pero al final del recorrido siempre encontraba problemas, fundamentalmente en la salida a PDF, me estoy refiriendo a una salida con un &lt;strong&gt;alto estándar de calidad tipográfica&lt;/strong&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;gbTeXpublisher es una aplicación orientada a la producción editorial, si sos editor, corrector y/o diseñador de libros con una fuerte impronta en la edición científica, este artículo introductorio te puede interesar.&lt;/p&gt;</description>
     </item>
     
   </channel>
