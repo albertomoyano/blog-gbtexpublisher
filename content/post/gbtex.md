@@ -114,7 +114,7 @@ Para poder graficar mejor lo dicho en el párrafo anterior, dejo muestras de car
 
 ### Homeoarchy
 
-Control de inconsistencia de principio y fin de linea.[^home]
+Control de inconsistencia de principio y fin de linea.[^home] En este [artículo](https://albertomoyano.github.io/blog-gbtexpublisher/post/homeoarchy/) que escribí hace unos años doy mayores detalles sobre este tema.
 
 ![](https://albertomoyano.github.io/blog-personal/images/home.png)
 
