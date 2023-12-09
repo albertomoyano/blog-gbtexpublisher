@@ -390,11 +390,14 @@ Las siguientes capturas muestran que metadatos son leídos en el PDF por los ind
 
 ![](https://albertomoyano.github.io/blog-gbtexpublisher/images/xmp3.png)
 
-Los metadatos específicos de los autores y las colecciones se trabajan desde otras tablas de la base de datos para evitar la redundancia.
+Los metadatos específicos de los autores y las colecciones se trabajan desde otras tablas de la base de datos para evitar la redundancia. En el siguiente video se puede observar lo explicado anteriormente.
 
+
+
+<!-- {{< youtube 5HOcjV5Y2no >}}
 ![](https://albertomoyano.github.io/blog-personal/images/autores.png)
 
-![](https://albertomoyano.github.io/blog-personal/images/coleccion.png)
+![](https://albertomoyano.github.io/blog-personal/images/coleccion.png) -->
 
 ## Catálogo automatizado
 
@@ -404,13 +407,13 @@ El PDF que obtengo lo llevo a un directorio en donde se encuentran todas las pá
 
 ![](https://albertomoyano.github.io/blog-personal/images/catalogo.png)
 
-## Estadísticas
+## Obteniendo estadísticas
 
 Estudiar cómo a sido editado un libro o artículo a través de los resultados estadísticos de su interior es lo que permite este módulo, básicamente el contador rastrilla todo el proyecto y lo informa en diferentes planos.
 
 ![](https://albertomoyano.github.io/blog-personal/images/estadisticas.png)
 
-## Logfile
+## Control de errores desde el logfile
 
 En LaTeX existen diferentes tipos de errores, los voy a agrupar en 2 categorias: _suaves_ y _duros_, los primeros no afectan la generación de la salida, los segundos directamente abortan el proceso de compilación. Por ello es que LaTeX (como todos los lenguajes de programación) provee un archivo de salida que registra todo el proceso de compilación, ya que en caso de ser necesario se lo puede consultar para empezar a indagar por donde vienen los conflictos.
 
@@ -418,11 +421,9 @@ En LaTeX existen diferentes tipos de errores, los voy a agrupar en 2 categorias:
 
 ## Git local y remoto como copia de seguridad temporal
 
-Hace un tiempo (largo) vi una imagen en la red [linkedin](https://www.linkedin.com/in/edicion-cientifica/) que a simple vista (antes de leer el artículo) pensé que era un meme,[^meme] en la misma había muchos archivos MS Word, nombrados: versión final, versión final final, esta es la última versión, ahora sí la última; y así muchas copias de un word con todos los nombres que se pudieran imaginar.
+Hace un tiempo (largo) vi una imagen en la red [linkedin](https://www.linkedin.com/in/edicion-cientifica/) que a simple vista (antes de leer el artículo) pensé que era un meme,[^meme] en la misma había muchos archivos MS Word, nombrados: versión final, versión final final, esta es la última versión, ahora sí la última; y así muchas copias de un word con todos los nombres que se pudieran imaginar, la imagen buscaba encontrar quiénes se identificaban con la imagen.
 
-Git fue desarrollado por [Linus Torvalds](https://es.wikipedia.org/wiki/Linus_Torvalds) como resultado de sus necesidades puntuales al frente del equipo de desarrolladores del kernel de Linux, yo le doy un giro más a la rosca y lo empiezo a utilizar en la producción editorial, gbTeXpublisher trabaja con [GitLab](https://es.wikipedia.org/wiki/GitLab), en su versión gratuita es quien mejor cumple con la ecuación costo/beneficio, ya que su función de generación de instantáneas y capacidad de almacenaje son más que suficientes para el proceso de producción.
-
-Si se desea trabajar solo en modo local, no es necesario tener cuenta en GitLab.
+[Git](https://es.wikipedia.org/wiki/Git) es un sistema de control de versiones distribuido, ampliamente utilizado para el seguimiento de cambios. Fue creado por [Linus Torvalds](https://es.wikipedia.org/wiki/Linus_Torvalds) en 2005, es una herramienta poderosa y flexible, fundamental para el trabajo en equipo. Puede llevar algo de tiempo acostumbrarse --a su lógica de uso--, pero una vez aprendidos sus conceptos se vuelve esencial para trabajar de manera sólida y segura. Si se desea trabajar solo en modo local no es necesario tener una cuenta en GitLab.
 
 ![](https://albertomoyano.github.io/blog-personal/images/pantalla14.png)
 

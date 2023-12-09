@@ -53,7 +53,7 @@
   <meta itemprop="name" content="Presentación de gbTeXpublisher">
 <meta itemprop="description" content="Presentación de gbTeXpublisher, marco teórico"><meta itemprop="datePublished" content="2023-12-04T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-12-04T00:00:00+00:00" />
-<meta itemprop="wordCount" content="5796"><meta itemprop="image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images"/>
+<meta itemprop="wordCount" content="5808"><meta itemprop="image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images"/>
 <meta itemprop="keywords" content="LaTeX,gbTeXpublisher," />
 
   
@@ -159,8 +159,8 @@
     <li><a href="#siglas-y-glosarios">Siglas y glosarios</a></li>
     <li><a href="#trabajando-con-los-metadatos">Trabajando con los metadatos</a></li>
     <li><a href="#catálogo-automatizado">Catálogo automatizado</a></li>
-    <li><a href="#estadísticas">Estadísticas</a></li>
-    <li><a href="#logfile">Logfile</a></li>
+    <li><a href="#obteniendo-estadísticas">Obteniendo estadísticas</a></li>
+    <li><a href="#control-de-errores-desde-el-logfile">Control de errores desde el logfile</a></li>
     <li><a href="#git-local-y-remoto-como-copia-de-seguridad-temporal">Git local y remoto como copia de seguridad temporal</a></li>
     <li><a href="#controlando-los-tiempos-y-las-cargas-de-trabajo">Controlando los tiempos y las cargas de trabajo</a></li>
     <li><a href="#copia-de-seguridad-del-trabajo-terminado">Copia de seguridad del trabajo terminado</a></li>
@@ -436,23 +436,22 @@ title        = {La cuarta discontinuidad},
 <p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/xmp1.png" alt=""></p>
 <p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/xmp2.png" alt=""></p>
 <p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/xmp3.png" alt=""></p>
-<p>Los metadatos específicos de los autores y las colecciones se trabajan desde otras tablas de la base de datos para evitar la redundancia.</p>
-<p><img src="https://albertomoyano.github.io/blog-personal/images/autores.png" alt=""></p>
-<p><img src="https://albertomoyano.github.io/blog-personal/images/coleccion.png" alt=""></p>
+<p>Los metadatos específicos de los autores y las colecciones se trabajan desde otras tablas de la base de datos para evitar la redundancia. En el siguiente video se puede observar lo explicado anteriormente.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <h2 id="catálogo-automatizado">Catálogo automatizado</h2>
 <p>Una de las cuestiones que necesitaba resolver de manera automatizada, era el catálogo en formato PDF, hasta la versión actual la construcción se hace con una plantilla fija, los datos se toman de los metadatos y solo quedan unos pocos datos para agregar manualmente, en un futuro espero agregar plantillas para disponer de diferentes diseños.</p>
 <p>El PDF que obtengo lo llevo a un directorio en donde se encuentran todas las páginas de los diferentes libros y un <em>script</em> hace el trabajo de <em>costura</em> sumando todos los archivos más una tapa en un solo archivo resultante.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/catalogo.png" alt=""></p>
-<h2 id="estadísticas">Estadísticas</h2>
+<h2 id="obteniendo-estadísticas">Obteniendo estadísticas</h2>
 <p>Estudiar cómo a sido editado un libro o artículo a través de los resultados estadísticos de su interior es lo que permite este módulo, básicamente el contador rastrilla todo el proyecto y lo informa en diferentes planos.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/estadisticas.png" alt=""></p>
-<h2 id="logfile">Logfile</h2>
+<h2 id="control-de-errores-desde-el-logfile">Control de errores desde el logfile</h2>
 <p>En LaTeX existen diferentes tipos de errores, los voy a agrupar en 2 categorias: <em>suaves</em> y <em>duros</em>, los primeros no afectan la generación de la salida, los segundos directamente abortan el proceso de compilación. Por ello es que LaTeX (como todos los lenguajes de programación) provee un archivo de salida que registra todo el proceso de compilación, ya que en caso de ser necesario se lo puede consultar para empezar a indagar por donde vienen los conflictos.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/logfile.png" alt=""></p>
 <h2 id="git-local-y-remoto-como-copia-de-seguridad-temporal">Git local y remoto como copia de seguridad temporal</h2>
-<p>Hace un tiempo (largo) vi una imagen en la red <a href="https://www.linkedin.com/in/edicion-cientifica/">linkedin</a> que a simple vista (antes de leer el artículo) pensé que era un meme,<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup> en la misma había muchos archivos MS Word, nombrados: versión final, versión final final, esta es la última versión, ahora sí la última; y así muchas copias de un word con todos los nombres que se pudieran imaginar.</p>
-<p>Git fue desarrollado por <a href="https://es.wikipedia.org/wiki/Linus_Torvalds">Linus Torvalds</a> como resultado de sus necesidades puntuales al frente del equipo de desarrolladores del kernel de Linux, yo le doy un giro más a la rosca y lo empiezo a utilizar en la producción editorial, gbTeXpublisher trabaja con <a href="https://es.wikipedia.org/wiki/GitLab">GitLab</a>, en su versión gratuita es quien mejor cumple con la ecuación costo/beneficio, ya que su función de generación de instantáneas y capacidad de almacenaje son más que suficientes para el proceso de producción.</p>
-<p>Si se desea trabajar solo en modo local, no es necesario tener cuenta en GitLab.</p>
+<p>Hace un tiempo (largo) vi una imagen en la red <a href="https://www.linkedin.com/in/edicion-cientifica/">linkedin</a> que a simple vista (antes de leer el artículo) pensé que era un meme,<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup> en la misma había muchos archivos MS Word, nombrados: versión final, versión final final, esta es la última versión, ahora sí la última; y así muchas copias de un word con todos los nombres que se pudieran imaginar, la imagen buscaba encontrar quiénes se identificaban con la imagen.</p>
+<p><a href="https://es.wikipedia.org/wiki/Git">Git</a> es un sistema de control de versiones distribuido, ampliamente utilizado para el seguimiento de cambios. Fue creado por <a href="https://es.wikipedia.org/wiki/Linus_Torvalds">Linus Torvalds</a> en 2005, es una herramienta poderosa y flexible, fundamental para el trabajo en equipo. Puede llevar algo de tiempo acostumbrarse &ndash;a su lógica de uso&ndash;, pero una vez aprendidos sus conceptos se vuelve esencial para trabajar de manera sólida y segura. Si se desea trabajar solo en modo local no es necesario tener una cuenta en GitLab.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla14.png" alt=""></p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla15.png" alt=""></p>
 <h2 id="controlando-los-tiempos-y-las-cargas-de-trabajo">Controlando los tiempos y las cargas de trabajo</h2>
