@@ -53,7 +53,7 @@
   <meta itemprop="name" content="Presentación de gbTeXpublisher">
 <meta itemprop="description" content="Presentación de gbTeXpublisher, marco teórico"><meta itemprop="datePublished" content="2023-12-04T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-12-04T00:00:00+00:00" />
-<meta itemprop="wordCount" content="5793"><meta itemprop="image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images"/>
+<meta itemprop="wordCount" content="5796"><meta itemprop="image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images"/>
 <meta itemprop="keywords" content="LaTeX,gbTeXpublisher," />
 
   
@@ -200,7 +200,7 @@
 <p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/completo.png" alt=""></p>
 <p>El ejemplo de la figura es uno de los tantos posibles, que tiene su base en el lenguaje de marcas <a href="https://es.wikipedia.org/wiki/Markdown">Markdown</a>, pero también existen otros lenguajes como <a href="https://asciidoc-py.github.io/index.html">asciidoc</a>, <a href="https://orgmode.org/">Org Mode</a> y por supuesto <a href="https://es.wikipedia.org/wiki/LaTeX">LaTeX</a>.</p>
 <p>La principal consigna que persigue este modelo es ir de lo simple a lo complejo. Cada formato de salida tiene sus propias necesidades particulares. El PDF para pantalla no es exactamente igual al de imprenta, que a su vez requiere otros ajustes; en el ePub puede hacerse necesario configurar de otra manera las figuras o cuadros para una correcta visualización; en HTML para una lectura <em>on line</em> se puede sacar provecho de la visualización interactiva y así un largo etcétera y como punto de inflexión vamos a encontrar la cuestión de los metadatos, donde las diferentes salidas poseen solo un pequeño grupo de coincidencias. Por consiguiente, lo que se hace imperioso es <strong>evitar la herencia de características</strong>, que es el principal problema que conlleva la metodología cíclica, a diferencia de esta, la edición ramificada se inicia con un documento simple de <a href="https://es.wikipedia.org/wiki/Archivo_de_texto">texto plano</a> que <strong>contiene solo las marcas</strong> de los elementos estructurales (que a su vez pueden contener el diseño), para luego con ajustes manuales o automatizados obtener cada salida y que estas no contengan errores heredados.</p>
-<p>Ejemplo conceptual de la lógica a seguir, supongamos que tengo una marca de cita:<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
+<p>Este es un ejemplo conceptual de la lógica a seguir, supongamos que tengo una marca de cita:<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
 <ol>
 <li>Si la salida es a PDF se aplica «Q» diseño y valor de estructura.</li>
 <li>Si la salida es a ePub se aplica «X» diseño y valor de estructura.</li>

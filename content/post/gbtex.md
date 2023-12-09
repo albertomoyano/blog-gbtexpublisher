@@ -65,7 +65,7 @@ El ejemplo de la figura es uno de los tantos posibles, que tiene su base en el l
 
 La principal consigna que persigue este modelo es ir de lo simple a lo complejo. Cada formato de salida tiene sus propias necesidades particulares. El PDF para pantalla no es exactamente igual al de imprenta, que a su vez requiere otros ajustes; en el ePub puede hacerse necesario configurar de otra manera las figuras o cuadros para una correcta visualización; en HTML para una lectura _on line_ se puede sacar provecho de la visualización interactiva y así un largo etcétera y como punto de inflexión vamos a encontrar la cuestión de los metadatos, donde las diferentes salidas poseen solo un pequeño grupo de coincidencias. Por consiguiente, lo que se hace imperioso es **evitar la herencia de características**, que es el principal problema que conlleva la metodología cíclica, a diferencia de esta, la edición ramificada se inicia con un documento simple de [texto plano](https://es.wikipedia.org/wiki/Archivo_de_texto) que **contiene solo las marcas** de los elementos estructurales (que a su vez pueden contener el diseño), para luego con ajustes manuales o automatizados obtener cada salida y que estas no contengan errores heredados.
 
-Ejemplo conceptual de la lógica a seguir, supongamos que tengo una marca de cita:[^cita]
+Este es un ejemplo conceptual de la lógica a seguir, supongamos que tengo una marca de cita:[^cita]
 
 1. Si la salida es a PDF se aplica «Q» diseño y valor de estructura.
 2. Si la salida es a ePub se aplica «X» diseño y valor de estructura.
