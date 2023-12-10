@@ -456,7 +456,7 @@ No soy programador, me identifico plenamente como editor con una fuerte formaci�
 
 > Gambas es un lenguaje de programación libre derivado de BASIC (de ahí que Gambas quiere decir **G**ambas **A**lmost **M**eans **Bas**ic). Se distribuye con licencia GNU GPL. Cabe destacar que presenta ciertas similitudes con Java, ya que para la ejecución de cualquier aplicación, se requiere un intérprete previamente instalado (Gambas Runtime) que entienda el bytecode de las aplicaciones desarrolladas y lo convierta en código ejecutable por el computador [(wikipedia)](https://es.wikipedia.org/wiki/Gambas).
 
-![](https://albertomoyano.github.io/blog-personal/images/pantalla10.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/pantalla10.png)
 
 Y si bien los motivos en mi elección son varios, también entiendo que puedan ser cuestionados al decidir trabajar solo con GNU Linux, dejo aquí cuáles fueron los más importantes para mi elección:
 
