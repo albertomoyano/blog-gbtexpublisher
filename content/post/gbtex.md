@@ -104,6 +104,8 @@ Existen más proyectos girando en torno a la edición ramificada y no tuve tiemp
 
 Para los diseños muy elaborados utilizados en revistas, también es posible aplicar la metodología de le-tex, que es salir a un XML y trabajar el diseño desde InDesign o QXpress, se suma un posible conflicto de control, pero es el precio a pagar para diseños específicos.
 
+Es interesante observar lo siguiente, muchos proyectos para edición ramificada utilizan LaTeX como camino para la salida a PDF (pero como camino secundario), esto me llevo a observar que lo que prima en los proyectos es cuál salida es la determinante, quiero decir, si la salida a HTML o ePub es prioritaria sobre que la salida a PDF, producir directamente en asciidoc va a ser lo mejor, por dar un ejemplo.
+
 ## Todos los caminos conducen a LaTeX
 
 Conocí LaTeX en el año 1993, de la mano de Horacio Suárez, él venía de trabajar en una editorial orientada a las matemáticas, me lo mostró en una PC corriendo [MS-DOS](https://es.wikipedia.org/wiki/MS-DOS) y ejecutando el editor [epsilon](https://lugaru.com/), recuerdo que me sorprendió mucho, pero no fue hasta 10 años después, cuando abandone la preprensa y la imprenta para dedicarme de lleno a la edición científica que le empecé a dar un uso intenso.
