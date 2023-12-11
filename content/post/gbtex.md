@@ -444,11 +444,13 @@ Es oportuno aclarar que, así como gbTeXpublisher se encuentra en desarrollo, es
 
 ## Comentario final
 
-No se requiere que los editores de libros tengan conocimientos de programación de manera obligatoria. La función principal de un editor de libros y revistas es y seguirá siendo trabajar con el contenido, asegurándose de que sea claro y coherente con una estructura lógica y gramatical. Sin embargo, vivimos en un mundo en donde la tecnología desempeña un papel clave en la producción y distribución de contenidos, y esto incluye a los libros y las revistas.
+Para explicitar lo obvio, no creo que los editores de libros deban tener conocimientos de programación de manera obligatoria. **La función principal de un editor de libros y/o revistas es y seguirá siendo trabajar con el contenido**, asegurándose de que sea claro y coherente con una estructura lógica y gramatical. Sin embargo, vivimos en un mundo en donde la tecnología desempeña un papel clave en la producción y distribución de contenidos, y esto incluye a los libros y las revistas.
 
-En el contexto actual, tener conocimientos --básicos-- de programación será beneficioso para un editor de libros. Esto se debe a que la publicación digital y la distribución en línea, son cada vez más comunes. La comprensión de conceptos técnicos sobre formatos de archivos, condicionales, expresiones regulares y seguridad, por nombrar algunos, serán útiles para aquellos que trabajan en la industria editorial.
+En el contexto actual, tener conocimientos --al menos básicos-- de informática será más que beneficioso para un editor. Esto se debe a que la publicación digital y la distribución en línea, son cada vez más comunes. La comprensión de conceptos técnicos sobre formatos de archivos, valores condicionales, expresiones regulares, seguridad, etcétera, por nombrar algunos, serán útiles para aquellos que trabajan en la industria editorial.
 
-No tengo dudas de que el espacio editorial en el que me desempeño --la edición científica-- necesita una transformación enriquecedora sobre su modelo de producción, a efectos de poder garantizar --sin fechas de vencimiento-- su capacidad de poder mantenerse en el tiempo, asegurando el procesamiento y la difusión de sus contenidos. El método elegido para la edición científica, es en gran medida responsable de la calidad de las fuentes de información que produce. Es evidente que los variados saberes involucrados, le otorgan a esta profesión un desempeño interdisciplinario complejo dentro del campo de la producción del conocimiento.
+No tengo dudas de que el espacio editorial en el que me desempeño --la edición científica-- necesita una transformación enriquecedora sobre su modelo de producción, a efectos de poder garantizar --sin fechas de vencimiento-- su capacidad de poder mantenerse en el tiempo, asegurando el procesamiento y la difusión de sus contenidos. El método elegido para la producción editorial, es en gran medida responsable de la calidad de las fuentes de información que produce.
+
+Es evidente que los variados saberes involucrados, le otorgan a esta profesión un desempeño interdisciplinario complejo dentro del campo de la producción del conocimiento.
 
 Matthew Carter en una exposición en el 2014 lo planteó en términos muy simples:
 
@@ -460,7 +462,7 @@ Es oportuno aclarar que, así como gbTeXpublisher se encuentra en desarrollo, es
 
 ## Gambas y solo GNU Linux
 
-No soy programador, me identifico plenamente como editor con una fuerte formación en artes gráficas (tuve taller de preprensa e imprenta durante muchos años), así que mis conocimientos son en base a mucha lectura y práctica. Estuve durante mucho tiempo lidiando con [Python](https://es.wikipedia.org/wiki/Python), Objet Pascal [(Lazarus)](https://es.wikipedia.org/wiki/Lazarus_(entorno_de_desarrollo)) y algo de [Ruby](https://es.wikipedia.org/wiki/Ruby), y reconozco ventajas en todos estos lenguajes, pero mi reflexión en la búsqueda de una solución informática consideró primordialmente el balance entre: calidad, desempeño, facilidad de uso y productividad, el resultado me llevo a encarar gbTeXpublisher con [Gambas](https://gambas.sourceforge.net/en/main.html).
+No soy programador, me identifico plenamente como editor con una fuerte formación en artes gráficas (tuve taller de preprensa e imprenta durante 15 años), así que mis conocimientos informáticos son en base a mucha lectura y práctica. Estuve durante mucho tiempo lidiando con [Python](https://es.wikipedia.org/wiki/Python), [Objet Pascal]https://es.wikipedia.org/wiki/Object_Pascal, [Lazarus](https://es.wikipedia.org/wiki/Lazarus_(entorno_de_desarrollo)) y [Ruby](https://es.wikipedia.org/wiki/Ruby), reconozco ventajas en todos estos lenguajes, pero mi reflexión en la búsqueda de una solución informática consideró primordialmente el balance entre: facilidad de uso y productividad; el resultado me llevo a encarar gbTeXpublisher con [Gambas](https://gambas.sourceforge.net/en/main.html).
 
 > Gambas es un lenguaje de programación libre derivado de BASIC (de ahí que Gambas quiere decir **G**ambas **A**lmost **M**eans **Bas**ic). Se distribuye con licencia GNU GPL. Cabe destacar que presenta ciertas similitudes con Java, ya que para la ejecución de cualquier aplicación, se requiere un intérprete previamente instalado (Gambas Runtime) que entienda el bytecode de las aplicaciones desarrolladas y lo convierta en código ejecutable por el computador [(wikipedia)](https://es.wikipedia.org/wiki/Gambas).
 
@@ -476,7 +478,7 @@ Y si bien los motivos en mi elección son varios, también entiendo que puedan s
 
 ## Algunas aclaraciones sobre mi plataforma de trabajo
 
-Por motivos que superan las expectativas de este artículo y sabiendo que todas las distribuciones de GNU Linux tienen diferencias en las librerías gráficas, voy a mostrar cual es el equipo con el que desarrollo y trabajo a diario utilizando gbTeXpublisher, cualquier persona que este intentando utilizar la aplicación y tenga diferencias en la distribución de los elementos de la interfaz gráfica, me puede contactar indicando que distribución utiliza, con cuál librería gráfica y entorno de escritorio y veré de hacer pruebas de control.
+Por motivos que no hacen a este artículo y sabiendo que todas las distribuciones de GNU Linux tienen diferencias en las librerías gráficas, voy a mostrar cual son las características gráficas del equipo con el que desarrollo y trabajo a diario utilizando gbTeXpublisher, cualquier persona que este intentando utilizar la aplicación y tenga problemas con los elementos de la interfaz gráfica me puede contactar indicando que distribución utiliza, con cuál librería gráfica y entorno de escritorio y veré de hacer pruebas de control.
 
 ![](https://albertomoyano.github.io/blog-gbtexpublisher/images/manjaro.png)
 
