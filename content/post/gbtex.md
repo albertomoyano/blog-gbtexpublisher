@@ -100,6 +100,10 @@ Un ecosistema en si mismo...
 
 Luego de varios intentos me dí por vencido, esta [imagen](https://i.pinimg.com/736x/11/01/3c/11013c0024bd466791a8b0489340d3d7.jpg) de _El Eternauta_, se me vino a la mente cuando escribía este artículo.
 
+Existen más proyectos girando en torno a la edición ramificada y no tuve tiempo de estudiarlos (también debe haber otros que no conozco), de los más interesantes que me quedaron como deuda está el de la editorial O'Reilly ([HTMLBook](https://github.com/oreillymedia/HTMLBook)), utiliza asciidoc como lenguaje base para las marcas.
+
+Para los diseños muy elaborados utilizados en revistas, también es posible aplicar la metodología de le-tex, que es salir a un XML y trabajar el diseño desde InDesign o QXpress, se suma un posible conflicto de control, pero es el precio a pagar para diseños específicos.
+
 ## Todos los caminos conducen a LaTeX
 
 Conocí LaTeX en el año 1993, de la mano de Horacio Suárez, él venía de trabajar en una editorial orientada a las matemáticas, me lo mostró en una PC corriendo [MS-DOS](https://es.wikipedia.org/wiki/MS-DOS) y ejecutando el editor [epsilon](https://lugaru.com/), recuerdo que me sorprendió mucho, pero no fue hasta 10 años después, cuando abandone la preprensa y la imprenta para dedicarme de lleno a la edición científica que le empecé a dar un uso intenso.
