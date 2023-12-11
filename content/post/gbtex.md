@@ -387,7 +387,7 @@ Los metadatos específicos de los autores y las colecciones se trabajan desde ot
 
 Hace un tiempo (largo) vi una imagen en la red [linkedin](https://www.linkedin.com/in/edicion-cientifica/) que a simple vista (antes de leer el artículo) pensé que era un meme,[^meme] en la misma había muchos archivos MS Word, nombrados: versión final, versión final final, esta es la última versión, ahora sí la última; y así muchas copias de un word con todos los nombres que se pudieran imaginar, la imagen buscaba encontrar quiénes se identificaban con la misma.
 
-[Git](https://es.wikipedia.org/wiki/Git) es un sistema de control de versiones distribuido, ampliamente utilizado para el seguimiento de cambios. Fue creado por [Linus Torvalds](https://es.wikipedia.org/wiki/Linus_Torvalds) en 2005, es una herramienta poderosa y flexible, fundamental para el trabajo en equipo. Puede llevar algo de tiempo acostumbrarse --a su lógica de uso--, pero una vez aprendidos sus conceptos se vuelve esencial para trabajar de manera sólida y segura. Si se desea trabajar solo en modo local no es necesario tener una cuenta en GitLab.
+gbTeXpublisher trabaja con [git](https://es.wikipedia.org/wiki/Git) como sistema de control de versiones, este es ampliamente utilizado para el seguimiento de cambios. Fue creado por [Linus Torvalds](https://es.wikipedia.org/wiki/Linus_Torvalds) en 2005, es una herramienta poderosa, flexible y fundamental para el trabajo en equipo. Puede llevar algo de tiempo acostumbrarse --a su lógica de uso--, pero una vez aprendidos sus conceptos se vuelve esencial para trabajar de manera sólida y segura. Si se desea trabajar solo en modo local no es necesario tener una cuenta en GitLab.
 
 ![](https://albertomoyano.github.io/blog-personal/images/pantalla14.png)
 
