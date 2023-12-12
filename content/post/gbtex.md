@@ -309,11 +309,11 @@ La indexación para las siglas y el glosario está codificado en el preámbulo q
 
 ![](https://albertomoyano.github.io/blog-personal/images/build.png)
 
+No hay un archivo de configuración para PDF, esta es la salida natural, por consiguiente, todas sus características están dadas en el propio código del archivo.
+
 Para los archivos de configuración para ePub, HTML y JATS, la suerte es la misma, quiero decir, contemplan una salida _generosa_ en términos de posibilidades, pero pueden ser modificados según cada necesidad.
 
 ![](https://albertomoyano.github.io/blog-personal/images/configepub.png)
-
-No hay un archivo de configuración para PDF, esta es la salida natural, por consiguiente, todas sus características están dadas en el propio código del archivo.
 
 ## Ahora bien, comenzamos con el trabajo
 
