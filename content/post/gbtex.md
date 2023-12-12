@@ -248,11 +248,11 @@ El [motor SQL](https://es.wikipedia.org/wiki/SQL) lleva la tarea de centralizar 
 
 El programa tiene dependencia de [Git](https://git-scm.com/), [Pandoc](https://pandoc.org/) y [Sigil](https://sigil-ebook.com/sigil/), doy por descartado que LaTeX ya está instalado, sugiero tener instalada la versión _full_ (aproximadamente 4 gigas).
 
-Para editar utilizo [TeXstudio](https://www.texstudio.org/) desde hace varios años, pero sirve cualquiera de los editores de texto para LaTeX que se encuentran en Internet.
+Personalmente, para editar los textos utilizo [TeXstudio](https://www.texstudio.org/) desde hace ya varios años, pero sirve cualquiera de los editores que se encuentran en Internet.
 
-También es necesario tener una cuenta en [gitlab](https://gitlab.com/), la versión gratuita es más que suficiente.
+También es necesario tener una cuenta en [gitlab](https://gitlab.com/), para hacer uso del respaldo remoto, los 10 gigas de la versión gratuita son más que suficientes.
 
-Si bien en gambas se puede hacer el empaquetado para las principales distribuciones de GNU Linux, para evitar posibles conflictos, lo que está disponible es un empaquetado **autotools**.
+Si bien en gambas es posible hacer el empaquetado para las principales distribuciones de GNU Linux, para evitar posibles conflictos, lo que está disponible es un empaquetado **autotools**.
 
 Este es el _link_ de descarga para la última versión disponible [(gbTeXpublisher v477)](https://www.dropbox.com/scl/fi/ut8tvyo6qwo7k2f24rzkc/gbTeXpublisher-0.0.477.tar.gz?rlkey=tnfq7shmjt8ewiruih8nmpq04&dl=1).
 
@@ -262,7 +262,7 @@ En el siguiente video muestro el proceso de instalación.
 
 Para los que quieran hacer una bifurcación del proyecto o descargarlo y compilar desde las fuentes, esta es la ruta de [gbTeXpublisher](https://gitlab.com/alberto.alejandro.moyano/gbtexpublisher) en GitLab.
 
-Los usuarios de windows pueden utilizar el software a través de [WSL](https://learn.microsoft.com/es-es/windows/wsl/install).
+Los usuarios de windows pueden utilizar el software a través de [WSL](https://learn.microsoft.com/es-es/windows/wsl/install), considero que es preferible tener un doble arranque (windows/linux), pero cada uno analiza en que situación se siente más cómodo.
 
 A los usuarios de MacOS, no sé que decirles, no tengo acceso a esos equipos desde hace muchos años. Si alguien quiere hacer pruebas quedo a disposición para ayudarlo en lo que pueda.
 
@@ -362,7 +362,7 @@ Al igual que con las referencias bibliográficas, en el siguiente video doy una 
 
 La información contenida en el formulario de metadatos es utilizada en las diferentes salidas, a la derecha los íconos muestran en que salida impacta esa información.
 
-La carga de datos en este formulario es crucial, si faltan, la compilación no da error, pero se desperdicia la posibilidad de incrustar metadatos en los diferentes formatos de salida, por ejemplo, la salida a PDF tiene soporte para [XMP](https://es.wikipedia.org/wiki/XMP), muchos indexadores toman los metadatos leyéndolos del PDF y no de la etiqueta asociada en el repositorio.
+El tratamiento de los metadatos en los libros es muy diferente al que tiene en los artículos de revistas, mientras que en el primer caso si faltan la compilación no da error, en el segundo sí. La ausencia de los datos desperdicia la posibilidad de inyectar estos en los diferentes formatos de salida, por ejemplo, la salida a PDF tiene soporte para [XMP](https://es.wikipedia.org/wiki/XMP), muchos indexadores toman los metadatos leyéndolos del PDF, no de la etiqueta asociada en el repositorio.
 
 ![](https://albertomoyano.github.io/blog-gbtexpublisher/images/metadatos.png)
 
@@ -374,11 +374,10 @@ Las siguientes capturas muestran que metadatos son leídos en el PDF por los ind
 
 ![](https://albertomoyano.github.io/blog-gbtexpublisher/images/xmp3.png)
 
-Los metadatos específicos de los autores y las colecciones se trabajan desde otras tablas de la base de datos para evitar la redundancia. En el siguiente video se puede observar lo explicado anteriormente.
-
-
+Los metadatos específicos de los autores y las colecciones se trabajan desde otras tablas de la base de datos para evitar la redundancia. En el siguiente video es una muestra parcial de todo lo explicado anteriormente.
 
 <!-- {{< youtube 5HOcjV5Y2no >}}
+
 ![](https://albertomoyano.github.io/blog-personal/images/autores.png)
 
 ![](https://albertomoyano.github.io/blog-personal/images/coleccion.png) -->

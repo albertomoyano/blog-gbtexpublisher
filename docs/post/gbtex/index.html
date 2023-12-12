@@ -53,7 +53,7 @@
   <meta itemprop="name" content="Presentación de gbTeXpublisher">
 <meta itemprop="description" content="Presentación de gbTeXpublisher, marco teórico"><meta itemprop="datePublished" content="2023-12-04T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-12-04T00:00:00+00:00" />
-<meta itemprop="wordCount" content="6015"><meta itemprop="image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images"/>
+<meta itemprop="wordCount" content="6070"><meta itemprop="image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images"/>
 <meta itemprop="keywords" content="LaTeX,gbTeXpublisher," />
 
   
@@ -340,9 +340,9 @@ title        = {La cuarta discontinuidad},
 <p>El <a href="https://es.wikipedia.org/wiki/SQL">motor SQL</a> lleva la tarea de centralizar toda aquella información que pudiera ser reutilizada, evitando la redundancia de datos. La inyección de los datos se hace de manera automática y el ABM (alta, baja y modificación) de los datos se trabajan desde los diferentes formularios que posee gbTeXpublisher.</p>
 <h2 id="descarga-e-instalación-de-gbtexpublisher">Descarga e instalación de gbTeXpublisher</h2>
 <p>El programa tiene dependencia de <a href="https://git-scm.com/">Git</a>, <a href="https://pandoc.org/">Pandoc</a> y <a href="https://sigil-ebook.com/sigil/">Sigil</a>, doy por descartado que LaTeX ya está instalado, sugiero tener instalada la versión <em>full</em> (aproximadamente 4 gigas).</p>
-<p>Para editar utilizo <a href="https://www.texstudio.org/">TeXstudio</a> desde hace varios años, pero sirve cualquiera de los editores de texto para LaTeX que se encuentran en Internet.</p>
-<p>También es necesario tener una cuenta en <a href="https://gitlab.com/">gitlab</a>, la versión gratuita es más que suficiente.</p>
-<p>Si bien en gambas se puede hacer el empaquetado para las principales distribuciones de GNU Linux, para evitar posibles conflictos, lo que está disponible es un empaquetado <strong>autotools</strong>.</p>
+<p>Personalmente, para editar los textos utilizo <a href="https://www.texstudio.org/">TeXstudio</a> desde hace ya varios años, pero sirve cualquiera de los editores que se encuentran en Internet.</p>
+<p>También es necesario tener una cuenta en <a href="https://gitlab.com/">gitlab</a>, para hacer uso del respaldo remoto, los 10 gigas de la versión gratuita son más que suficientes.</p>
+<p>Si bien en gambas es posible hacer el empaquetado para las principales distribuciones de GNU Linux, para evitar posibles conflictos, lo que está disponible es un empaquetado <strong>autotools</strong>.</p>
 <p>Este es el <em>link</em> de descarga para la última versión disponible <a href="https://www.dropbox.com/scl/fi/ut8tvyo6qwo7k2f24rzkc/gbTeXpublisher-0.0.477.tar.gz?rlkey=tnfq7shmjt8ewiruih8nmpq04&amp;dl=1">(gbTeXpublisher v477)</a>.</p>
 <p>En el siguiente video muestro el proceso de instalación.</p>
 
@@ -351,7 +351,7 @@ title        = {La cuarta discontinuidad},
 </div>
 
 <p>Para los que quieran hacer una bifurcación del proyecto o descargarlo y compilar desde las fuentes, esta es la ruta de <a href="https://gitlab.com/alberto.alejandro.moyano/gbtexpublisher">gbTeXpublisher</a> en GitLab.</p>
-<p>Los usuarios de windows pueden utilizar el software a través de <a href="https://learn.microsoft.com/es-es/windows/wsl/install">WSL</a>.</p>
+<p>Los usuarios de windows pueden utilizar el software a través de <a href="https://learn.microsoft.com/es-es/windows/wsl/install">WSL</a>, considero que es preferible tener un doble arranque (windows/linux), pero cada uno analiza en que situación se siente más cómodo.</p>
 <p>A los usuarios de MacOS, no sé que decirles, no tengo acceso a esos equipos desde hace muchos años. Si alguien quiere hacer pruebas quedo a disposición para ayudarlo en lo que pueda.</p>
 <h2 id="comenzando-con-gbtexpublisher">Comenzando con gbTeXpublisher</h2>
 <p>Cuando se está editando un solo libro, se pueden tener ciertas libertades, pero cuando se tienen 7 o 9 libros de manera constante en el flujo de producción, la cosa cambia. El orden y el principio de <a href="https://es.wikipedia.org/wiki/No_te_repitas">DRY</a> se vuelve más que importante si queremos tener una sana optimización de los recursos. En gbTeXpublisher se van a encontar funciones predefinidas (y rígidas) que aseguran comportamientos estables y predecibles.</p>
@@ -416,13 +416,13 @@ title        = {La cuarta discontinuidad},
 
 <h2 id="trabajando-con-los-metadatos">Trabajando con los metadatos</h2>
 <p>La información contenida en el formulario de metadatos es utilizada en las diferentes salidas, a la derecha los íconos muestran en que salida impacta esa información.</p>
-<p>La carga de datos en este formulario es crucial, si faltan, la compilación no da error, pero se desperdicia la posibilidad de incrustar metadatos en los diferentes formatos de salida, por ejemplo, la salida a PDF tiene soporte para <a href="https://es.wikipedia.org/wiki/XMP">XMP</a>, muchos indexadores toman los metadatos leyéndolos del PDF y no de la etiqueta asociada en el repositorio.</p>
+<p>El tratamiento de los metadatos en los libros es muy diferente al que tiene en los artículos de revistas, mientras que en el primer caso si faltan la compilación no da error, en el segundo sí. La ausencia de los datos desperdicia la posibilidad de inyectar estos en los diferentes formatos de salida, por ejemplo, la salida a PDF tiene soporte para <a href="https://es.wikipedia.org/wiki/XMP">XMP</a>, muchos indexadores toman los metadatos leyéndolos del PDF, no de la etiqueta asociada en el repositorio.</p>
 <p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/metadatos.png" alt=""></p>
 <p>Las siguientes capturas muestran que metadatos son leídos en el PDF por los indexadores.</p>
 <p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/xmp1.png" alt=""></p>
 <p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/xmp2.png" alt=""></p>
 <p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/xmp3.png" alt=""></p>
-<p>Los metadatos específicos de los autores y las colecciones se trabajan desde otras tablas de la base de datos para evitar la redundancia. En el siguiente video se puede observar lo explicado anteriormente.</p>
+<p>Los metadatos específicos de los autores y las colecciones se trabajan desde otras tablas de la base de datos para evitar la redundancia. En el siguiente video es una muestra parcial de todo lo explicado anteriormente.</p>
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
 <h2 id="git-local-y-remoto-como-copia-de-seguridad-temporal">Git local y remoto como copia de seguridad temporal</h2>
