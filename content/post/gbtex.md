@@ -15,7 +15,7 @@ gbTeXpublisher nace como resultado de una necesidad concreta –[mi producción 
 
 gbTeXpublisher es una aplicación de escritorio que permite gestionar los procesos de producción editorial de manera fácil, me gusta pensar en esta aplicación como un facilitador, ya que todo lo que se puede hacer **con** gbTeXpublisher, también se puede hacer **sin** gbTeXpublisher, la diferencia radica en la facilidad que otorga su interfaz.
 
-gbTeXpublisher es también el resultado del enorme trabajo de muchas personas, quisiera hacer una mención de agradecimiento especial para [Donald Knuth](https://es.wikipedia.org/wiki/Donald_Knuth), [Benoît Minisini](https://en.wikipedia.org/wiki/Beno%C3%AEt_Minisini) y los foros de [CervanTeX](http://cervantex.es/) y [Gambas](https://es.wikipedia.org/wiki/Gambas), dejo para lo último a [Michal Hoftich](https://www.kodymirus.cz/), el aporte de su desarrollo a sido clave en el rumbo que tomaron mis decisiones de producción.
+gbTeXpublisher es también el resultado del enorme trabajo de muchas personas, quisiera hacer una mención de agradecimiento especial para [Donald Knuth](https://es.wikipedia.org/wiki/Donald_Knuth), [Benoît Minisini](https://en.wikipedia.org/wiki/Beno%C3%AEt_Minisini) y los foros de [CervanTeX](http://cervantex.es/) y [Gambas](https://es.wikipedia.org/wiki/Gambas), dejo para lo último a [Michal Hoftich](https://www.kodymirus.cz/), el aporte de su desarrollo ha sido clave en el rumbo que tomaron mis decisiones de producción.
 
 gbTeXpublisher posee [licencia GPL3](https://www.gnu.org/licenses/gpl-3.0.en.html), por consiguiente se concede permiso para copiar, distribuir y/o modificar este software según los términos de dicha licencia.
 
@@ -55,7 +55,7 @@ Ahora bien, para empezar a involucrarnos en este modelo hagamos el ejercicio de 
 
 Para una mejor comprensión de lo que digo, pensemos que tenemos un archivo fuente, tomamos el camino para obtener un PDF y el resultado es perfecto, bien, ahora con el mismo archivo fuente tomamos el camino para obtener un ePub y encontramos errores (de diseño, estructura, índice, etc., no importa de qué) los arreglos se deben realizar en el archivo fuente, **no en el ePub**, esto es lo que nos permite mantener consistencia en el origen de los datos.
 
-Para trabajar con este modelo de producción es necesario utilizar algún lenguaje de marcas,[^marcas] ¿porqué?, porque hasta ahora la mejor forma conocida de producir es separando **la estructura del contenido** de su **modelo de representación visual** y esto se consigue aplicando marcas (etiquetando) a las partes del documento, ya que se pueden incorporar todas las que sean necesarias acerca de la estructura y el diseño para la representación del texto en la salida buscada.
+Para trabajar con este modelo de producción es necesario utilizar algún lenguaje de marcas,[^marcas] ¿por qué?, porque hasta ahora la mejor forma conocida de producir es separando **la estructura del contenido** de su **modelo de representación visual** y esto se consigue aplicando marcas (etiquetando) a las partes del documento, ya que se pueden incorporar todas las que sean necesarias acerca de la estructura y el diseño para la representación del texto en la salida buscada.
 
 La figura a continuación nos muestra un modelo (de todos los posibles) de edición ramificada, donde no existe una secuencia de A con B, sino un inicio de (A) con posibles caminos continuadores (B, C, D, etc.), algunos pueden frenar su andar al llegar a su destino final, otros pueden bifurcarse y convertirse en el inicio de un nuevo camino.
 
@@ -214,14 +214,14 @@ El preámbulo es la parte en donde se declaran las diferentes macros que darán 
 1. **trabajan sobre la salida** (por ejemplo _geometry_ que permite manipular el diseño y la estructura de la página).
 2. **intervienen en el contenido** (por ejemplo _csquotes_ que automatiza el manejo de las comillas).
 
-El punto 1 es crucial entenderlo, ya que es donde todos los sistemas fallan, **las necesidades que tiene una salida (no importa cual) no son necesariamente las mismas que tiene otro tipo de salida (no importa cual)**. Aquí es donde mejor se comprende porqué es necesario **evitar la herencia de características**.
+El punto 1 es crucial entenderlo, ya que es donde todos los sistemas fallan, **las necesidades que tiene una salida (no importa cual) no son necesariamente las mismas que tiene otro tipo de salida (no importa cual)**. Aquí es donde mejor se comprende por qué es necesario **evitar la herencia de características**.
 
 A su vez, los paquetes que trabajan sobre la salida, pueden:
 
 1. ser incompatibles entre sí;
 2. tener dependencia de otros paquetes.
 
-El primer caso es el más gravoso, ya que no permite que dos paquetes convivan dentro del preámbulo, no es objetivo de este artículo explicar porque existe esta situación y como se resuelve (cuando se puede, que no es siempre).
+El primer caso es el más gravoso, ya que no permite que dos paquetes convivan dentro del preámbulo, no es objetivo de este artículo explicar por qué existe esta situación y como se resuelve (cuando se puede, que no es siempre).
 
 El segundo obliga a tener que estudiar que no exista el punto 1 entre las dependencias.
 
@@ -268,13 +268,13 @@ A los usuarios de MacOS, no sé que decirles, no tengo acceso a esos equipos des
 
 ## Comenzando con gbTeXpublisher
 
-Cuando se está editando un solo libro, se pueden tener ciertas libertades, pero cuando se tienen 7 o 9 libros de manera constante en el flujo de producción, la cosa cambia. El orden y el principio de [DRY](https://es.wikipedia.org/wiki/No_te_repitas) se vuelve más que importante si queremos tener una sana optimización de los recursos. En gbTeXpublisher se van a encontar funciones predefinidas (y rígidas) que aseguran comportamientos estables y predecibles.
+Cuando se está editando un solo libro, se pueden tener ciertas libertades, pero cuando se tienen 7 o 9 libros de manera constante en el flujo de producción, la cosa cambia. El orden y el principio de [DRY](https://es.wikipedia.org/wiki/No_te_repitas) se vuelve más que importante si queremos tener una sana optimización de los recursos. En gbTeXpublisher se van a encontrar funciones predefinidas (y rígidas) que aseguran comportamientos estables y predecibles.
 
-Luego de instalar gbTeXpublisher encontraremos una carpeta oculta dentro del **`home.user`** (léase carpeta personal), donde se alojara la base de datos, el proceso de instalación copia una base de datos con un número determinado de entradas que sirven como ejemplo, esto vale para las notas, las siglas y las referencias bibliográficas. En la figura a continuación lo resalto con una línea roja.
+Luego de instalar gbTeXpublisher encontraremos una carpeta oculta dentro del **`home.user`** (léase carpeta personal), donde se alojará la base de datos, el proceso de instalación copia una base de datos con un número determinado de entradas que sirven como ejemplo, esto vale para las notas, las siglas y las referencias bibliográficas. En la figura a continuación lo resalto con una línea roja.
 
 ![](https://albertomoyano.github.io/blog-personal/images/pantalla11.png)
 
-El programa no trabaja **sobre** el archivo de LaTeX, sino que lo hace con una **copia**. Esto da plena y absoluta libertad de trabajar el texto con el editor que mejor le plazca al usuario. De ahí que su interfaz de incio pueda sorprender --ya que no dice nada-- esto también se observa al notar que algunos menúes están deshabilitados y se activan una vez que se haya elegido un archivo con el cual trabajar. La imagen a continuación lo ilustra.
+El programa no trabaja **sobre** el archivo de LaTeX, sino que lo hace con una **copia**. Esto da plena y absoluta libertad de trabajar el texto con el editor que mejor le plazca al usuario. De ahí que su interfaz de inicio pueda sorprender --ya que no dice nada-- esto también se observa al notar que algunos menúes están deshabilitados y se activan una vez que se haya elegido un archivo con el cual trabajar. La imagen a continuación lo ilustra.
 
 ![](https://albertomoyano.github.io/blog-personal/images/pantalla01.png)
 
@@ -291,7 +291,7 @@ El primero que encontramos es el formulario para la conversión de archivos word
 
 ![](https://albertomoyano.github.io/blog-personal/images/pantalla06.png)
 
-El segundo es el formulario de apuntes, su idea y desarrollo surgieron de manera natural. Antes de gbTeXpublisher, a medida que iba trabajando tomaba apuntes sobre el proceso, ya sea consultas que debía hacer (al autor, al corrector o a mi cliente), buscar en otros archivos ese pedazo de código que alguna vez use o simplemente apuntes de ayuda memoria temporal, todo eso es lo que se vuelca en este formulario, la información queda almacenada en la base de datos para ser recuperada cada vez que sea necesario.
+El segundo es el formulario de apuntes, su idea y desarrollo surgieron de manera natural. Antes de gbTeXpublisher, a medida que iba trabajando tomaba apuntes sobre el proceso, ya sea consultas que debía hacer (al autor, al corrector o a mi cliente), buscar en otros archivos ese pedazo de código que alguna vez utilicé o simplemente apuntes de ayuda memoria temporal, todo eso es lo que se vuelca en este formulario, la información queda almacenada en la base de datos para ser recuperada cada vez que sea necesario.
 
 Las notas pueden ser exportadas a formato **`.docx`** para ser enviadas por correo o impresas.
 
