@@ -108,11 +108,11 @@ Es interesante observar lo siguiente, muchos proyectos para edición ramificada 
 
 ## Todos los caminos conducen a LaTeX
 
-Conocí LaTeX en el año 1993, de la mano de Horacio Suárez, él venía de trabajar en una editorial orientada a las matemáticas, me lo mostró en una PC corriendo [MS-DOS](https://es.wikipedia.org/wiki/MS-DOS) y ejecutando el editor [epsilon](https://lugaru.com/), recuerdo que me sorprendió mucho, pero no fue hasta 10 años después, cuando abandone la preprensa y la imprenta para dedicarme de lleno a la edición científica que le empecé a dar un uso intenso.
+Conocí LaTeX en el año 1993, pude verlo correr en una PC con [MS-DOS](https://es.wikipedia.org/wiki/MS-DOS), ejecutando el editor [epsilon](https://lugaru.com/), recuerdo que me sorprendió mucho, pero no fue hasta 10 años después que lo empecé a usar de manera intensiva, cuando abandone la preprensa y la imprenta para dedicarme de lleno a la edición científica.
 
-Esto no me impidió en los últimos años también haber trabajado con [Markdown](https://es.wikipedia.org/wiki/Markdown) y [AsciiDoc](https://en.wikipedia.org/wiki/AsciiDoc) (con el intérprete [asciidoctor](https://asciidoctor.org/)), y aún hoy los sigo usando (los artículos de este blog los escribo en markdown).
+Esto no impidió que en los últimos años haya trabajado con [Markdown](https://es.wikipedia.org/wiki/Markdown) y [AsciiDoc](https://en.wikipedia.org/wiki/AsciiDoc) (con el intérprete [asciidoctor](https://asciidoctor.org/)), y aún hoy los sigo usando (los artículos de este blog los escribo en markdown), también hice algunas pruebas con [PlasTeX](https://plastex.github.io/plastex/getting_started/).
 
-Intentar hacer una muestra de las capacidades de LaTeX en la producción editorial sería interminable, ya que no hay límites como los que se pueden encontrar en una aplicación de DTP (donde el programa determina que se puede hacer y que no) en LaTeX el límite lo pone el propio conocimiento que se tenga de él (por eso es un lenguaje).
+Intentar hacer una muestra de las capacidades de LaTeX en la producción editorial sería interminable, ya que no hay límites como los que se pueden encontrar en una aplicación de [DTP](https://es.wikipedia.org/wiki/Autoedici%C3%B3n) (donde las capacidades del programa determinan que se posible hacer y que no) en LaTeX el límite lo pone el conocimiento que se tenga de él (por eso es un lenguaje).
 
 ### Botones para muestra
 
