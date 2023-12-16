@@ -13,13 +13,13 @@ gbTeXpublisher es una aplicación diseñada para facilitar la producción editor
 
 gbTeXpublisher nace como resultado de una necesidad concreta –[mi producción editorial](https://www.edicionesimagomundi.com/)–, desde hace bastante tiempo adhiero al modelo de producción de edición ramificada y encuentro en [LaTeX](https://es.wikipedia.org/wiki/LaTeX) la vía apropiada para conseguirlo, hice varios intentos con markdown y asciidoctor, pero al final del recorrido siempre encontraba problemas, fundamentalmente en la salida a PDF, me estoy refiriendo a una salida con un **alto estándar de calidad tipográfica**.
 
-gbTeXpublisher es una aplicación de escritorio que permite gestionar los procesos de producción editorial de manera fácil, me gusta pensar en esta aplicación como un facilitador, ya que todo lo que se puede hacer **con** gbTeXpublisher, también se puede hacer **sin** gbTeXpublisher, la diferencia radica en la facilidad que otorga su interfaz.
+gbTeXpublisher es una aplicación de escritorio que permite gestionar los procesos de producción editorial basados en el lenguaje LaTeX de manera fácil, me gusta pensar en esta aplicación como un facilitador, ya que todo lo que se puede hacer **con** gbTeXpublisher, también se puede hacer **sin** gbTeXpublisher, la diferencia radica en la facilidad que otorga su interfaz.
 
 gbTeXpublisher es también el resultado del enorme trabajo de muchas personas, a todas les estoy agradecido, pero quisiera hacer una mención especial para [Donald Knuth](https://es.wikipedia.org/wiki/Donald_Knuth), [Benoît Minisini](https://en.wikipedia.org/wiki/Beno%C3%AEt_Minisini) y los foros de [CervanTeX](http://cervantex.es/) y [Gambas](https://es.wikipedia.org/wiki/Gambas), dejo para lo último a [Michal Hoftich](https://www.kodymirus.cz/), el aporte de su desarrollo ha sido clave en el rumbo que tomaron mis decisiones de producción.
 
 gbTeXpublisher posee [licencia GPL3](https://www.gnu.org/licenses/gpl-3.0.en.html), por consiguiente se concede permiso para copiar, distribuir y/o modificar este software según los términos de dicha licencia.
 
-Este artículo es un intento de presentación formal (aunque todavía el desarrollo se encuentre en _beta_) y me parece oportuno comenzar con una corta introducción teórica sobre los modelos de producción editorial al día de hoy.
+Este artículo es un intento de presentación formal (aunque considero que el desarrollo se encuentra en _beta_) y me parece oportuno comenzar con una corta introducción teórica sobre los modelos de producción editorial al día de hoy.
 
 ## Pequeña introducción
 
@@ -29,7 +29,7 @@ Sin embargo, me animo a pensar que la tradición editorial no ha podido --o sabi
 
 La idea que propongo consiste en trabajar sobre un modelo de edición estandarizada, multiformato y multisoporte (y que no atenta contra el diseño), conocida como **edición ramificada**. Para lograr esto es necesario evitar cualquier tipo de enfoque [WYSIWYG](https://es.wikipedia.org/wiki/WYSIWYG).
 
-[Brian Kernighan](https://es.wikipedia.org/wiki/Brian_Kernighan) dijo alguna vez que el problema con el WYSIWYG (*lo que ves es lo que obtienes*) es que en realidad lo que ves es **TODO** lo que obtienes. No descarto las interfaces gráficas, han demostrado --y continúan-- siendo excelentes para muchas tareas, gbTeXpublisher está basado en una interfaz gráfica. Pero también el uso de la consola con un _Shell_ permite una potencia y  elasticidad mayor.
+[Brian Kernighan](https://es.wikipedia.org/wiki/Brian_Kernighan) dijo una vez que el problema con el WYSIWYG (*lo que ves es lo que obtienes*) es que en realidad lo que ves es **TODO** lo que obtienes. No descarto las interfaces gráficas, han demostrado --y continúan-- siendo excelentes para muchas tareas, gbTeXpublisher está basado en una interfaz gráfica. Pero también el uso de la consola con un _Shell_ permite una potencia y  elasticidad mayor.
 
 ## El modelo cíclico (la edición que conocemos)
 
@@ -260,8 +260,7 @@ Los usuarios de windows pueden utilizar el software a través de [WSL](https://l
 
 A los usuarios de MacOS, no sé que decirles, no tengo acceso a esos equipos desde hace muchos años. Si alguien quiere hacer pruebas quedo a disposición para ayudarlo en lo que pueda.
 
-
-Solo para que se tenga un conocimiento global de lo que hace la instalación, aclaro que luego de instalar gbTeXpublisher se van a encontrar con una carpeta oculta dentro del **`home.user`** (léase carpeta personal), donde se alojará la base de datos, el proceso de instalación copia una base de datos con un número determinado de entradas que sirven para ser estudiadas, esto vale para las notas, las siglas y las referencias bibliográficas. En la figura a continuación lo resalto con una línea roja.
+Con el fin de proporcionar una visión integral de las funciones de la instalación, es importante destacar que después de completar la instalación de gbTeXpublisher, se generará una carpeta oculta en el directorio **`home.user`** (denominado también como directorio personal). Esta carpeta albergará la base de datos, y durante el proceso de instalación, se copiará una base de datos preexistente con un número específico de entradas. Estas entradas son fundamentales para el estudio de notas, acrónimos y referencias bibliográficas. En la figura siguiente, este aspecto se destaca visualmente mediante una línea roja para mayor claridad.
 
 ![](https://albertomoyano.github.io/blog-personal/images/pantalla11.png)
 
