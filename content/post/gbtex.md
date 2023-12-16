@@ -7,29 +7,29 @@ tags = ["LaTeX", "gbTeXpublisher",]
 pin = true
 +++
 
-gbTeXpublisher es una aplicación orientada a la producción editorial, si sos editor, corrector y/o diseñador de libros con una fuerte impronta en la edición científica, este artículo introductorio te puede interesar.
+gbTeXpublisher es una aplicación orientada a la producción editorial, si eres editor, corrector y/o diseñador de libros con una fuerte impronta en la edición científica, este artículo introductorio puede ser de tu interés.
 
 <!--more-->
 
-gbTeXpublisher nace como resultado de una necesidad concreta –[mi producción editorial](https://www.edicionesimagomundi.com/)–, desde hace bastante tiempo adhiero al modelo de edición ramificada y encuentro en [LaTeX](https://es.wikipedia.org/wiki/LaTeX) la vía apropiada para conseguirlo, hice intentos con markdown, asciidoc y asciidoctor, pero al final del recorrido siempre encontraba problemas, fundamentalmente en la salida a PDF, me estoy refiriendo a una salida con un **alto estándar de calidad tipográfica**.
+gbTeXpublisher nace como resultado de una necesidad concreta –[mi producción editorial](https://www.edicionesimagomundi.com/)–, desde hace bastante tiempo adhiero al modelo de producción de edición ramificada y encuentro en [LaTeX](https://es.wikipedia.org/wiki/LaTeX) la vía apropiada para conseguirlo, hice varios intentos con markdown y asciidoctor, pero al final del recorrido siempre encontraba problemas, fundamentalmente en la salida a PDF, me estoy refiriendo a una salida con un **alto estándar de calidad tipográfica**.
 
 gbTeXpublisher es una aplicación de escritorio que permite gestionar los procesos de producción editorial de manera fácil, me gusta pensar en esta aplicación como un facilitador, ya que todo lo que se puede hacer **con** gbTeXpublisher, también se puede hacer **sin** gbTeXpublisher, la diferencia radica en la facilidad que otorga su interfaz.
 
-gbTeXpublisher es también el resultado del enorme trabajo de muchas personas, quisiera hacer una mención de agradecimiento especial para [Donald Knuth](https://es.wikipedia.org/wiki/Donald_Knuth), [Benoît Minisini](https://en.wikipedia.org/wiki/Beno%C3%AEt_Minisini) y los foros de [CervanTeX](http://cervantex.es/) y [Gambas](https://es.wikipedia.org/wiki/Gambas), dejo para lo último a [Michal Hoftich](https://www.kodymirus.cz/), el aporte de su desarrollo ha sido clave en el rumbo que tomaron mis decisiones de producción.
+gbTeXpublisher es también el resultado del enorme trabajo de muchas personas, a todas les estoy agradecido, pero quisiera hacer una mención especial para [Donald Knuth](https://es.wikipedia.org/wiki/Donald_Knuth), [Benoît Minisini](https://en.wikipedia.org/wiki/Beno%C3%AEt_Minisini) y los foros de [CervanTeX](http://cervantex.es/) y [Gambas](https://es.wikipedia.org/wiki/Gambas), dejo para lo último a [Michal Hoftich](https://www.kodymirus.cz/), el aporte de su desarrollo ha sido clave en el rumbo que tomaron mis decisiones de producción.
 
 gbTeXpublisher posee [licencia GPL3](https://www.gnu.org/licenses/gpl-3.0.en.html), por consiguiente se concede permiso para copiar, distribuir y/o modificar este software según los términos de dicha licencia.
 
-Este artículo es un intento de presentación formal (aunque todavía el desarrollo se encuentre en estado _beta_) y me parece oportuno comenzar con una introducción teórica sobre los modelos de producción editorial al día de hoy.
+Este artículo es un intento de presentación formal (aunque todavía el desarrollo se encuentre en _beta_) y me parece oportuno comenzar con una corta introducción teórica sobre los modelos de producción editorial al día de hoy.
 
 ## Pequeña introducción
 
-Es posible observar que la edición es íntegramente digital desde comienzo de los noventa, ya que los diferentes intervinientes en el proceso editorial, han terminado incorporando a los sistemas informáticos en su uso diario, ya sea para escribir o producción editorial, también podemos asegurar que las imprentas (por dar un ejemplo del proceso) hoy solo reciben trabajos en formato digital.
+Es posible observar y reconocer que la edición es íntegramente digital desde principio de los noventa, ya que los diferentes intervinientes en el proceso editorial han terminado incorporando sistemas informáticos en su uso cotidiano, ya sea para escribir o producir en el ámbito editorial, y también podemos asegurar que las imprentas (por dar el ejemplo de un actor del proceso) hoy solo reciben trabajos en formato digital.
 
-Sin embargo, se puede observar que la tradición editorial no ha podido --o sabido-- captar que este cambio en la forma de producir no refiere solo al hecho de utilizar nuevas técnicas, herramientas o dispositivos, sino también, a la pérdida de parte de los fundamentos básicos que existen en el proceso de edición.
+Sin embargo, me animo a pensar que la tradición editorial no ha podido --o sabido-- captar que estos cambios en la forma de producir no refieren solo al hecho de utilizar nuevas tecnologías, herramientas o dispositivos, sino también, a la pérdida de parte de los fundamentos básicos que existen en el proceso de edición.
 
-La idea que propongo consiste en trabajar sobre un modelo de edición estandarizada, automatizada, multiformato y multisoporte (y que no atenta contra el diseño), conocida como **edición ramificada**. Para lograr esto es necesario evitar cualquier tipo de enfoque [WYSIWYG](https://es.wikipedia.org/wiki/WYSIWYG).
+La idea que propongo consiste en trabajar sobre un modelo de edición estandarizada, multiformato y multisoporte (y que no atenta contra el diseño), conocida como **edición ramificada**. Para lograr esto es necesario evitar cualquier tipo de enfoque [WYSIWYG](https://es.wikipedia.org/wiki/WYSIWYG).
 
-[Brian Kernighan](https://es.wikipedia.org/wiki/Brian_Kernighan) dijo alguna vez que el problema con el WYSIWYG (*lo que ves es lo que obtienes*) es que en realidad lo que ves es **TODO** lo que obtienes. Las interfaces gráficas son excelentes para muchas cosas, yo las utilizo de manera constante, tampoco escapo a ellas. Pero también uso la consola con un _Shell_ cuando necesito elasticidad, ya que es mucho mas práctica y potente para algunas tareas.
+[Brian Kernighan](https://es.wikipedia.org/wiki/Brian_Kernighan) dijo alguna vez que el problema con el WYSIWYG (*lo que ves es lo que obtienes*) es que en realidad lo que ves es **TODO** lo que obtienes. No descarto las interfaces gráficas, han demostrado --y continúan-- siendo excelentes para muchas tareas, gbTeXpublisher está basado en una interfaz gráfica. Pero también el uso de la consola con un _Shell_ permite una potencia y  elasticidad mayor.
 
 ## El modelo cíclico (la edición que conocemos)
 
@@ -51,9 +51,9 @@ La edición ramificada facilita la consistencia de los datos y la eficiencia en 
 
 En la edición técnica y en los sistemas de documentación, la edición ramificada también se utiliza para describir el enfoque de mantener una única fuente de información para la creación de manuales, catálogos u otros materiales, lo que facilita la actualización y consistencia en diferentes contextos de uso.
 
-Ahora bien, para empezar a involucrarnos en este modelo hagamos el ejercicio de cambiar la perspectiva de producción, realicemos un ejercicio de pensamiento lateral.[^1] La idea es simple: **no nos concentremos en los formatos de salida, sino en los caminos que conducen a ellos**.
+Ahora bien, para empezar a involucrarnos en este modelo debemos hacer el ejercicio de cambiar la perspectiva de producción, realizando un ejercicio de pensamiento lateral.[^1] La idea es simple: **no nos concentremos en los formatos de salida, sino en los caminos que conducen a ellos**.
 
-Para una mejor comprensión de lo que digo, pensemos que tenemos un archivo fuente, tomamos el camino para obtener un PDF y el resultado es perfecto, bien, ahora con el mismo archivo fuente tomamos el camino para obtener un ePub y encontramos errores (de diseño, estructura, índice, etc., no importa de qué) los arreglos se deben realizar en el archivo fuente, **no en el ePub**, esto es lo que nos permite mantener consistencia en el origen de los datos.
+Para una mejor comprensión de lo que digo, pensemos que tenemos un archivo fuente, tomamos el camino para obtener un PDF y el resultado es perfecto, bien, ahora con el mismo archivo fuente tomamos el camino para obtener un ePub y encontramos errores (de ortografía, diseño, estructura, etcétera, no importa de qué) los arreglos se deben realizar en el camino que nos lleva a él, **no en el ePub** (que es el resultado), esto es lo que nos permite mantener consistencia en el origen de los datos.
 
 Para trabajar con este modelo de producción es necesario utilizar algún lenguaje de marcas,[^marcas] ¿por qué?, porque hasta ahora la mejor forma conocida de producir es separando **la estructura del contenido** de su **modelo de representación visual** y esto se consigue aplicando marcas (etiquetando) a las partes del documento, ya que se pueden incorporar todas las que sean necesarias acerca de la estructura y el diseño para la representación del texto en la salida buscada.
 
@@ -63,7 +63,7 @@ La figura a continuación nos muestra un modelo (de todos los posibles) de edici
 
 El ejemplo de la figura es uno de los tantos posibles, que tiene su base en el lenguaje de marcas [Markdown](https://es.wikipedia.org/wiki/Markdown), pero también existen otros lenguajes como [asciidoc](https://asciidoc-py.github.io/index.html), [Org Mode](https://orgmode.org/) y por supuesto [LaTeX](https://es.wikipedia.org/wiki/LaTeX).
 
-La principal consigna que persigue este modelo es ir de lo simple a lo complejo. Cada formato de salida tiene sus propias necesidades particulares. El PDF para pantalla no es exactamente igual al de imprenta, que a su vez requiere otros ajustes; en el ePub puede hacerse necesario configurar de otra manera las figuras o cuadros para una correcta visualización; en HTML para una lectura _on line_ se puede sacar provecho de la visualización interactiva y así un largo etcétera y como punto de inflexión vamos a encontrar la cuestión de los metadatos, donde las diferentes salidas poseen solo un pequeño grupo de coincidencias. Por consiguiente, lo que se hace imperioso es **evitar la herencia de características**, que es el principal problema que conlleva la metodología cíclica, a diferencia de esta, la edición ramificada se inicia con un documento simple de [texto plano](https://es.wikipedia.org/wiki/Archivo_de_texto) que **contiene solo las marcas** de los elementos estructurales (que a su vez pueden contener el diseño), para luego con ajustes manuales o automatizados obtener cada salida y que estas no contengan errores heredados.
+La principal consigna que persigue este modelo es ir de lo simple a lo complejo. Cada formato de salida tiene sus propias necesidades particulares. El PDF para pantalla no es exactamente igual al de imprenta (los hipervínculos hacen una gran diferencia); en el ePub puede hacerse necesario configurar de otra manera las figuras o cuadros; en HTML se puede sacar provecho de la visualización interactiva y así un largo etcétera y como punto de inflexión vamos a encontrar una cuestión clave en Ciencia Abierta, los metadatos.[^cienciaAbierta] Por consiguiente, lo que se hace imperioso es **evitar la herencia de características**, que es el principal problema que conlleva la metodología cíclica, a diferencia de esta, la edición ramificada se inicia con un documento simple de [texto plano](https://es.wikipedia.org/wiki/Archivo_de_texto) que **contiene solo las marcas** de los elementos estructurales (que a su vez pueden contener el diseño), para luego con ajustes --manuales o automatizados-- obtener cada salida y que estas no contengan errores heredados.
 
 Este es un ejemplo conceptual de la lógica a seguir, supongamos que tengo una marca de cita:[^cita]
 
@@ -102,13 +102,13 @@ Luego de varios intentos me dí por vencido, esta [imagen](https://i.pinimg.com/
 
 Existen más proyectos girando en torno a la edición ramificada y no tuve tiempo de estudiarlos (también debe haber otros que no conozco), de los más interesantes que me quedaron como deuda está el de la editorial O'Reilly ([HTMLBook](https://github.com/oreillymedia/HTMLBook)), utiliza asciidoc como lenguaje base para las marcas.
 
-Para los diseños muy elaborados utilizados en revistas, también es posible aplicar la metodología de le-tex, que es salir a un XML y trabajar el diseño desde InDesign o QXpress, se suma un posible conflicto de control, pero es el precio a pagar para diseños específicos.
+Para los diseños utilizados en revistas complejos de codificar, también es posible aplicar la metodología sugerida por le-tex, que es salir a un archivo XML y trabajar el diseño desde InDesign o QXpress, en este modelo se suma un posible conflicto de control, pero es el precio a pagar para diseños específicos.
 
-Es interesante observar lo siguiente, muchos proyectos para edición ramificada utilizan LaTeX como camino para la salida a PDF (pero como camino secundario), esto me llevo a observar que lo que prima en los proyectos es cuál salida es la determinante, quiero decir, si la salida a HTML o ePub es prioritaria sobre que la salida a PDF, producir directamente en asciidoc va a ser lo mejor, por dar un ejemplo.
+Es interesante observar lo siguiente, muchos proyectos para edición ramificada utilizan LaTeX como camino para la salida a PDF (pero como camino secundario), esto me llevo a reflexionar que lo que prima en los proyectos es cuál salida es la determinante, quiero decir, si la salida a HTML o ePub es prioritaria sobre que la salida a PDF, producir directamente en asciidoc --por ejemplo-- va a ser una mejor opción de trabajo.
 
 ## Todos los caminos conducen a LaTeX
 
-Conocí LaTeX en el año 1993, pude verlo correr en una PC con [MS-DOS](https://es.wikipedia.org/wiki/MS-DOS), ejecutando el editor [epsilon](https://lugaru.com/), recuerdo que me sorprendió mucho, pero no fue hasta 10 años después que lo empecé a usar de manera intensiva, cuando abandone la preprensa y la imprenta para dedicarme de lleno a la edición científica.
+Conocí LaTeX en el año 1993, pude ver el resultado de sus compilaciones en una PC con [MS-DOS](https://es.wikipedia.org/wiki/MS-DOS), recuerdo que me sorprendió mucho, pero no fue hasta 10 años después que lo empecé a usar de manera cotidiana e intensiva, cuando abandone la preprensa y la imprenta para dedicarme de lleno a la edición científica.
 
 Esto no impidió que en los últimos años haya trabajado con [Markdown](https://es.wikipedia.org/wiki/Markdown) y [AsciiDoc](https://en.wikipedia.org/wiki/AsciiDoc) (con el intérprete [asciidoctor](https://asciidoctor.org/)), y aún hoy los sigo usando (los artículos de este blog los escribo en markdown), también hice algunas pruebas con [PlasTeX](https://plastex.github.io/plastex/getting_started/).
 
@@ -148,11 +148,11 @@ Se tiene control absoluto sobre cualquier posición _x-y_ de la página para pos
 
 ![](https://albertomoyano.github.io/blog-personal/images/objeto.png)
 
-Estos ejemplos son solo la punta del iceberg, puede sonar exagerado, pero se entiende mejor cuando se asimila a LaTeX como lo que es, _un lenguaje de programación para la composición tipográfica_, y **no** como un programa de armado.
+Estos ejemplos son solo la punta del iceberg, puede sonar exagerado, pero se entiende mejor cuando se asimila a LaTeX como lo que es, **un lenguaje para la composición tipográfica**, y no como un programa de armado.
 
 ## Pequeña radiografía de LaTeX
 
-LaTeX es un sistema de composición tipográfica, orientado a la creación de documentos escritos con un **alto estándar de calidad tipográfica**. Por sus características y posibilidades, es usado de manera intensiva en la generación de textos científicos. Fue escrito por [Leslie Lamport](https://es.wikipedia.org/wiki/Leslie_Lamport) en 1984, con la intención de facilitar el uso del lenguaje de composición tipográfica [TeX](https://es.wikipedia.org/wiki/TeX), creado por [Donald Knuth](https://es.wikipedia.org/wiki/Donald_Knuth). A resumidas cuentas, LaTeX es un conjunto de macros de TeX, y se encuentra bajo [licencia LPPL](https://es.wikipedia.org/wiki/LaTeX_Project_Public_License).
+LaTeX es un lenguaje de composición tipográfica, orientado a la creación de documentos escritos con un **alto estándar de calidad tipográfica**. Por sus características y posibilidades, es usado de manera intensiva en la generación de textos científicos. Fue escrito por [Leslie Lamport](https://es.wikipedia.org/wiki/Leslie_Lamport) en 1984, con la intención de facilitar el uso del lenguaje de composición tipográfica [TeX](https://es.wikipedia.org/wiki/TeX), creado por [Donald Knuth](https://es.wikipedia.org/wiki/Donald_Knuth). A resumidas cuentas, LaTeX no es mas que un conjunto de macros de TeX, y se encuentra bajo [licencia LPPL](https://es.wikipedia.org/wiki/LaTeX_Project_Public_License).
 
 El patrón de escritura que maneja LaTeX (no es el único lenguaje que trabaja de esta manera) es separar **la estructura del contenido** de la **representación visual de la salida**, aún teniendo todo dentro de un mismo archivo de texto plano.
 
@@ -221,14 +221,10 @@ A su vez, los paquetes que trabajan sobre la salida, pueden:
 1. ser incompatibles entre sí;
 2. tener dependencia de otros paquetes.
 
-El primer caso es el más gravoso, ya que no permite que dos paquetes convivan dentro del preámbulo, no es objetivo de este artículo explicar por qué existe esta situación y como se resuelve (cuando se puede, que no es siempre).
-
-El segundo obliga a tener que estudiar que no exista el punto 1 entre las dependencias.
-
 Frente a la cantidad abrumadora de paquetes disponibles en el [CTAN](https://www.ctan.org/),[^ctan] sin contar que está la posibilidad de escribir macros propias o incluso de interactuar con otros lenguajes (por ejemplo [Lua](https://es.wikipedia.org/wiki/Lua))[^lua] o metalenguajes (por ejemplo [Tikz](https://es.wikipedia.org/wiki/PGF/TikZ)), lo primero a resolver era cuál camino seguir.
 
-1. **un preámbulo único**, regido exclusivamente por condicionales que controlen todo el flujo, con el nivel de riesgo que esto conlleva, ya que cualquier cambio --por mas simple que fuera-- puede alterar toda la cadena del flujo a seguir.
-2. **varios preámbulos**, ajustados a cada tipo de salida, trabajando con un solo condicional para todas las salidas.
+1. **un preámbulo único**, regido exclusivamente por condicionales[^condicion] que controlen todo el flujo, con el nivel de riesgo que esto conlleva, ya que cualquier cambio --por mas simple que fuera-- puede alterar toda la cadena del flujo a seguir.
+2. **varios preámbulos**, ajustados a cada tipo de salida.
 
 El camino que tome es el 2. No es el camino esperado por muchos programadores con los que hablé, pero no soy programador. La figura a continuación ilustra la idea.
 
@@ -246,13 +242,11 @@ El [motor SQL](https://es.wikipedia.org/wiki/SQL) lleva la tarea de centralizar 
 
 ## Descarga e instalación de gbTeXpublisher
 
-El programa tiene dependencia de [Git](https://git-scm.com/), [Pandoc](https://pandoc.org/) y [Sigil](https://sigil-ebook.com/sigil/), doy por descartado que LaTeX ya está instalado, sugiero tener instalada la versión _full_ (aproximadamente 4 gigas).
-
-Personalmente, para editar los textos utilizo [TeXstudio](https://www.texstudio.org/) desde hace ya varios años, pero sirve cualquiera de los editores que se encuentran en Internet.
+Doy por descartado que LaTeX ya está instalado, sugiero tener instalada la versión _full_ (aproximadamente 4 gigas). Personalmente, para editar los textos utilizo [TeXstudio](https://www.texstudio.org/) desde hace ya varios años, pero sirve cualquiera de los editores que se encuentran en Internet.
 
 También es necesario tener una cuenta en [gitlab](https://gitlab.com/), para hacer uso del respaldo remoto, los 10 gigas de la versión gratuita son más que suficientes.
 
-Si bien en gambas es posible hacer el empaquetado para las principales distribuciones de GNU Linux, para evitar posibles conflictos, lo que está disponible es un empaquetado **autotools**.
+Si bien en [Gambas](https://gambas.sourceforge.net/en/main.html) (el lenguaje que utilicé para escribir gbTeXpublisher) es posible hacer el empaquetado para las principales distribuciones de GNU Linux, para evitar posibles conflictos, lo que está disponible es un empaquetado **autotools**.
 
 Este es el _link_ de descarga para la última versión disponible [(gbTeXpublisher v477)](https://www.dropbox.com/scl/fi/ut8tvyo6qwo7k2f24rzkc/gbTeXpublisher-0.0.477.tar.gz?rlkey=tnfq7shmjt8ewiruih8nmpq04&dl=1).
 
@@ -266,13 +260,14 @@ Los usuarios de windows pueden utilizar el software a través de [WSL](https://l
 
 A los usuarios de MacOS, no sé que decirles, no tengo acceso a esos equipos desde hace muchos años. Si alguien quiere hacer pruebas quedo a disposición para ayudarlo en lo que pueda.
 
+
+Solo para que se tenga un conocimiento global de lo que hace la instalación, aclaro que luego de instalar gbTeXpublisher se van a encontrar con una carpeta oculta dentro del **`home.user`** (léase carpeta personal), donde se alojará la base de datos, el proceso de instalación copia una base de datos con un número determinado de entradas que sirven para ser estudiadas, esto vale para las notas, las siglas y las referencias bibliográficas. En la figura a continuación lo resalto con una línea roja.
+
+![](https://albertomoyano.github.io/blog-personal/images/pantalla11.png)
+
 ## Comenzando con gbTeXpublisher
 
 Cuando se está editando un solo libro, se pueden tener ciertas libertades, pero cuando se tienen 7 o 9 libros de manera constante en el flujo de producción, la cosa cambia. El orden y el principio de [DRY](https://es.wikipedia.org/wiki/No_te_repitas) se vuelve más que importante si queremos tener una sana optimización de los recursos. En gbTeXpublisher se van a encontrar funciones predefinidas (y rígidas) que aseguran comportamientos estables y predecibles.
-
-Luego de instalar gbTeXpublisher encontraremos una carpeta oculta dentro del **`home.user`** (léase carpeta personal), donde se alojará la base de datos, el proceso de instalación copia una base de datos con un número determinado de entradas que sirven como ejemplo, esto vale para las notas, las siglas y las referencias bibliográficas. En la figura a continuación lo resalto con una línea roja.
-
-![](https://albertomoyano.github.io/blog-personal/images/pantalla11.png)
 
 El programa no trabaja **sobre** el archivo de LaTeX, sino que lo hace con una **copia**. Esto da plena y absoluta libertad de trabajar el texto con el editor que mejor le plazca al usuario. De ahí que su interfaz de inicio pueda sorprender --ya que no dice nada-- esto también se observa al notar que algunos menúes están deshabilitados y se activan una vez que se haya elegido un archivo con el cual trabajar. La imagen a continuación lo ilustra.
 
@@ -301,7 +296,7 @@ Las notas pueden ser exportadas a formato **`.docx`** para ser enviadas por corr
 
 gbTeXpublisher utiliza como motor de conversión subyacente [make4ht](https://www.ctan.org/pkg/make4ht) que es un sistema de compilación simple para [tex4ht](https://www.ctan.org/pkg/tex4ebook?lang=en).
 
-Existen 4 archivos de configuración, el programa instala una configuración base que sirve para una gran  mayoría de casos, en estos archivos es en donde se hacen cambios cuando se pretende alterar la salida más allá del diseño visual.
+**Importante:** gbTeXpublisher, técnicamente está terminado. Realizo (cada vez menos) pequeñas correcciones vinculadas a _tips_ de producción de mi día a día. Entonces, ¿por qué hago mención de que es un _beta_? Porque una vez que se entendió la lógica de uso, todo el trabajo se encuentra en estos archivos de configuración. Los cuatro archivos de configuración que el programa instala tienen una configuración base general, y mi intención es optimizar estos archivos. Reitero: en estos archivos es donde se hacen cambios cuando se pretende alterar la salida más allá del diseño visual.
 
 El archivo **`build.lua`** trae por _default_ una configuración base pensada para no dejar ninguna posibilidad fuera de su alcance, si alguna de sus instrucciones no fuesen necesarias (por las características del archivo con el que se está trabajando), no es problemático dejarlas, ya que el error que nos dará el compilador es del tipo _suave_, y por supuesto, si el archivo con el que trabajamos lo requiere, este archivo de configuración puede modificarse sin problemas.
 
@@ -386,7 +381,7 @@ Los metadatos específicos de los autores y las colecciones se trabajan desde ot
 
 Hace un tiempo (largo) vi una imagen en la red [linkedin](https://www.linkedin.com/in/edicion-cientifica/) que a simple vista (antes de leer el artículo) pensé que era un meme,[^meme] en la misma había muchos archivos MS Word, nombrados: versión final, versión final final, esta es la última versión, ahora sí la última; y así muchas copias de un word con todos los nombres que se pudieran imaginar, la imagen buscaba encontrar quiénes se identificaban con la misma.
 
-gbTeXpublisher trabaja con [Git](https://es.wikipedia.org/wiki/Git) como sistema de control de versiones, este es ampliamente utilizado para el seguimiento de cambios. Fue creado por [Linus Torvalds](https://es.wikipedia.org/wiki/Linus_Torvalds) en 2005, es una herramienta poderosa, flexible y fundamental para el trabajo en equipo. Puede llevar algo de tiempo acostumbrarse --a su lógica de uso--, pero una vez aprendidos sus conceptos se vuelve esencial para trabajar de manera sólida y segura, aún así, en gbTeXpublisher el acto de hacer las instantáneas de respaldo quedo simplificado al punto de un solo clic de _mouse_.
+gbTeXpublisher trabaja con [Git](https://es.wikipedia.org/wiki/Git) como sistema de control de versiones, este es ampliamente utilizado para el seguimiento de cambios. Fue creado por [Linus Torvalds](https://es.wikipedia.org/wiki/Linus_Torvalds) en 2005, es una herramienta poderosa, flexible y fundamental para el trabajo en equipo. Puede llevar algo de tiempo acostumbrarse --a su lógica de uso--, pero una vez aprendidos sus conceptos se vuelve esencial para trabajar de manera sólida y segura, aún así, en gbTeXpublisher el acto de hacer las instantáneas de respaldo quedo simplificado al punto de un solo click de _mouse_.
 
 Si se desea trabajar solo en modo local no es necesario tener una cuenta en GitLab.
 
@@ -435,12 +430,6 @@ Llegado a este punto, el trabajo está terminado, el libro impreso, la versión 
 
 ![](https://albertomoyano.github.io/blog-personal/images/pantalla17.png)
 
-<!-- ## Veamos todo esto en un video
-
-Es oportuno aclarar que, así como gbTeXpublisher se encuentra en desarrollo, este artículo también, y puede ser modificado a medida que pasa el tiempo.
-
-{{< youtube xjxyEwjG2Es >}} -->
-
 ## Comentario final
 
 Para explicitar lo obvio, no creo que los editores de libros deban tener conocimientos de programación de manera obligatoria. **La función principal de un editor de libros y/o revistas es y seguirá siendo trabajar con el contenido**, asegurándose de que sea claro y coherente con una estructura lógica y gramatical. Sin embargo, vivimos en un mundo en donde la tecnología desempeña un papel clave en la producción y distribución de contenidos, y esto incluye a los libros y las revistas.
@@ -457,11 +446,11 @@ Matthew Carter en una exposición en el 2014 lo planteó en términos muy simple
 
 {{< youtube xjxyEwjG2Es >}}
 
-Es oportuno aclarar que, así como gbTeXpublisher se encuentra en desarrollo, este artículo también, y puede ser modificado a medida que pasa el tiempo.
+Es oportuno aclarar que, así como gbTeXpublisher puede tener modificaciones en el futuro, este artículo también puede ser modificado a medida que pasa el tiempo. Además, es importante señalar que dado que gbTeXpublisher está distribuido bajo la Licencia Pública General de GNU (GPL), este se proporciona **tal cual y sin garantías**. La licencia GPL no otorga garantías explícitas y se insta a los usuarios a consultar los términos de la licencia para comprender completamente sus derechos y responsabilidades.
 
 ## Gambas y solo GNU Linux
 
-No soy programador, me identifico plenamente como editor con una fuerte formación en artes gráficas (tuve taller de preprensa e imprenta durante 15 años), así que mis conocimientos informáticos son en base a mucha lectura y práctica. Estuve durante mucho tiempo lidiando con [Python](https://es.wikipedia.org/wiki/Python), [Objet Pascal](https://es.wikipedia.org/wiki/Object_Pascal), [Lazarus](https://es.wikipedia.org/wiki/Lazarus_(entorno_de_desarrollo)) y [Ruby](https://es.wikipedia.org/wiki/Ruby), reconozco ventajas en todos estos lenguajes, pero mi reflexión en la búsqueda de una solución informática consideró primordialmente el balance entre: facilidad de uso y productividad; el resultado me llevo a encarar gbTeXpublisher con [Gambas](https://gambas.sourceforge.net/en/main.html).
+No soy programador, me identifico plenamente como editor con una fuerte formación en artes gráficas (tuve taller de preprensa e imprenta durante 15 años), así que mis conocimientos informáticos son en base a mucha lectura y práctica. Estuve durante mucho tiempo lidiando con [Python](https://es.wikipedia.org/wiki/Python), [Lazarus](https://es.wikipedia.org/wiki/Lazarus_(entorno_de_desarrollo)) y [Ruby](https://es.wikipedia.org/wiki/Ruby), reconozco ventajas en todos estos lenguajes, pero mi reflexión en la búsqueda de una solución informática consideró primordialmente el balance entre: facilidad de uso y productividad; el resultado me llevo a encarar gbTeXpublisher con [Gambas](https://gambas.sourceforge.net/en/main.html).
 
 > Gambas es un lenguaje de programación libre derivado de BASIC (de ahí que Gambas quiere decir **G**ambas **A**lmost **M**eans **Bas**ic). Se distribuye con licencia GNU GPL. Cabe destacar que presenta ciertas similitudes con Java, ya que para la ejecución de cualquier aplicación, se requiere un intérprete previamente instalado (Gambas Runtime) que entienda el bytecode de las aplicaciones desarrolladas y lo convierta en código ejecutable por el computador [(wikipedia)](https://es.wikipedia.org/wiki/Gambas).
 
@@ -500,3 +489,7 @@ Por motivos que no hacen a este artículo y sabiendo que todas las distribucione
 [^saveas]: En el año 1993 fundé SaveAs... un taller de preimpresión en el que tenía 4 servidores con [Debian](https://www.debian.org/index.es.html).
 
 [^home]: Una traducción posible de _homeoarchy_ sería: omisión accidental de una línea de texto durante la lectura, debido a similitudes en su contenido inicial.
+
+[^cienciaAbierta]: Los metadatos desempeñan un papel crucial en el contexto de la ciencia abierta, ya que facilitan la gestión, el descubrimiento y el acceso a la información científica. Veamos algunas razones por las cuales los metadatos son importantes: (1) **Descubrimiento de investigación:** permiten una descripción detallada de los conjuntos de datos, artículos y otros recursos de investigación. Esto facilita su descubrimiento por parte de otros investigadores, ayudando a ampliar la visibilidad de la investigación. (2) **Interoperabilidad:** al utilizar estándares de metadatos comunes, se mejora la interoperabilidad entre diferentes plataformas y sistemas. Esto facilita la integración de datos y la colaboración entre distintas iniciativas de ciencia abierta. (3) **Reproducibilidad:** bien definidos contribuyen a la reproducibilidad de la investigación. Proporcionan información detallada sobre cómo se recopilaron, procesaron y analizaron los datos, lo que permite a otros investigadores replicar o verificar los resultados. (4) **Atribución y citación:** pueden contener información sobre los autores, afiliaciones, fuentes de financiamiento y otros detalles relevantes. Esto facilita la atribución adecuada de la investigación y el seguimiento de las contribuciones individuales. (5) **Gestión de Datos:** son esenciales para la gestión eficiente de datos a lo largo de su ciclo de vida. Ayudan a organizar y describir los conjuntos de datos, lo que facilita su almacenamiento, acceso y preservación a largo plazo. (6) **Cumplimiento de políticas y normativas:** son útiles para cumplir con políticas y normativas relacionadas con la transparencia y la apertura de la investigación. Proporcionan detalles sobre la conformidad con estándares éticos, licencias de datos y otros requisitos institucionales. (7) **Mejora de la calidad:** la disponibilidad de metadatos precisos y completos contribuye a la mejora de la calidad de la investigación. Facilitan la revisión por pares y la evaluación de la validez y confiabilidad de los datos. (8) **Facilitación del Acceso Abierto:** pueden incluir información sobre la disponibilidad y los términos de acceso a los recursos de investigación. Esto es fundamental para garantizar un acceso abierto y equitativo a la información científica. En resumen, los metadatos son herramientas fundamentales para la gestión eficiente, el descubrimiento y la utilización de la investigación en el contexto de la ciencia abierta. Contribuyen a la transparencia, la colaboración y la maximización del impacto de la investigación en la comunidad científica y la sociedad en general.
+
+[^condicion]: En programación y lógica, una sentencia condicional se utiliza para realizar acciones diferentes según si una condición es verdadera o falsa. Se basa en el concepto de «si-entonces» y permite que un programa tome decisiones dinámicamente durante su ejecución.
