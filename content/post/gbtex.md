@@ -112,11 +112,11 @@ Conocí LaTeX en el año 1993, pude ver el resultado de sus compilaciones en una
 
 Esto no impidió que en los últimos años haya trabajado con [Markdown](https://es.wikipedia.org/wiki/Markdown) y [AsciiDoc](https://en.wikipedia.org/wiki/AsciiDoc) (con el intérprete [asciidoctor](https://asciidoctor.org/)), y aún hoy los sigo usando (los artículos de este blog los escribo en markdown), también hice algunas pruebas con [PlasTeX](https://plastex.github.io/plastex/getting_started/).
 
-Intentar hacer una muestra de las capacidades de LaTeX en la producción editorial sería interminable, ya que no hay límites como los que se pueden encontrar en una aplicación de [DTP](https://es.wikipedia.org/wiki/Autoedici%C3%B3n) (donde las capacidades del programa determinan que se posible hacer y que no) en LaTeX el límite lo pone el conocimiento que se tenga de él (por eso es un lenguaje).
+Intentar hacer una muestra de las capacidades de LaTeX en la producción editorial sería interminable, ya que no hay límites como los que se pueden encontrar en una aplicación de [DTP](https://es.wikipedia.org/wiki/Autoedici%C3%B3n) (donde las capacidades del programa determinan que es posible hacer y que no) en LaTeX no hay límites, el límite está en el conocimiento que se tenga de él (por eso es un lenguaje).
 
 ### Botones para muestra
 
-Para poder graficar mejor lo dicho en el párrafo anterior, dejo muestras de características obtenidas en mi trabajo diario con LaTeX, que son imposibles de obtener con otros lenguajes (o con programas para DTP del mercado) que explican mejor a que me refiero cuando utilizo la expresión **alto estándar de calidad tipográfica**.
+Para poder graficar mejor lo dicho en el párrafo anterior, dejo ejemplos de características obtenidas en mi trabajo diario con LaTeX, que **son imposibles de obtener con programas para DTP del mercado** y que muestran mejor a que me refiero cuando utilizo la expresión **alto estándar de calidad tipográfica**.
 
 ### Homeoarchy
 
@@ -209,7 +209,7 @@ Este artículo no es un curso de LaTeX, en la red hay a montones,[^cursos] pero 
 
 ## ¿Entonces?
 
-El preámbulo es la parte en donde se declaran las diferentes macros que darán instrucciones precisas al compilador para la salida que se desea obtener, ahora bien, los paquetes están sujetos a 2 características principales.
+El preámbulo es la parte en donde se declaran las diferentes macros que darán instrucciones precisas al compilador para la salida que se desea obtener, ahora bien, los paquetes y/o macros están sujetos a 2 características principales.
 
 1. **trabajan sobre la salida** (por ejemplo _geometry_ que permite manipular el diseño y la estructura de la página).
 2. **intervienen en el contenido** (por ejemplo _csquotes_ que automatiza el manejo de las comillas).
@@ -458,11 +458,11 @@ No soy programador, me identifico plenamente como editor con una fuerte formaci�
 
 Y si bien los motivos en mi elección son varios, también entiendo que puedan ser cuestionados al decidir trabajar solo con GNU Linux, dejo aquí cuáles fueron los más importantes para mi elección:
 
-1. No programo para terceros, lo hago para mí uso personal.
-2. Utilizo GNU Linux desde hace 30 años.[^saveas]
-3. Gambas es un [RAD](https://es.wikipedia.org/wiki/Desarrollo_r%C3%A1pido_de_aplicaciones).
-4. Es rápido y potente [(Benchmarks)](https://gambas.sourceforge.net/en/main.html#).
-5. Es muy fácil de aprender.
+1. Solvento mis gastos trabajando como editor, no programando.
+2. Creo que el conocimiento es una construcción colectiva.
+3. Utilizo GNU Linux desde hace 30 años.[^saveas]
+4. Gambas es un [RAD](https://es.wikipedia.org/wiki/Desarrollo_r%C3%A1pido_de_aplicaciones).
+5. Es rápido, potente [(Benchmarks)](https://gambas.sourceforge.net/en/main.html#) y muy fácil de aprender.
 
 ## Algunas aclaraciones sobre mi plataforma de trabajo
 
