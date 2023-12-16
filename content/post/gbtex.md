@@ -7,7 +7,7 @@ tags = ["LaTeX", "gbTeXpublisher",]
 pin = true
 +++
 
-gbTeXpublisher es una aplicación orientada a la producción editorial, si eres editor, corrector y/o diseñador de libros con una fuerte impronta en la edición científica, este artículo introductorio puede ser de tu interés.
+gbTeXpublisher es una aplicación diseñada para facilitar la producción editorial. Si te desempeñas como editor, corrector y/o diseñador de libros, especialmente con un enfoque significativo en la edición científica, este artículo introductorio podría resultarte de interés.
 
 <!--more-->
 
@@ -434,11 +434,11 @@ Llegado a este punto, el trabajo está terminado, el libro impreso, la versión 
 
 Para explicitar lo obvio, no creo que los editores de libros deban tener conocimientos de programación de manera obligatoria. **La función principal de un editor de libros y/o revistas es y seguirá siendo trabajar con el contenido**, asegurándose de que sea claro y coherente con una estructura lógica y gramatical. Sin embargo, vivimos en un mundo en donde la tecnología desempeña un papel clave en la producción y distribución de contenidos, y esto incluye a los libros y las revistas.
 
-En el contexto actual, tener conocimientos --al menos básicos-- de informática será más que beneficioso para un editor. Esto se debe a que la publicación digital y la distribución en línea, son cada vez más comunes. La comprensión de conceptos técnicos sobre formatos de archivos, valores condicionales, expresiones regulares, seguridad, etcétera, por nombrar algunos, serán útiles para aquellos que trabajan en la industria editorial.
+En la situación actual, contar con conocimientos en informática, incluso a un nivel básico, resulta altamente beneficioso para un editor. Esto se debe a la creciente prevalencia de la publicación digital y la distribución en línea. La comprensión de conceptos técnicos relacionados con formatos de archivos, condicionales, expresiones regulares, seguridad, entre otros, será de gran utilidad para aquellos que se desempeñan en la industria editorial.
 
-No tengo dudas de que el espacio editorial en el que me desempeño --la edición científica-- necesita una transformación enriquecedora sobre su modelo de producción, a efectos de poder garantizar --sin fechas de vencimiento-- su capacidad de poder mantenerse en el tiempo, asegurando el procesamiento y la difusión de sus contenidos. El método elegido para la producción editorial, es en gran medida responsable de la calidad de las fuentes de información que produce.
+No tengo dudas de que el ámbito editorial en el que me desenvuelvo, específicamente la edición científica, requiere una transformación significativa en su modelo de producción. Esta evolución es crucial para asegurar su sostenibilidad a lo largo del tiempo, permitiendo el procesamiento y la difusión de contenidos sin restricciones temporales. La calidad de las fuentes de información generadas está directamente influenciada por el método seleccionado para la producción editorial.
 
-Es evidente que los variados saberes involucrados, le otorgan a esta profesión un desempeño interdisciplinario complejo dentro del campo de la producción del conocimiento.
+Es evidente que la complejidad interdisciplinaria inherente a esta profesión, con la participación de diversos conocimientos, desempeña un papel fundamental en el campo de la producción del conocimiento.
 
 Matthew Carter en una exposición en el 2014 lo planteó en términos muy simples:
 
@@ -456,13 +456,12 @@ No soy programador, me identifico plenamente como editor con una fuerte formaci�
 
 ![](https://albertomoyano.github.io/blog-gbtexpublisher/images/pantalla10.png)
 
-Y si bien los motivos en mi elección son varios, también entiendo que puedan ser cuestionados al decidir trabajar solo con GNU Linux, dejo aquí cuáles fueron los más importantes para mi elección:
+Aunque las razones que me llevaron a elegir trabajar exclusivamente con GNU Linux son personales, reconozco que pueden suscitar preguntas. A continuación, expongo cuáles fueron los factores más relevantes que influyeron en mi elección:
 
-1. Solvento mis gastos trabajando como editor, no programando.
-2. Creo que el conocimiento es una construcción colectiva.
-3. Utilizo GNU Linux desde hace 30 años.[^saveas]
-4. Gambas es un [RAD](https://es.wikipedia.org/wiki/Desarrollo_r%C3%A1pido_de_aplicaciones).
-5. Es rápido, potente [(Benchmarks)](https://gambas.sourceforge.net/en/main.html#) y muy fácil de aprender.
+1. Utilizo GNU Linux desde hace 30 años.[^saveas]
+2. Solvento mis gastos trabajando como editor, no programando.
+3. Creo que el conocimiento es una construcción colectiva.
+4. Gambas es un [RAD](https://es.wikipedia.org/wiki/Desarrollo_r%C3%A1pido_de_aplicaciones), es rápido, potente [(Benchmarks)](https://gambas.sourceforge.net/en/main.html#) y muy fácil de aprender.
 
 ## Algunas aclaraciones sobre mi plataforma de trabajo
 
