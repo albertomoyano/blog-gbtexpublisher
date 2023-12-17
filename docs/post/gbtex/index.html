@@ -53,7 +53,7 @@
   <meta itemprop="name" content="Presentación de gbTeXpublisher">
 <meta itemprop="description" content="Presentación de gbTeXpublisher, marco teórico"><meta itemprop="datePublished" content="2023-12-04T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-12-04T00:00:00+00:00" />
-<meta itemprop="wordCount" content="6573"><meta itemprop="image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images"/>
+<meta itemprop="wordCount" content="6568"><meta itemprop="image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images"/>
 <meta itemprop="keywords" content="LaTeX,gbTeXpublisher," />
 
   
@@ -370,7 +370,8 @@ title        = {La cuarta discontinuidad},
 <p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla08.png" alt=""></p>
 <h2 id="configurando-las-salidas">Configurando las salidas</h2>
 <p>gbTeXpublisher utiliza como motor de conversión subyacente <a href="https://www.ctan.org/pkg/make4ht">make4ht</a> que es un sistema de compilación simple para <a href="https://www.ctan.org/pkg/tex4ebook?lang=en">tex4ht</a>.</p>
-<p><strong>Importante:</strong> gbTeXpublisher, técnicamente está terminado. Realizo (cada vez menos) pequeñas correcciones vinculadas a <em>tips</em> de producción de mi día a día. Entonces, ¿por qué hago mención de que es un <em>beta</em>? Porque una vez que se entendió la lógica de uso, todo el trabajo se encuentra en estos archivos de configuración. Los cuatro archivos de configuración que el programa instala tienen una configuración base general, y mi intención es optimizar estos archivos. Reitero: en estos archivos es donde se hacen cambios cuando se pretende alterar la salida más allá del diseño visual.</p>
+<p><strong>Importante:</strong> gbTeXpublisher, técnicamente está maduro, lo utilizo en mi producción diaria. Sigo con correcciones vinculadas a <em>tips</em> de producción de mi día a día. Entonces, ¿por qué hago mención de que es un <em>beta</em>? Porque seguramente, si empiezo a recibir consultas surjan otras cuestiones a revisar.</p>
+<p>Los cuatro archivos de configuración que el programa instala tienen una configuración base general, y mi intención es optimizar estos archivos. Reitero: en estos archivos es donde se hacen cambios cuando se pretende alterar la salida más allá del diseño visual.</p>
 <p>El archivo <strong><code>build.lua</code></strong> trae por <em>default</em> una configuración base pensada para no dejar ninguna posibilidad fuera de su alcance, si alguna de sus instrucciones no fuesen necesarias (por las características del archivo con el que se está trabajando), no es problemático dejarlas, ya que el error que nos dará el compilador es del tipo <em>suave</em>, y por supuesto, si el archivo con el que trabajamos lo requiere, este archivo de configuración puede modificarse sin problemas.</p>
 <p>La indexación para las siglas y el glosario está codificado en el preámbulo que viene por <em>default</em>.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/build.png" alt=""></p>

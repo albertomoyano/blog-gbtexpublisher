@@ -295,7 +295,9 @@ Las notas pueden ser exportadas a formato **`.docx`** para ser enviadas por corr
 
 gbTeXpublisher utiliza como motor de conversión subyacente [make4ht](https://www.ctan.org/pkg/make4ht) que es un sistema de compilación simple para [tex4ht](https://www.ctan.org/pkg/tex4ebook?lang=en).
 
-**Importante:** gbTeXpublisher, técnicamente está terminado. Realizo (cada vez menos) pequeñas correcciones vinculadas a _tips_ de producción de mi día a día. Entonces, ¿por qué hago mención de que es un _beta_? Porque una vez que se entendió la lógica de uso, todo el trabajo se encuentra en estos archivos de configuración. Los cuatro archivos de configuración que el programa instala tienen una configuración base general, y mi intención es optimizar estos archivos. Reitero: en estos archivos es donde se hacen cambios cuando se pretende alterar la salida más allá del diseño visual.
+**Importante:** gbTeXpublisher, técnicamente está maduro, lo utilizo en mi producción diaria. Sigo con correcciones vinculadas a _tips_ de producción de mi día a día. Entonces, ¿por qué hago mención de que es un _beta_? Porque seguramente, si empiezo a recibir consultas surjan otras cuestiones a revisar.
+
+Los cuatro archivos de configuración que el programa instala tienen una configuración base general, y mi intención es optimizar estos archivos. Reitero: en estos archivos es donde se hacen cambios cuando se pretende alterar la salida más allá del diseño visual.
 
 El archivo **`build.lua`** trae por _default_ una configuración base pensada para no dejar ninguna posibilidad fuera de su alcance, si alguna de sus instrucciones no fuesen necesarias (por las características del archivo con el que se está trabajando), no es problemático dejarlas, ya que el error que nos dará el compilador es del tipo _suave_, y por supuesto, si el archivo con el que trabajamos lo requiere, este archivo de configuración puede modificarse sin problemas.
 
