@@ -404,14 +404,16 @@ Ni que decir, si el trabajo es en equipo (no confundir trabajar en equipo con tr
 
 ![](https://albertomoyano.github.io/blog-personal/images/kanban.png)
 
-
 ## Catálogo automatizado
 
-Una de las cuestiones que necesitaba resolver de manera automatizada, era el catálogo en formato PDF, hasta la versión actual la construcción se hace con una plantilla fija, los datos se toman de los metadatos y solo quedan unos pocos datos para agregar manualmente, en un futuro espero agregar plantillas para disponer de diferentes diseños.
-
-El PDF que obtengo lo llevo a un directorio en donde se encuentran todas las páginas de los diferentes libros y un _script_ hace el trabajo de _costura_ sumando todos los archivos más una tapa en un solo archivo resultante.
+Fue imperativo abordar de manera ágil y eficaz (y segura) la cuestión del catálogo en formato PDF. La construcción se realiza mediante una plantilla predeterminada, extrayendo los datos necesarios de los metadatos. Solo restan dos datos por añadir manualmente: el autor y el currículum vitae (los motivos se detallan en el video). En perspectiva, aspiro a realizar modificaciones que permitan trabajar con diversas plantillas, posibilitando así la creación de diseños variados. El video siguiente ilustra el proceso de utilización.
 
 ![](https://albertomoyano.github.io/blog-personal/images/catalogo.png)
+
+
+{{< youtube EppfTII68z0 >}}
+
+El PDF que obtengo lo llevo a un directorio en donde se encuentran todas las páginas de los diferentes libros y un _script_ hace el trabajo de _costura_ concatenando todos los archivos en uno solo más una tapa.
 
 ## Obteniendo estadísticas
 
