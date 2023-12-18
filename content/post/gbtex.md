@@ -370,11 +370,11 @@ Las siguientes capturas muestran que metadatos son leídos en el PDF por los ind
 
 ![](https://albertomoyano.github.io/blog-gbtexpublisher/images/xmp3.png)
 
-Los metadatos específicos de los autores y las colecciones se trabajan desde otras tablas de la base de datos para evitar la redundancia. En el siguiente video es una muestra parcial de todo lo explicado anteriormente.
+Los metadatos específicos de los autores y las colecciones se trabajan desde otras tablas de la base de datos para evitar la redundancia. El siguiente video es una muestra parcial de todo lo explicado anteriormente.
 
-<!-- {{< youtube 5HOcjV5Y2no >}}
+{{< youtube 6fzO0nCOzps >}}
 
-![](https://albertomoyano.github.io/blog-personal/images/autores.png)
+<!--  ![](https://albertomoyano.github.io/blog-personal/images/autores.png)
 
 ![](https://albertomoyano.github.io/blog-personal/images/coleccion.png) -->
 
