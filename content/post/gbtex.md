@@ -23,9 +23,9 @@ Este artículo es un intento de presentación formal (aunque considero que el de
 
 ## Pequeña introducción
 
-Es posible observar y reconocer que la edición es íntegramente digital desde principio de los noventa, ya que los diferentes intervinientes en el proceso editorial han terminado incorporando sistemas informáticos en su uso cotidiano, ya sea para escribir o producir en el ámbito editorial, y también podemos asegurar que las imprentas (por dar el ejemplo de un actor del proceso) hoy solo reciben trabajos en formato digital.
+Es evidente que desde la década de los noventa, la edición se ha vuelto completamente digital. Esto se refleja en la adopción generalizada de sistemas informáticos por parte de los diferentes actores involucrados en el proceso editorial, quienes utilizan estas tecnologías para escribir y producir. Un ejemplo notable es que las imprentas hoy en día solo aceptan trabajos en formato digital.
 
-Sin embargo, me animo a pensar que la tradición editorial no ha podido --o sabido-- captar que estos cambios en la forma de producir no refieren solo al hecho de utilizar nuevas tecnologías, herramientas o dispositivos, sino también, a la pérdida de parte de los fundamentos básicos que existen en el proceso de edición.
+A pesar de esta transformación digital, me aventuro a sugerir que la tradición editorial no ha logrado, o quizás no ha sabido, asimilar que estos cambios no se limitan simplemente al uso de nuevas tecnologías, herramientas o dispositivos. También implican una pérdida de algunos fundamentos básicos que han sido parte integral del proceso de edición.
 
 La idea que propongo consiste en trabajar sobre un modelo de edición estandarizada, multiformato y multisoporte (y que no atenta contra el diseño), conocida como **edición ramificada**. Para lograr esto es necesario evitar cualquier tipo de enfoque [WYSIWYG](https://es.wikipedia.org/wiki/WYSIWYG).
 
@@ -33,7 +33,7 @@ La idea que propongo consiste en trabajar sobre un modelo de edición estandariz
 
 ## El modelo cíclico (la edición que conocemos)
 
-Podemos observar en la figura a continuación que la edición cíclica se concentra en la posibilidad de producir al mismo tiempo para varios soportes de salida (un inicio A, deriva en un destino B, C, etc.), tratando de conservar la idea de que la publicación (en nuestro caso un libro) tiene un solo camino a seguir. Este método de trabajo está arraigado en la idea de que algún *software* hará el trabajo milagroso de hacerlo posible, otorgándonos tranquilidad al concebir la conversión a diferentes formatos. Solo cuando se toma conciencia *real* de la pérdida que tenemos en la calidad técnica y editorial, se hace patente que la edición cíclica no es un método óptimo para la producción multiformato y multisoporte.
+En la figura que se presenta a continuación, se destaca la concentración de la edición cíclica en la capacidad de producir simultáneamente para varios soportes de salida (donde un inicio A se desplaza hacia destinos B, C, etc.). Se busca preservar la noción de que la publicación, en este caso un libro, sigue un único camino. Este enfoque de trabajo se fundamenta en la creencia de que algún software realizará de manera milagrosa la tarea, proporcionando tranquilidad al abordar la conversión a diferentes formatos. Sin embargo, solo al tomar una conciencia real de la pérdida en calidad técnica y editorial, se hace evidente que la edición cíclica no constituye un método óptimo para la producción en formatos y soportes diversos.
 
 ![](https://albertomoyano.github.io/blog-personal/images/ciclos.png)
 
@@ -104,7 +104,7 @@ Existen más proyectos girando en torno a la edición ramificada y no tuve tiemp
 
 Para los diseños utilizados en revistas complejos de codificar, también es posible aplicar la metodología sugerida por le-tex, que es salir a un archivo XML y trabajar el diseño desde InDesign o QXpress, en este modelo se suma un posible conflicto de control, pero es el precio a pagar para diseños específicos.
 
-Es interesante observar lo siguiente, muchos proyectos para edición ramificada utilizan LaTeX como camino para la salida a PDF (pero como camino secundario), esto me llevo a reflexionar que lo que prima en los proyectos es cuál salida es la determinante, quiero decir, si la salida a HTML o ePub es prioritaria sobre que la salida a PDF, producir directamente en asciidoc --por ejemplo-- va a ser una mejor opción de trabajo.
+Resulta intrigante notar que muchos proyectos de edición ramificada optan por emplear LaTeX como ruta secundaria para la generación de archivos PDF. Esta observación me llevó a reflexionar sobre la primacía en los proyectos, es decir, si la generación de archivos HTML o ePub tiene mayor prioridad que la producción de archivos PDF. En este contexto, surge la consideración de que elegir producir directamente en Asciidoc, por ejemplo, podría ser una opción de trabajo más eficiente cuando la salida a PDF no es la principal prioridad.
 
 ## Todos los caminos conducen a LaTeX
 
@@ -432,6 +432,10 @@ En LaTeX existen diferentes tipos de errores, los voy a agrupar en 2 categorias:
 Llegado a este punto, el trabajo está terminado, el libro impreso, la versión electrónica subida al repositorio, etcétera. Ha llegado el momento de guardar todo en un depósito de respaldo, yo personalmente utilizo [Mega](https://es.wikipedia.org/wiki/Mega_(sitio_web)), su relación costo/beneficio para este menester es la mejor (hay más opciones, por supuesto), también tengo un abono en Google para expandir mi cuota en Drive, pero lo utilizo para otras cosas. El menú **Comprimir directorio para respaldo**, básicamente lo que hace es una copia comprimiendo todo en formato [**`.tar.gz`**](https://es.wikipedia.org/wiki/Tar), la imagen a continuación lo dice todo. Después solo resta llevar ese archivo al repositorio de respaldo.
 
 ![](https://albertomoyano.github.io/blog-personal/images/pantalla17.png)
+
+## Copia de respaldo de la base de datos
+
+Esta constituye una de las primeras retroalimentaciones que recibí de aquellos que están probando gbTeXpublisher. No me había percatado de incluir una función para respaldar la base de datos. Ahora, cada vez que se cierra la aplicación, se genera automáticamente una copia de respaldo en el directorio **`.respaldogbTeX`**. El nombre del archivo se modifica al agregar la fecha, lo que implica que las copias del mismo día se sobrescriben. No hay restricciones en cuanto a la cantidad de copias respaldadas; cada usuario puede decidir cuántas desea conservar.
 
 ## Comentario final
 
