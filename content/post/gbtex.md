@@ -437,6 +437,8 @@ Llegado a este punto, el trabajo está terminado, el libro impreso, la versión 
 
 Esta constituye una de las primeras retroalimentaciones que recibí de aquellos que están probando gbTeXpublisher. No me había percatado de incluir una función para respaldar la base de datos. Ahora, cada vez que se cierra la aplicación, se genera automáticamente una copia de respaldo en el directorio **`.respaldogbTeX`**. El nombre del archivo se modifica al agregar la fecha, lo que implica que las copias del mismo día se sobrescriben. No hay restricciones en cuanto a la cantidad de copias respaldadas; cada usuario puede decidir cuántas desea conservar.
 
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/respaldo.png)
+
 ## Comentario final
 
 Para explicitar lo obvio, no creo que los editores de libros deban tener conocimientos de programación de manera obligatoria. **La función principal de un editor de libros y/o revistas es y seguirá siendo trabajar con el contenido**, asegurándose de que sea claro y coherente con una estructura lógica y gramatical. Sin embargo, vivimos en un mundo en donde la tecnología desempeña un papel clave en la producción y distribución de contenidos, y esto incluye a los libros y las revistas.
