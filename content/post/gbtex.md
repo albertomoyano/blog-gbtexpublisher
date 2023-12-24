@@ -88,7 +88,7 @@ Furtado[^2] plantea que en una primera aproximación, las ediciones se diferenci
 
 1. [Pecas](https://programando.li/bros/)
 
-El proyecto está archivado, su desarrollador (Ramiro, alias [perro tuerto](https://git.cuates.net/perro)) en una comunicación telefónica que tuvimos hace unos años, me dijo que el proyecto tiene errores de diseño que no le permiten evolucionar, pero tal como está, si lo que se pretende es solo obtener una salida a ePub desde markdown, el software no tiene fallas, y doy fe, lo utilice para hacer ejercicios y funciona, pero tiene tanta solidez como limitaciones. En los últimos tiempos ha tenido una actualización que también saca PDF y HTML en línea con herramientas adicionales.
+El proyecto está archivado, su desarrollador (Ramiro, alias [perro tuerto](https://git.cuates.net/perro)) en una comunicación telefónica que tuvimos hace unos años, me dijo que el proyecto tiene errores de diseño que no le permiten evolucionar, pero tal como está, si lo que se pretende es solo obtener una salida a ePub desde markdown, el software no tiene fallas, y doy fe, lo utilice para hacer ejercicios y funciona, pero tiene tanta solidez como limitaciones. En los últimos tiempos ha tenido una actualización que permite obtener PDF y HTML en línea.
 
 2. [Softcover](https://www.softcover.io/start)
 
