@@ -17,7 +17,7 @@ gbTeXpublisher es una aplicación de escritorio que permite gestionar de manera 
 
 gbTeXpublisher es también el resultado del enorme trabajo de muchas personas, a todas les estoy agradecido, pero quisiera hacer una mención particular para [Donald Knuth](https://es.wikipedia.org/wiki/Donald_Knuth), [Benoît Minisini](https://en.wikipedia.org/wiki/Beno%C3%AEt_Minisini) y los foros de [CervanTeX](http://cervantex.es/) y [Gambas](https://es.wikipedia.org/wiki/Gambas) y, de manera especial, para [Michal Hoftich](https://www.kodymirus.cz/), ya que el aporte de su desarrollo ha sido clave en el rumbo que tomaron mis decisiones de producción.
 
-Dejo por último a Federico Moyano, Sergio Santamaría y Ramiro Santa Ana Anguiano, sus comentarios y aportes fueron de gran ayuda en el desarrollo de este proyecto.
+Dejo por último a Alejandro Moyano, Sergio Santamaría y Ramiro Santa Ana Anguiano, sus comentarios y aportes fueron de gran ayuda en el desarrollo de este proyecto.
 
 gbTeXpublisher posee [licencia GPL3](https://www.gnu.org/licenses/gpl-3.0.en.html), por consiguiente se concede permiso para copiar, distribuir y modificar este software según los términos de dicha licencia.
 
@@ -63,8 +63,6 @@ En la edición técnica y en los sistemas de documentación, la edición ramific
 
 Ahora bien, para empezar a involucrarnos en este modelo debemos hacer el ejercicio de cambiar la perspectiva de producción, realizando un ejercicio de pensamiento lateral.[^1] La idea es simple: **no nos concentremos en los formatos de salida, sino en los caminos que conducen a ellos**.
 
-![](https://albertomoyano.github.io/blog-gbtexpublisher/images/arbol.png)
-
 Para facilitar la comprensión de mi explicación, imaginemos que partimos de un archivo fuente. Al seguir el proceso para convertirlo en un PDF, obtenemos un resultado perfecto. Ahora, al utilizar el mismo archivo fuente para generar un ePub, nos encontramos con errores, ya sea en el diseño, la estructura, u otros aspectos. Es crucial corregir estos problemas en el proceso de conversión hacia el ePub, no directamente en el ePub final. Este enfoque garantiza la consistencia en la fuente de los datos.
 
 Para trabajar con este modelo de producción es necesario utilizar algún lenguaje de marcas,[^marcas] ¿por qué?, porque hasta ahora la mejor forma conocida de producir es separando **la estructura del contenido** de su **modelo de representación visual** y esto se consigue aplicando marcas (etiquetando) a las partes del documento, ya que se pueden incorporar todas las que sean necesarias acerca de la estructura y el diseño para la representación del texto en la salida buscada.
@@ -74,6 +72,10 @@ La figura a continuación nos muestra un modelo (de todos los posibles) de edici
 ![](https://albertomoyano.github.io/blog-gbtexpublisher/images/completo.png)
 
 El ejemplo de la figura es uno de los tantos posibles, que tiene su base en el lenguaje de marcas [Markdown](https://es.wikipedia.org/wiki/Markdown), pero también existen otros lenguajes como [asciidoc](https://asciidoc-py.github.io/index.html), [Org Mode](https://orgmode.org/) y por supuesto [LaTeX](https://es.wikipedia.org/wiki/LaTeX).
+
+gbTeXpublisher sigue el modelo representado en la figura que sigue.
+
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/arbol.png)
 
 La principal consigna que persigue este modelo es ir de lo simple a lo complejo. Cada formato de salida tiene sus propias necesidades particulares. El PDF para pantalla no es exactamente igual al de imprenta (los hipervínculos hacen una gran diferencia); en el ePub puede hacerse necesario configurar de otra manera las figuras o cuadros; en HTML se puede sacar provecho de la visualización interactiva y así un largo etcétera y como punto de inflexión vamos a encontrar una cuestión clave en Ciencia Abierta, los metadatos.[^cienciaAbierta] Por consiguiente, lo que se hace imperioso es **evitar la herencia de características**, que es el principal problema que conlleva la metodología cíclica, a diferencia de esta, la edición ramificada se inicia con un documento simple de [texto plano](https://es.wikipedia.org/wiki/Archivo_de_texto) que **contiene solo las marcas** de los elementos estructurales (que a su vez pueden contener el diseño), para luego con ajustes --manuales o automatizados-- obtener cada salida que evite la herencia de características indeseadas.
 
