@@ -15,9 +15,9 @@ gbTeXpublisher nace como resultado de una necesidad concreta –[mi producción 
 
 gbTeXpublisher es una aplicación de escritorio que permite gestionar de manera fácil los procesos de producción editorial basados en el lenguaje LaTeX, me gusta pensar en esta aplicación como un facilitador, ya que todo lo que se puede hacer **con** gbTeXpublisher, también se puede hacer **sin** gbTeXpublisher, la diferencia radica en la facilidad que otorga su interfaz.
 
-gbTeXpublisher es también el resultado del enorme trabajo de muchas personas, a todas les estoy agradecido, pero quisiera hacer una mención particular para [Donald Knuth](https://es.wikipedia.org/wiki/Donald_Knuth), [Benoît Minisini](https://en.wikipedia.org/wiki/Beno%C3%AEt_Minisini) y los foros de [CervanTeX](http://cervantex.es/) y [Gambas](https://es.wikipedia.org/wiki/Gambas), de manera especial para [Michal Hoftich](https://www.kodymirus.cz/), el aporte de su desarrollo ha sido clave en el rumbo que tomaron mis decisiones de producción.
+gbTeXpublisher es también el resultado del enorme trabajo de muchas personas, a todas les estoy agradecido, pero quisiera hacer una mención particular para [Donald Knuth](https://es.wikipedia.org/wiki/Donald_Knuth), [Benoît Minisini](https://en.wikipedia.org/wiki/Beno%C3%AEt_Minisini) y los foros de [CervanTeX](http://cervantex.es/) y [Gambas](https://es.wikipedia.org/wiki/Gambas) y, de manera especial, para [Michal Hoftich](https://www.kodymirus.cz/), ya que el aporte de su desarrollo ha sido clave en el rumbo que tomaron mis decisiones de producción.
 
-Por último a Sergio Santamaría y Ramiro Santa Ana Anguiano por sus comentarios y aportes en este desarrollo.
+Dejo por último a Federico Moyano, Sergio Santamaría y Ramiro Santa Ana Anguiano, sus comentarios y aportes fueron de gran ayuda en el desarrollo de este proyecto.
 
 gbTeXpublisher posee [licencia GPL3](https://www.gnu.org/licenses/gpl-3.0.en.html), por consiguiente se concede permiso para copiar, distribuir y modificar este software según los términos de dicha licencia.
 
