@@ -49,7 +49,11 @@ La edición ramificada es un modelo de producción que implica una apertura en d
 
 En el tema que nos involucra --la edición de libros y revistas-- _single source_ implica tener un único origen para el contenido del libro o revista, que luego se puede adaptar para generar diferentes formatos de salida, como impresión, ePub, HTML o XML.
 
-Desde mi perspectiva, la edición ramificada se presenta como una variante del _single source_ en la que los materiales iniciales dan origen a representaciones gráficas en [forma de árbol](https://es.wikipedia.org/wiki/%C3%81rbol_(teor%C3%ADa_de_grafos). En contraste, el _single source_ convencional tiene como objetivo la creación de gráficos en [forma de estrella](https://es.wikipedia.org/wiki/Estrella_(teor%C3%ADa_de_grafos). En este contexto, el _single source_ se percibe como una visión más simplificada, idealista y repetitiva, ya que en una estructura en estrella, el HTML se replica para generar versiones en línea y en formato ePub. La edición ramificada se caracteriza por ser una perspectiva más compleja y concreta de los desafíos editoriales cotidianos. En este enfoque, se busca mantener el árbol lo más simple posible, adaptándolo a las necesidades y capacidades disponibles.
+Desde mi perspectiva, la edición ramificada se presenta como una variante del _single source_ en la que los materiales iniciales dan origen a representaciones gráficas en [forma de árbol](https://es.wikipedia.org/wiki/%C3%81rbol_(teor%C3%ADa_de_grafos)). En contraste, el _single source_ convencional tiene como objetivo la creación de gráficos en [forma de estrella](https://es.wikipedia.org/wiki/Estrella_(teor%C3%ADa_de_grafos)).
+
+En este contexto, el _single source_ se percibe como una visión más simplificada, idealista y repetitiva, ya que en una estructura en estrella, el HTML --por ejemplo-- se replica para generar versiones en línea y en formato ePub.
+
+La edición ramificada se caracteriza por tener una perspectiva más compleja y concreta de los desafíos editoriales cotidianos. En este enfoque, se busca mantener el árbol lo más simple posible, adaptándolo a las necesidades y capacidades disponibles.
 
 Una de las ideas que predomina es facilitar la consistencia de los datos y la eficiencia en su manipulación, ya que en lugar de mantener y actualizar varios formatos de salida de un mismo contenido, se trabaja en un único archivo de origen (fuente) desde donde se generan diferentes salidas según sea necesario.
 
