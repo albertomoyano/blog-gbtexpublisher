@@ -7,7 +7,7 @@ tags = ["LaTeX", "gbTeXpublisher",]
 pin = true
 +++
 
-gbTeXpublisher es una aplicación diseñada para facilitar la producción editorial. Si te desempeñas como editor, corrector y/o diseñador de libros, especialmente con un enfoque significativo en la edición científica, este artículo introductorio podría resultarte de interés.
+gbTeXpublisher es una aplicación diseñada para facilitar la producción editorial. Si te desempeñas como editor, corrector o diseñador de libros, especialmente con un enfoque significativo en la edición científica, este artículo introductorio podría resultarte de interés.
 
 <!--more-->
 
@@ -15,15 +15,17 @@ gbTeXpublisher nace como resultado de una necesidad concreta –[mi producción 
 
 gbTeXpublisher es una aplicación de escritorio que permite gestionar de manera fácil los procesos de producción editorial basados en el lenguaje LaTeX, me gusta pensar en esta aplicación como un facilitador, ya que todo lo que se puede hacer **con** gbTeXpublisher, también se puede hacer **sin** gbTeXpublisher, la diferencia radica en la facilidad que otorga su interfaz.
 
-gbTeXpublisher es también el resultado del enorme trabajo de muchas personas, a todas les estoy agradecido, pero quisiera hacer una mención especial para [Donald Knuth](https://es.wikipedia.org/wiki/Donald_Knuth), [Benoît Minisini](https://en.wikipedia.org/wiki/Beno%C3%AEt_Minisini) y los foros de [CervanTeX](http://cervantex.es/) y [Gambas](https://es.wikipedia.org/wiki/Gambas), dejo para lo último a [Michal Hoftich](https://www.kodymirus.cz/), el aporte de su desarrollo ha sido clave en el rumbo que tomaron mis decisiones de producción.
+gbTeXpublisher es también el resultado del enorme trabajo de muchas personas, a todas les estoy agradecido, pero quisiera hacer una mención particular para [Donald Knuth](https://es.wikipedia.org/wiki/Donald_Knuth), [Benoît Minisini](https://en.wikipedia.org/wiki/Beno%C3%AEt_Minisini) y los foros de [CervanTeX](http://cervantex.es/) y [Gambas](https://es.wikipedia.org/wiki/Gambas), de manera especial para [Michal Hoftich](https://www.kodymirus.cz/), el aporte de su desarrollo ha sido clave en el rumbo que tomaron mis decisiones de producción.
 
-gbTeXpublisher posee [licencia GPL3](https://www.gnu.org/licenses/gpl-3.0.en.html), por consiguiente se concede permiso para copiar, distribuir y/o modificar este software según los términos de dicha licencia.
+Por último a Sergio Santamaría y Ramiro Santa Ana Anguiano por sus comentarios y aportes en este desarrollo.
+
+gbTeXpublisher posee [licencia GPL3](https://www.gnu.org/licenses/gpl-3.0.en.html), por consiguiente se concede permiso para copiar, distribuir y modificar este software según los términos de dicha licencia.
 
 Este artículo es un intento de presentación formal (aunque considero que el desarrollo se encuentra en _beta_) y me parece oportuno comenzar con una corta introducción teórica sobre los modelos de producción editorial al día de hoy.
 
 ## Pequeña introducción
 
-Es evidente que desde la década de los noventa, la edición se ha vuelto completamente digital. Esto se refleja en la adopción generalizada de sistemas informáticos por parte de los diferentes actores involucrados en el proceso editorial, quienes utilizan estas tecnologías para escribir y producir. Un ejemplo notable es que las imprentas hoy en día solo aceptan trabajos en formato digital.
+Es evidente que desde la década de los noventa, la edición se ha vuelto completamente digital. Esto se refleja en la adopción generalizada de sistemas informáticos por parte de los diferentes actores involucrados en el proceso editorial, quienes utilizan estas tecnologías para escribir, editar, imprimir y distribuir. Un ejemplo notable es que las imprentas hoy en día solo aceptan trabajos en formato digital.
 
 A pesar de esta transformación digital, me aventuro a sugerir que la tradición editorial no ha logrado, o quizás no ha sabido, asimilar que estos cambios no se limitan simplemente al uso de nuevas tecnologías, herramientas o dispositivos. También implican una pérdida de algunos fundamentos básicos que han sido parte integral del proceso de edición.
 
@@ -47,7 +49,9 @@ La edición ramificada es un modelo de producción que implica una apertura en d
 
 En el tema que nos involucra --la edición de libros y revistas-- _single source_ implica tener un único origen para el contenido del libro o revista, que luego se puede adaptar para generar diferentes formatos de salida, como impresión, ePub, HTML o XML.
 
-La edición ramificada facilita la consistencia de los datos y la eficiencia en su manipulación, ya que en lugar de mantener y actualizar varios formatos de salida de un mismo contenido, se trabaja en un único archivo de origen (fuente) desde donde se generan diferentes salidas según sea necesario.
+Desde mi perspectiva, la edición ramificada se presenta como una variante del _single source_ en la que los materiales iniciales dan origen a representaciones gráficas en [forma de árbol](https://es.wikipedia.org/wiki/%C3%81rbol_(teor%C3%ADa_de_grafos). En contraste, el _single source_ convencional tiene como objetivo la creación de gráficos en [forma de estrella](https://es.wikipedia.org/wiki/Estrella_(teor%C3%ADa_de_grafos). En este contexto, el _single source_ se percibe como una visión más simplificada, idealista y repetitiva, ya que en una estructura en estrella, el HTML se replica para generar versiones en línea y en formato ePub. La edición ramificada se caracteriza por ser una perspectiva más compleja y concreta de los desafíos editoriales cotidianos. En este enfoque, se busca mantener el árbol lo más simple posible, adaptándolo a las necesidades y capacidades disponibles.
+
+Una de las ideas que predomina es facilitar la consistencia de los datos y la eficiencia en su manipulación, ya que en lugar de mantener y actualizar varios formatos de salida de un mismo contenido, se trabaja en un único archivo de origen (fuente) desde donde se generan diferentes salidas según sea necesario.
 
 En la edición técnica y en los sistemas de documentación, la edición ramificada también se utiliza para describir el enfoque de mantener una única fuente de información para la creación de manuales, catálogos u otros materiales, lo que facilita la actualización y consistencia en diferentes contextos de uso.
 
@@ -63,7 +67,7 @@ La figura a continuación nos muestra un modelo (de todos los posibles) de edici
 
 El ejemplo de la figura es uno de los tantos posibles, que tiene su base en el lenguaje de marcas [Markdown](https://es.wikipedia.org/wiki/Markdown), pero también existen otros lenguajes como [asciidoc](https://asciidoc-py.github.io/index.html), [Org Mode](https://orgmode.org/) y por supuesto [LaTeX](https://es.wikipedia.org/wiki/LaTeX).
 
-La principal consigna que persigue este modelo es ir de lo simple a lo complejo. Cada formato de salida tiene sus propias necesidades particulares. El PDF para pantalla no es exactamente igual al de imprenta (los hipervínculos hacen una gran diferencia); en el ePub puede hacerse necesario configurar de otra manera las figuras o cuadros; en HTML se puede sacar provecho de la visualización interactiva y así un largo etcétera y como punto de inflexión vamos a encontrar una cuestión clave en Ciencia Abierta, los metadatos.[^cienciaAbierta] Por consiguiente, lo que se hace imperioso es **evitar la herencia de características**, que es el principal problema que conlleva la metodología cíclica, a diferencia de esta, la edición ramificada se inicia con un documento simple de [texto plano](https://es.wikipedia.org/wiki/Archivo_de_texto) que **contiene solo las marcas** de los elementos estructurales (que a su vez pueden contener el diseño), para luego con ajustes --manuales o automatizados-- obtener cada salida y que estas no contengan errores heredados.
+La principal consigna que persigue este modelo es ir de lo simple a lo complejo. Cada formato de salida tiene sus propias necesidades particulares. El PDF para pantalla no es exactamente igual al de imprenta (los hipervínculos hacen una gran diferencia); en el ePub puede hacerse necesario configurar de otra manera las figuras o cuadros; en HTML se puede sacar provecho de la visualización interactiva y así un largo etcétera y como punto de inflexión vamos a encontrar una cuestión clave en Ciencia Abierta, los metadatos.[^cienciaAbierta] Por consiguiente, lo que se hace imperioso es **evitar la herencia de características**, que es el principal problema que conlleva la metodología cíclica, a diferencia de esta, la edición ramificada se inicia con un documento simple de [texto plano](https://es.wikipedia.org/wiki/Archivo_de_texto) que **contiene solo las marcas** de los elementos estructurales (que a su vez pueden contener el diseño), para luego con ajustes --manuales o automatizados-- obtener cada salida que evite la herencia de características indeseadas.
 
 Este es un ejemplo conceptual de la lógica a seguir, supongamos que tengo una marca de cita:[^cita]
 
@@ -80,7 +84,7 @@ Furtado[^2] plantea que en una primera aproximación, las ediciones se diferenci
 
 1. [Pecas](https://programando.li/bros/)
 
-El proyecto está archivado, su desarrollador (Ramiro, alias [perro tuerto](https://git.cuates.net/perro)) en una comunicación telefónica que tuvimos hace unos años, me dijo que el proyecto tiene errores de diseño que no le permiten evolucionar, pero tal como está, si lo que se prentende es solo obtener una salida a ePub desde markdown, el software no tiene fallas, y doy fe, lo utilice para hacer ejercicios y funciona, pero tiene tanta solidez como limitaciones.
+El proyecto está archivado, su desarrollador (Ramiro, alias [perro tuerto](https://git.cuates.net/perro)) en una comunicación telefónica que tuvimos hace unos años, me dijo que el proyecto tiene errores de diseño que no le permiten evolucionar, pero tal como está, si lo que se pretende es solo obtener una salida a ePub desde markdown, el software no tiene fallas, y doy fe, lo utilice para hacer ejercicios y funciona, pero tiene tanta solidez como limitaciones. En los últimos tiempos ha tenido una actualización que también saca PDF y HTML en línea con herramientas adicionales.
 
 2. [Softcover](https://www.softcover.io/start)
 
@@ -209,7 +213,7 @@ Este artículo no es un curso de LaTeX, en la red hay a montones,[^cursos] pero 
 
 ## ¿Entonces?
 
-El preámbulo es la parte en donde se declaran las diferentes macros que darán instrucciones precisas al compilador para la salida que se desea obtener, ahora bien, los paquetes y/o macros están sujetos a 2 características principales.
+El preámbulo es la parte en donde se declaran las diferentes macros que darán instrucciones precisas al compilador para la salida que se desea obtener, ahora bien, los paquetes y macros están sujetos a 2 características principales.
 
 1. **trabajan sobre la salida** (por ejemplo _geometry_ que permite manipular el diseño y la estructura de la página).
 2. **intervienen en el contenido** (por ejemplo _csquotes_ que automatiza el manejo de las comillas).
@@ -441,7 +445,7 @@ Esta constituye una de las primeras retroalimentaciones que recibí de aquellos 
 
 ## Comentario final
 
-Para explicitar lo obvio, no creo que los editores de libros deban tener conocimientos de programación de manera obligatoria. **La función principal de un editor de libros y/o revistas es y seguirá siendo trabajar con el contenido**, asegurándose de que sea claro y coherente con una estructura lógica y gramatical. Sin embargo, vivimos en un mundo en donde la tecnología desempeña un papel clave en la producción y distribución de contenidos, y esto incluye a los libros y las revistas.
+Para explicitar lo obvio, no creo que los editores de libros deban tener conocimientos de programación de manera obligatoria. **La función principal de un editor de libros o revistas es y seguirá siendo trabajar con el contenido**, asegurándose de que sea claro y coherente con una estructura lógica y gramatical. Sin embargo, vivimos en un mundo en donde la tecnología desempeña un papel clave en la producción y distribución de contenidos, y esto incluye a los libros y las revistas.
 
 En la situación actual, contar con conocimientos en informática, incluso a un nivel básico, resulta altamente beneficioso para un editor. Esto se debe a la creciente prevalencia de la publicación digital y la distribución en línea. La comprensión de conceptos técnicos relacionados con formatos de archivos, condicionales, expresiones regulares, seguridad, entre otros, será de gran utilidad para aquellos que se desempeñan en la industria editorial.
 
