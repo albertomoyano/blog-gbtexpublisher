@@ -40,8 +40,8 @@
 <meta property="og:description" content="Presentación de gbTeXpublisher, marco teórico" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://albertomoyano.github.io/blog-gbtexpublisher/post/gbtex/" /><meta property="og:image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images"/><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2023-12-04T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-12-04T00:00:00+00:00" /><meta property="og:site_name" content="Alberto Moyano" />
+<meta property="article:published_time" content="2023-12-26T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-12-26T00:00:00+00:00" /><meta property="og:site_name" content="Alberto Moyano" />
 
 
 
@@ -51,9 +51,9 @@
   
   
   <meta itemprop="name" content="Presentación de gbTeXpublisher">
-<meta itemprop="description" content="Presentación de gbTeXpublisher, marco teórico"><meta itemprop="datePublished" content="2023-12-04T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2023-12-04T00:00:00+00:00" />
-<meta itemprop="wordCount" content="6872"><meta itemprop="image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images"/>
+<meta itemprop="description" content="Presentación de gbTeXpublisher, marco teórico"><meta itemprop="datePublished" content="2023-12-26T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-12-26T00:00:00+00:00" />
+<meta itemprop="wordCount" content="6874"><meta itemprop="image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images"/>
 <meta itemprop="keywords" content="LaTeX,gbTeXpublisher," />
 
   
@@ -221,7 +221,7 @@
 <ol>
 <li><a href="https://programando.li/bros/">Pecas</a></li>
 </ol>
-<p>El proyecto está archivado, su desarrollador (Ramiro, alias <a href="https://git.cuates.net/perro">perro tuerto</a>) en una comunicación telefónica que tuvimos hace unos años, me dijo que el proyecto tiene errores de diseño que no le permiten evolucionar, pero tal como está, si lo que se pretende es solo obtener una salida a ePub desde markdown, el software no tiene fallas, y doy fe, lo utilice para hacer ejercicios y funciona, pero tiene tanta solidez como limitaciones. En los últimos tiempos ha tenido una actualización que permite obtener PDF y HTML en línea.</p>
+<p>El proyecto está archivado, su desarrollador (Ramiro, alias <a href="https://git.cuates.net/perro">perro tuerto</a>) en una comunicación telefónica que tuvimos hace unos años, me dijo que el proyecto tiene errores de diseño que no le permiten evolucionar, pero tal como está, si lo que se pretende es solo obtener una salida a ePub desde markdown, el software no tiene fallas, y doy fe, lo utilice para hacer ejercicios y funciona, pero tiene tanta solidez como limitaciones. Me a notificado Ramiro que en los últimos tiempos ha tenido una actualización que permite obtener PDF y HTML al vuelo.</p>
 <ol start="2">
 <li><a href="https://www.softcover.io/start">Softcover</a></li>
 </ol>
@@ -348,7 +348,7 @@ title        = {La cuarta discontinuidad},
 <p>Doy por descartado que LaTeX ya está instalado, sugiero tener instalada la versión <em>full</em> (aproximadamente 4 gigas). Personalmente, para editar los textos utilizo <a href="https://www.texstudio.org/">TeXstudio</a> desde hace ya varios años, pero sirve cualquiera de los editores que se encuentran en Internet.</p>
 <p>También es necesario tener una cuenta en <a href="https://gitlab.com/">gitlab</a>, para hacer uso del respaldo remoto, los 10 gigas de la versión gratuita son más que suficientes.</p>
 <p>Si bien en <a href="https://gambas.sourceforge.net/en/main.html">Gambas</a> (el lenguaje que utilicé para escribir gbTeXpublisher) es posible hacer el empaquetado para las principales distribuciones de GNU Linux, para evitar posibles conflictos, lo que está disponible es un empaquetado <strong>autotools</strong>.</p>
-<p>Este es el <em>link</em> de descarga para la última versión disponible <a href="https://www.dropbox.com/scl/fi/of5tdc1xb60p510qf2utl/gbTeXpublisher-0.0.514.tar.gz?rlkey=td1ob0selnk5mr361lo70ijbf&amp;dl=1">(gbTeXpublisher v514)</a>.</p>
+<p>Este es el <em>link</em> de descarga para la última versión disponible <a href="https://www.dropbox.com/scl/fi/0p54nphzqy5uih83mtbg7/gbTeXpublisher-0.0.515.tar.gz?rlkey=egx031tmgdtdsn1n20889k9s7&amp;dl=1">(gbTeXpublisher v515)</a>.</p>
 <p>En el siguiente video muestro el proceso de instalación.</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
@@ -379,7 +379,7 @@ title        = {La cuarta discontinuidad},
 <h2 id="configurando-las-salidas">Configurando las salidas</h2>
 <p>gbTeXpublisher utiliza como motor de conversión subyacente <a href="https://www.ctan.org/pkg/make4ht">make4ht</a> que es un sistema de compilación simple para <a href="https://www.ctan.org/pkg/tex4ebook?lang=en">tex4ht</a>.</p>
 <p><strong>Importante:</strong> gbTeXpublisher, técnicamente está maduro, lo utilizo en mi producción diaria. Sigo con correcciones vinculadas a <em>tips</em> de producción de mi día a día. Entonces, ¿por qué hago mención de que es un <em>beta</em>? Porque seguramente, si empiezo a recibir consultas surjan otras cuestiones a revisar.</p>
-<p>Los cuatro archivos de configuración que el programa instala tienen una configuración base general, y mi intención es optimizar estos archivos. Reitero: en estos archivos es donde se hacen cambios cuando se pretende alterar la salida más allá del diseño visual.</p>
+<p>Los archivos <strong><code>.cfg</code></strong> que el programa instala tienen una configuración base general, y mi intención es poder optimizarlos. Reitero: en estos archivos es donde se hacen cambios cuando se pretende alterar la salida más allá del diseño visual.</p>
 <p>El archivo <strong><code>build.lua</code></strong> trae por <em>default</em> una configuración base pensada para no dejar ninguna posibilidad fuera de su alcance, si alguna de sus instrucciones no fuesen necesarias (por las características del archivo con el que se está trabajando), no es problemático dejarlas, ya que el error que nos dará el compilador es del tipo <em>suave</em>, y por supuesto, si el archivo con el que trabajamos lo requiere, este archivo de configuración puede modificarse sin problemas.</p>
 <p>La indexación para las siglas y el glosario está codificado en el preámbulo que viene por <em>default</em>.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/build.png" alt=""></p>
@@ -411,6 +411,7 @@ title        = {La cuarta discontinuidad},
   <iframe src="https://www.youtube.com/embed/VV5XUvY7v2U" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
+<!-- raw HTML omitted -->
 <h2 id="siglas-y-glosarios">Siglas y glosarios</h2>
 <p>Las siglas y glosarios se pueden dar de alta desde este formulario, lo que implica que quedan registrados en la base de datos, esto permite la reutilización de los valores, también es posible agregar entradas directamente en el archivo <strong><code>.tex</code></strong>.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/glosarios.png" alt=""></p>

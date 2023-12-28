@@ -1,7 +1,7 @@
 +++
 author = "Alberto Moyano"
 title= "Presentación de gbTeXpublisher"
-date = 2023-12-04
+date = 2023-12-26
 description = "Presentación de gbTeXpublisher, marco teórico"
 tags = ["LaTeX", "gbTeXpublisher",]
 pin = true
@@ -94,7 +94,7 @@ Furtado[^2] plantea que en una primera aproximación, las ediciones se diferenci
 
 1. [Pecas](https://programando.li/bros/)
 
-El proyecto está archivado, su desarrollador (Ramiro, alias [perro tuerto](https://git.cuates.net/perro)) en una comunicación telefónica que tuvimos hace unos años, me dijo que el proyecto tiene errores de diseño que no le permiten evolucionar, pero tal como está, si lo que se pretende es solo obtener una salida a ePub desde markdown, el software no tiene fallas, y doy fe, lo utilice para hacer ejercicios y funciona, pero tiene tanta solidez como limitaciones. En los últimos tiempos ha tenido una actualización que permite obtener PDF y HTML en línea.
+El proyecto está archivado, su desarrollador (Ramiro, alias [perro tuerto](https://git.cuates.net/perro)) en una comunicación telefónica que tuvimos hace unos años, me dijo que el proyecto tiene errores de diseño que no le permiten evolucionar, pero tal como está, si lo que se pretende es solo obtener una salida a ePub desde markdown, el software no tiene fallas, y doy fe, lo utilice para hacer ejercicios y funciona, pero tiene tanta solidez como limitaciones. Me a notificado Ramiro que en los últimos tiempos ha tenido una actualización que permite obtener PDF y HTML al vuelo.
 
 2. [Softcover](https://www.softcover.io/start)
 
@@ -262,7 +262,7 @@ También es necesario tener una cuenta en [gitlab](https://gitlab.com/), para ha
 
 Si bien en [Gambas](https://gambas.sourceforge.net/en/main.html) (el lenguaje que utilicé para escribir gbTeXpublisher) es posible hacer el empaquetado para las principales distribuciones de GNU Linux, para evitar posibles conflictos, lo que está disponible es un empaquetado **autotools**.
 
-Este es el _link_ de descarga para la última versión disponible [(gbTeXpublisher v514)](https://www.dropbox.com/scl/fi/of5tdc1xb60p510qf2utl/gbTeXpublisher-0.0.514.tar.gz?rlkey=td1ob0selnk5mr361lo70ijbf&dl=1).
+Este es el _link_ de descarga para la última versión disponible [(gbTeXpublisher v515)](https://www.dropbox.com/scl/fi/0p54nphzqy5uih83mtbg7/gbTeXpublisher-0.0.515.tar.gz?rlkey=egx031tmgdtdsn1n20889k9s7&dl=1).
 
 En el siguiente video muestro el proceso de instalación.
 
@@ -311,7 +311,7 @@ gbTeXpublisher utiliza como motor de conversión subyacente [make4ht](https://ww
 
 **Importante:** gbTeXpublisher, técnicamente está maduro, lo utilizo en mi producción diaria. Sigo con correcciones vinculadas a _tips_ de producción de mi día a día. Entonces, ¿por qué hago mención de que es un _beta_? Porque seguramente, si empiezo a recibir consultas surjan otras cuestiones a revisar.
 
-Los cuatro archivos de configuración que el programa instala tienen una configuración base general, y mi intención es optimizar estos archivos. Reitero: en estos archivos es donde se hacen cambios cuando se pretende alterar la salida más allá del diseño visual.
+Los archivos **`.cfg`** que el programa instala tienen una configuración base general, y mi intención es poder optimizarlos. Reitero: en estos archivos es donde se hacen cambios cuando se pretende alterar la salida más allá del diseño visual.
 
 El archivo **`build.lua`** trae por _default_ una configuración base pensada para no dejar ninguna posibilidad fuera de su alcance, si alguna de sus instrucciones no fuesen necesarias (por las características del archivo con el que se está trabajando), no es problemático dejarlas, ya que el error que nos dará el compilador es del tipo _suave_, y por supuesto, si el archivo con el que trabajamos lo requiere, este archivo de configuración puede modificarse sin problemas.
 
@@ -357,6 +357,8 @@ Por _default_ gbTeXpublisher para la clase _book_ entrega un archivo configurado
 Para explicar el uso de las referencias junto a la lógica que muestra cómo se separa **la estructura del contenido** de la **representación visual de la salida**, la mejor forma es a través de un video.
 
 {{< youtube VV5XUvY7v2U >}}
+
+<!-- En este [otro video](https://es.wikipedia.org/wiki/Perl) se puede observar un uso exhaustivo del módulo que maneja las referencias bibliográficas. -->
 
 ## Siglas y glosarios
 
