@@ -359,7 +359,9 @@ Para explicar el uso de las referencias junto a la lógica que muestra cómo se 
 {{< youtube VV5XUvY7v2U >}}
 
 
-En este [otro video](https://mega.nz/file/o4NhABLY#QgQJKy_R6QdtFpQleavjkjMf4F4XAJQXdZrOilueir8) se puede observar un uso exhaustivo del módulo que maneja las referencias bibliográficas.
+En este otro video se puede observar un uso exhaustivo del módulo que maneja las referencias bibliográficas.
+
+{{< youtube y79P5SiAt0I >}}
 
 ## Siglas y glosarios
 
