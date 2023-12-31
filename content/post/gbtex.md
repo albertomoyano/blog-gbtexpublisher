@@ -262,7 +262,7 @@ También es necesario tener una cuenta en [gitlab](https://gitlab.com/), para ha
 
 Si bien en [Gambas](https://gambas.sourceforge.net/en/main.html) (el lenguaje que utilicé para escribir gbTeXpublisher) es posible hacer el empaquetado para las principales distribuciones de GNU Linux, para evitar posibles conflictos, lo que está disponible es un empaquetado **autotools**.
 
-Este es el _link_ de descarga para la última versión disponible [(gbTeXpublisher v522)](https://www.dropbox.com/scl/fi/wlmhi0tibgwvoii8040e2/gbTeXpublisher-0.0.522.tar.gz?rlkey=cr5zgibskedgjqq15ypmqdtjd&dl=2).
+Este es el _link_ de descarga para la última versión disponible [(gbTeXpublisher v523)](https://www.dropbox.com/scl/fi/1cr6aa2otisr4cjz0zkxr/gbTeXpublisher-0.0.523.tar.gz?rlkey=9mpnm4uo50x3sqjfn1mt67kxp&dl=1).
 
 En el siguiente video muestro el proceso de instalación.
 
