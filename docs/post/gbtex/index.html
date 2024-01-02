@@ -53,7 +53,7 @@
   <meta itemprop="name" content="Presentación de gbTeXpublisher">
 <meta itemprop="description" content="Presentación de gbTeXpublisher, marco teórico"><meta itemprop="datePublished" content="2023-12-26T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-12-26T00:00:00+00:00" />
-<meta itemprop="wordCount" content="6891"><meta itemprop="image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images" />
+<meta itemprop="wordCount" content="6895"><meta itemprop="image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images" />
 <meta itemprop="keywords" content="LaTeX,gbTeXpublisher," />
 
   
@@ -346,7 +346,7 @@ title        = {La cuarta discontinuidad},
 <p>Doy por descartado que LaTeX ya está instalado, sugiero tener instalada la versión <em>full</em> (aproximadamente 4 gigas). Personalmente, para editar los textos utilizo <a href="https://www.texstudio.org/">TeXstudio</a> desde hace ya varios años, pero sirve cualquiera de los editores que se encuentran en Internet.</p>
 <p>También es necesario tener una cuenta en <a href="https://gitlab.com/">gitlab</a>, para hacer uso del respaldo remoto, los 10 gigas de la versión gratuita son más que suficientes.</p>
 <p>Si bien en <a href="https://gambas.sourceforge.net/en/main.html">Gambas</a> (el lenguaje que utilicé para escribir gbTeXpublisher) es posible hacer el empaquetado para las principales distribuciones de GNU Linux, para evitar posibles conflictos, lo que está disponible es un empaquetado <strong>autotools</strong>.</p>
-<p>Este es el <em>link</em> de descarga para la última versión disponible <a href="https://www.dropbox.com/scl/fi/1cr6aa2otisr4cjz0zkxr/gbTeXpublisher-0.0.523.tar.gz?rlkey=9mpnm4uo50x3sqjfn1mt67kxp&amp;dl=1">(gbTeXpublisher v523)</a>.</p>
+<p>Este es el <em>link</em> de descarga para la última versión disponible <a href="https://www.dropbox.com/scl/fi/x8durpnvnqjzavt8al2la/gbTeXpublisher-0.0.528.tar.gz?rlkey=a1bghaoalye6manrazhm0ccis&amp;dl=1">(gbTeXpublisher v528)</a>.</p>
 <p>En el siguiente video muestro el proceso de instalación.</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
@@ -382,7 +382,7 @@ title        = {La cuarta discontinuidad},
 <p>La indexación para las siglas y el glosario está codificado en el preámbulo que viene por <em>default</em>.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/build.png" alt=""></p>
 <p>No hay un archivo de configuración para PDF, esta es la salida natural, por consiguiente, todas sus características están dadas en el propio código del archivo.</p>
-<p>Para los archivos de configuración para ePub, HTML y JATS, la suerte es la misma, quiero decir, contemplan una salida <em>generosa</em> en términos de posibilidades, pero pueden ser modificados según cada necesidad.</p>
+<p>Para los archivos de configuración para ePub, HTML y XML, la suerte es la misma, quiero decir, contemplan una salida general en términos de posibilidades, que pueden ser modificados según cada necesidad.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/configepub.png" alt=""></p>
 <h2 id="ahora-bien-comenzamos-con-el-trabajo">Ahora bien, comenzamos con el trabajo</h2>
 <p>Luego de seleccionar un archivo, si miramos la carpeta contenedora del proyecto, veremos que se han creado nuevos directorios:</p>
@@ -401,7 +401,7 @@ title        = {La cuarta discontinuidad},
 <h2 id="referencias-bibliográficas">Referencias bibliográficas</h2>
 <p>A continuación vemos el formulario para manejar las referencias bibliográficas, el programa trabaja con un motor de base de datos <a href="https://es.wikipedia.org/wiki/SQLite">SQLite</a>, que para trabajar en modo local, es lo mejor que conozco, pero si el trabajo se quisiera realizar en modo colaborativo (en red, abierta o cerrada), se debería migrar a otro motor.</p>
 <p>Todas las entradas están basadas en <a href="https://www.ctan.org/pkg/biblatex">BibLaTeX</a> que es una reimplementación completa de las funciones bibliográficas proporcionadas por LaTeX. El formato está completamente controlado por macros de LaTeX. BibLaTeX utiliza su propio analizador de datos llamado <a href="https://biblatex-biber.sourceforge.net/">biber</a> (escrito en <a href="https://es.wikipedia.org/wiki/Perl">Perl</a>) para procesar los datos bibliográficos.</p>
-<p>Por <em>default</em> gbTeXpublisher para la clase <em>book</em> entrega un archivo configurado para la salida a PDF con el estándar autor-año (diseño moderno) desarrollado por Ivan Valbusa en la Universidad de Verona (<a href="https://ctan.org/pkg/biblatex-philosophy">biblatex-philosophy</a>), para la salida a ePub se utiliza el estándar autor-año (diseño clásico) del mismo desarrollador y para la clase <em>article</em> se utiliza el estándar de <a href="https://www.ctan.org/pkg/biblatex-apa">APA</a> y, por supuesto, todas estas salidas se pueden modificar e incluso cambiar.</p>
+<p>Por <em>default</em> gbTeXpublisher para la clase <em>book</em> entrega un archivo configurado para la salida a PDF con el estándar autor-año (diseño moderno) desarrollado por Ivan Valbusa en la Universidad de Verona (<a href="https://ctan.org/pkg/biblatex-philosophy">biblatex-philosophy</a>), para la salida a ePub, XHTML, HTML5 y XML se utiliza el estándar <a href="https://ctan.org/pkg/biblatex-iso690">biblatex-iso690</a> y para la salida a PDF en la clase <em>article</em> se utiliza el estándar de <a href="https://www.ctan.org/pkg/biblatex-apa">APA</a> y, por supuesto, todas estas salidas se pueden modificar e incluso cambiar.</p>
 <p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla07.png" alt=""></p>
 <p>Para explicar el uso de las referencias junto a la lógica que muestra cómo se separa <strong>la estructura del contenido</strong> de la <strong>representación visual de la salida</strong>, la mejor forma es a través de un video.</p>
 
@@ -651,7 +651,7 @@ title        = {La cuarta discontinuidad},
 
     <footer id="footer">
   <div>
-    <span>© 2013</span> - <span>2023</span>
+    <span>© 2013</span> - <span>2024</span>
   </div>
 
   <div>

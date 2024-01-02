@@ -262,7 +262,7 @@ También es necesario tener una cuenta en [gitlab](https://gitlab.com/), para ha
 
 Si bien en [Gambas](https://gambas.sourceforge.net/en/main.html) (el lenguaje que utilicé para escribir gbTeXpublisher) es posible hacer el empaquetado para las principales distribuciones de GNU Linux, para evitar posibles conflictos, lo que está disponible es un empaquetado **autotools**.
 
-Este es el _link_ de descarga para la última versión disponible [(gbTeXpublisher v523)](https://www.dropbox.com/scl/fi/1cr6aa2otisr4cjz0zkxr/gbTeXpublisher-0.0.523.tar.gz?rlkey=9mpnm4uo50x3sqjfn1mt67kxp&dl=1).
+Este es el _link_ de descarga para la última versión disponible [(gbTeXpublisher v528)](https://www.dropbox.com/scl/fi/x8durpnvnqjzavt8al2la/gbTeXpublisher-0.0.528.tar.gz?rlkey=a1bghaoalye6manrazhm0ccis&dl=1).
 
 En el siguiente video muestro el proceso de instalación.
 
@@ -321,7 +321,7 @@ La indexación para las siglas y el glosario está codificado en el preámbulo q
 
 No hay un archivo de configuración para PDF, esta es la salida natural, por consiguiente, todas sus características están dadas en el propio código del archivo.
 
-Para los archivos de configuración para ePub, HTML y JATS, la suerte es la misma, quiero decir, contemplan una salida _generosa_ en términos de posibilidades, pero pueden ser modificados según cada necesidad.
+Para los archivos de configuración para ePub, HTML y XML, la suerte es la misma, quiero decir, contemplan una salida general en términos de posibilidades, que pueden ser modificados según cada necesidad.
 
 ![](https://albertomoyano.github.io/blog-personal/images/configepub.png)
 
@@ -350,7 +350,7 @@ A continuación vemos el formulario para manejar las referencias bibliográficas
 
 Todas las entradas están basadas en [BibLaTeX](https://www.ctan.org/pkg/biblatex) que es una reimplementación completa de las funciones bibliográficas proporcionadas por LaTeX. El formato está completamente controlado por macros de LaTeX. BibLaTeX utiliza su propio analizador de datos llamado [biber](https://biblatex-biber.sourceforge.net/) (escrito en [Perl](https://es.wikipedia.org/wiki/Perl)) para procesar los datos bibliográficos.
 
-Por _default_ gbTeXpublisher para la clase _book_ entrega un archivo configurado para la salida a PDF con el estándar autor-año (diseño moderno) desarrollado por Ivan Valbusa en la Universidad de Verona ([biblatex-philosophy](https://ctan.org/pkg/biblatex-philosophy)), para la salida a ePub se utiliza el estándar autor-año (diseño clásico) del mismo desarrollador y para la clase _article_ se utiliza el estándar de [APA](https://www.ctan.org/pkg/biblatex-apa) y, por supuesto, todas estas salidas se pueden modificar e incluso cambiar.
+Por _default_ gbTeXpublisher para la clase _book_ entrega un archivo configurado para la salida a PDF con el estándar autor-año (diseño moderno) desarrollado por Ivan Valbusa en la Universidad de Verona ([biblatex-philosophy](https://ctan.org/pkg/biblatex-philosophy)), para la salida a ePub, XHTML, HTML5 y XML se utiliza el estándar [biblatex-iso690](https://ctan.org/pkg/biblatex-iso690) y para la salida a PDF en la clase _article_ se utiliza el estándar de [APA](https://www.ctan.org/pkg/biblatex-apa) y, por supuesto, todas estas salidas se pueden modificar e incluso cambiar.
 
 ![](https://albertomoyano.github.io/blog-personal/images/pantalla07.png)
 
