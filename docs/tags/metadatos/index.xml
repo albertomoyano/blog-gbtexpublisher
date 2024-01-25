@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Metadatos on Alberto Moyano</title>
+    <link>https://albertomoyano.github.io/blog-gbtexpublisher/tags/metadatos/</link>
+    <description>Recent content in Metadatos on Alberto Moyano</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Wed, 24 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://albertomoyano.github.io/blog-gbtexpublisher/tags/metadatos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Metadatos en Libre Office</title>
+      <link>https://albertomoyano.github.io/blog-gbtexpublisher/post/metadatosenodt/</link>
+      <pubDate>Wed, 24 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://albertomoyano.github.io/blog-gbtexpublisher/post/metadatosenodt/</guid>
+      <description>&lt;p&gt;Me complace anunciar que se encuentra disponible una nueva versión de gbTeXpublisher para su descarga. Esta actualización tiene varias novedades, pero la más importante es la de poder compilar con salida a Libre Office y MS Word con los metadatos incrustados.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
