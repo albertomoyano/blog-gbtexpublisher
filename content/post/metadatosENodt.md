@@ -21,7 +21,7 @@ La imagen a continuación ilustra el resultado obtenido, estoy utilizando la her
 
 ![](https://albertomoyano.github.io/blog-gbtexpublisher/images/metadatosodt.png)
 
-En en siguiente video se puede observar todo el proceso.
+En el siguiente video se puede observar todo el proceso.
 
 {{< youtube 3jF5WhDHKIM >}}
 
