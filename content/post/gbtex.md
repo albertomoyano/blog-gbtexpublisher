@@ -37,11 +37,11 @@ La idea que propongo consiste en trabajar sobre un modelo de edición estandariz
 
 En la figura que se presenta a continuación, se destaca la concentración de la edición cíclica en la capacidad de producir simultáneamente para varios soportes de salida (donde un inicio A se desplaza hacia destinos B, C, etc.). Se busca preservar la noción de que la publicación, en este caso un libro, sigue un único camino. Este enfoque de trabajo se fundamenta en la creencia de que algún software realizará de manera milagrosa la tarea, proporcionando tranquilidad al abordar la conversión a diferentes formatos. Sin embargo, solo al tomar una conciencia real de la pérdida en calidad técnica y editorial, se hace evidente que la edición cíclica no constituye un método óptimo para la producción en formatos y soportes diversos.
 
-![](https://albertomoyano.github.io/blog-personal/images/ciclos.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/ciclos.png)
 
 Pero es entendible que esto haya pasado, si observamos como era el modelo de producción editorial antes de la era digital.
 
-![](https://albertomoyano.github.io/blog-personal/images/gutenberg.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/gutenberg.png)
 
 ## La edición ramificada (el futuro por venir)
 
@@ -136,7 +136,7 @@ Para poder graficar mejor lo dicho en el párrafo anterior, dejo ejemplos de car
 
 Control de inconsistencia de principio y fin de linea.[^home] En este [artículo](https://albertomoyano.github.io/blog-gbtexpublisher/post/homeoarchy/) que escribí hace unos años doy mayores detalles sobre este tema.
 
-![](https://albertomoyano.github.io/blog-personal/images/home.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/home.png)
 
 ### Formateo automático ortotipográfico
 
@@ -154,13 +154,13 @@ Se puede observar que la tabla de la base de datos, no contiene bastardillas, ni
 
 Y esta es la salida que se obtiene en el PDF para el modelo autor-año con el estándar del paquete [biblatex-philosophy](https://ctan.org/pkg/biblatex-philosophy).
 
-![](https://albertomoyano.github.io/blog-personal/images/mazlish.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/mazlish.png)
 
 ### Posición de los objetos en la página
 
 Se tiene control absoluto sobre cualquier posición _x-y_ de la página para posicionar objetos, incluso otra página (que también se interpreta como un objeto).
 
-![](https://albertomoyano.github.io/blog-personal/images/objeto.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/objeto.png)
 
 Estos ejemplos son solo la punta del iceberg, puede sonar exagerado, pero se entiende mejor cuando se asimila a LaTeX como lo que es, **un lenguaje para la composición tipográfica**, y no como un programa de armado.
 
@@ -242,7 +242,7 @@ Frente a la cantidad abrumadora de paquetes disponibles en el [CTAN](https://www
 
 El camino que tome es el 2. No es el camino esperado por muchos programadores con los que hablé, pero no soy programador. La figura a continuación ilustra la idea.
 
-![](https://albertomoyano.github.io/blog-personal/images/archivo.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/archivo.png)
 
 Entonces, como sigue; gbTeXpublisher lo que hace básicamente es concatenar el preámbulo más la configuración más el contenido en un solo archivo y pasárselo al compilador para que haga su trabajo.
 
@@ -250,7 +250,7 @@ Lo más importante que rescato de este modelo, es que si me encuentro con la nec
 
 La figura a continuación muestra un resumen de cómo es el flujo de trabajo, es importante resaltar la posibilidad que existe de recuperar cualquier trabajo antiguo, indistintamente del formato que tenga.
 
-![](https://albertomoyano.github.io/blog-personal/images/literada.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/literada.png)
 
 El [motor SQL](https://es.wikipedia.org/wiki/SQL) lleva la tarea de centralizar toda aquella información que pudiera ser reutilizada, evitando la redundancia de datos. La inyección de los datos se hace de manera automática y el ABM (alta, baja y modificación) de los datos se trabajan desde los diferentes formularios que posee gbTeXpublisher.
 
@@ -276,7 +276,7 @@ A los usuarios de MacOS, no sé que decirles, no tengo acceso a esos equipos des
 
 Con el fin de proporcionar una visión integral de las funciones de la instalación, es importante destacar que después de completar la instalación de gbTeXpublisher, se generará una carpeta oculta en el directorio **`home.user`** (denominado también como directorio personal). Esta carpeta albergará la base de datos, y durante el proceso de instalación, se copiará una base de datos preexistente con un número específico de entradas. Estas entradas son fundamentales para el estudio de notas, acrónimos y referencias bibliográficas. En la figura siguiente, este aspecto se destaca visualmente mediante una línea roja para mayor claridad.
 
-![](https://albertomoyano.github.io/blog-personal/images/pantalla11.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/pantalla11.png)
 
 ## Comenzando con gbTeXpublisher
 
@@ -284,11 +284,11 @@ Cuando se está editando un solo libro, se pueden tener ciertas libertades, pero
 
 El programa no trabaja **sobre** el archivo de LaTeX, sino que lo hace con una **copia**. Esto da plena y absoluta libertad de trabajar el texto con el editor que mejor le plazca al usuario. De ahí que su interfaz de inicio pueda sorprender --ya que no dice nada-- esto también se observa al notar que algunos menúes están deshabilitados y se activan una vez que se haya elegido un archivo con el cual trabajar. La imagen a continuación lo ilustra.
 
-![](https://albertomoyano.github.io/blog-personal/images/pantalla01.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/pantalla01.png)
 
 Una vez que hayamos seleccionado un archivo para trabajar, la pantalla puede parecerse a esta.
 
-![](https://albertomoyano.github.io/blog-personal/images/pantalla02.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/pantalla02.png)
 
 Volviendo al inicio, en un párrafo anterior dije que algunos menúes están deshabilitados hasta que se elija un archivo **`.tex`** para trabajar, pero otros sí están habilitados.
 
@@ -297,13 +297,13 @@ El primero que encontramos es el formulario para la conversión de archivos word
 1. se crean dos carpetas --originales y media-- dentro del directorio de trabajo;
 2. se mueve el archivo word a la carpeta originales.
 
-![](https://albertomoyano.github.io/blog-personal/images/pantalla06.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/pantalla06.png)
 
 El segundo es el formulario de apuntes, su idea y desarrollo surgieron de manera natural. Antes de gbTeXpublisher, a medida que iba trabajando tomaba apuntes sobre el proceso, ya sea consultas que debía hacer (al autor, al corrector o a mi cliente), buscar en otros archivos ese pedazo de código que alguna vez utilicé o simplemente apuntes de ayuda memoria temporal, todo eso es lo que se vuelca en este formulario, la información queda almacenada en la base de datos para ser recuperada cada vez que sea necesario.
 
 Las notas pueden ser exportadas a formato **`.docx`** para ser enviadas por correo o impresas.
 
-![](https://albertomoyano.github.io/blog-personal/images/pantalla08.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/pantalla08.png)
 
 ## Configurando las salidas
 
@@ -317,13 +317,13 @@ El archivo **`build.lua`** trae por _default_ una configuración base pensada pa
 
 La indexación para las siglas y el glosario está codificado en el preámbulo que viene por _default_.
 
-![](https://albertomoyano.github.io/blog-personal/images/build.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/build.png)
 
 No hay un archivo de configuración para PDF, esta es la salida natural, por consiguiente, todas sus características están dadas en el propio código del archivo.
 
 Para los archivos de configuración para ePub, HTML y XML, la suerte es la misma, quiero decir, contemplan una salida general en términos de posibilidades, que pueden ser modificados según cada necesidad.
 
-![](https://albertomoyano.github.io/blog-personal/images/configepub.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/configepub.png)
 
 ## Ahora bien, comenzamos con el trabajo
 
@@ -338,11 +338,11 @@ Luego de seleccionar un archivo, si miramos la carpeta contenedora del proyecto,
 
 Si los directorios **originales** y **media**, ya existian porque se hizo la conversión de **`.docx`** a **`.tex`** utilizando gbTeXpublisher, estos no se sobreescriben y se mantiene sin modificaciones su contenido.
 
-![](https://albertomoyano.github.io/blog-personal/images/sample.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/sample.png)
 
 Dentro del directorio **files** se agregaran los archivos auxiliares y complementarios para la compilación, estos son los diferentes preámbulos y archivos de configuración, si cualquiera de estos archivos fuera modificado (no importa si desde gbTeXpublisher o desde un editor externo), no será reemplazado al volver (en un momento diferente) a cargar la aplicación, solo será agregado nuevamente aquél archivo que por error hubiera sido eliminado.
 
-![](https://albertomoyano.github.io/blog-personal/images/sample2.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/sample2.png)
 
 ## Referencias bibliográficas
 
@@ -352,7 +352,7 @@ Todas las entradas están basadas en [BibLaTeX](https://www.ctan.org/pkg/biblate
 
 Por _default_ gbTeXpublisher para la clase _book_ entrega un archivo configurado para la salida a PDF con el estándar autor-año (diseño moderno) desarrollado por Ivan Valbusa en la Universidad de Verona ([biblatex-philosophy](https://ctan.org/pkg/biblatex-philosophy)), para la salida a ePub, XHTML, HTML5 y XML se utiliza el estándar [biblatex-iso690](https://ctan.org/pkg/biblatex-iso690) y para la salida a PDF en la clase _article_ se utiliza el estándar de [APA](https://www.ctan.org/pkg/biblatex-apa) y, por supuesto, todas estas salidas se pueden modificar e incluso cambiar.
 
-![](https://albertomoyano.github.io/blog-personal/images/pantalla07.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/pantalla07.png)
 
 Para explicar el uso de las referencias junto a la lógica que muestra cómo se separa **la estructura del contenido** de la **representación visual de la salida**, la mejor forma es a través de un video.
 
@@ -367,7 +367,7 @@ En este otro video se puede observar un uso exhaustivo del módulo que maneja la
 
 Las siglas y glosarios se pueden dar de alta desde este formulario, lo que implica que quedan registrados en la base de datos, esto permite la reutilización de los valores, también es posible agregar entradas directamente en el archivo **`.tex`**.
 
-![](https://albertomoyano.github.io/blog-personal/images/glosarios.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/glosarios.png)
 
 Al igual que con las referencias bibliográficas, en el siguiente video doy una vista general del modelo de trabajo.
 
@@ -393,9 +393,9 @@ Los metadatos específicos de los autores y las colecciones se trabajan desde ot
 
 {{< youtube 6fzO0nCOzps >}}
 
-<!--  ![](https://albertomoyano.github.io/blog-personal/images/autores.png)
+<!--  ![](https://albertomoyano.github.io/blog-gbtexpublisher/images/autores.png)
 
-![](https://albertomoyano.github.io/blog-personal/images/coleccion.png) -->
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/coleccion.png) -->
 
 ## Git local y remoto como copia de seguridad temporal
 
@@ -405,7 +405,7 @@ gbTeXpublisher trabaja con [Git](https://es.wikipedia.org/wiki/Git) como sistema
 
 Si se desea trabajar solo en modo local no es necesario tener una cuenta en GitLab.
 
-![](https://albertomoyano.github.io/blog-personal/images/pantalla14.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/pantalla14.png)
 
 En el siguiente video, muestro como es el uso diario.
 
@@ -421,13 +421,13 @@ Aún trabajando solo, a veces es aconsejable saber cuanto tiempo y esfuerzo (lé
 
 Ni que decir, si el trabajo es en equipo (no confundir trabajar en equipo con trabajar en red), donde todos acceden a los mismos archivos.
 
-![](https://albertomoyano.github.io/blog-personal/images/kanban.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/kanban.png)
 
 ## Catálogo automatizado
 
 Fue imperativo abordar de manera ágil y eficaz (y segura) la cuestión del catálogo en formato PDF. La construcción se realiza mediante una plantilla predeterminada, extrayendo los datos necesarios de los metadatos. Solo restan dos datos por añadir manualmente: el autor y el currículum vitae (los motivos se detallan en el video). En perspectiva, aspiro a realizar modificaciones que permitan trabajar con diversas plantillas, posibilitando así la creación de diseños variados. El video siguiente ilustra el proceso de utilización.
 
-![](https://albertomoyano.github.io/blog-personal/images/catalogo.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/catalogo.png)
 
 
 {{< youtube EppfTII68z0 >}}
@@ -438,19 +438,19 @@ El PDF que obtengo lo llevo a un directorio en donde se encuentran todas las pá
 
 Estudiar cómo a sido editado un libro o artículo a través de los resultados estadísticos de su interior es lo que permite este módulo, básicamente el contador rastrilla todo el proyecto y lo informa en diferentes planos.
 
-![](https://albertomoyano.github.io/blog-personal/images/estadisticas.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/estadisticas.png)
 
 ## Control de errores desde el logfile
 
 En LaTeX existen diferentes tipos de errores, los voy a agrupar en 2 categorias: _suaves_ y _duros_, los primeros no afectan la generación de la salida, los segundos directamente abortan el proceso de compilación. Por ello es que LaTeX (como todos los lenguajes de programación) provee un archivo de salida que registra todo el proceso de compilación, ya que en caso de ser necesario se lo puede consultar para empezar a indagar por donde vienen los conflictos.
 
-![](https://albertomoyano.github.io/blog-personal/images/logfile.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/logfile.png)
 
 ## Copia de seguridad del trabajo terminado
 
 Llegado a este punto, el trabajo está terminado, el libro impreso, la versión electrónica subida al repositorio, etcétera. Ha llegado el momento de guardar todo en un depósito de respaldo, yo personalmente utilizo [Mega](https://es.wikipedia.org/wiki/Mega_(sitio_web)), su relación costo/beneficio para este menester es la mejor (hay más opciones, por supuesto), también tengo un abono en Google para expandir mi cuota en Drive, pero lo utilizo para otras cosas. El menú **Comprimir directorio para respaldo**, básicamente lo que hace es una copia comprimiendo todo en formato [**`.tar.gz`**](https://es.wikipedia.org/wiki/Tar), la imagen a continuación lo dice todo. Después solo resta llevar ese archivo al repositorio de respaldo.
 
-![](https://albertomoyano.github.io/blog-personal/images/pantalla17.png)
+![](https://albertomoyano.github.io/blog-gbtexpublisher/images/pantalla17.png)
 
 ## Copia de respaldo de la base de datos
 

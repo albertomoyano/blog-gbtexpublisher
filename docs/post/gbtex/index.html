@@ -185,9 +185,9 @@
 <p><a href="https://es.wikipedia.org/wiki/Brian_Kernighan">Brian Kernighan</a> dijo una vez que el problema con el WYSIWYG (<em>lo que ves es lo que obtienes</em>) es que en realidad lo que ves es <strong>TODO</strong> lo que obtienes. No descarto las interfaces gráficas, han demostrado &ndash;y continúan&ndash; siendo excelentes para muchas tareas, gbTeXpublisher está basado en una interfaz gráfica. Pero también el uso de la consola con un <em>Shell</em> permite una potencia y  elasticidad mayor.</p>
 <h2 id="el-modelo-cíclico-la-edición-que-conocemos">El modelo cíclico (la edición que conocemos)</h2>
 <p>En la figura que se presenta a continuación, se destaca la concentración de la edición cíclica en la capacidad de producir simultáneamente para varios soportes de salida (donde un inicio A se desplaza hacia destinos B, C, etc.). Se busca preservar la noción de que la publicación, en este caso un libro, sigue un único camino. Este enfoque de trabajo se fundamenta en la creencia de que algún software realizará de manera milagrosa la tarea, proporcionando tranquilidad al abordar la conversión a diferentes formatos. Sin embargo, solo al tomar una conciencia real de la pérdida en calidad técnica y editorial, se hace evidente que la edición cíclica no constituye un método óptimo para la producción en formatos y soportes diversos.</p>
-<p><img src="https://albertomoyano.github.io/blog-personal/images/ciclos.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/ciclos.png" alt=""></p>
 <p>Pero es entendible que esto haya pasado, si observamos como era el modelo de producción editorial antes de la era digital.</p>
-<p><img src="https://albertomoyano.github.io/blog-personal/images/gutenberg.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/gutenberg.png" alt=""></p>
 <h2 id="la-edición-ramificada-el-futuro-por-venir">La edición ramificada (el futuro por venir)</h2>
 <p>La edición ramificada es un modelo de producción que implica una apertura en diversos aspectos, para comprender mejor esto se puede recurrir al término <em>single source</em> (fuente única), que refiere a la práctica de mantener un único origen para el contenido y que pueda ser utilizado en diversos procesos y así obtener múltiples destinos de salida. Esto puede aplicarse tanto a la creación como a la gestión y al mantenimiento de los contenidos.</p>
 <p>En el tema que nos involucra &ndash;la edición de libros y revistas&ndash; <em>single source</em> implica tener un único origen para el contenido del libro o revista, que luego se puede adaptar para generar diferentes formatos de salida, como impresión, ePub, HTML o XML.</p>
@@ -248,7 +248,7 @@
 <p>Para poder graficar mejor lo dicho en el párrafo anterior, dejo ejemplos de características obtenidas en mi trabajo diario con LaTeX, que <strong>son imposibles de obtener con programas para DTP del mercado</strong> y que muestran mejor a que me refiero cuando utilizo la expresión <strong>alto estándar de calidad tipográfica</strong>.</p>
 <h3 id="homeoarchy">Homeoarchy</h3>
 <p>Control de inconsistencia de principio y fin de linea.<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup> En este <a href="https://albertomoyano.github.io/blog-gbtexpublisher/post/homeoarchy/">artículo</a> que escribí hace unos años doy mayores detalles sobre este tema.</p>
-<p><img src="https://albertomoyano.github.io/blog-personal/images/home.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/home.png" alt=""></p>
 <h3 id="formateo-automático-ortotipográfico">Formateo automático ortotipográfico</h3>
 <p>Se puede observar que la tabla de la base de datos, no contiene bastardillas, ni puntos, ni versalitas, etc.</p>
 <pre><code>@Book{Mazlish1995,
@@ -262,10 +262,10 @@ title        = {La cuarta discontinuidad},
 }
 </code></pre>
 <p>Y esta es la salida que se obtiene en el PDF para el modelo autor-año con el estándar del paquete <a href="https://ctan.org/pkg/biblatex-philosophy">biblatex-philosophy</a>.</p>
-<p><img src="https://albertomoyano.github.io/blog-personal/images/mazlish.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/mazlish.png" alt=""></p>
 <h3 id="posición-de-los-objetos-en-la-página">Posición de los objetos en la página</h3>
 <p>Se tiene control absoluto sobre cualquier posición <em>x-y</em> de la página para posicionar objetos, incluso otra página (que también se interpreta como un objeto).</p>
-<p><img src="https://albertomoyano.github.io/blog-personal/images/objeto.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/objeto.png" alt=""></p>
 <p>Estos ejemplos son solo la punta del iceberg, puede sonar exagerado, pero se entiende mejor cuando se asimila a LaTeX como lo que es, <strong>un lenguaje para la composición tipográfica</strong>, y no como un programa de armado.</p>
 <h2 id="pequeña-radiografía-de-latex">Pequeña radiografía de LaTeX</h2>
 <p>LaTeX es un lenguaje de composición tipográfica, orientado a la creación de documentos escritos con un <strong>alto estándar de calidad tipográfica</strong>. Por sus características y posibilidades, es usado de manera intensiva en la generación de textos científicos. Fue escrito por <a href="https://es.wikipedia.org/wiki/Leslie_Lamport">Leslie Lamport</a> en 1984, con la intención de facilitar el uso del lenguaje de composición tipográfica <a href="https://es.wikipedia.org/wiki/TeX">TeX</a>, creado por <a href="https://es.wikipedia.org/wiki/Donald_Knuth">Donald Knuth</a>. A resumidas cuentas, LaTeX no es mas que un conjunto de macros de TeX, y se encuentra bajo <a href="https://es.wikipedia.org/wiki/LaTeX_Project_Public_License">licencia LPPL</a>.</p>
@@ -336,11 +336,11 @@ title        = {La cuarta discontinuidad},
 <li><strong>varios preámbulos</strong>, ajustados a cada tipo de salida.</li>
 </ol>
 <p>El camino que tome es el 2. No es el camino esperado por muchos programadores con los que hablé, pero no soy programador. La figura a continuación ilustra la idea.</p>
-<p><img src="https://albertomoyano.github.io/blog-personal/images/archivo.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/archivo.png" alt=""></p>
 <p>Entonces, como sigue; gbTeXpublisher lo que hace básicamente es concatenar el preámbulo más la configuración más el contenido en un solo archivo y pasárselo al compilador para que haga su trabajo.</p>
 <p>Lo más importante que rescato de este modelo, es que si me encuentro con la necesidad de cambiar el diseño (visual o estructural) de la salida, poder modificar los diferentes archivos involucrados en cada compilación es fácil y con poco (casi nulo) margen de error, no confundir esto con manejar el lenguaje LaTeX, esto último es excluyente.</p>
 <p>La figura a continuación muestra un resumen de cómo es el flujo de trabajo, es importante resaltar la posibilidad que existe de recuperar cualquier trabajo antiguo, indistintamente del formato que tenga.</p>
-<p><img src="https://albertomoyano.github.io/blog-personal/images/literada.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/literada.png" alt=""></p>
 <p>El <a href="https://es.wikipedia.org/wiki/SQL">motor SQL</a> lleva la tarea de centralizar toda aquella información que pudiera ser reutilizada, evitando la redundancia de datos. La inyección de los datos se hace de manera automática y el ABM (alta, baja y modificación) de los datos se trabajan desde los diferentes formularios que posee gbTeXpublisher.</p>
 <h2 id="descarga-e-instalación-de-gbtexpublisher">Descarga e instalación de gbTeXpublisher</h2>
 <p>Doy por descartado que LaTeX ya está instalado, sugiero tener instalada la versión <em>full</em> (aproximadamente 4 gigas). Personalmente, para editar los textos utilizo <a href="https://www.texstudio.org/">TeXstudio</a> desde hace ya varios años, pero sirve cualquiera de los editores que se encuentran en Internet.</p>
@@ -357,33 +357,33 @@ title        = {La cuarta discontinuidad},
 <p>Los usuarios de windows pueden utilizar el software a través de <a href="https://learn.microsoft.com/es-es/windows/wsl/install">WSL</a>, considero que es preferible tener un doble arranque (windows/linux), pero cada uno analiza en que situación se siente más cómodo.</p>
 <p>A los usuarios de MacOS, no sé que decirles, no tengo acceso a esos equipos desde hace muchos años. Si alguien quiere hacer pruebas quedo a disposición para ayudarlo en lo que pueda.</p>
 <p>Con el fin de proporcionar una visión integral de las funciones de la instalación, es importante destacar que después de completar la instalación de gbTeXpublisher, se generará una carpeta oculta en el directorio <strong><code>home.user</code></strong> (denominado también como directorio personal). Esta carpeta albergará la base de datos, y durante el proceso de instalación, se copiará una base de datos preexistente con un número específico de entradas. Estas entradas son fundamentales para el estudio de notas, acrónimos y referencias bibliográficas. En la figura siguiente, este aspecto se destaca visualmente mediante una línea roja para mayor claridad.</p>
-<p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla11.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/pantalla11.png" alt=""></p>
 <h2 id="comenzando-con-gbtexpublisher">Comenzando con gbTeXpublisher</h2>
 <p>Cuando se está editando un solo libro, se pueden tener ciertas libertades, pero cuando se tienen 7 o 9 libros de manera constante en el flujo de producción, la cosa cambia. El orden y el principio de <a href="https://es.wikipedia.org/wiki/No_te_repitas">DRY</a> se vuelve más que importante si queremos tener una sana optimización de los recursos. En gbTeXpublisher se van a encontrar funciones predefinidas (y rígidas) que aseguran comportamientos estables y predecibles.</p>
 <p>El programa no trabaja <strong>sobre</strong> el archivo de LaTeX, sino que lo hace con una <strong>copia</strong>. Esto da plena y absoluta libertad de trabajar el texto con el editor que mejor le plazca al usuario. De ahí que su interfaz de inicio pueda sorprender &ndash;ya que no dice nada&ndash; esto también se observa al notar que algunos menúes están deshabilitados y se activan una vez que se haya elegido un archivo con el cual trabajar. La imagen a continuación lo ilustra.</p>
-<p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla01.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/pantalla01.png" alt=""></p>
 <p>Una vez que hayamos seleccionado un archivo para trabajar, la pantalla puede parecerse a esta.</p>
-<p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla02.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/pantalla02.png" alt=""></p>
 <p>Volviendo al inicio, en un párrafo anterior dije que algunos menúes están deshabilitados hasta que se elija un archivo <strong><code>.tex</code></strong> para trabajar, pero otros sí están habilitados.</p>
 <p>El primero que encontramos es el formulario para la conversión de archivos word (<strong><code>.docx</code></strong>) a formato <strong><code>.tex</code></strong>, el proceso se realiza utilizando <a href="https://pandoc.org/">pandoc</a>, junto con la conversión se realizan otras dos tareas más:</p>
 <ol>
 <li>se crean dos carpetas &ndash;originales y media&ndash; dentro del directorio de trabajo;</li>
 <li>se mueve el archivo word a la carpeta originales.</li>
 </ol>
-<p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla06.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/pantalla06.png" alt=""></p>
 <p>El segundo es el formulario de apuntes, su idea y desarrollo surgieron de manera natural. Antes de gbTeXpublisher, a medida que iba trabajando tomaba apuntes sobre el proceso, ya sea consultas que debía hacer (al autor, al corrector o a mi cliente), buscar en otros archivos ese pedazo de código que alguna vez utilicé o simplemente apuntes de ayuda memoria temporal, todo eso es lo que se vuelca en este formulario, la información queda almacenada en la base de datos para ser recuperada cada vez que sea necesario.</p>
 <p>Las notas pueden ser exportadas a formato <strong><code>.docx</code></strong> para ser enviadas por correo o impresas.</p>
-<p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla08.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/pantalla08.png" alt=""></p>
 <h2 id="configurando-las-salidas">Configurando las salidas</h2>
 <p>gbTeXpublisher utiliza como motor de conversión subyacente <a href="https://www.ctan.org/pkg/make4ht">make4ht</a> que es un sistema de compilación simple para <a href="https://www.ctan.org/pkg/tex4ebook?lang=en">tex4ht</a>.</p>
 <p><strong>Importante:</strong> gbTeXpublisher, técnicamente está maduro, lo utilizo en mi producción diaria. Sigo con correcciones vinculadas a <em>tips</em> de producción de mi día a día. Entonces, ¿por qué hago mención de que es un <em>beta</em>? Porque seguramente, si empiezo a recibir consultas surjan otras cuestiones a revisar.</p>
 <p>Los archivos <strong><code>.cfg</code></strong> que el programa instala tienen una configuración base general, y mi intención es poder optimizarlos. Reitero: en estos archivos es donde se hacen cambios cuando se pretende alterar la salida más allá del diseño visual.</p>
 <p>El archivo <strong><code>build.lua</code></strong> trae por <em>default</em> una configuración base pensada para no dejar ninguna posibilidad fuera de su alcance, si alguna de sus instrucciones no fuesen necesarias (por las características del archivo con el que se está trabajando), no es problemático dejarlas, ya que el error que nos dará el compilador es del tipo <em>suave</em>, y por supuesto, si el archivo con el que trabajamos lo requiere, este archivo de configuración puede modificarse sin problemas.</p>
 <p>La indexación para las siglas y el glosario está codificado en el preámbulo que viene por <em>default</em>.</p>
-<p><img src="https://albertomoyano.github.io/blog-personal/images/build.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/build.png" alt=""></p>
 <p>No hay un archivo de configuración para PDF, esta es la salida natural, por consiguiente, todas sus características están dadas en el propio código del archivo.</p>
 <p>Para los archivos de configuración para ePub, HTML y XML, la suerte es la misma, quiero decir, contemplan una salida general en términos de posibilidades, que pueden ser modificados según cada necesidad.</p>
-<p><img src="https://albertomoyano.github.io/blog-personal/images/configepub.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/configepub.png" alt=""></p>
 <h2 id="ahora-bien-comenzamos-con-el-trabajo">Ahora bien, comenzamos con el trabajo</h2>
 <p>Luego de seleccionar un archivo, si miramos la carpeta contenedora del proyecto, veremos que se han creado nuevos directorios:</p>
 <ol>
@@ -395,14 +395,14 @@ title        = {La cuarta discontinuidad},
 <li>tapa</li>
 </ol>
 <p>Si los directorios <strong>originales</strong> y <strong>media</strong>, ya existian porque se hizo la conversión de <strong><code>.docx</code></strong> a <strong><code>.tex</code></strong> utilizando gbTeXpublisher, estos no se sobreescriben y se mantiene sin modificaciones su contenido.</p>
-<p><img src="https://albertomoyano.github.io/blog-personal/images/sample.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/sample.png" alt=""></p>
 <p>Dentro del directorio <strong>files</strong> se agregaran los archivos auxiliares y complementarios para la compilación, estos son los diferentes preámbulos y archivos de configuración, si cualquiera de estos archivos fuera modificado (no importa si desde gbTeXpublisher o desde un editor externo), no será reemplazado al volver (en un momento diferente) a cargar la aplicación, solo será agregado nuevamente aquél archivo que por error hubiera sido eliminado.</p>
-<p><img src="https://albertomoyano.github.io/blog-personal/images/sample2.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/sample2.png" alt=""></p>
 <h2 id="referencias-bibliográficas">Referencias bibliográficas</h2>
 <p>A continuación vemos el formulario para manejar las referencias bibliográficas, el programa trabaja con un motor de base de datos <a href="https://es.wikipedia.org/wiki/SQLite">SQLite</a>, que para trabajar en modo local, es lo mejor que conozco, pero si el trabajo se quisiera realizar en modo colaborativo (en red, abierta o cerrada), se debería migrar a otro motor.</p>
 <p>Todas las entradas están basadas en <a href="https://www.ctan.org/pkg/biblatex">BibLaTeX</a> que es una reimplementación completa de las funciones bibliográficas proporcionadas por LaTeX. El formato está completamente controlado por macros de LaTeX. BibLaTeX utiliza su propio analizador de datos llamado <a href="https://biblatex-biber.sourceforge.net/">biber</a> (escrito en <a href="https://es.wikipedia.org/wiki/Perl">Perl</a>) para procesar los datos bibliográficos.</p>
 <p>Por <em>default</em> gbTeXpublisher para la clase <em>book</em> entrega un archivo configurado para la salida a PDF con el estándar autor-año (diseño moderno) desarrollado por Ivan Valbusa en la Universidad de Verona (<a href="https://ctan.org/pkg/biblatex-philosophy">biblatex-philosophy</a>), para la salida a ePub, XHTML, HTML5 y XML se utiliza el estándar <a href="https://ctan.org/pkg/biblatex-iso690">biblatex-iso690</a> y para la salida a PDF en la clase <em>article</em> se utiliza el estándar de <a href="https://www.ctan.org/pkg/biblatex-apa">APA</a> y, por supuesto, todas estas salidas se pueden modificar e incluso cambiar.</p>
-<p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla07.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/pantalla07.png" alt=""></p>
 <p>Para explicar el uso de las referencias junto a la lógica que muestra cómo se separa <strong>la estructura del contenido</strong> de la <strong>representación visual de la salida</strong>, la mejor forma es a través de un video.</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
@@ -417,7 +417,7 @@ title        = {La cuarta discontinuidad},
 
 <h2 id="siglas-y-glosarios">Siglas y glosarios</h2>
 <p>Las siglas y glosarios se pueden dar de alta desde este formulario, lo que implica que quedan registrados en la base de datos, esto permite la reutilización de los valores, también es posible agregar entradas directamente en el archivo <strong><code>.tex</code></strong>.</p>
-<p><img src="https://albertomoyano.github.io/blog-personal/images/glosarios.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/glosarios.png" alt=""></p>
 <p>Al igual que con las referencias bibliográficas, en el siguiente video doy una vista general del modelo de trabajo.</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
@@ -444,7 +444,7 @@ title        = {La cuarta discontinuidad},
 <p>Hace un tiempo (largo) vi una imagen en la red <a href="https://www.linkedin.com/in/edicion-cientifica/">linkedin</a> que a simple vista (antes de leer el artículo) pensé que era un meme,<sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup> en la misma había muchos archivos MS Word, nombrados: versión final, versión final final, esta es la última versión, ahora sí la última; y así muchas copias de un word con todos los nombres que se pudieran imaginar, la imagen buscaba encontrar quiénes se identificaban con la misma.</p>
 <p>gbTeXpublisher trabaja con <a href="https://es.wikipedia.org/wiki/Git">Git</a> como sistema de control de versiones, este es ampliamente utilizado para el seguimiento de cambios. Fue creado por <a href="https://es.wikipedia.org/wiki/Linus_Torvalds">Linus Torvalds</a> en 2005, es una herramienta poderosa, flexible y fundamental para el trabajo en equipo. Puede llevar algo de tiempo acostumbrarse &ndash;a su lógica de uso&ndash;, pero una vez aprendidos sus conceptos se vuelve esencial para trabajar de manera sólida y segura, aún así, en gbTeXpublisher el acto de hacer las instantáneas de respaldo quedo simplificado al punto de un solo click de <em>mouse</em>.</p>
 <p>Si se desea trabajar solo en modo local no es necesario tener una cuenta en GitLab.</p>
-<p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla14.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/pantalla14.png" alt=""></p>
 <p>En el siguiente video, muestro como es el uso diario.</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
@@ -458,10 +458,10 @@ title        = {La cuarta discontinuidad},
 <p>Kanban, cuyo significado es letrero o tarjeta en japonés,​ es un sistema de información que controla de modo armónico la fabricación de los productos necesarios en la cantidad y tiempo necesarios en cada uno de los procesos que tienen lugar tanto en el interior de la fábrica, como entre distintas empresas <a href="https://es.wikipedia.org/wiki/Kanban">(Wikipedia)</a>.</p>
 </blockquote>
 <p>Ni que decir, si el trabajo es en equipo (no confundir trabajar en equipo con trabajar en red), donde todos acceden a los mismos archivos.</p>
-<p><img src="https://albertomoyano.github.io/blog-personal/images/kanban.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/kanban.png" alt=""></p>
 <h2 id="catálogo-automatizado">Catálogo automatizado</h2>
 <p>Fue imperativo abordar de manera ágil y eficaz (y segura) la cuestión del catálogo en formato PDF. La construcción se realiza mediante una plantilla predeterminada, extrayendo los datos necesarios de los metadatos. Solo restan dos datos por añadir manualmente: el autor y el currículum vitae (los motivos se detallan en el video). En perspectiva, aspiro a realizar modificaciones que permitan trabajar con diversas plantillas, posibilitando así la creación de diseños variados. El video siguiente ilustra el proceso de utilización.</p>
-<p><img src="https://albertomoyano.github.io/blog-personal/images/catalogo.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/catalogo.png" alt=""></p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/EppfTII68z0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
@@ -470,13 +470,13 @@ title        = {La cuarta discontinuidad},
 <p>El PDF que obtengo lo llevo a un directorio en donde se encuentran todas las páginas de los diferentes libros y un <em>script</em> hace el trabajo de <em>costura</em> concatenando todos los archivos en uno solo más una tapa.</p>
 <h2 id="obteniendo-estadísticas">Obteniendo estadísticas</h2>
 <p>Estudiar cómo a sido editado un libro o artículo a través de los resultados estadísticos de su interior es lo que permite este módulo, básicamente el contador rastrilla todo el proyecto y lo informa en diferentes planos.</p>
-<p><img src="https://albertomoyano.github.io/blog-personal/images/estadisticas.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/estadisticas.png" alt=""></p>
 <h2 id="control-de-errores-desde-el-logfile">Control de errores desde el logfile</h2>
 <p>En LaTeX existen diferentes tipos de errores, los voy a agrupar en 2 categorias: <em>suaves</em> y <em>duros</em>, los primeros no afectan la generación de la salida, los segundos directamente abortan el proceso de compilación. Por ello es que LaTeX (como todos los lenguajes de programación) provee un archivo de salida que registra todo el proceso de compilación, ya que en caso de ser necesario se lo puede consultar para empezar a indagar por donde vienen los conflictos.</p>
-<p><img src="https://albertomoyano.github.io/blog-personal/images/logfile.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/logfile.png" alt=""></p>
 <h2 id="copia-de-seguridad-del-trabajo-terminado">Copia de seguridad del trabajo terminado</h2>
 <p>Llegado a este punto, el trabajo está terminado, el libro impreso, la versión electrónica subida al repositorio, etcétera. Ha llegado el momento de guardar todo en un depósito de respaldo, yo personalmente utilizo <a href="https://es.wikipedia.org/wiki/Mega_(sitio_web)">Mega</a>, su relación costo/beneficio para este menester es la mejor (hay más opciones, por supuesto), también tengo un abono en Google para expandir mi cuota en Drive, pero lo utilizo para otras cosas. El menú <strong>Comprimir directorio para respaldo</strong>, básicamente lo que hace es una copia comprimiendo todo en formato <a href="https://es.wikipedia.org/wiki/Tar"><strong><code>.tar.gz</code></strong></a>, la imagen a continuación lo dice todo. Después solo resta llevar ese archivo al repositorio de respaldo.</p>
-<p><img src="https://albertomoyano.github.io/blog-personal/images/pantalla17.png" alt=""></p>
+<p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/pantalla17.png" alt=""></p>
 <h2 id="copia-de-respaldo-de-la-base-de-datos">Copia de respaldo de la base de datos</h2>
 <p>Esta constituye una de las primeras retroalimentaciones que recibí de aquellos que están probando gbTeXpublisher. No me había percatado de incluir una función para respaldar la base de datos. Ahora, cada vez que se cierra la aplicación, se genera automáticamente una copia de respaldo en el directorio <strong><code>.respaldogbTeX</code></strong>. El nombre del archivo se modifica al agregar la fecha, lo que implica que las copias del mismo día se sobrescriben. No hay restricciones en cuanto a la cantidad de copias respaldadas; cada usuario puede decidir cuántas desea conservar.</p>
 <p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/respaldo.png" alt=""></p>
