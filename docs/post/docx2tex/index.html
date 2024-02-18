@@ -53,7 +53,7 @@
   <meta itemprop="name" content="Utilizar docx2tex">
 <meta itemprop="description" content="Utilizar docx2tex en gbTeXpublisher"><meta itemprop="datePublished" content="2024-02-18T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2024-02-18T00:00:00+00:00" />
-<meta itemprop="wordCount" content="36"><meta itemprop="image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images" />
+<meta itemprop="wordCount" content="226"><meta itemprop="image" content="https://albertomoyano.github.io/blog-gbtexpublisher/images" />
 <meta itemprop="keywords" content="LaTeX,gbTeXpublisher," />
 
   
@@ -130,8 +130,17 @@
   
   <article class="content">
     
-    <p>gbTeXpublisher es una aplicación diseñada para facilitar la producción editorial. Si te desempeñas como editor, corrector o diseñador de libros, especialmente con un enfoque significativo en la edición científica, este artículo introductorio podría resultarte de interés.</p>
+    <p>gbTeXpublisher suma la posibilidad de convertir los archivos docx a tex utilizando docx2tex.</p>
+<p>Ahora, cuando abrimos el formulario para realizar la conversión podemos elegir entre las dos opciones (Pandoc viene seleccionada por <em>default</em>).</p>
+<p>Dentro de las diferencias operativas veremos que docx2tex no necesita que indiquemos un nombre para el destino.</p>
 <p><img src="https://albertomoyano.github.io/blog-gbtexpublisher/images/docx2tex.png" alt=""></p>
+<p>Su principal ventaja frente a Pandoc es que no falla, literal, hice más de 100 pruebas en archivos muy manoseados y mal construidos, y no obtuve errores en ningún caso.</p>
+<p>Su principal desventaja es que el proceso es lento comparado con Pandoc, que sencillamente es instantáneo.</p>
+<p>Si la conversión que necesitamos se realiza sobre un archivo medianamente bien construido en MS Word, es decir, sospechamos que tendrá poca basura a nivel código, Pandoc sigue siendo la mejor opción.</p>
+<p>Esta forma de convertir archivos de Microsoft Word (docx) en archivos de LaTeX se agrega para solucionar algunos inconvenientes que encuentro en la conversión realizada desde Pandoc.</p>
+<p>docx2tex no es una dependencia de gbTeXpublisher, por consiguiente es necesario hacer la instalación por fuera, el método que propongo es hacerlo a través de clonar el repositorio, por <em>default</em>, gbTeXpublisher irá a buscar la carpeta docx2tex al <strong><code>home</code></strong> del usuario, así que sugiero hacer la clonación en ese lugar.</p>
+<pre tabindex="0"><code>git clone https://github.com/transpect/docx2tex --recursive
+</code></pre><p>docx2tex fue desarrollado por <a href="https://www.le-tex.de/en/company.html">le-tex</a>, basado en el marco <a href="https://transpect.github.io/">transpect</a>. El autor principal de <a href="https://github.com/transpect/docx2tex">docx2tex</a> es <a href="https://github.com/mkraetke">mracetke</a>.</p>
     
   </article>
   
