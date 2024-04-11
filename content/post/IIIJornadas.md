@@ -7,13 +7,13 @@ tags = ["LaTeX", "gbTeXpublisher",]
 pin = true
 +++
 
-El pasado 14 de marzo, tuve la posibilidad de dar una charla sobre edición ramificada utilizando gbtexpublisher, como el tiempo fue escaso y quedaron muchas características sin mostrar, decidí hacer esta serie de videos que dan una muestra integral del software.
+El pasado 14 de marzo, tuve la posibilidad de dar una charla sobre edición ramificada utilizando gbTeXpublisher, como el tiempo fue escaso y quedaron muchas características sin mostrar, decidí hacer esta serie de videos que dan una muestra integral del software.
 
 <!--more-->
 
 Los videos se grabaron utilizando la última versión de desarrollo (0.1.18).
 
-El estado del desarrollo es:
+El estado del mismo es:
 
 - Generación de PDF (para pantalla e impresión): 100%
 - Generación de ePub y Mobi: 100%
@@ -36,7 +36,7 @@ El estado del desarrollo es:
 - Gestión remota con GitHub: 100%
 - Integración GitHub con Zenodo: 100%
 
-Si ya tiene una versión de prueba anterior instalada, es necesario eliminar la base de datos que se encuentra en el directorio .gbTeXpublisher (se encuentra oculto en su home) antes de hacer la instalación de esta versión.
+Si ya tiene una versión de prueba anterior instalada, es necesario eliminar la base de datos que se encuentra en el directorio `.gbtexpublisher` (se encuentra oculto en su home) antes de hacer la instalación de esta versión.
 
 
 {{< youtube 4ioxGeAwYYs >}}
