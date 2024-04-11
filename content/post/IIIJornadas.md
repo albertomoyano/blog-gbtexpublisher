@@ -7,7 +7,7 @@ tags = ["LaTeX", "gbTeXpublisher",]
 pin = true
 +++
 
-El pasado 14 de marzo, tuve la posibilidad de dar una charla sobre edición ramificada utilizando gbTeXpublisher, el tiempo fue escaso y quedaron muchas características sin mostrar, por eso decidí hacer esta serie de videos que dan una muestra integral del software.
+El pasado 14 de marzo, tuve la posibilidad de dar una charla sobre edición ramificada utilizando gbtexpublisher, como el tiempo fue escaso y quedaron muchas características sin mostrar, decidí hacer esta serie de videos que dan una muestra integral del software.
 
 <!--more-->
 
@@ -33,6 +33,8 @@ El estado del desarrollo es:
 - Trabajo local con SQLite: 100%
 - Trabajo remoto con MySQL: 0% en desarrollo
 - Gestión remota con GitLab: 100%
+- Gestión remota con GitHub: 100%
+- Integración GitHub con Zenodo: 100%
 
 Si ya tiene una versión de prueba anterior instalada, es necesario eliminar la base de datos que se encuentra en el directorio .gbTeXpublisher (se encuentra oculto en su home) antes de hacer la instalación de esta versión.
 
