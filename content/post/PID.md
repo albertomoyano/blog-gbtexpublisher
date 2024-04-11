@@ -13,7 +13,7 @@ Los Identificadores Persistentes Descentralizados (dPID) en el contexto de revis
 
 Entre los principales motivos que me movilizan a empezar a estudiar toda esta temática, prima su adopción e integración con gbTeXpublisher.
 
-Agradezco el desarrollo introductorio que realizo Sergio Santamaría, lo pueden ver en [este enlace](![](https://albertomoyano.github.io/blog-gbtexpublisher/images/dPID_PUBICIENT_2024_2.pdf)).
+Agradezco el desarrollo introductorio que realizo Sergio Santamaría, lo pueden ver en [este enlace](https://www.dropbox.com/scl/fi/vjgbunhmk8ic8yosc7y6i/dPID_PUBICIENT_2024_2.pdf?rlkey=si80agyr19rhtr7kkjxzsvtwc&dl=0), me ha servido como buen punto de partida.
 
 La naturaleza «descentralizada» de estos identificadores se refiere a que no dependen de una entidad central o autoridad única para su asignación o gestión. Esto contrasta con sistemas de identificación más tradicionales, como el DOI (Digital Object Identifier), que, aunque altamente efectivos y ampliamente adoptados, dependen de agencias registradoras centralizadas para su administración.
 
