@@ -1,8 +1,8 @@
 +++
 author = "Alberto Moyano"
-title= "Nuevos menúes para trabajo de corrección"
+title= "Funciones para el trabajo de corrección"
 date = 2024-08-14
-description = "Nuevos menúes para trabajo de corrección"
+description = "Funciones para el trabajo de corrección"
 tags = ["LaTeX", "gbTeXpublisher",]
 pin = true
 +++
