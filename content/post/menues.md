@@ -7,7 +7,7 @@ tags = ["LaTeX", "gbTeXpublisher",]
 pin = true
 +++
 
-gbTeXpublisher suma la posibilidad de ...
+Nota en desarrollo
 
 <!--more-->
 
