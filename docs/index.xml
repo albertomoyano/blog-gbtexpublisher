@@ -6,7 +6,16 @@
     <description>Recent content on Alberto Moyano</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Thu, 11 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://albertomoyano.github.io/blog-gbtexpublisher/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 14 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://albertomoyano.github.io/blog-gbtexpublisher/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nuevos menúes para trabajo de corrección</title>
+      <link>https://albertomoyano.github.io/blog-gbtexpublisher/post/menues/</link>
+      <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://albertomoyano.github.io/blog-gbtexpublisher/post/menues/</guid>
+      <description>&lt;p&gt;gbTeXpublisher suma la posibilidad de &amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Primeras aproximaciones a dPID</title>
       <link>https://albertomoyano.github.io/blog-gbtexpublisher/post/pid/</link>
@@ -204,37 +213,6 @@ El rubro editorial no escapa de la pelea –paradigma del desarrollo capitalista
       
       <guid>https://albertomoyano.github.io/blog-gbtexpublisher/post/emoji-support/</guid>
       <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://albertomoyano.github.io/blog-gbtexpublisher/post/files/inicio-frontmatter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://albertomoyano.github.io/blog-gbtexpublisher/post/files/inicio-frontmatter/</guid>
-      <description>% página 1 \newpage \thispagestyle{empty} {\textcolor{white}{.}}
-% página 2 \newpage \thispagestyle{empty} {\textcolor{white}{.}}
-% página 3 \newpage \thispagestyle{empty} {\textcolor{white}{.}}
-\vspace{30mm}
-\begin{center} \LARGE{&amp;lt;título&amp;gt;} \end{center}
-% página 4 \newpage \thispagestyle{empty} {\textcolor{white}{.}}
-% página 5 \newpage \thispagestyle{empty} \begin{center}%,draft {\sc\large{nombre de autor}}\ %compiladoras \end{center}
-\vspace{30mm}
-\begin{center} \LARGE{título}\\vspace{10mm}
-\Large{subtítulo} \end{center}
-\vfill
-\begin{figure}[b] \centering \includegraphics[width=20mm]{./media/logo-imago-cmyk.png} \end{figure}
-% página 6 \newpage \thispagestyle{empty} \begin{figure}[t] \centering \vspace{-10mm} \includegraphics[width=20mm]{./media/logo-coleccion.png}\ \sc{colección comunicación} \end{figure}
-\noindent autor \ \noindent título. 1a ed. Buenos Aires: 2023.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://albertomoyano.github.io/blog-gbtexpublisher/post/readme/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://albertomoyano.github.io/blog-gbtexpublisher/post/readme/</guid>
-      <description></description>
     </item>
     
   </channel>

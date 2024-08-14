@@ -3,24 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://albertomoyano.github.io/blog-gbtexpublisher/</loc>
-    <lastmod>2024-04-11T00:00:00+00:00</lastmod>
+    <lastmod>2024-08-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://albertomoyano.github.io/blog-gbtexpublisher/tags/gbtexpublisher/</loc>
-    <lastmod>2024-04-11T00:00:00+00:00</lastmod>
+    <lastmod>2024-08-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://albertomoyano.github.io/blog-gbtexpublisher/tags/index/</loc>
-    <lastmod>2024-04-11T00:00:00+00:00</lastmod>
+    <lastmod>2024-08-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://albertomoyano.github.io/blog-gbtexpublisher/tags/latex/</loc>
-    <lastmod>2024-04-11T00:00:00+00:00</lastmod>
+    <lastmod>2024-08-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://albertomoyano.github.io/blog-gbtexpublisher/post/menues/</loc>
+    <lastmod>2024-08-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://albertomoyano.github.io/blog-gbtexpublisher/post/</loc>
-    <lastmod>2024-04-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://albertomoyano.github.io/blog-gbtexpublisher/post/pid/</loc>
-    <lastmod>2024-04-11T00:00:00+00:00</lastmod>
+    <lastmod>2024-08-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://albertomoyano.github.io/blog-gbtexpublisher/tags/</loc>
+    <lastmod>2024-08-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://albertomoyano.github.io/blog-gbtexpublisher/post/pid/</loc>
     <lastmod>2024-04-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://albertomoyano.github.io/blog-gbtexpublisher/post/github-gitlab/</loc>
@@ -169,9 +172,5 @@
   </url><url>
     <loc>https://albertomoyano.github.io/blog-gbtexpublisher/post/emoji-support/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://albertomoyano.github.io/blog-gbtexpublisher/post/files/inicio-frontmatter/</loc>
-  </url><url>
-    <loc>https://albertomoyano.github.io/blog-gbtexpublisher/post/readme/</loc>
   </url>
 </urlset>

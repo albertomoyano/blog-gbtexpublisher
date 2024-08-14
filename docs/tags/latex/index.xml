@@ -6,7 +6,16 @@
     <description>Recent content in LaTeX on Alberto Moyano</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Thu, 11 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://albertomoyano.github.io/blog-gbtexpublisher/tags/latex/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 14 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://albertomoyano.github.io/blog-gbtexpublisher/tags/latex/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nuevos menúes para trabajo de corrección</title>
+      <link>https://albertomoyano.github.io/blog-gbtexpublisher/post/menues/</link>
+      <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://albertomoyano.github.io/blog-gbtexpublisher/post/menues/</guid>
+      <description>&lt;p&gt;gbTeXpublisher suma la posibilidad de &amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Primeras aproximaciones a dPID</title>
       <link>https://albertomoyano.github.io/blog-gbtexpublisher/post/pid/</link>
