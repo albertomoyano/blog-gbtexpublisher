@@ -1,5 +1,5 @@
 baseURL = 'https://albertomoyano.github.io/blog-gbtexpublisher/'
-title = 'Alberto Moyano'
+title = 'gbTeXpublisher'
 theme = "hugo-texify2"
 publishDir = "docs"
 paginate = 4
